@@ -108,8 +108,9 @@ Alle kurz, alle ohne Marketingsprache, alle mit einer einzigen konkreten Frage a
 **An jemanden aus dem eigenen Netzwerk**
 
 > Servus [Name], kurze Sache: [Mitgründer] und ich ziehen eine Trainingsgruppe auf. Fixe Termine,
-> Samstag lang, Dienstag Intervalle, im Winter Kraft und Hallenbad. Zwei Tempogruppen, damit
-> niemand hinten rausfällt. Kein Verein, kein Beitrag, kein Zwang.
+> Samstag lang, Dienstag Intervalle, im Winter Kraft und Hallenbad. Zwei Niveaugruppen und immer
+> zwei Längenoptionen, damit es in jede Trainingswoche passt. Kein Verein, kein Beitrag, kein
+> Zwang.
 >
 > Erster Termin ist Samstag, [Datum], [Uhrzeit], [Treffpunkt]. Kommst du mit?
 
@@ -119,11 +120,16 @@ Alle kurz, alle ohne Marketingsprache, alle mit einer einzigen konkreten Frage a
 > Wien eine Trainingsgruppe auf, für Leute, die ordentlich Umfang machen und ein Renndatum im
 > Kalender haben. Triathlon, Hyrox, Trail, gemischt.
 >
-> Fixe wöchentliche Termine, zwei Tempogruppen, kein Verein. Samstag [Datum] fahren wir
-> [Strecke], Start [Uhrzeit] bei [Treffpunkt]. Wenn das zeitlich passt, komm einfach dazu.
+> Fixe wöchentliche Termine, zwei Niveaugruppen, kein Verein. Samstag [Datum] fahren wir
+> [Strecke], GA1, wahlweise 70 oder 110 km. Start [Uhrzeit] bei [Treffpunkt]. Wenn das passt,
+> komm einfach dazu.
 
 Wichtig: keine Vorstellung des Projekts, kein "wir bauen eine Plattform". Eine Einladung zu einer
 Ausfahrt. Menschen sagen zu einer Ausfahrt zu, nicht zu einem Vorhaben.
+
+**Immer mitschicken: Intensität und zwei Längenoptionen.** Das ist der Unterschied zwischen einer
+Einladung, die in eine Trainingswoche passt, und einer, die man absagen muss. "GA1, 70 oder 110
+km" beantwortet die Frage, die sich der Empfänger sonst selbst stellen müsste.
 
 **An einen Gym- oder Studiobetreiber, schriftlich**
 

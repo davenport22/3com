@@ -32,15 +32,18 @@ users
   id, created_at, display_name, photo_url, home_district, city_id,
   bio, target_race, target_race_date, strava_athlete_id, reliability_score
 
-user_bands
+user_bands                      -- LEVEL: a property of the person, changes over months
   id, user_id, discipline (swim|bike|run|trail|strength),
-  tempo_group (kaffeefahrt|tempo|vollgas),     -- what the user sees and picks
-  band_low, band_high,                          -- numeric, never shown
-  unit (sec_per_100m | watt_per_kg | sec_per_km | vertical_m_per_h | relative),
+  band_low, band_high,          -- a corridor, stored canonically, shown in the discipline's unit
+  unit (sec_per_100m | kmh | watt_per_kg | sec_per_km | vertical_m_per_h | relative),
   source (self_declared | strava_derived), updated_at
 
-  -- strength/Hyrox has no meaningful pace unit: use tempo_group alone with
-  -- unit='relative'. Do not invent a metric to keep the schema symmetric.
+  -- strength/Hyrox has no meaningful pace unit: unit='relative' with a 1-3 scale.
+  -- Do not invent a metric just to keep the schema symmetric.
+
+session_level_groups            -- LEVEL groups offered by one series, set by the host
+  id, session_id, label,        -- host-written, e.g. "Gruppe 1" or "30-32 km/h"
+  band_low, band_high, unit, capacity
 
 cities
   id, name, slug, timezone, bounds        -- present from day one, hidden in UI
@@ -48,7 +51,9 @@ cities
 sessions
   id, host_user_id, city_id, title, description,
   discipline (swim|bike|run|trail|strength|brick|other),
-  session_type (endurance|tempo|interval|long|recovery|brick|technique|race_sim|circuit),
+  intensity (ga1|ga2|threshold|interval|long|recovery|brick|technique|race_sim|circuit),
+  structure_note,               -- one line, e.g. "4x8min Schwelle, 4min Pause". Free text.
+                                -- Deliberately NOT a structured workout editor.
   starts_at, duration_min,
   meeting_point_lat, meeting_point_lng, meeting_point_label, district,
   pace_band_low, pace_band_high, pace_band_unit,
@@ -90,23 +95,31 @@ Notes:
   watts per kg times 100, seconds per km) to make overlap queries trivial.
 - `attended` drives `reliability_score`. Set it by host confirmation plus self-confirmation.
 
-## The pace-fit calculation
+## The fit calculation
 
-The single most important piece of logic. Keep it simple and explainable:
+Fit has two independent parts. Only the first can be computed; the second is shown, not judged.
+
+**1. Level fit (computed).** Compare the member's band against each level group of the session:
 
 ```
-overlap = max(0, min(user_high, session_high) - max(user_low, session_low))
-session_width = session_high - session_low
+overlap = max(0, min(user_high, group_high) - max(user_low, group_low))
+group_width = group_high - group_low
+fit = overlap / group_width
 
-fit = overlap / session_width
-
-fit >= 0.5   -> "passt zu dir"
+fit >= 0.5    -> "deine Gruppe"
 0 < fit < 0.5 -> "knapp" (with direction: schneller / langsamer)
-fit == 0 and user is faster  -> "für dich locker"
-fit == 0 and user is slower  -> "ambitioniert für dich"
+fit == 0, user faster -> "für dich locker"
+fit == 0, user slower -> "ambitioniert für dich"
 ```
 
-Never block a join based on fit. Inform, do not gate. Gating destroys the beginner funnel.
+The UI surfaces the best-fitting group and lets the member pick another one anyway.
+
+**2. Plan fit (displayed, never computed).** The session's `intensity` and `structure_note` are
+shown prominently. 3com does not know the member's training plan and must not pretend to: no
+plan import, no "this fits your week" claim. The member reads one line and decides in two
+seconds. That is enough, and anything more is a different product.
+
+Never block a join based on either. Inform, do not gate. Gating destroys the beginner funnel.
 
 ## Strava integration
 

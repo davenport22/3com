@@ -240,3 +240,35 @@ Serien, und ein Name samt Identität, die einen Sponsor überleben.
 jedes Gespräch ein Bittgang, und jeder Bittgang verbrennt den Kontakt für den Moment, in dem er
 etwas wert wäre. Die Zielgruppe bleibt attraktiv, Glaubwürdigkeit dagegen ist verderblich.
 **Wiedervorlage:** sobald alle drei Bedingungen erfüllt sind.
+
+---
+
+## D-019 Zwei getrennte Dimensionen: Intensität und Niveau
+
+**Datum:** 2026-09-11
+**Ersetzt:** D-010 in der Benennung, bestätigt es im Grundsatz.
+**Entscheidung:** Das Produkt trennt strikt zwei Dimensionen.
+**Intensität** gehört zur Einheit und kommt aus dem Trainingsplan. Sie wird in der Sprache der
+Zielgruppe benannt (GA1, GA2, Schwelle, Intervall, Long, Koppel, Recovery,
+Wettkampfsimulation), dazu eine Zeile Struktur im Klartext, etwa "4x8min Schwelle, 4min Pause".
+**Niveau** gehört zum Menschen, ist ein Korridor in der Einheit der Disziplin und ändert sich
+über Monate, nicht über Tage.
+**Begründung:** Die Benennung Kaffeefahrt, Tempo, Vollgas vermischte beides und suggerierte
+zusätzlich, die härteste Einheit sei die unsozialste. Das ist falsch. Auch Vollgas ist gemeinsam
+besser, und zwar messbar: Windschatten, geteilte Führungsarbeit, präziseres Tempo auf der Bahn.
+**Folge für das Matching:** Niveau wird berechnet und als passende Gruppe angezeigt. Planpassung
+wird nur dargestellt, nie berechnet. 3com kennt keinen Trainingsplan und tut nicht so.
+**Wiedervorlage:** keine.
+
+---
+
+## D-020 Anker-Einheiten müssen zwei Planphasen bedienen
+
+**Datum:** 2026-09-11
+**Entscheidung:** Jede wiederkehrende Anker-Einheit wird so entworfen, dass Aufbau- und
+Entlastungswoche nebeneinander laufen können: zwei Längenoptionen auf derselben Route, variable
+Wiederholungszahl bei identischer Serienstruktur, variabler Umfang bei identischem Hauptsatz.
+**Begründung:** Direkte Folge aus H1. Gleiches Niveau reicht nicht, wenn die Planphase nicht
+passt. Eine Einheit, die nur eine Planphase bedient, verliert jede Woche die Hälfte der Leute.
+**Kommunikationsregel:** Jede Einladung nennt Intensität und beide Längenoptionen.
+**Wiedervorlage:** keine.

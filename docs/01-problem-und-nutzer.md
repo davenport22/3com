@@ -1,7 +1,7 @@
 # 01 Problem und Nutzer
 
-Überarbeitet in v0.3: Die Zielgruppe wird nicht mehr über die Sportart abgegrenzt, sondern über
-die Trainingslast. Begründung und Konsequenzen siehe unten.
+Überarbeitet in v0.3 (Abgrenzung über Trainingslast statt Sportart) und in v0.5 (Kernproblem als
+zweidimensionale Peer-Knappheit neu gefasst).
 
 ## Das Problem in drei Sätzen
 
@@ -54,20 +54,69 @@ Grenze.
 trainieren muss" und "ich mache es". Genau dort entsteht die Einsamkeit, und sie ist in jedem
 der drei Formate dieselbe.
 
-## Der eigentliche Blocker: das Tempoproblem
+## Der eigentliche Blocker: zweidimensionale Peer-Knappheit
 
-Die Hypothese, die das ganze Konzept trägt:
+Das ist die Kernhypothese, und sie ist in v0.5 deutlich schärfer gefasst als vorher.
 
-> **[Hypothese H1]** Der Hauptgrund, warum ambitionierte Ausdauersportler nicht miteinander
-> trainieren, ist nicht fehlende Gelegenheit, sondern die Angst vor der Tempo-Fehlpaarung. Zu
-> langsam heißt Blamage, zu schnell heißt kaputte Einheit. Beides ist schlimmer als allein.
+> **[Hypothese H1]** Ambitionierte Ausdauersportler trainieren nicht deshalb allein, weil es
+> keine anderen gäbe. Sie trainieren allein, weil sie kaum jemanden kennen, der **gleichzeitig
+> zwei Bedingungen erfüllt**: ähnlich leistungsfähig, und an diesem Tag mit derselben Art von
+> Einheit im Plan.
 >
-> *Prüfmethode:* 15 Gespräche nach den ersten Einheiten. Frage nicht "würdest du gerne in der
-> Gruppe trainieren" (Antwort immer ja), sondern "erzähl mir von der letzten Gruppeneinheit, die
-> du ausgelassen hast, obwohl du Zeit hattest".
+> *Prüfmethode:* Nicht "würdest du gerne in der Gruppe trainieren" (Antwort immer ja), sondern:
+> "Wie viele Leute kennst du, mit denen du am Dienstag deine Intervalle machen könntest, ohne
+> dass einer von euch die Einheit anpassen muss?" Die erwartete Antwort ist null, eins oder zwei.
 
-Daraus folgt: Die Tempogruppe ist kein Filter, sondern das Kernfeature. Sie erscheint aber als
-Name, nicht als Zahl (siehe 05).
+### Warum das zwei Dimensionen sind und nicht eine
+
+Die beiden Dimensionen werden ständig verwechselt, auch im ersten Entwurf dieses Dokuments:
+
+| Dimension | Gehört zu | Beispiel |
+|---|---|---|
+| **Leistungsniveau** | zum Menschen | fährt im Flachen 30 km/h oder 35 km/h |
+| **Intensität der Einheit** | zum Trainingsplan des Tages | GA1, Schwelle, Intervall, Recovery |
+
+Zwei gleich schnelle Athleten können am selben Tag nicht miteinander trainieren, wenn einer in
+der Aufbauwoche und der andere in der Entlastungswoche steht. Zwei Athleten mit derselben
+Einheit im Plan können es nicht, wenn zwischen ihnen fünf km/h liegen. Beide Bedingungen müssen
+gleichzeitig erfüllt sein, und genau deshalb ist die Menge der tatsächlichen Trainingspartner so
+klein.
+
+Rechne es an einem Bekanntenkreis von zehn Triathleten durch: Vielleicht vier sind ungefähr
+gleich schnell. Von diesen vier hat an einem gegebenen Dienstag vielleicht einer dieselbe
+Einheit im Plan. Ein Bekanntenkreis von zehn liefert also im Schnitt einen einzigen möglichen
+Trainingspartner pro Einheit, und der kann an diesem Abend auch noch anders können.
+
+**Das ist der Grund, warum WhatsApp-Gruppen das Problem nicht lösen.** Sie koordinieren Zeit.
+Das Problem ist aber nicht die Zeit, sondern die Deckung von Niveau und Planphase. Eine Gruppe
+mit 200 Leuten löst es, eine mit 10 nicht, und zwar unabhängig vom Werkzeug.
+
+### Was daraus für das Produkt folgt
+
+1. **Jede Einheit trägt ihre Intensität sichtbar**, in der Sprache, die diese Zielgruppe ohnehin
+   spricht: GA1, Schwelle, Intervall, Long, Koppel, Recovery. Nicht als Marketingbegriff,
+   sondern damit jemand in zwei Sekunden erkennt, ob es zu seinem Plan an diesem Tag passt.
+2. **Jede Einheit trägt konkrete Niveaugruppen**, vom Gastgeber gesetzt, in der Einheit der
+   Disziplin.
+3. **Dichte ist kein Luxus, sondern die Lösung.** Der Wert des Produkts steigt nicht linear mit
+   der Mitgliederzahl, sondern erst ab einer Schwelle sprunghaft, weil erst dann in jeder
+   Zelle aus Niveau mal Intensität jemand steht.
+
+### Und ein Korrektiv: harte Einheiten sind die besten Gruppeneinheiten
+
+Die frühere Bezeichnung der Tempogruppen beschrieb sie danach, ob man reden kann. Das war ein
+Fehler, weil es implizit sagt, die härteste Einheit sei die unsozialste. Das Gegenteil stimmt:
+
+- Auf dem Rad ist der Windschatten bei hoher Intensität am wertvollsten, die Führungsarbeit wird
+  geteilt
+- Auf der Bahn hält eine Gruppe das Tempo präziser als jeder Einzelne, und das Zählen der Serien
+  fällt leichter
+- Im Wasser ist das Anschwimmen in der Bahn genau die Situation, in der man sich gegenseitig zieht
+- Im Kraftraum und bei Hyrox macht die Gruppe die Wiederholungen, die man allein auslässt
+
+**Gemeinsam bedeutet nicht locker.** Es bedeutet, dass man die Einheit besser trifft, als man sie
+allein getroffen hätte. Das ist das stärkere Verkaufsargument und es richtet sich an genau die
+Leute, die ernsthaft trainieren.
 
 ## Zweite tragende Hypothese
 

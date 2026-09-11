@@ -38,17 +38,35 @@ platforms from one codebase, and the core use case is committing to a session, n
 **Onboarding and profile**
 - Sign in with email magic link, optional Strava OAuth
 - Profile: name, photo, home district, disciplines, target race and date
-- **Tempo group, not pace numbers.** Three named groups per discipline, self-selected:
-  - **Kaffeefahrt** (you can hold a conversation)
-  - **Tempo** (short sentences only)
-  - **Vollgas** (no talking)
-  A numeric band sits behind each group for later matching logic and for Strava-derived
-  suggestions, but no user ever sees an interval. Groups overlap deliberately at the edges; a
-  member near a boundary is offered both.
+- **Level band per discipline, not a single number.** A corridor in the discipline's own unit
+  (e.g. 30 to 32 km/h flat, 4:30 to 4:50 per km, 1:35 to 1:50 per 100m). Self-declared, or
+  proposed from Strava and then confirmed. This is a property of the person and changes over
+  months.
+
+**Two dimensions, kept strictly apart**
+
+The earlier draft named three groups by whether you can talk (Kaffeefahrt / Tempo / Vollgas).
+That was wrong: it conflated the person's level with the session's intensity, and it implied
+that the hardest session is the least social, which is the opposite of true. The corrected
+model:
+
+| | Intensity | Level |
+|---|---|---|
+| Belongs to | the session, from the training plan | the person |
+| Set by | the host when creating the series | the member in their profile |
+| Changes | daily | over months |
+| Vocabulary | GA1, GA2, threshold, intervals, long, brick, recovery, race sim | a pace or power corridor per discipline |
+
+A session fits a member only when **both** match. Missing this is exactly why a well-connected
+athlete still has almost no real training partners (hypothesis H1 in `01`).
 
 **Recurring sessions (the core)**
-- A session series: discipline, weekday, time, meeting point, session type, tempo groups
-  offered, capacity per group, host, cost, notes
+- A session series: discipline, weekday, time, meeting point, **intensity**, **level groups
+  offered** (each with an explicit corridor), capacity per group, host, cost, notes
+- **Session structure as free text, one line.** "4x8min Schwelle, 4min Pause" or "2,5h GA1,
+  Lobau-Runde". This is what lets someone check it against their own plan in two seconds. Do not
+  build a structured workout editor; a single line covers 95 percent of the value at 2 percent
+  of the cost.
 - Disciplines: swim, bike, run, trail, strength and functional (Hyrox-style), brick, other.
   The discipline is a property of the session, never of the member. Members rotate across the
   year; the product must not force them into one lane.
@@ -116,7 +134,8 @@ product and behaves like an empty room.
 | # | As a | I want to | So that | Priority |
 |---|---|---|---|---|
 | 1 | member | commit to next Saturday's ride in two taps | I have a fixed point in my week | P0 |
-| 2 | member | pick a tempo group by how it feels, not by a number | I do not feel graded before I have even started | P0 |
+| 2 | member | see the session's intensity and structure in one line | I know whether it fits my plan today, not just my legs | P0 |
+| 2b | member | see which level group is mine without doing maths | I do not have to guess and I do not feel graded | P0 |
 | 3 | host | see who is actually coming, per group | I can plan the route and not wait for nobody | P0 |
 | 4 | host | take over an existing series without asking anyone | the session survives when the founders are unavailable | P0 |
 | 5 | founder | run a coached session with limited spots and shared cost | the community gets quality it cannot self-organise | P0 |
@@ -128,10 +147,11 @@ product and behaves like an empty room.
 ## Screens (v1)
 
 1. **Diese Woche** (default): the next occurrences across all series, with your commitment state
-2. **Serie** : what this session is, who hosts it, the next three dates, tempo groups, commit
+2. **Serie**: what this session is, intensity and structure, who hosts it, the next three dates,
+   level groups with their corridors, commit
 3. **Occurrence detail**: participants per group, meeting point, group thread, host controls
 4. **Serie anlegen / übernehmen**: one scrolling form with sensible defaults
-5. **Profil**: tempo groups, target race, upcoming commitments, reliability ratio
+5. **Profil**: level bands per discipline, target race, upcoming commitments, reliability ratio
 6. **Onboarding**: 4 steps, under 90 seconds, ending on a commitment to a real session
 
 The default screen is "Diese Woche", not a board. That single choice encodes the whole revision:

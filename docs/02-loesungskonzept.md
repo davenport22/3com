@@ -8,8 +8,11 @@ Plätzen.** Kein Feed, kein Profil, keine Gruppe. Eine Session.
 Eine Session hat:
 - Disziplin (Schwimmen, Rad, Lauf, Trail, Kraft und Funktional, Koppel, Sonstiges)
 - Zeitpunkt und Startort
-- Trainingsart und Intensität (GA1, Tempo, Intervall, Long, Recovery)
-- Tempoband oder Wattband, nicht ein Wert sondern ein Korridor
+- **Intensität**, in der Trainingssprache der Zielgruppe: GA1, GA2, Schwelle, Intervall, Long,
+  Koppel, Recovery, Wettkampfsimulation. Das ist die Dimension, an der jemand erkennt, ob die
+  Einheit zu seinem Plan an diesem Tag passt.
+- **Niveaugruppen**, vom Gastgeber gesetzt, konkret in der Einheit der Disziplin
+  (zum Beispiel 30 bis 32 km/h, oder 4:30 bis 4:50 pro Kilometer). Ein Korridor, kein Wert.
 - Kapazität und Hostmodus (offen, auf Anfrage, geschlossen)
 - Optional: Kosten, Coach, Ort mit Buchung
 
@@ -79,6 +82,34 @@ Wichtig ist die Abgrenzung zu Strava, sonst baut man ein schlechteres Strava.
 | Vergleich und Wettbewerb (Segmente, KOM) | Verabredung und Zugehörigkeit |
 | Global, Follower-basiert | Lokal, Session-basiert |
 | Zahlen im Mittelpunkt | Menschen im Mittelpunkt |
+
+### Die zwei Dimensionen, konsequent getrennt
+
+Intensität gehört zur Einheit, Niveau gehört zum Menschen. Diese Trennung ist die wichtigste
+Designentscheidung im Produkt, weil die Verwechslung beider Dimensionen die eigentliche Ursache
+des Problems ist (siehe H1 in 01).
+
+|  | **Intensität** | **Niveau** |
+|---|---|---|
+| Gehört zu | der Einheit, aus dem Trainingsplan | dem Menschen, aus seiner Leistungsfähigkeit |
+| Wird gesetzt von | dem Gastgeber beim Anlegen | dem Mitglied im Profil, optional aus Strava abgeleitet |
+| Ändert sich | täglich | über Monate |
+| Beispiel | 4x8min Schwelle | 30 bis 32 km/h im Flachen |
+
+Eine Einheit passt zu dir, wenn beides stimmt. Eine harte Intervalleinheit in der falschen
+Niveaugruppe ist genauso unbrauchbar wie eine passende Niveaugruppe in einer Woche, in der dein
+Plan Entlastung vorsieht.
+
+### Gemeinsam heißt nicht locker
+
+Ein Grundsatz, der in der Kommunikation nach außen genauso gilt wie im Produkt: **Auch Vollgas
+ist gemeinsam besser.** Harte Einheiten sind nicht die unsozialen, sie sind die, bei denen die
+Gruppe den größten messbaren Unterschied macht. Windschatten bei hoher Intensität, geteilte
+Führungsarbeit, präziseres Tempo auf der Bahn, das Anschwimmen im Wasser, die Wiederholungen im
+Kraftraum, die man allein auslässt.
+
+Jede Formulierung, die suggeriert, gemeinsames Training sei das langsamere Training, ist damit
+falsch und schadet bei genau der Zielgruppe, auf die es ankommt.
 
 **Designregel:** Im 3com-Feed erscheint keine Einheit ohne sozialen Bezug. Eine Solo-Einheit
 wird nicht automatisch importiert und gepostet. Gepostet wird: "waren zu viert bei Regen am

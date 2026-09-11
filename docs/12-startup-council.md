@@ -297,3 +297,20 @@ bleibt unverändert: kein Kapital aufnehmen.
 Die Verbreiterung kauft Markt und Ganzjährigkeit und bezahlt mit Identität. Der Preis ist
 vertretbar, aber er ist erst bezahlt, wenn der Name, die Sprache und die drei konstanten Anker
 die Zugehörigkeit tragen, die vorher die Sportart geliefert hat.
+
+---
+
+## Nachtrag v0.5: Jobs' Benennung war nur zur Hälfte richtig
+
+Jobs hatte recht damit, dass niemand sich selbst in ein Intervall von 4:35 bis 4:55 eintragen
+will. Seine Lösung, drei nach Redbarkeit benannte Gruppen, war aber selbst fehlerhaft: sie
+vermischt die Intensität der Einheit mit dem Niveau des Menschen und erklärt die härteste
+Einheit implizit zur unsozialsten.
+
+Das Gegenteil stimmt. Eine harte Einheit ist die, bei der die Gruppe den größten messbaren
+Unterschied macht. Windschatten wirkt bei hoher Intensität am stärksten, die Führungsarbeit
+wird geteilt, auf der Bahn hält eine Gruppe das Tempo präziser als jeder Einzelne.
+
+Übernommen wird deshalb sein Prinzip, nicht seine Lösung: keine nackten Zahlen im Profil, aber
+klare Trennung von Intensität (gehört zur Einheit) und Niveau (gehört zum Menschen). Siehe
+D-019.

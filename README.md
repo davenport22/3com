@@ -10,13 +10,18 @@ aus geplanten Einzeleinheiten gemeinsame Einheiten.
 mehr, strukturiert, mit einem Renndatum. Triathlon ist der Kern, Hyrox, Trail und Ultra sowie
 Marathon mit strukturiertem Plan gehören dazu.
 
+**Das Kernproblem:** nicht fehlende Gelegenheit, sondern zweidimensionale Peer-Knappheit. Man
+kennt kaum jemanden, der gleichzeitig ähnlich leistungsfähig ist **und** an diesem Tag dieselbe
+Art von Einheit im Plan hat. Intensität gehört zur Einheit, Niveau gehört zum Menschen. Nur
+Dichte löst das, kein Werkzeug.
+
 ---
 
 ## Status
 
 | Punkt | Stand |
 |---|---|
-| Phase | Konzept v0.4, noch nichts gebaut |
+| Phase | Konzept v0.5, noch nichts gebaut |
 | Gründer | zwei, gleiche Anteile. Einer BD, Vertrieb und Community, einer Produkt und Technik |
 | Ambitionsniveau | bewusst offen, entscheidet sich nach dem MVP |
 | Start | zentral organisierte Events: drei ganzjährige Anker, Coach-Sessions, saisonale Zusatzformate |

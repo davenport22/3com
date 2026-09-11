@@ -105,8 +105,8 @@ Ihr habt alle vier gewählt. Drei davon sind richtig, beim vierten widerspreche 
 
 ### 1. Wöchentliche Anker-Einheiten (ab sofort, ganzjährig unverändert)
 
-Drei feste Termine, unverhandelbar verlässlich, zwei Tempogruppen ab dem ersten Tag. Diese drei
-Termine stehen das ganze Jahr an derselben Stelle im Kalender, auch wenn der Inhalt saisonal
+Drei feste Termine, unverhandelbar verlässlich, **zwei Niveaugruppen ab dem ersten Tag**. Diese
+drei Termine stehen das ganze Jahr an derselben Stelle im Kalender, auch wenn der Inhalt saisonal
 variiert. Nur die Zusatzformate wechseln mit der Jahreszeit (siehe Jahresrhythmus in 02).
 
 Der Grund ist Kommunikation, nicht Logistik: Wer weiß, dass samstags um acht etwas stattfindet,
@@ -118,8 +118,27 @@ muss nichts nachschlagen. Ein Kalender, der sich saisonal umbaut, verliert genau
 | **Dienstag Intervalle** | ab 22.09.2026 | Intervalle in der Gruppe sind objektiv besser als allein. Härtestes Nutzenargument. |
 | **Schwimmen** | ab Oktober 2026 | Größte Hürde für Einsteiger, höchste Bindung. Braucht eine gesicherte Bahn. |
 
-Zwei angekündigte Tempogruppen von Anfang an. Nicht "wir fahren zusammen und schauen".
-Genau die Fehlpaarung ist der Grund, warum Leute nicht kommen.
+Zwei angekündigte Niveaugruppen von Anfang an, jede mit einem konkreten Korridor. Nicht "wir
+fahren zusammen und schauen". Genau die Fehlpaarung ist der Grund, warum Leute nicht kommen.
+
+### Die Gestaltungsregel für Gastgeber: Planphasen müssen nebeneinander passen
+
+Das ist die operative Konsequenz aus H1 (siehe 01) und der wichtigste Unterschied zu einer
+gewöhnlichen Gruppenausfahrt. Zwei Menschen mit gleichem Niveau können trotzdem nicht
+miteinander trainieren, wenn einer in der Aufbau- und einer in der Entlastungswoche steht. Eine
+Anker-Einheit, die nur eine Planphase bedient, verliert jede Woche die Hälfte der Leute.
+
+Jede Anker-Einheit wird deshalb so entworfen, dass mindestens zwei Planphasen nebeneinander
+laufen können:
+
+| Anker | Wie zwei Planphasen zusammen funktionieren |
+|---|---|
+| **Samstag lang** | Gleiche Route, zwei Abbiegepunkte: die kurze Runde für Entlastungswochen, die lange für Aufbauwochen. Beide starten gemeinsam. |
+| **Dienstag Intervalle** | Gleicher Startpunkt, gleiche Serienstruktur, aber unterschiedliche Wiederholungszahl. Wer weniger macht, steigt früher aus und läuft aus. |
+| **Schwimmen** | Bahnen nach Niveau, Hauptsatz identisch, Umfang variabel. |
+
+**Die Einheit kommuniziert das aktiv.** Nicht "Samstag 100 km", sondern "Samstag, Start 8 Uhr,
+GA1, 70 oder 110 km, zwei Gruppen". Damit passt sie in doppelt so viele Trainingswochen.
 
 ### 2. Coach-geführte Special Sessions (ab Oktober)
 

@@ -145,14 +145,26 @@ Einsteiger. Eine der drei Anker-Einheiten wird ausdrücklich für sie ausgelegt.
 eine Frau unter den ersten fünf Gastgebern, sonst prägt sich die Kultur falsch ein und ist
 später nicht mehr korrigierbar.
 
-### R12 Zwei Gründer ohne geklärte Rollen (mittel / hoch)
+### R12 Rollen und Anteile (herabgestuft: niedrig / mittel)
 
-"Beide alles, aufgeteilt nach Zeit" funktioniert unter Freunden gut, bis etwas ausfällt. Wenn
-beide für alles zuständig sind, ist niemand für etwas zuständig.
+**Weitgehend gelöst:** Anteile werden zu gleichen Teilen geteilt, die Arbeitsteilung folgt einer
+natürlichen Neigung, einer eher BD, Vertrieb und Community, einer eher Bauen und Produkt. Diese
+Teilung liegt günstig zum Kalender, weil die Lastspitzen sich ergänzen statt zu überlappen
+(siehe 07).
 
-**Gegenmaßnahme:** Nicht Funktionen aufteilen, sondern Ergebnisse. Ein Name pro wiederkehrendem
-Ergebnis (Tabelle in 07). Dazu Anteile und Ausstiegsfall schriftlich, bevor irgendetwas läuft.
-Das fühlt sich überflüssig an und ist genau deshalb der häufigste Gründerkonflikt.
+**Was offen bleibt, ist klein und wichtig:** Vesting und der Ausstiegsfall. Gleiche Anteile sind
+die richtige Antwort, aber ohne Regelung hält jemand, der nach acht Monaten aussteigt, weiterhin
+die Hälfte von etwas, das der andere weiterträgt. Eine halbe Stunde jetzt.
+
+### R15 Der Builder verschwindet im Bauzeitfenster (neu, mittel / mittel)
+
+Von November bis Februar sitzt einer von euch weitgehend am Rechner. Vier Monate ohne Präsenz
+bei den Einheiten bedeuten, dass er danach für eine Community baut, die er nicht mehr kennt.
+Bei einem Produkt, dessen einziger Wert soziale Dichte ist, ist das ein echtes Risiko und kein
+Komfortthema.
+
+**Gegenmaßnahme:** Der Builder führt auch im Bauzeitfenster mindestens eine Anker-Einheit pro
+Woche. Anwesenheit ist bei einer Community nicht Beiwerk, sondern das Produkt.
 
 ### R13 Identitätsverwässerung durch die Verbreiterung (neu, mittel / hoch)
 

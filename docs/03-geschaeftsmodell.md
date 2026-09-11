@@ -85,6 +85,19 @@ es erst, wenn die Identität stark genug ist, ihn zu überleben. Ein lokaler Rad
 Raum stellt und dafür genannt wird, ist kein Sponsoring, sondern Nachbarschaft, und jederzeit
 in Ordnung.
 
+### Der Auslöser für das erste Markengespräch
+
+Nicht ein Datum, sondern eine Zahl. Drei Bedingungen müssen gleichzeitig erfüllt sein:
+
+1. **300 aktive Mitglieder** in Wien nach der Definition in `10-roadmap.md`
+2. **Mindestens fünf Serien, die nicht von den Gründern geführt werden**, weil eine Marke sonst
+   mit zwei Personen spricht und nicht mit einer Community
+3. **Ein Name und eine Identität, die einen Sponsor überleben**
+
+Vorher ist jedes Markengespräch ein Bittgang, und jeder Bittgang verbrennt den Kontakt für den
+Moment, in dem er etwas wert wäre. Die Zielgruppe ist attraktiv, das ändert sich nicht. Marken
+laufen euch nicht weg, Glaubwürdigkeit dagegen schon.
+
 ## Erlösquelle 2: Angebotsseitiger Marktplatz
 
 | Modell | Mechanik | Take Rate **[Hypothese]** |

@@ -71,30 +71,33 @@ Gastgeber auf.
 
 ## Rollenteilung
 
-Ihr habt euch für "beide alles, aufgeteilt nach Zeit" entschieden. Das ist flexibel und passt zu
-zwei Menschen, die sich vertrauen. Es hat eine bekannte Schwachstelle: wenn beide für alles
-zuständig sind, ist niemand für etwas zuständig, und das fällt erst auf, wenn etwas ausfällt.
+Anteile werden zu gleichen Teilen geteilt. In der täglichen Arbeit gibt es eine natürliche
+Neigung: **einer eher Business Development, Vertrieb und Community, einer eher Bauen und
+Produkt.** Das ist die bessere Aufstellung als "beide alles", und zwar aus einem Grund, der
+zufällig genau auf euren Kalender passt.
 
-Der minimale Eingriff, der die Flexibilität erhält und die Lücke schließt: **teilt nicht
-Funktionen auf, sondern Ergebnisse.** Für jedes wiederkehrende Ergebnis steht genau ein Name:
+| Rolle | Schwerpunkt | Die eine Frage, an der die Rolle gemessen wird |
+|---|---|---|
+| **Der Aufbauer (BD und Community)** | Slots und Partner verhandeln, die ersten 30 Leute gewinnen, Gastgeber anwerben, Coaches binden, Rituale am Leben halten | Kommen jede Woche Menschen, die letzten Monat noch nicht da waren? |
+| **Der Builder (Produkt und Technik)** | Datenmodell, PWA, Betrieb, Hosting, Strava-Anbindung, Metriken | Kann ein Fremder eine Serie übernehmen, ohne jemanden zu fragen? |
 
-| Ergebnis | Ein Name |
-|---|---|
-| Samstagseinheit findet statt | |
-| Dienstagseinheit findet statt | |
-| Schwimmeinheit findet statt | |
-| Winterslots sind gebucht (Gym, Studio, Bahn) | |
-| App existiert und läuft | |
-| Neue Gastgeber werden angeworben | |
-| Partnergespräche | |
+**Warum das mit dem Kalender zusammenpasst:** Von November bis Februar verschwindet der Builder
+weitgehend in der Entwicklung. Genau in dieser Phase ist der Aufbauer voll ausgelastet mit
+Winterslots, Partnern und dem Saisonauftakt. Die Lastspitzen liegen nicht übereinander, sie
+ergänzen sich. Ab Mai dreht es sich um: nicht mehr gebaut, dafür Hochsaison im Betrieb, und
+beide sind wieder in derselben Aufgabe.
 
-Wer eintragen ist, macht es nicht unbedingt selbst, aber merkt es, wenn es nicht passiert. Das
-kostet zehn Minuten und erspart den häufigsten Konflikt zwischen zwei Gründern.
+**Die eine Regel, die diese Teilung braucht:** Der Builder führt trotzdem mindestens eine
+Anker-Einheit pro Woche, auch mitten im Bauzeitfenster. Anwesenheit ist bei einer Community kein
+Nice-to-have, sondern das Produkt. Ein Gründer, der vier Monate nur am Rechner sitzt, baut
+danach an einer Community vorbei, die er nicht mehr kennt.
 
-Zweitens, und unangenehm, aber besser jetzt als in achtzehn Monaten: **klärt die Aufteilung von
-Anteilen und den Fall, dass einer aussteigt, schriftlich, bevor irgendetwas läuft.** Bei zwei
-Freunden mit gemeinsamem Hobby fühlt sich das überflüssig an. Genau deshalb wird es
-übersprungen, und genau deshalb endet es regelmäßig schlecht.
+**Zum Schriftlichen:** Gleiche Anteile sind die richtige Antwort und brauchen trotzdem drei
+Zeilen auf Papier. Der Punkt, der in der Praxis fehlt, ist nicht die Aufteilung, sondern
+**Vesting und der Ausstiegsfall**: Was passiert mit den Anteilen, wenn einer nach acht Monaten
+keine Zeit mehr hat? Ohne Regelung hält jemand, der nicht mehr mitarbeitet, die Hälfte von
+etwas, das der andere weiterträgt. Das ist der häufigste Gründerkonflikt überhaupt, und er
+kostet jetzt eine halbe Stunde und später eine Freundschaft.
 
 ## Die vier Startformate
 

@@ -16,8 +16,8 @@ Marathon mit strukturiertem Plan gehören dazu.
 
 | Punkt | Stand |
 |---|---|
-| Phase | Konzept v0.3, noch nichts gebaut |
-| Gründer | zwei, ganzjährig im Training, rotieren zwischen Hyrox, Trail und Ultra und Langdistanz |
+| Phase | Konzept v0.4, noch nichts gebaut |
+| Gründer | zwei, gleiche Anteile. Einer BD, Vertrieb und Community, einer Produkt und Technik |
 | Ambitionsniveau | bewusst offen, entscheidet sich nach dem MVP |
 | Start | zentral organisierte Events: drei ganzjährige Anker, Coach-Sessions, saisonale Zusatzformate |
 | MVP-Form | eigene PWA, wiederkehrende Serien statt Ad-hoc-Board |
@@ -44,6 +44,7 @@ Marathon mit strukturiertem Plan gehören dazu.
 | [docs/10-roadmap.md](docs/10-roadmap.md) | 90-Tage-Plan, Meilensteine, Abbruchkriterien |
 | [docs/11-interview-leitfaden.md](docs/11-interview-leitfaden.md) | Leitfaden für die 15 Validierungsinterviews |
 | [docs/12-startup-council.md](docs/12-startup-council.md) | Fünf Perspektiven, Debatte, fünf Änderungen |
+| [docs/13-bd-playbook.md](docs/13-bd-playbook.md) | Slot-Verhandlung und die ersten 30 Menschen, mit Vorlagen |
 | [decisions/DECISIONS.md](decisions/DECISIONS.md) | Entscheidungslog |
 
 ## Sprachkonvention

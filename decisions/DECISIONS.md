@@ -212,3 +212,31 @@ funktionieren wie für eine vierstündige Ausfahrt im Juni. Zusätzlich trägt d
 Verbreiterung die Zugehörigkeit, die vorher die Sportart geliefert hat. Damit ist er die
 dringendste offene Entscheidung, nicht die unwichtigste.
 **Wiedervorlage:** Ende Oktober 2026, vor dem Winterprogramm.
+
+---
+
+## D-017 Gleiche Anteile, arbeitsteilige Rollen
+
+**Datum:** 2026-09-11
+**Entscheidung:** Anteile werden zu gleichen Teilen geteilt. In der täglichen Arbeit gilt eine
+natürliche Teilung: einer eher Business Development, Vertrieb und Community, einer eher Bauen
+und Produkt.
+**Begründung:** Die Teilung liegt günstig zum Kalender. Von November bis Februar baut der eine,
+während der andere Winterslots, Partner und den Saisonauftakt trägt. Die Lastspitzen ergänzen
+sich statt sich zu überlappen.
+**Auflage:** Der Builder führt auch im Bauzeitfenster mindestens eine Anker-Einheit pro Woche
+(Risiko R15). Und: Vesting und Ausstiegsfall schriftlich, auch bei gleichen Anteilen.
+**Wiedervorlage:** keine.
+
+---
+
+## D-018 Markenansprache erst ab einer Zahl, nicht ab einem Datum
+
+**Datum:** 2026-09-11
+**Entscheidung:** Der erste Markendeal wird erst angegangen, wenn drei Bedingungen gleichzeitig
+erfüllt sind: 300 aktive Mitglieder in Wien, mindestens fünf nicht von den Gründern geführte
+Serien, und ein Name samt Identität, die einen Sponsor überleben.
+**Begründung:** Für Marken wird es erst interessant, wenn die Community existiert. Vorher ist
+jedes Gespräch ein Bittgang, und jeder Bittgang verbrennt den Kontakt für den Moment, in dem er
+etwas wert wäre. Die Zielgruppe bleibt attraktiv, Glaubwürdigkeit dagegen ist verderblich.
+**Wiedervorlage:** sobald alle drei Bedingungen erfüllt sind.

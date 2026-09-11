@@ -259,3 +259,41 @@ Markendeal spät, klein und mit einem respektierten Partner. *(Godin, mit Musk)*
 | Größtes Risiko | Nicht der Markt, nicht der Wettbewerb, nicht die Technik. **Gründerstunden.** |
 | Die eine Zahl, die alles entscheidet | Wie viele Menschen außer dir führen in den ersten zwölf Wochen eine Einheit? Zielwert: fünf. |
 | Was zu tun ist, bevor irgendetwas gebaut wird | Drei Einheiten in bestehenden Gruppen posten und Körper zählen. Kosten: null. Dauer: zwei Wochen. |
+
+---
+
+## Nachtrag v0.3: was die neuen Fakten am Urteil ändern
+
+Zwei Gründer, beide ganzjährig im Training und zwischen Hyrox, Trail und Ultra und Langdistanz
+rotierend. Start über zentral organisierte Events. Das bewegt vier der fünf Positionen.
+
+**Musk.** Sein Hauptargument wird stärker, nicht schwächer. Die Koinzidenzrechnung gilt
+unverändert, und zentral organisierte wiederkehrende Termine sind genau die Antwort darauf. Sein
+zweites Argument, die Gründerstunden, verliert dagegen an Schärfe: zwei Personen, ganzjährig
+verfügbar, kein Saisonausfall. Aus einer harten Grenze wird eine Kapazitätsfrage.
+
+**Ries.** Seine offene Segmentfrage ist beantwortet, aber anders als von ihm vorgeschlagen. Er
+wollte den engen Keil (zwölf Wochen vor der ersten Langdistanz). Gewählt wurde die Abgrenzung
+über Trainingslast statt über Sportart oder Anlass. Das ist breiter als sein Vorschlag und
+schmäler als "Ausdauersport", und es erfüllt sein eigentliches Kriterium: eine klar benennbare
+Gruppe mit akutem, datiertem Bedarf. Seine Forderung nach einem vorlaufenden Messwert bleibt
+unverändert gültig.
+
+**Godin.** Er wird durch die Verbreiterung zum wichtigsten Mahner. Seine Warnung lautet
+sinngemäß: Ein Stamm braucht eine Sprache, und eine Kategorie hat keine. "Ausdauer-Generalisten"
+ist eine Segmentdefinition für ein Strategiedokument, kein Satz, den ein Mitglied über sich
+sagt. Die Konsequenz steht als Risiko R13 in 09 und macht den Namen zur dringendsten offenen
+Entscheidung: er muss jetzt die Zugehörigkeit tragen, die die Sportart nicht mehr liefert.
+
+**Der VC.** Seine Rechnung wird günstiger. Der bedienbare Markt in Wien verdreifacht sich grob
+auf 5.000 bis 12.000 Personen. Das macht das Projekt nicht venture-tauglich, aber es verschiebt
+die Aussage von "Wien trägt kein Geschäft" zu "Wien trägt knapp ein kleines Geschäft". Sein Rat
+bleibt unverändert: kein Kapital aufnehmen.
+
+**Jobs.** Unberührt. Sein Einwand galt der Oberfläche, nicht dem Markt.
+
+### Das neue Urteil in einem Satz
+
+Die Verbreiterung kauft Markt und Ganzjährigkeit und bezahlt mit Identität. Der Preis ist
+vertretbar, aber er ist erst bezahlt, wenn der Name, die Sprache und die drei konstanten Anker
+die Zugehörigkeit tragen, die vorher die Sportart geliefert hat.

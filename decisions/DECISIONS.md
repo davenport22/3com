@@ -167,3 +167,48 @@ nicht mehr entwickelt, nur betrieben.
 hat. Im Winter sind die Abende planbar und die mentale Last niedrig. In der spezifischen Phase
 ab Mai liegen die Trainingsumfänge bei 15 bis 20 Stunden pro Woche, dann ist kein Bauen möglich.
 **Wiedervorlage:** keine.
+
+---
+
+## D-014 Abgrenzung über Trainingslast statt über Sportart
+
+**Datum:** 2026-09-11
+**Entscheidung:** 3com richtet sich an Ausdauer-Generalisten, triathlon-verankert. Die Grenze
+verläuft bei **acht Stunden Training pro Woche oder mehr, strukturiert, mit einem Renndatum**.
+Hyrox, Trail und Ultra, Marathon mit strukturiertem Plan gehören dazu. Gelegenheitssport nicht.
+**Begründung:** Der gemeinsame Nenner zwischen Ironman, UTMB und Hyrox ist nicht die Disziplin,
+sondern die Last, die Terminlogik und die Sprache. Der bedienbare Markt in Wien verdreifacht
+sich dadurch grob auf 5.000 bis 12.000 Personen, und die Saisonalität verschwindet. Beide
+Gründer sind selbst Generalisten und damit ganzjährig glaubwürdig.
+**Preis:** Identität. Eine Kategorie hält keinen Stamm zusammen (Risiko R13). Der Ausschluss des
+Gelegenheitssportlers ist deshalb wichtiger als die Aufnahme des Trailläufers: er hält Niveau
+und Sprache intakt.
+**Messgröße:** Hypothese H3 in 01, geprüft über den Saisonwechsel im Sommer 2027 (Meilenstein M6).
+**Wiedervorlage:** September 2027.
+
+---
+
+## D-015 Anker konstant, Zusatzformate saisonal
+
+**Datum:** 2026-09-11
+**Entscheidung:** Die drei wöchentlichen Anker stehen ganzjährig an derselben Stelle im
+Kalender. Nur die Special Sessions wechseln mit der Saison: Kraft und Hyrox im Winter, Trail im
+Frühjahr und Herbst, Freiwasser und lange Ausfahrten im Sommer.
+**Begründung:** Der Vorteil liegt in der Kommunikation, nicht in der Logistik. Wer weiß, dass
+samstags um acht etwas stattfindet, muss nichts nachschlagen. Ein Kalender, der sich saisonal
+umbaut, verliert genau diese Eigenschaft.
+**Wiedervorlage:** keine.
+
+---
+
+## D-016 Name muss disziplinoffen sein
+
+**Datum:** 2026-09-11
+**Entscheidung:** Alle Namenskandidaten, die auf drei Disziplinen oder auf Triathlon festgelegt
+sind, scheiden aus: 3com, Wechselzone, Brick, Tripod, Trico, Trikot, T2.
+**Neue Shortlist:** Windschatten, Kadenz, Rudel. Vierter Kandidat zur Prüfung: Grundlage.
+**Begründung:** Folge aus D-014. Der Name muss für eine Krafteinheit im Januar genauso
+funktionieren wie für eine vierstündige Ausfahrt im Juni. Zusätzlich trägt der Name nach der
+Verbreiterung die Zugehörigkeit, die vorher die Sportart geliefert hat. Damit ist er die
+dringendste offene Entscheidung, nicht die unwichtigste.
+**Wiedervorlage:** Ende Oktober 2026, vor dem Winterprogramm.

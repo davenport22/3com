@@ -49,6 +49,9 @@ platforms from one codebase, and the core use case is committing to a session, n
 **Recurring sessions (the core)**
 - A session series: discipline, weekday, time, meeting point, session type, tempo groups
   offered, capacity per group, host, cost, notes
+- Disciplines: swim, bike, run, trail, strength and functional (Hyrox-style), brick, other.
+  The discipline is a property of the session, never of the member. Members rotate across the
+  year; the product must not force them into one lane.
 - Each occurrence is its own instance: a member commits to a date, not to the series
 - Series page shows the next three occurrences and who has committed to each
 - Host can cancel a single occurrence with a reason, or pause a series

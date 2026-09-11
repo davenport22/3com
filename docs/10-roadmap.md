@@ -1,22 +1,24 @@
 # 10 Roadmap
 
-Datiert auf den realen Kalender und an die Periodisierung der beiden Gründer gekoppelt.
-Ausgangspunkt: September 2026. Zielrennen beider Gründer: Sommer 2027.
+Datiert auf den realen Kalender. Ausgangspunkt: September 2026. Gemeinsames Zielrennen beider
+Gründer: Sommer 2027. Beide trainieren ganzjährig und rotieren zwischen Hyrox, Trail und Ultra
+und Langdistanz.
 
 ## Das Prinzip
 
-Gebaut wird in der Grundlagenphase, betrieben wird in der spezifischen Phase. Wer im Mai 2027
-noch Code schreibt, hat die Periodisierung gegen sich statt für sich.
+Gebaut wird im Winter, betrieben wird im Sommer. Nicht weil ihr im Winter weniger trainiert,
+sondern weil draußen wenig passiert und die Abende planbar sind. Wer im Mai 2027 noch Code
+schreibt, arbeitet gegen seine eigenen Trainingsumfänge.
 
 ## Phasenübersicht
 
 | Phase | Zeitraum | Ziel | Abbruchkriterium |
 |---|---|---|---|
-| **Anker draußen** | Sep bis Okt 2026 | 3 laufende Anker, 40 bis 60 Personen, Indoor-Slots gesichert | Verhältnis Zusage zu Erscheinen unter 50 Prozent nach 6 Wochen |
-| **Winter und Bau** | Nov 2026 bis Feb 2027 | Indoor-Programm als Kernangebot, PWA gebaut | Winterprogramm füllt sich nicht, dann nicht fertigbauen |
+| **Anker draußen** | Sep bis Okt 2026 | 3 laufende Anker, 40 bis 60 Personen, Winterslots gesichert | Verhältnis Zusage zu Erscheinen unter 50 Prozent nach 6 Wochen |
+| **Winter und Bau** | Nov 2026 bis Feb 2027 | Winterprogramm als Kernangebot, PWA gebaut | Winterprogramm füllt sich nicht, dann nicht fertigbauen |
 | **Launch** | Mär bis Apr 2027 | App im Betrieb, alle Serien migriert, neue Gastgeber angeworben | unter 2 fremdgeführten Serien nach 8 Wochen |
-| **Saison und Betrieb** | Mai bis Jul 2027 | Kein Bauen. 5 fremdgeführte Serien. Herbstprogramm steht. | 5 Gastgeber nicht erreicht, dann Ausfallplan für August |
-| **Post-Race** | Aug bis Sep 2027 | Community überlebt euer Motivationsloch | Aktivität bricht um mehr als 60 Prozent ein |
+| **Saison und Betrieb** | Mai bis Jul 2027 | Kein Bauen. 5 fremdgeführte Serien. Herbstprogramm steht. | 5 Gastgeber nicht erreicht, dann bleibt es ein gut organisiertes Hobby |
+| **Formatwechsel** | Aug bis Sep 2027 | Community trägt den Wechsel von Langdistanz zu Trail und Hyrox mit | unter 30 Prozent der Mitglieder wechseln die Disziplin (Hypothese H3 widerlegt) |
 | **Jahr 2** | ab Okt 2027 | Erste Erlöse, Entscheidung über Ambitionsniveau, Test zweite Stadt | Stadt zwei funktioniert nur mit euch vor Ort, dann Pfad Verein wählen |
 
 ## Phase 1: Anker draußen (Sep bis Okt 2026)
@@ -30,14 +32,15 @@ Solange das Wetter hält. Kein Produkt, nur WhatsApp und Verlässlichkeit.
 - [ ] Anteilsaufteilung und Ausstiegsfall schriftlich klären
 - [ ] WhatsApp-Community und Strava-Club anlegen
 - [ ] **Erste Samstagsausfahrt für 19.09.2026 terminieren**, Startpunkt fix, zwei Tempogruppen angekündigt
-- [ ] Startlisten Ironman Austria, 70.3 St. Pölten, Vienna Triathlon nach Wiener Postleitzahlen auswerten
+- [ ] Startlisten sichten: Ironman Austria, 70.3 St. Pölten, Vienna Triathlon, Hyrox Vienna, VCM Marathondistanz, österreichische Trail- und Ultrarennen
 
 ### Woche 2 bis 3
 
 - [ ] Erste Samstagsausfahrt durchführen, egal wie viele kommen
 - [ ] Dienstagsintervalle ab 22.09.2026 starten
-- [ ] **Indoor-Studios ansprechen.** Randzeiten, feste Serie über die ganze Saison, nicht Einzeltermine
-- [ ] **Hallenbad-Bahnzeiten klären**
+- [ ] **Winterslots ansprechen.** Zuerst das Billige: Gym oder Halle für Kraft- und
+      Hyrox-Einheiten, oft mit Randzeitenkapazität. Parallel das Teure: Indoor-Cycling-Studio und
+      Hallenbad-Bahn, jeweils als feste Serie über die ganze Saison, nicht als Einzeltermine
 - [ ] 10 Gespräche mit Teilnehmenden nach den Einheiten, Leitfaden in `11-interview-leitfaden.md`
 - [ ] Domainprüfung für die drei Namen der Shortlist
 
@@ -47,6 +50,8 @@ Solange das Wetter hält. Kein Produkt, nur WhatsApp und Verlässlichkeit.
 - [ ] Ein Coach für die erste Special Session gewinnen, Durchreichmodell
 - [ ] Erstes Gespräch mit einem Radshop über Startpunkt und Raum
 - [ ] Erkennungszeichen bestellen: Aufkleber oder Kappe, nur durch fünfmaliges Erscheinen erhältlich
+- [ ] **Startlisten über alle sechs Formate auswerten**, nach Wiener Postleitzahlen filtern.
+      Das ersetzt die Marktschätzung in 04 durch echte Zahlen
 - [ ] **Zwischenfazit: Verhältnis Zusage zu Erscheinen.** Unter 50 Prozent wird nichts gebaut
 
 ### Woche 7 bis 8, Ende Oktober
@@ -54,18 +59,21 @@ Solange das Wetter hält. Kein Produkt, nur WhatsApp und Verlässlichkeit.
 - [ ] Saisonauftakt-Abend planen (Vortrag, kein Markenevent)
 - [ ] Winterprogramm terminieren und ankündigen
 - [ ] **Go oder No-Go für den Bau.** Bedingungen: Zusage-zu-Erscheinen über 50 Prozent,
-      mindestens 25 Personen aktiv, mindestens ein Indoor-Slot gesichert
+      mindestens 25 Personen aktiv, mindestens ein Winterslot gesichert
+- [ ] Klären: hat einer von euch ein Hyrox-Rennen zwischen November und Februar? Wenn ja, baut
+      der andere in dieser Phase den Hauptteil
 - [ ] Finaler Name entschieden
 
 ## Phase 2: Winter und Bau (Nov 2026 bis Feb 2027)
 
-Eure ruhigste Trainingsphase, verlässliche Abende, niedrigste mentale Last. Das ist das
-Bauzeitfenster.
+Draußen passiert wenig, die Abende sind planbar. Das ist das Bauzeitfenster, unabhängig davon,
+wie viel ihr in dieser Phase selbst trainiert. Falls einer von euch ein Hyrox-Rennen im Winter
+hat, trägt der andere den Hauptteil des Baus.
 
 **Betrieb parallel:**
-- Indoor-Cycling-Serie läuft wöchentlich
-- Hallenbad-Bahn läuft wöchentlich
-- Laufeinheit draußen, wetterunabhängig
+- Die drei Anker laufen unverändert weiter, ganzjährig an derselben Stelle im Kalender
+- Kraft- und Hyrox-Einheiten als Winterschwerpunkt
+- Indoor-Cycling-Serie und Hallenbad-Bahn, sofern verhandelt
 - Saisonauftakt-Abend im November
 - Erste Coach-Sessions
 
@@ -94,19 +102,22 @@ gegenüber dem ersten Entwurf etwa halbiert, weil das Ad-hoc-Board entfällt.
 **Ab hier wird nicht mehr gebaut.** Eure Trainingsumfänge liegen bei 15 bis 20 Stunden pro
 Woche. Was jetzt nicht fertig ist, wird es bis August nicht.
 
-- [ ] Fünf Serien werden von anderen geführt (Überlebensbedingung, siehe unten)
+- [ ] Fünf Serien werden von anderen geführt (M5, die wichtigste Zahl im ganzen Plan)
 - [ ] **Herbstprogramm im Mai planen, nicht im August**
 - [ ] Trainingswochenende oder Camp, hohe Bindungswirkung, trägt sich selbst
 - [ ] Rennwoche als gemeinsames Community-Erlebnis gestalten, auch für die, die nicht starten
 
-## Phase 5: Post-Race (Aug bis Sep 2027)
+## Phase 5: Formatwechsel (Aug bis Sep 2027)
 
-Die gefährlichste Phase. Bei euch beiden fallen gleichzeitig Motivation, Umfang und Anwesenheit
-weg.
+In v0.2 war das die gefährlichste Phase des Projekts. Durch das ganzjährige Training beider
+Gründer ist sie deutlich entschärft: nach dem Zielrennen folgt bei euch das nächste Format, kein
+Loch. Was hier stattdessen geprüft wird, ist Hypothese H3.
 
-- [ ] Die fünf fremdgeführten Serien laufen ohne euch weiter
-- [ ] Eine Veranstaltung, die keine Fitness braucht: Saisonauswertung, Planung 2028, Abend
-- [ ] Ehrliche Auswertung: wie viel Aktivität ist ohne euch geblieben
+- [ ] Die fünf fremdgeführten Serien laufen weiter, auch in eurer Regenerationswoche
+- [ ] Schwerpunkt der Zusatzformate wechselt auf Trail und Ultra
+- [ ] **Messung H3:** Wie viele Mitglieder wechseln die Disziplin mit, statt abzuspringen?
+      Unter 30 Prozent war die Verbreiterung ein Rechenfehler.
+- [ ] Eine Veranstaltung, die keine Fitness braucht: Saisonauswertung, Planung 2028
 - [ ] **Entscheidung Ambitionsniveau** anhand realer Daten, siehe `00-vision.md`
 
 ## Meilensteine mit Zahlen
@@ -114,16 +125,17 @@ weg.
 | Meilenstein | Kennzahl | Termin |
 |---|---|---|
 | M1 Ritual trägt | Zusage zu Erscheinen über 50 Prozent über 6 Wochen | Ende Okt 2026 |
-| M2 Winter gesichert | 2 Indoor-Slots als Serie über die Saison gebucht | Ende Okt 2026 |
+| M2 Winter gesichert | 2 Winterslots als Serie über die Saison gebucht | Ende Okt 2026 |
 | M3 App live | PWA in Produktion, alle Serien migriert | Ende Mär 2027 |
 | M4 Delegation beginnt | 2 Serien von anderen geführt | Ende Apr 2027 |
 | M5 Ausfallsicherheit | **5 Serien von anderen geführt** | Ende Mai 2027 |
-| M6 Post-Race überlebt | Aktivität im September über 60 Prozent des Juni-Niveaus | Sep 2027 |
+| M6 Formatwechsel trägt | über 30 Prozent der Mitglieder wechseln über die Saison die Disziplin | Sep 2027 |
 | M7 Erster Euro | Take Rate oder Partnerdeal | Winter 2027/28 |
 | M8 Reproduzierbar | Zweite Stadt, 8 Wochen stabil ohne euch vor Ort | 2028 |
 
-M5 ist der wichtigste Meilenstein der gesamten Roadmap. Alles andere lässt sich nachholen, diese
-Zahl nicht: sie muss vor dem Rennen stehen, weil sie danach nicht mehr herstellbar ist.
+M5 ist der wichtigste Meilenstein der gesamten Roadmap, weil er als einziger die Frage
+beantwortet, die über das Ambitionsniveau entscheidet: läuft 3com ohne euch? M6 ist der
+zweitwichtigste, weil er die Verbreiterung auf Ausdauer-Generalisten bestätigt oder widerlegt.
 
 ## Definition "aktiver Nutzer"
 

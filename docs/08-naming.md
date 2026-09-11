@@ -10,7 +10,7 @@ Status: **3com ist Arbeitstitel.** Entscheidung über den finalen Namen vor dem 
 | Markenrechtliches Risiko | **mittel bis hoch** | 3Com Corporation war ein US-Netzwerkkonzern, 2010 von HP übernommen. Es existieren mehrere eingetragene 3COM-Marken. Die Marke ist im operativen Geschäft nicht mehr aktiv, Eintragungen können aber fortbestehen. In Klasse 41 (Sport, Training, Community) ist der Konflikt weniger direkt als in Klasse 9 und 42, aber der Name bleibt riskant und schwer verteidigbar. |
 | Auffindbarkeit | **schlecht** | Google zu "3com" liefert 30 Jahre Netzwerktechnik. Die Domain-Landschaft ist belegt. SEO praktisch unmöglich. |
 | Aussprechbarkeit | **schwach** | Drei-com, three-com oder Drei-Kom? Im deutschsprachigen Raum uneindeutig. Ein Name, den man buchstabieren muss, verliert bei Mundpropaganda. |
-| Bedeutungstransport | **schwach** | "com" liest sich als communication, community oder company. Kein Sportbezug, keine Wärme, kein Bild. |
+| Bedeutungstransport | **falsch, nicht nur schwach** | "com" liest sich als communication, community oder company. Kein Sportbezug, keine Wärme, kein Bild. Seit der Verbreiterung in v0.3 kommt ein Sachfehler dazu: die Drei steht für drei Disziplinen, und 3com deckt jetzt auch Hyrox, Trail und Ultra ab. |
 | Internationalisierbarkeit | gut | Sprachneutral. |
 | Emotionale Qualität | **schwach** | Klingt nach B2B-Software, nicht nach Samstagmorgen bei 4 Grad auf der Donauinsel. |
 
@@ -43,8 +43,8 @@ sind Auffindbarkeit und fehlender Bedeutungstransport, nicht das Markenrecht.
 
 | Name | Bedeutung | Stärke | Schwäche |
 |---|---|---|---|
-| **Wechselzone** | Die Zone zwischen den Disziplinen | Absoluter Insider-Begriff, metaphorisch der Ort, wo alles zusammenkommt | Lang, nur DACH, nur Triathlon |
-| **Brick** | Koppeltraining, Rad direkt gefolgt von Lauf | Kurz, international, hoher Insider-Wert, gutes Logo-Potenzial | Sehr generisches Wort, Markenschutz schwierig |
+| **Wechselzone** | Die Zone zwischen den Disziplinen | Absoluter Insider-Begriff | Lang, nur DACH, **triathlonspezifisch und damit seit v0.3 ausgeschieden** |
+| **Brick** | Koppeltraining, Rad direkt gefolgt von Lauf | Kurz, international, hoher Insider-Wert | Generisches Wort, Markenschutz schwierig, **triathlonspezifisch und damit seit v0.3 geschwächt** |
 | **T2** | Der zweite Wechsel, Rad zu Lauf | Sehr kurz, app-tauglich, Insider | Zu generisch, kaum schützbar, mehrdeutig |
 | **Zone 2** / **Z2** | Der Grundlagenbereich, in dem der Großteil des Volumens liegt | Der Insider-Witz schlechthin. Genau die Zone, in der man reden kann, also die Zone gemeinsamen Trainings. Inhaltlich perfekt passend. | Stark belegt im Longevity- und Fitness-Marketing, kaum schützbar |
 | **Grundlage** | Grundlagenausdauer, GA1 | Deutsch, warm, doppelte Bedeutung (Trainingsbasis und Fundament einer Community) | Sehr generisches Wort |
@@ -60,15 +60,24 @@ sind Auffindbarkeit und fehlender Bedeutungstransport, nicht das Markenrecht.
 | **Kadenz** | Trittfrequenz, Rhythmus | Schön, deutsch, rhythmisch, disziplinoffen |
 | **Laktat** | Der gemeinsame Feind | Witzig, insiderhaft, aber negativ konnotiert |
 
-## Shortlist (Empfehlung zur Prüfung)
+## Shortlist, überarbeitet in v0.3
 
-Drei Kandidaten, bewusst unterschiedlich positioniert:
+Die Verbreiterung auf Ausdauer-Generalisten (siehe 01) schließt jeden Namen aus, der auf drei
+Disziplinen oder auf Triathlon festgelegt ist. Damit fallen 3com, Wechselzone, Brick, Tripod,
+Trico, Trikot und T2 aus der Bewertung.
+
+Zusätzliches Kriterium: der Name muss für eine Krafteinheit im Januar genauso funktionieren wie
+für eine vierstündige Ausfahrt im Juni.
 
 | Rang | Name | Positionierung | Warum |
 |---|---|---|---|
-| 1 | **Windschatten** | warm, deutsch, gemeinschaftlich | Trägt die Kernbotschaft ohne Erklärung: gemeinsam ist es leichter. Emotional weit vor allen anderen. Wenn Internationalisierung relevant wird, ist **Slipstream** der direkte Übersetzungspfad, das erlaubt eine saubere Zwei-Marken-Strategie. |
-| 2 | **Wechselzone** | insiderhaft, triathlonspezifisch | Maximale Zugehörigkeitswirkung bei Triathleten. Kostet Zugänglichkeit für Einsteiger und sperrt auf Triathlon. |
-| 3 | **Kadenz** | neutral, rhythmisch, disziplinoffen | Am besten skalierbar über Disziplinen und Länder, dafür am wenigsten emotional aufgeladen. |
+| 1 | **Windschatten** | warm, deutsch, gemeinschaftlich | Trägt die Kernbotschaft ohne Erklärung: gemeinsam ist es leichter. Funktioniert für jede Disziplin, weil die Metapher sozial ist und nicht sportartspezifisch. Emotional weit vor allen anderen. **Slipstream** ist der direkte Übersetzungspfad für eine spätere Internationalisierung. |
+| 2 | **Kadenz** | neutral, rhythmisch, disziplinoffen | Am besten skalierbar über Disziplinen und Länder. Trittfrequenz und Rhythmus funktionieren im Rad, im Lauf und im Kraftraum. Am wenigsten emotional aufgeladen. |
+| 3 | **Rudel** | kurz, roh, zugehörigkeitsstark | Die Gruppe, die gemeinsam läuft. Kurz genug für Steve Jobs' Einwand, disziplinoffen, hoher Wiedererkennungswert. Risiko: klingt für manche zu rau und schreckt die Einsteigerinnen ab. |
+
+Weiterhin geprüft werden sollte **Grundlage** (Grundlagenausdauer, doppeldeutig als Fundament
+der Community, funktioniert über alle Disziplinen) als vierter Kandidat. Sehr generisches Wort,
+dafür ungewöhnlich passend.
 
 ## Prüfprotokoll vor der Entscheidung
 

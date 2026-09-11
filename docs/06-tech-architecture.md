@@ -33,17 +33,22 @@ users
   bio, target_race, target_race_date, strava_athlete_id, reliability_score
 
 user_bands
-  id, user_id, discipline (swim|bike|run),
-  easy_low, easy_high, threshold_low, threshold_high,
-  unit (sec_per_100m | watt_per_kg | kmh | sec_per_km),
+  id, user_id, discipline (swim|bike|run|trail|strength),
+  tempo_group (kaffeefahrt|tempo|vollgas),     -- what the user sees and picks
+  band_low, band_high,                          -- numeric, never shown
+  unit (sec_per_100m | watt_per_kg | sec_per_km | vertical_m_per_h | relative),
   source (self_declared | strava_derived), updated_at
+
+  -- strength/Hyrox has no meaningful pace unit: use tempo_group alone with
+  -- unit='relative'. Do not invent a metric to keep the schema symmetric.
 
 cities
   id, name, slug, timezone, bounds        -- present from day one, hidden in UI
 
 sessions
   id, host_user_id, city_id, title, description,
-  discipline, session_type (endurance|tempo|interval|long|recovery|brick|technique|race_sim),
+  discipline (swim|bike|run|trail|strength|brick|other),
+  session_type (endurance|tempo|interval|long|recovery|brick|technique|race_sim|circuit),
   starts_at, duration_min,
   meeting_point_lat, meeting_point_lng, meeting_point_label, district,
   pace_band_low, pace_band_high, pace_band_unit,

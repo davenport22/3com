@@ -6,7 +6,7 @@ Alles in 3com hängt an einem einzigen Objekt: **eine geplante Trainingseinheit 
 Plätzen.** Kein Feed, kein Profil, keine Gruppe. Eine Session.
 
 Eine Session hat:
-- Disziplin (Schwimmen, Rad, Lauf, Koppel, Kraft, Sonstiges)
+- Disziplin (Schwimmen, Rad, Lauf, Trail, Kraft und Funktional, Koppel, Sonstiges)
 - Zeitpunkt und Startort
 - Trainingsart und Intensität (GA1, Tempo, Intervall, Long, Recovery)
 - Tempoband oder Wattband, nicht ein Wert sondern ein Korridor
@@ -102,13 +102,27 @@ Diese Liste ist so wichtig wie das Konzept selbst, weil sie das Produkt vor Aufb
 - **Kein Rennveranstalter.** Keine eigenen Wettkämpfe, zumindest nicht in den ersten zwei Jahren.
 - **Kein Verein.** Keine Mitgliedschaft, keine Beiträge, keine Funktionärsstruktur.
 
-## Das Winterproblem als Chance
+## Der Jahresrhythmus statt der Saison
 
-Wien hat vier bis fünf Monate, in denen Radfahren draußen unattraktiv und Freiwasser unmöglich
-ist. Für einen Outdoor-Community-Ansatz ist das ein saisonales Loch. Für 3com ist es das
-stärkste Argument:
+Ein reines Triathlonangebot hat in Wien vier bis fünf tote Monate: Radfahren draußen
+unattraktiv, Freiwasser unmöglich. Durch die Abgrenzung über Trainingslast statt Sportart
+(siehe 01) verschwindet dieses Loch. Es wird zu einem Schwerpunktwechsel.
 
-Indoor-Training ist die einsamste Phase im Triathlonjahr. Drei Stunden auf der Rolle im Keller
-im Januar. Genau hier ist der gemeinsame Indoor-Slot, das Hallenbad-Bahntraining und die
-Hallenlaufeinheit am wertvollsten. Ein Start in den Winter hinein ist daher nicht das
-schlechtere, sondern das bessere Timing, weil das Problem am größten ist.
+**Die Anker bleiben konstant, die Zusatzformate wechseln mit der Saison.** Das ist die
+Entscheidung: drei feste wöchentliche Termine, die das ganze Jahr an derselben Stelle im
+Kalender stehen, plus Special Sessions, die dem Jahreslauf folgen.
+
+| Zeitraum | Anker (konstant) | Zusatzformate |
+|---|---|---|
+| Nov bis Feb | Lange Einheit, Intervalle, Schwimmen | Hyrox- und Krafteinheiten, Indoor-Cycling-Slots, Hallenbad-Technik, Saisonplanung |
+| Mär bis Mai | dieselben drei | Trail und Höhenmeter, erste lange Ausfahrten, Koppeltraining |
+| Jun bis Aug | dieselben drei | Freiwasser, lange Ausfahrten, Rennbegleitung |
+| Sep bis Okt | dieselben drei | Trail und Ultra, Saisonausklang, Auswertung |
+
+Der Vorteil der konstanten Anker liegt nicht in der Logistik, sondern in der Kommunikation. Wer
+weiß, dass samstags um acht etwas stattfindet, muss nichts nachschlagen. Ein Kalender, der sich
+saisonal umbaut, verliert genau diese Eigenschaft.
+
+**Der Winter bleibt trotzdem das wertvollste Fenster.** Im Januar ist die Einsamkeit am größten
+und die Konkurrenz am geringsten. Wer dann einen Grund hat, um 6:30 aus dem Haus zu gehen,
+kommt im Mai auch zur Ausfahrt.

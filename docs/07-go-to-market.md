@@ -1,7 +1,8 @@
 # 07 Go to Market
 
 Überarbeitet nach dem Startup Council und nach der Gründerkonstellation: zwei Gründer, beide
-selbst im Aufbau auf eine Langdistanz im Sommer 2027, Start über zentral organisierte Events.
+ganzjährig im Training und zwischen Hyrox, Trail und Ultra und Langdistanz rotierend,
+gemeinsames Zielrennen im Sommer 2027, Start über zentral organisierte Events.
 
 ## Die Ausgangslage ist besser als im ersten Entwurf angenommen
 
@@ -13,11 +14,15 @@ startet ihr mit zentral organisierten Events. Das Angebot ist damit von Tag eins
 das Produkt muss nicht Nachfrage und Angebot gleichzeitig erzeugen, sondern nur ein bestehendes
 Angebot bedienbar machen. Das ist eine deutlich leichtere Aufgabe.
 
-**2. Euer eigenes Training ist das Angebot.**
-Ihr müsst die Anker-Einheiten nicht zusätzlich stemmen. Ihr fahrt den langen Samstag ohnehin.
-Ihr macht die Dienstagsintervalle ohnehin. Ihr schwimmt ohnehin. Der Grenzaufwand, andere
-mitzunehmen, liegt nahe null. Das ist der Grund, warum diese Konstellation funktioniert und ein
-Gründer ohne eigenen Trainingsbedarf scheitern würde.
+**2. Euer eigenes Training ist das Angebot, und zwar ganzjährig.**
+Ihr müsst die Anker-Einheiten nicht zusätzlich stemmen. Ihr fahrt den langen Samstag ohnehin,
+ihr macht die Intervalle ohnehin, ihr schwimmt ohnehin. Der Grenzaufwand, andere mitzunehmen,
+liegt nahe null.
+
+Entscheidend ist die Breite: ihr rotiert zwischen Hyrox, Trail und Ultra und Langdistanz und
+seid damit über das ganze Jahr trainiert und glaubwürdig. Ein Gründer, der nur im Sommer
+Triathlon macht, kann von November bis Februar keine Einheit führen. Ihr könnt das, und genau
+darauf ist der Jahresrhythmus in 02 gebaut.
 
 **3. Der Bedarf ist echt und nicht recherchiert.**
 Zwei Gründer mit eigenem akutem Problem sind kein Ersatz für Validierung, aber sie sind die
@@ -32,26 +37,28 @@ sagt euch, wann ihr bauen könnt und wann nicht.
 | Zeitraum | Euer Training | Was das Projekt macht |
 |---|---|---|
 | **Sep bis Okt 2026** | Saisonausklang, lockeres Volumen | Anker draußen starten, solange das Wetter hält. Community aufbauen. Indoor-Slots für den Winter sichern. |
-| **Nov 2026 bis Feb 2027** | Grundlage, viel Indoor, niedrige Intensität, planbare Zeiten | **Das Bauzeitfenster.** Niedrigste mentale Last im Jahr, verlässliche Abende. Hier entsteht die App. Parallel läuft das Indoor-Winterprogramm als Kernangebot. |
+| **Nov 2026 bis Feb 2027** | Grundlage auf dem Rad und im Wasser, Schwerpunkt Kraft und Hyrox | **Das Bauzeitfenster.** Nicht weil ihr weniger trainiert, sondern weil draußen wenig passiert und die Abende planbar sind. Parallel läuft das Winterprogramm als Kernangebot. Falls einer von euch ein Hyrox-Rennen in dieser Phase hat, baut der andere den Hauptteil. |
 | **Mär bis Apr 2027** | Aufbau, Umfang steigt | App live und im Betrieb. Letzte Anpassungen. Neue Gastgeber anwerben. |
 | **Mai bis Jun 2027** | Spezifische Phase, 15 bis 20 Stunden pro Woche | **Kein Bauen mehr.** Nur betreiben. Eure Einheiten sind jetzt am längsten und am wertvollsten für andere. Das Angebot ist auf dem Höhepunkt. |
-| **Jul 2027** | Rennen | Gemeinsames Community-Erlebnis. Der emotionale Höhepunkt des ersten Jahres. |
-| **Aug 2027** | Regeneration, Motivationsloch | **Die gefährlichste Phase des Projekts.** Siehe unten. |
+| **Jul 2027** | Zielrennen | Gemeinsames Community-Erlebnis. Der emotionale Höhepunkt des ersten Jahres. |
+| **Ab Aug 2027** | Kurze Regeneration, dann nächstes Format (Trail, Ultra, Hyrox) | Betrieb läuft weiter. Kein Saisonbruch, aber der Moment, in dem sich zeigt, ob es ohne euch geht. |
 
 Die Konsequenz: **Baut zwischen November und Februar.** Nicht jetzt im September, nicht im
 Frühjahr. Im Winter habt ihr die verlässlichsten Abende des ganzen Jahres, und draußen passiert
 ohnehin wenig.
 
-## Das Post-Race-Loch ist das größte neue Risiko
+## Das Post-Race-Loch, neu bewertet
 
-Nach dem Rennen im Juli 2027 fallen bei euch beiden gleichzeitig die Motivation, das
-Trainingsvolumen und die Anwesenheit weg. Wenn die Community zu diesem Zeitpunkt noch an euch
-hängt, stirbt sie im August 2027.
+In v0.2 war das hier das größte Risiko. Es ist deutlich kleiner, als es aussah: Ihr trainiert
+ganzjährig und rotiert zwischen Formaten. Nach dem Ironman im Juli folgt bei euch die Trail-
+oder Hyrox-Vorbereitung, nicht die Couch. Das Angebot bricht also nicht weg.
 
-Das lässt sich nicht spontan reparieren, es muss vorher gebaut werden:
+Was bleibt, ist trotzdem wichtig, nur mit anderer Begründung: Solange ausschließlich ihr beide
+Einheiten führt, ist 3com ein gut organisiertes Hobby und kein Projekt, das ohne euch existiert.
+Die Maßnahmen bleiben deshalb im Plan, als Skalierungs- statt als Überlebensbedingung:
 
-- **Bis Mai 2027 müssen mindestens fünf Einheiten von anderen geführt werden.** Das ist kein
-  Wunschziel, das ist eine Überlebensbedingung. Sie steht deshalb als Meilenstein in der
+- **Bis Mai 2027 werden mindestens fünf Einheiten von anderen geführt.** Das ist die einzige
+  Zahl, die beantwortet, ob 3com ohne euch existiert. Sie steht als Meilenstein M5 in der
   Roadmap.
 - **Das Herbstprogramm wird im Mai geplant, nicht im August.** Wenn ihr im August entscheiden
   müsst, was im September passiert, passiert nichts.
@@ -76,7 +83,7 @@ Funktionen auf, sondern Ergebnisse.** Für jedes wiederkehrende Ergebnis steht g
 | Samstagseinheit findet statt | |
 | Dienstagseinheit findet statt | |
 | Schwimmeinheit findet statt | |
-| Indoor-Slots sind gebucht | |
+| Winterslots sind gebucht (Gym, Studio, Bahn) | |
 | App existiert und läuft | |
 | Neue Gastgeber werden angeworben | |
 | Partnergespräche | |
@@ -93,9 +100,14 @@ Freunden mit gemeinsamem Hobby fühlt sich das überflüssig an. Genau deshalb w
 
 Ihr habt alle vier gewählt. Drei davon sind richtig, beim vierten widerspreche ich.
 
-### 1. Wöchentliche Anker-Einheiten (ab sofort)
+### 1. Wöchentliche Anker-Einheiten (ab sofort, ganzjährig unverändert)
 
-Drei feste Termine, unverhandelbar verlässlich, zwei Tempogruppen ab dem ersten Tag.
+Drei feste Termine, unverhandelbar verlässlich, zwei Tempogruppen ab dem ersten Tag. Diese drei
+Termine stehen das ganze Jahr an derselben Stelle im Kalender, auch wenn der Inhalt saisonal
+variiert. Nur die Zusatzformate wechseln mit der Jahreszeit (siehe Jahresrhythmus in 02).
+
+Der Grund ist Kommunikation, nicht Logistik: Wer weiß, dass samstags um acht etwas stattfindet,
+muss nichts nachschlagen. Ein Kalender, der sich saisonal umbaut, verliert genau das.
 
 | Anker | Wann | Warum |
 |---|---|---|
@@ -118,9 +130,17 @@ einer WhatsApp-Gruppe und einer Community mit Existenzberechtigung.
 Ein Coach, nicht drei. Wiederkehrend, nicht einmalig. Der Coach wird Teil der Community, nicht
 ein Dienstleister, der gebucht wird.
 
-### 3. Indoor-Winterprogramm (November bis März)
+### 3. Winterprogramm (November bis März)
 
 Das ist das stärkste Format im gesamten Plan, und das Zeitfenster ist jetzt.
+
+Durch die Verbreiterung besteht es aus zwei Teilen mit sehr unterschiedlicher Kostenstruktur:
+**Kraft- und Hyrox-Einheiten** brauchen keinen teuren Slot, oft reicht ein Park, eine Halle oder
+ein Gym mit Randzeitenkapazität. Sie sind damit das billigste und am schnellsten startbare
+Winterformat überhaupt. **Indoor-Cycling-Slots und Hallenbad-Bahnen** kosten Geld und müssen
+verhandelt werden, liefern dafür aber genau das, was niemand allein herstellen kann.
+
+Startet mit dem billigen Teil, verhandelt parallel den teuren.
 
 Von November bis März ist Triathlontraining in Wien maximal einsam: Rolle im Keller, Hallenbad,
 Laufband. Genau dort ist der Wert einer Gruppe am höchsten und die Konkurrenz am geringsten.
@@ -168,8 +188,10 @@ Nicht über Werbung, sondern einzeln und persönlich. Mit zwei Gründern verdopp
 Netzwerkzugang, das ist der schnellste Hebel in den ersten vier Wochen.
 
 1. **Eure beiden Netzwerke.** Jeder schreibt zwanzig Leute einzeln an. Keine Broadcast-Nachricht.
-2. **Startlisten.** Ironman Austria Klagenfurt, 70.3 St. Pölten, Vienna Triathlon. Wiener
-   Teilnehmende sind öffentlich. Über Strava und Instagram persönlich ansprechen.
+2. **Startlisten, jetzt über alle Formate.** Ironman Austria Klagenfurt, 70.3 St. Pölten,
+   Vienna Triathlon, **Hyrox Vienna**, VCM Marathondistanz, österreichische Trail- und
+   Ultrarennen. Wiener Teilnehmende sind öffentlich einsehbar. Das ist durch die Verbreiterung
+   die mit Abstand größte Veränderung im Seeding: aus einer Liste werden sechs.
 3. **Strava-Segmente.** Donauinsel, Höhenstraße, Prater Hauptallee. Wer dort regelmäßig allein
    unterwegs ist, ist exakt die Zielgruppe.
 4. **Physische Orte.** Radshops mit Rennradfokus, Triathlon-Fachgeschäfte, Schwimmkurse für
@@ -203,6 +225,8 @@ Zugehörigkeit sichtbar, und im Ausdauersport ganz besonders. Das kommt vor jede
 | Instagram, lokal, Reels von echten Einheiten | hoch | Gruppenbilder im Regen wirken stärker als jede Produktaufnahme |
 | Strava-Club und Segmentpräsenz | hoch | Exakte Zielgruppe, kostenlos, glaubwürdig |
 | Radshops und Fachgeschäfte | mittel bis hoch | Vertrauensträger, physischer Ankerpunkt, potenzieller Raumgeber |
+| Hyrox-affiliierte Gyms | hoch | Deren Mitglieder sind exakt die neue Zielgruppe, und ihr bringt ihnen die Ausdauereinheiten, die sie selbst nicht anbieten |
+| Trail- und Laufgruppen | mittel | Überschneidung bei den Ambitionierten, Vorsicht vor Konkurrenzwahrnehmung |
 | Startlisten | hoch | Die präziseste verfügbare Zielgruppenliste |
 | Indoor-Studios und Bäder | hoch | Deren Kundschaft ist eure Zielgruppe, und ihr bringt ihnen Auslastung |
 | Bezahlte Werbung | niedrig | Zu kleiner Markt, in Phase 1 Geldverbrennung |

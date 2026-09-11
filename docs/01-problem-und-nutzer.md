@@ -1,60 +1,104 @@
 # 01 Problem und Nutzer
 
+Überarbeitet in v0.3: Die Zielgruppe wird nicht mehr über die Sportart abgegrenzt, sondern über
+die Trainingslast. Begründung und Konsequenzen siehe unten.
+
 ## Das Problem in drei Sätzen
 
-Triathlontraining für eine Mitteldistanz oder Langdistanz bedeutet 8 bis 15 Stunden pro Woche,
-verteilt auf drei Disziplinen, über neun bis zwölf Monate. Der Großteil dieser Stunden wird
-allein absolviert, obwohl fast jede dieser Einheiten in Gesellschaft besser wäre: der lange
-Radausfahrt-Sonntag, die Bahneinheit, das Schwimmen, die Koppeleinheit. Das Ergebnis ist ein
-Sport, in dem Menschen mit identischem Ziel, identischem Tempo und identischem Wohnbezirk
-monatelang nebeneinander her trainieren, ohne sich zu kennen.
+Wer auf eine Langdistanz, einen Ultra oder ein Hyrox-Rennen hin trainiert, verbringt acht bis
+fünfzehn Stunden pro Woche in strukturierten Einheiten, über Monate, fast immer allein. Der
+Großteil dieser Stunden wäre in Gesellschaft besser: die lange Ausfahrt, der lange Lauf, die
+Bahneinheit, das Schwimmen, die Krafteinheit im Januar. Das Ergebnis ist ein Feld von Menschen
+mit identischem Ziel, identischem Tempo und identischem Wohnbezirk, die monatelang nebeneinander
+her trainieren, ohne sich zu kennen.
+
+## Die Abgrenzung: Last statt Sportart
+
+Der gemeinsame Nenner zwischen einem Ironman-Aufbau, einem UTMB-Aufbau und einer
+Hyrox-Vorbereitung ist nicht die Disziplin. Es ist:
+
+> **Acht Stunden pro Woche oder mehr, strukturiert, überwiegend allein, mit einem Datum im
+> Kalender.**
+
+Wer das tut, hat unabhängig von der Sportart dasselbe Problem, dieselbe Terminlogik und
+dieselbe Sprache. Wer zweimal die Woche zum Spaß läuft, hat es nicht, und ist deshalb auch nicht
+die Zielgruppe.
+
+Diese Abgrenzung hat vier Folgen:
+
+1. **Der Markt wird zwei- bis dreimal größer**, ohne dass die Identität verwässert (siehe 04).
+2. **Die Saisonalität verschwindet.** Hyrox und Kraft im Winter, Trail im Frühjahr und Herbst,
+   Rad und Freiwasser im Sommer. Es gibt keine tote Jahreszeit mehr, nur einen Wechsel im
+   Schwerpunkt.
+3. **Die Gründer sind glaubwürdig über das ganze Jahr**, weil sie selbst zwischen den Formaten
+   rotieren und jede Einheit mitgehen können.
+4. **Der Name 3com wird endgültig falsch**, weil die Drei auf drei Disziplinen festgelegt ist.
+   Dasselbe gilt für die Shortlist-Option Wechselzone (siehe 08).
+
+Die Verankerung bleibt trotzdem triathlon-nah: Triathlon ist das Format mit der höchsten
+Trainingslast, der stärksten Sprache und der klarsten Zugehörigkeit. Es ist der Kern, nicht die
+Grenze.
 
 ## Warum das Problem heute nicht gelöst ist
 
 | Bestehende Lösung | Warum sie das Problem nicht löst |
 |---|---|
-| Triathlonverein | Feste Zeiten, Mitgliedsbeitrag, Lizenzkultur, oft Leistungsorientierung. Passt schlecht zum Berufstätigen, der Dienstag kurzfristig doch kann und Mittwoch doch nicht. |
-| Strava Club | Rückblickend. Zeigt, was jemand gemacht hat, nicht was jemand vorhat. Keine Koordinationsfunktion. |
-| WhatsApp-Gruppe | Funktioniert bis circa 30 Leute, danach Lärm. Kein Tempo-Matching, keine Historie, keine Auffindbarkeit, kein Onboarding für Neue. |
-| Facebook-Gruppen | Demografisch im Rückzug, Reichweite algorithmisch gedeckelt, kein Terminobjekt. |
-| Trainingsplan-Apps (TrainingPeaks, MOTTIV, Intervals.icu) | Lösen die Planung, nicht die Gesellschaft. Explizit einzelsportlich gedacht. |
-| Lauftreffs / Gruppenausfahrten von Shops | Existieren, aber eindisziplinär, unregelmäßig kommuniziert und ohne Triathlonbezug. |
+| Triathlonverein | Feste Zeiten, Mitgliedsbeitrag, Lizenzkultur. Passt schlecht zum Berufstätigen, der Dienstag kurzfristig doch kann. Und deckt nur eine Sportart ab. |
+| Hyrox-Gym oder Box | Löst Kraft und Format, aber nicht die langen Ausdauereinheiten drumherum. |
+| Lauftreff, Trailgruppe | Eindisziplinär, oft ohne Leistungsdifferenzierung, selten mit Renndatum im Blick. |
+| Strava Club | Rückblickend. Zeigt, was jemand gemacht hat, nicht was jemand vorhat. Keine Koordination. |
+| WhatsApp-Gruppe | Funktioniert bis circa 30 Leute, danach Lärm. Kein Tempo-Matching, keine Historie, kein Onboarding. |
+| Trainingsplan-Apps (TrainingPeaks, Intervals.icu, MOTTIV) | Lösen die Planung, nicht die Gesellschaft. Explizit einzelsportlich gedacht. |
 
 **Die Lücke:** Es gibt kein Produkt für den Moment zwischen "ich weiß, was ich diese Woche
-trainieren muss" und "ich mache es". Genau dort entsteht die Einsamkeit.
+trainieren muss" und "ich mache es". Genau dort entsteht die Einsamkeit, und sie ist in jedem
+der drei Formate dieselbe.
 
 ## Der eigentliche Blocker: das Tempoproblem
 
 Die Hypothese, die das ganze Konzept trägt:
 
-> **[Hypothese H1]** Der Hauptgrund, warum Age-Grouper nicht mit anderen trainieren, ist nicht
-> fehlende Gelegenheit, sondern die Angst vor der Tempo-Fehlpaarung. Zu langsam heißt Blamage,
-> zu schnell heißt kaputte Einheit. Beides ist schlimmer als allein fahren.
+> **[Hypothese H1]** Der Hauptgrund, warum ambitionierte Ausdauersportler nicht miteinander
+> trainieren, ist nicht fehlende Gelegenheit, sondern die Angst vor der Tempo-Fehlpaarung. Zu
+> langsam heißt Blamage, zu schnell heißt kaputte Einheit. Beides ist schlimmer als allein.
 >
-> *Prüfmethode:* 15 qualitative Interviews mit Wiener Age-Groupern. Frage nicht "würdest du
-> gerne in der Gruppe trainieren" (Antwort immer ja), sondern "erzähl mir von der letzten
-> Gruppeneinheit, die du ausgelassen hast, obwohl du Zeit hattest".
+> *Prüfmethode:* 15 Gespräche nach den ersten Einheiten. Frage nicht "würdest du gerne in der
+> Gruppe trainieren" (Antwort immer ja), sondern "erzähl mir von der letzten Gruppeneinheit, die
+> du ausgelassen hast, obwohl du Zeit hattest".
 
-Daraus folgt: Tempo-, Watt- und Zielbandbreite sind kein Nice-to-have-Filter, sondern das
-Kernfeature. Ohne glaubwürdiges Matching ist das Board ein schwarzes Brett und kein Produkt.
+Daraus folgt: Die Tempogruppe ist kein Filter, sondern das Kernfeature. Sie erscheint aber als
+Name, nicht als Zahl (siehe 05).
 
 ## Zweite tragende Hypothese
 
-> **[Hypothese H2]** Wiederkehrende, verlässliche Rituale erzeugen Community. Ad-hoc-Matching
-> erzeugt nur Transaktionen. Ein Produkt, das nur ad hoc kann, bleibt leer.
+> **[Hypothese H2]** Wiederkehrende, verlässliche Rituale erzeugen Zugehörigkeit.
+> Ad-hoc-Matching erzeugt nur Transaktionen. Ein Produkt, das nur ad hoc kann, bleibt leer.
 >
-> *Prüfmethode:* Zwei feste wöchentliche Anker-Einheiten über acht Wochen laufen lassen und
-> messen, ob die Wiederkehrrate über 40 Prozent liegt.
+> *Prüfmethode:* Drei feste wöchentliche Anker über acht Wochen und messen, ob das Verhältnis
+> von Zusage zu Erscheinen über 50 Prozent liegt.
+
+## Dritte Hypothese, neu in v0.3
+
+> **[Hypothese H3]** Die Zugehörigkeit hält über den Formatwechsel hinweg. Wer im Winter zur
+> Krafteinheit kommt, kommt im Sommer zur Ausfahrt, auch wenn er kein Triathlet ist.
+>
+> *Prüfmethode:* Anteil der Mitglieder, die über einen Saisonwechsel hinweg aktiv bleiben und
+> dabei die Disziplin wechseln. Unter 30 Prozent ist die Gruppe in Wahrheit drei getrennte
+> Gruppen, die zufällig denselben Kalender teilen.
+
+H3 ist die Kehrseite der Verbreiterung und muss aktiv gemessen werden. Wenn sie scheitert, ist
+die breite Definition ein Rechenfehler und nicht eine Chance.
 
 ## Personas
 
-Segmentiert nach Lebenssituation, nicht nach Leistungsniveau. Leistung ist ein Filter im
-Produkt, nicht ein Segment im Markt.
+Segmentiert nach Lebenssituation, nicht nach Leistungsniveau oder Sportart. Sportart ist eine
+Eigenschaft der Einheit, nicht des Menschen.
 
 ### P1 Der ambitionierte Berufstätige (Kernzielgruppe)
 
-- 32 bis 45, Angestellter oder Selbstständiger, oft mit Reisetätigkeit
-- 10 bis 14 Stunden Training pro Woche, Ziel 70.3 oder Ironman
+- 30 bis 45, angestellt oder selbstständig, oft mit Reisetätigkeit
+- 8 bis 15 Stunden Training pro Woche, ein bis drei Renndaten im Jahr, oft über Formate hinweg
+  (Hyrox im Winter, Trail im Frühjahr, Langdistanz im Sommer)
 - Knappster Faktor ist Zeit, nicht Motivation und nicht Geld
 - Trainiert nach Plan, meist mit Coach oder gekauftem Plan
 - **Job to be done:** "Ich will die Stunden, die ich ohnehin trainiere, nicht auch noch allein
@@ -63,37 +107,40 @@ Produkt, nicht ein Segment im Markt.
 
 ### P2 Die Einsteigerin
 
-- 26 bis 38, kommt aus Laufen oder Schwimmen, erstes Olympisches oder erstes 70.3
-- Das größte Hindernis ist nicht Fitness, sondern Unsicherheit: Wechselzone, Neopren,
-  Windschattenregeln, Bahnetikette
+- 25 bis 38, kommt aus dem Laufen, dem Fitnessstudio oder dem Schwimmen, erstes großes Renndatum
+- Das größte Hindernis ist nicht Fitness, sondern Unsicherheit: Wechselzone, Neopren, Trailschuhe,
+  Sled Push, Bahnetikette
 - **Job to be done:** "Ich will jemanden, der es schon gemacht hat, und ich will nicht diejenige
   sein, auf die alle warten."
-- **Wert für 3com:** höchste Bindung und höchste Weiterempfehlungsrate, wenn der erste Kontakt
-  gut läuft. Gleichzeitig das größte Abbruchrisiko bei schlechtem Matching.
+- **Wert:** höchste Bindung und höchste Weiterempfehlungsrate bei gutem ersten Kontakt, höchstes
+  Abbruchrisiko bei schlechtem Matching.
+- **Achtung:** Beide Gründer sind P1. Diese Persona wird ohne bewusste Gegensteuerung übersehen
+  (siehe Risiko R11 in 09).
 
 ### P3 Der Vereinsmüde
 
-- 35 bis 50, war mal im Verein oder hat sich bewusst dagegen entschieden
-- Will Training in Gesellschaft ohne Verpflichtung, Beitrag, Vereinspolitik
+- 35 bis 50, war im Verein oder hat sich bewusst dagegen entschieden
+- Will Training in Gesellschaft ohne Verpflichtung, Beitrag und Vereinspolitik
 - Oft erfahren, oft bereit anzuleiten
 - **Job to be done:** "Ich will die guten Teile eines Vereins ohne die Struktur."
-- **Wert für 3com:** wird zum Session-Host. Diese Gruppe erzeugt Angebot, nicht nur Nachfrage.
-  Ohne P3 skaliert nichts.
+- **Wert:** wird zum Gastgeber. Diese Gruppe erzeugt Angebot, nicht nur Nachfrage. Ohne P3
+  skaliert nichts und das Projekt bleibt an den beiden Gründern hängen.
 
-### Angebotsseite (keine Personas, aber Stakeholder)
+### Angebotsseite
 
 | Rolle | Motiv | Was sie von 3com brauchen |
 |---|---|---|
 | Coaches | Kundenakquise, Auslastung von Gruppeneinheiten | Zugang zu qualifizierter Zielgruppe ohne Werbebudget |
-| Studios, Bäder, Bahnen | Auslastung in Randzeiten | Planbare Gruppenbuchungen |
-| Marken (Nutrition, Gear, Bike) | Produkttest, Sampling, Glaubwürdigkeit bei Age-Groupern | Zugang zu einer echten, aktiven Zielgruppe statt Influencer-Reichweite |
-| Lokale Radshops | Kundenbindung, Frequenz | Gruppenausfahrten mit Startpunkt beim Shop |
+| Studios, Gyms, Bäder, Bahnen | Auslastung in Randzeiten | Planbare Gruppenbuchungen über eine ganze Saison |
+| Marken (Nutrition, Gear, Bike, Schuh) | Produkttest, Sampling, Glaubwürdigkeit | Zugang zu einer echten, aktiven Zielgruppe statt Influencer-Reichweite |
+| Lokale Shops | Kundenbindung, Frequenz | Gruppenausfahrten und Läufe mit Startpunkt beim Shop |
 
 ## Nicht-Zielgruppen
 
 Explizit ausgeschlossen, damit das Produkt scharf bleibt:
 
-- Profis und Elite-Age-Grouper mit fixem Trainingsumfeld
-- Reine Läuferinnen ohne Triathlonambition (eigener, größerer, aber anders gelagerter Markt)
-- Fitnessstudio-Publikum ohne Wettkampfziel
-- Jugend- und Nachwuchsbereich (Vereinsdomäne, andere Regulatorik, Aufsichtspflicht)
+- Profis und Elite-Athleten mit fixem Trainingsumfeld
+- Gelegenheitssportler ohne Renndatum und unter fünf Stunden pro Woche. Das ist der
+  entscheidende Ausschluss: er hält das Niveau der Gruppe und die Sprache intakt.
+- Reines Fitnessstudio-Publikum ohne Wettkampfziel
+- Jugend- und Nachwuchsbereich (Vereinsdomäne, Aufsichtspflicht, andere Regulatorik)

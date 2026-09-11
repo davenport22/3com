@@ -2,10 +2,13 @@
 
 Community-Plattform für Triathletinnen und Triathleten. Start in Wien, danach DACH.
 
-**Kurzfassung:** Triathlontraining ist ein Mannschaftssport, der als Einzelsport betrieben wird.
-8 bis 15 Stunden pro Woche, drei Disziplinen, fast alles allein. 3com macht aus geplanten
-Einzeleinheiten gemeinsame Einheiten: du postest, was du vorhast, jemand mit ähnlichem Tempo
-und ähnlichem Rennziel taucht auf.
+**Kurzfassung:** Hochvolumiges Ausdauertraining ist ein Mannschaftssport, der als Einzelsport
+betrieben wird. Acht bis fünfzehn Stunden pro Woche, über Monate, fast alles allein. 3com macht
+aus geplanten Einzeleinheiten gemeinsame Einheiten.
+
+**Zielgruppe:** nicht eine Sportart, sondern eine Trainingslast. Acht Stunden pro Woche oder
+mehr, strukturiert, mit einem Renndatum. Triathlon ist der Kern, Hyrox, Trail und Ultra sowie
+Marathon mit strukturiertem Plan gehören dazu.
 
 ---
 
@@ -13,14 +16,15 @@ und ähnlichem Rennziel taucht auf.
 
 | Punkt | Stand |
 |---|---|
-| Phase | Konzept v0.2, noch nichts gebaut |
-| Gründer | zwei, beide im Aufbau auf eine Langdistanz im Sommer 2027 |
+| Phase | Konzept v0.3, noch nichts gebaut |
+| Gründer | zwei, ganzjährig im Training, rotieren zwischen Hyrox, Trail und Ultra und Langdistanz |
 | Ambitionsniveau | bewusst offen, entscheidet sich nach dem MVP |
-| Start | zentral organisierte Events: Anker-Einheiten, Coach-Sessions, Indoor-Winterprogramm |
+| Start | zentral organisierte Events: drei ganzjährige Anker, Coach-Sessions, saisonale Zusatzformate |
 | MVP-Form | eigene PWA, wiederkehrende Serien statt Ad-hoc-Board |
 | Bauzeitfenster | November 2026 bis Februar 2027, die Grundlagenphase der Gründer |
 | Erlöslogik | Angebotsseite zuerst, Marken erst im zweiten Winter, Athletinnen zahlen nicht |
-| Name | 3com ist Arbeitstitel, Shortlist siehe `docs/08-naming.md` |
+| Markt Wien | 5.000 bis 12.000 Personen (Schätzung, siehe 04) |
+| Name | 3com ist seit v0.3 sachlich falsch (drei Disziplinen). Shortlist: Windschatten, Kadenz, Rudel |
 | Datum | 2026-09-11 |
 
 ## Navigation

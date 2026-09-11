@@ -90,7 +90,7 @@ auf der Plattform.
 (siehe 02). Indoor-Slots, Hallenbad, Krafttraining, Vorträge, Saisonplanung. Der Winter ist die
 Phase, in der die Einsamkeit am größten und der Nutzen am höchsten ist.
 
-### R9 Kollision mit eurem eigenen Rennaufbau (hoch / hoch)
+### R9 Kollision mit eurem eigenen Rennaufbau (herabgestuft: mittel / mittel)
 
 Beide Gründer bereiten sich auf dasselbe Rennen im Sommer 2027 vor. In der spezifischen Phase
 von Mai bis Juli liegen eure Trainingsumfänge bei 15 bis 20 Stunden pro Woche. Wer in dieser
@@ -100,10 +100,19 @@ Phase noch bauen muss, schafft weder das eine noch das andere.
 November bis Februar, in eurer Grundlagenphase mit den verlässlichsten Abenden des Jahres. Ab
 Mai wird nur noch betrieben.
 
+**Herabstufung in v0.3:** Beide Gründer trainieren ganzjährig und rotieren zwischen Formaten
+(Hyrox, Trail und Ultra, Langdistanz). Es gibt keinen einzelnen Saisonhöhepunkt, auf den alles
+zuläuft, und damit auch keine Phase, in der das Angebot wegbricht. Die Trainingslast schwankt,
+sie fällt aber nicht aus.
+
+**Was bleibt:** Ein klar abgegrenztes Bauzeitfenster ist trotzdem nötig, weil Bauen und
+Hochvolumentraining sich schlecht vertragen. Die Begründung hat sich nur verschoben, von
+Saisonalität zu schlichter Wochenstundenrechnung.
+
 **Nebeneffekt, der positiv ist:** In eurer umfangreichsten Trainingsphase ist euer Angebot an die
 Community am größten, weil ihr ohnehin am längsten unterwegs seid.
 
-### R10 Das Post-Race-Loch (hoch / tödlich)
+### R10 Das Post-Race-Loch (herabgestuft: mittel / mittel)
 
 Nach dem Rennen im Juli 2027 fallen bei euch beiden gleichzeitig Motivation, Trainingsvolumen
 und Anwesenheit weg. Eine Community, die zu diesem Zeitpunkt noch an euch hängt, stirbt im
@@ -112,6 +121,15 @@ August 2027.
 **Gegenmaßnahme:** Fünf fremdgeführte Serien bis Ende Mai 2027 (Meilenstein M5). Herbstprogramm
 wird im Mai geplant, nicht im August. Eine Veranstaltung nach dem Rennen, die keine Fitness
 braucht.
+
+**Herabstufung in v0.3:** Die ursprüngliche Bewertung unterstellte einen einzelnen
+Saisonhöhepunkt mit anschließendem Motivationsloch. Bei ganzjährig trainierenden
+Ausdauer-Generalisten mit mehreren Formaten im Jahr existiert dieses Loch so nicht. Nach dem
+Ironman im Juli folgt bei euch die Trail- oder Hyrox-Vorbereitung, nicht die Couch.
+
+**Was bleibt:** Fünf fremdgeführte Serien bis Ende Mai 2027 bleiben im Plan, aber als
+Skalierungsbedingung statt als Überlebensbedingung. Sie beantworten weiterhin die einzige Frage,
+die über das Ambitionsniveau entscheidet: läuft es ohne euch?
 
 **Strukturelle Alternative:** Staffelt eure Rennen, falls das noch offen ist. Dasselbe Rennen
 ist gut für die Geschichte und schlecht für die Ausfallsicherheit.
@@ -136,6 +154,34 @@ beide für alles zuständig sind, ist niemand für etwas zuständig.
 Ergebnis (Tabelle in 07). Dazu Anteile und Ausstiegsfall schriftlich, bevor irgendetwas läuft.
 Das fühlt sich überflüssig an und ist genau deshalb der häufigste Gründerkonflikt.
 
+### R13 Identitätsverwässerung durch die Verbreiterung (neu, mittel / hoch)
+
+Die Abgrenzung über Trainingslast statt Sportart vergrößert den Markt um das Zwei- bis
+Dreifache. Sie kostet aber genau das, was einen Stamm zusammenhält: die gemeinsame Sprache. Eine
+"Ausdauersport-Community" ist eine Kategorie, kein Zugehörigkeitsgefühl, und konkurriert mit
+jedem Lauftreff der Stadt.
+
+**Gegenmaßnahme:** Die Verankerung bleibt triathlon-nah, weil Triathlon die höchste
+Trainingslast, die stärkste Sprache und die klarste Zugehörigkeit mitbringt. Die Grenze wird
+über die Last gezogen (acht Stunden plus, mit Renndatum), nicht über die Sportart. Der
+Ausschluss des Gelegenheitssportlers ist dabei wichtiger als die Aufnahme des Trailläufers:
+er hält das Niveau und damit die Sprache intakt.
+
+**Messgröße:** Hypothese H3 in 01. Wenn unter 30 Prozent der Mitglieder über einen
+Saisonwechsel hinweg die Disziplin wechseln, sind es in Wahrheit drei getrennte Gruppen mit
+gemeinsamem Kalender, und die Verbreiterung war ein Rechenfehler.
+
+### R14 Hyrox-Saison liegt im Bauzeitfenster (neu, mittel / mittel)
+
+Das Bauzeitfenster November bis Februar war mit der Grundlagenphase eines Triathleten
+begründet. Die Hyrox-Wettkampfsaison liegt aber genau dort. Wer im Januar ein Rennen hat, hat im
+Januar keine ruhige Phase.
+
+**Gegenmaßnahme:** Das Bauzeitfenster bleibt, die Begründung ändert sich: nicht "ihr habt Zeit",
+sondern "draußen passiert wenig und die Abende sind planbar". Konkret zu klären, bevor die
+Roadmap fixiert wird: hat einer von euch ein Hyrox-Rennen zwischen November und Februar. Wenn
+ja, baut der andere in dieser Phase den Hauptteil.
+
 ## Offene Fragen zur Entscheidung
 
 | # | Frage | Wann zu entscheiden | Wer entscheidet |
@@ -143,8 +189,9 @@ Das fühlt sich überflüssig an und ist genau deshalb der häufigste Gründerko
 | Q1 | Rechtsform: Einzelunternehmen, Verein oder GmbH? Der Haftungsaspekt (R4) spricht stärker für den Verein als bisher berücksichtigt. | vor öffentlichem Launch | David plus Steuerberater und Anwalt |
 | Q2 | ~~Allein oder mit Mitgründerin?~~ **Beantwortet:** zwei Gründer, beide mit eigenem Bedarf. Offen bleibt die schriftliche Klärung von Anteilen und Ausstiegsfall. | vor Phase 1 | beide Gründer |
 | Q3 | Wie viel Zeit pro Woche real, über 12 Monate, je Gründer? Mit Rennaufbau ist die Grenze niedriger als sie sich heute anfühlt. | sofort | beide Gründer |
-| Q8 | Bleiben beide beim selben Rennen, oder wird gestaffelt? Das entscheidet über die Ausfallsicherheit im Sommer 2027. | vor Jahresplanung | beide Gründer |
-| Q4 | Startet 3com triathlonspezifisch oder gleich ausdauersportbreit? Breiter heißt größerer Markt und schwächere Identität. | vor App-Launch | David |
+| Q8 | Bleiben beide beim selben Rennen, oder wird gestaffelt? | vor Jahresplanung | beide Gründer |
+| Q9 | Liegt bei einem von euch ein Hyrox-Rennen zwischen November und Februar? Das verschiebt die Lastverteilung im Bauzeitfenster. | vor Oktober 2026 | beide Gründer |
+| Q4 | ~~Triathlonspezifisch oder ausdauersportbreit?~~ **Beantwortet:** Ausdauer-Generalisten, triathlon-verankert, Abgrenzung über Trainingslast. Offen bleibt die Messung von H3. | laufend | beide Gründer |
 | Q5 | Freiwasserschwimmen anbieten oder aus Haftungsgründen ausschließen? | vor Sommersaison | David plus Anwalt |
 | Q6 | Wird der Strava-Import gebaut oder bleiben die Tempobänder selbstdeklariert? | Woche 1 der Entwicklung | David |
 | Q7 | Finaler Name | Woche 8 | David |

@@ -1,41 +1,54 @@
 # 04 Markt und Wettbewerb
 
+Neu berechnet in v0.3 nach der Verbreiterung auf Ausdauer-Generalisten (siehe 01).
+
 ## Marktgröße
 
-### Belegt
+### Belegte Zahlen
 
-- Der Österreichische Triathlonverband zählte **rund 15.000 Mitglieder in 305 Vereinen**
-  (Stand 26.04.2021, Wikipedia). **[Beleg, aber veraltet]**
-
-### Abgeleitet
-
-| Ebene | Schätzung | Grundlage |
+| Quelle | Zahl | Stand |
 |---|---|---|
-| Organisierte Triathletinnen in Österreich | 15.000 | ÖTRV 2021 **[Beleg]** |
-| Faktor für nicht organisierte Aktive | 2x bis 4x | Der Großteil der Age-Grouper ist in keinem Verein **[Hypothese]** |
-| Aktive Triathletinnen Österreich gesamt | 30.000 bis 60.000 | **[Hypothese]** |
-| Anteil Wien und Umland | 15 bis 25 Prozent | Bevölkerungsanteil plus urbane Überrepräsentation im Ausdauersport **[Hypothese]** |
-| **Aktive im Großraum Wien** | **5.000 bis 14.000** | **[Hypothese]** |
-| Davon mit Mittel- oder Langdistanzambition (Kernzielgruppe) | 25 bis 40 Prozent | **[Hypothese]** |
-| **Serviceable Market Wien** | **1.500 bis 5.000 Personen** | **[Hypothese]** |
+| Österreichischer Triathlonverband | rund 15.000 Mitglieder in 305 Vereinen | 2021 **[Beleg, veraltet]** |
+| Vienna City Marathon | über 42.000 Finisher über alle Bewerbe, Sonntagsbewerbe ausverkauft | 2026 **[Beleg]** |
+| Hyrox Vienna (Open European Championships) | rund 8.000 Athletinnen und Athleten aus 79 Ländern | Feb 2025 **[Beleg]** |
 
-**Prüfmethode:** Aktuelle ÖTRV-Zahlen beim Verband anfragen. Startlisten von Ironman Austria
-Klagenfurt, Ironman 70.3 St. Pölten und Vienna Triathlon nach Wiener Postleitzahlen auswerten.
-Das ist die härteste verfügbare Datenquelle und kostet einen Nachmittag.
+Der VCM und Hyrox Vienna sind die beiden größten Aktivsportveranstaltungen des Landes nach
+Teilnehmerzahl. Das sagt wenig über die Zielgruppe, aber viel über die Tiefe der Wiener Szene.
+
+### Abgeleitete Marktgröße
+
+Zielgruppendefinition: **trainiert acht Stunden pro Woche oder mehr, strukturiert, auf ein
+Renndatum hin, wohnhaft im Großraum Wien.**
+
+| Teilsegment | Schätzung Wien | Grundlage |
+|---|---|---|
+| Triathlon, Mittel- und Langdistanzambition | 1.500 bis 5.000 | ÖTRV-Ableitung **[Hypothese]** |
+| Hyrox, strukturiert trainierend | 1.200 bis 2.500 | Hyrox Vienna 8.000 Starter, davon 79 Nationen, Wien-Anteil 15 bis 25 Prozent **[Hypothese]** |
+| Trail und Ultra, mit Renndatum | 800 bis 2.500 | **[Hypothese]** |
+| Marathon und Halbmarathon mit strukturiertem Plan über 8 h/Woche | 1.500 bis 4.000 | Ableitung aus VCM-Teilnehmerstruktur **[Hypothese]** |
+| Abzug für Mehrfachzählung (dieselben Personen in mehreren Segmenten) | 20 bis 30 Prozent | genau diese Überschneidung ist die Zielgruppe **[Hypothese]** |
+| **Serviceable Market Wien** | **5.000 bis 12.000 Personen** | **[Hypothese]** |
+
+**Prüfmethode:** Startlisten auswerten und nach Wiener Postleitzahlen filtern. Ironman Austria
+Klagenfurt, 70.3 St. Pölten, Vienna Triathlon, Hyrox Vienna, VCM Marathondistanz, die großen
+österreichischen Trailrennen. Das ist die härteste verfügbare Datenquelle, öffentlich, und
+kostet einen Nachmittag. Das gehört in die ersten drei Wochen.
 
 ### Einordnung
 
-Ein Serviceable Market von 1.500 bis 5.000 Personen in Wien ist klein. Mit realistischen
-Penetrationsraten von 10 bis 20 Prozent landet man bei 150 bis 1.000 aktiven Nutzern in Wien.
+Gegenüber der reinen Triathlon-Definition (1.500 bis 5.000) verdreifacht sich der bedienbare
+Markt ungefähr. Mit realistischen Penetrationsraten von 10 bis 20 Prozent ergibt das **500 bis
+2.400 aktive Nutzer in Wien**.
 
-Das ist die zentrale Erkenntnis für die Ambitionsfrage:
+Das verschiebt die zentrale Aussage aus v0.1:
 
-> **Wien allein trägt kein skalierbares Geschäft. Wien ist der Beweis, nicht der Markt.**
+> Alt: Wien allein trägt kein Geschäft. Wien ist der Beweis, nicht der Markt.
+>
+> **Neu: Wien trägt knapp ein kleines Geschäft. Für alles darüber braucht es weiterhin die
+> zweite Stadt.**
 
-Der Markt entsteht erst durch Multiplikation über Städte (München, Berlin, Hamburg, Zürich,
-Graz, Linz) oder durch Ausweitung der Disziplinen (Laufen und Radsport separat, jeweils
-deutlich größer als Triathlon). Beides sollte im Produktdesign von Anfang an möglich sein,
-auch wenn es zunächst nicht bespielt wird.
+Das ändert die Ambitionsfrage nicht grundsätzlich, aber es entschärft sie. Ein kostendeckendes
+Wien ist jetzt ein plausibles Ergebnis und nicht nur ein Zwischenschritt.
 
 ## Wettbewerbslandschaft
 
@@ -43,53 +56,63 @@ auch wenn es zunächst nicht bespielt wird.
 
 | Anbieter | Was sie bieten | Wo 3com anders ist |
 |---|---|---|
-| Triathlonvereine (Tri4You, Sports Monkeys, USC Austria, Triathlon Wien u.a.) | Feste Trainingsgruppen, Vereinsstruktur, Lizenzen | Kein Beitrag, keine Verpflichtung, kurzfristige Teilnahme, vereinsübergreifend |
-| Strava Clubs | Rückblickende Aktivitätsanzeige, lose Gruppen | Vorausschauend, Verabredung statt Dokumentation, Tempo-Matching |
-| WhatsApp-Gruppen | Direkte Koordination im Bekanntenkreis | Skaliert über den Bekanntenkreis hinaus, durchsuchbar, mit Onboarding |
-| Lauftreffs und Shop-Ausfahrten | Regelmäßige eindisziplinäre Gruppen | Alle drei Disziplinen, triathlonspezifische Einheiten (Koppel, Freiwasser) |
+| Triathlonvereine (Tri4You, Sports Monkeys, USC Austria, Triathlon Wien) | Feste Trainingsgruppen, Vereinsstruktur, Lizenzen | Kein Beitrag, keine Verpflichtung, vereins- und disziplinübergreifend |
+| Hyrox-affiliierte Gyms und Boxen | Kraft und Format, oft mit Community-Charakter | Deckt die langen Ausdauereinheiten drumherum nicht ab, an ein Studio gebunden |
+| Lauftreffs und Shop-Läufe | Regelmäßige Gruppen, meist kostenlos | Eine Disziplin, selten Leistungsdifferenzierung, kein Renndatumsbezug |
+| Trail- und Bergsportgruppen | Wochenendtouren, starke Kultur | Saisonal, ortsgebunden, kein Wochenrhythmus |
+| Strava Clubs | Rückblickende Aktivitätsanzeige | Vorausschauend, Verabredung statt Dokumentation, Tempo-Matching |
+| WhatsApp-Gruppen | Koordination im Bekanntenkreis | Skaliert über den Bekanntenkreis hinaus, durchsuchbar, mit Onboarding |
 | Kommerzielle Coachings mit Gruppentraining | Angeleitetes Training | 3com konkurriert nicht, sondern ist deren Distributionskanal |
 
-### Produktseitige Analogien (nicht Wien-spezifisch)
+**Wichtige Beobachtung zur Verbreiterung:** Der Wettbewerb wird dichter, aber er bleibt
+fragmentiert. Jeder Anbieter deckt genau eine Disziplin oder genau ein Studio ab. Niemand deckt
+den Menschen ab, der über das Jahr zwischen Formaten rotiert. Das ist die Lücke, die durch die
+Verbreiterung erst sichtbar wird.
+
+### Produktseitige Analogien
 
 | Produkt | Kategorie | Lernpunkt |
 |---|---|---|
-| TrainingPeaks, Intervals.icu, MOTTIV | Trainingsplanung | Lösen die Planung. Kein Sozialteil. Kein Konflikt, eher Integration. |
+| TrainingPeaks, Intervals.icu, MOTTIV | Trainingsplanung | Lösen die Planung. Kein Sozialteil. Integration statt Konflikt. |
 | Strava | Aktivitätsnetzwerk | Der Gigant. Konkurrenz nur, wenn 3com den Fehler macht, ein Feed-Produkt zu bauen. |
-| Spond, Teamer | Vereinsorganisation | Löst Terminkoordination in bestehenden Gruppen. Kein Discovery, kein Matching. |
-| Meetup, Luma | Event-Discovery | Generisch, kein Sportkontext, kein Tempo-Matching. Als Werkzeug in Phase 0 aber nutzbar. |
+| Spond, Teamer | Vereinsorganisation | Terminkoordination in bestehenden Gruppen. Kein Discovery, kein Matching. |
+| Meetup, Luma | Event-Discovery | Generisch, kein Sportkontext, kein Tempo-Matching |
 | Racefully, Runkeeper-Gruppen | Lauf-Communities | Zeigen, wie schwer soziale Layer im Ausdauersport monetarisierbar sind. Warnsignal. |
+| Hyrox als Format selbst | Community-getriebenes Rennformat | Das interessanteste Vorbild: Hyrox ist in wenigen Jahren gewachsen, weil Gyms es als Grund zum gemeinsamen Trainieren genommen haben. Genau derselbe Mechanismus. |
 
 ### Ehrliche Wettbewerbsbeurteilung
 
 **Es gibt keinen direkten Wettbewerber.** Das ist nicht nur eine gute Nachricht. Die zweite
 mögliche Erklärung ist, dass der Markt zu klein oder das Problem nicht zahlungsrelevant genug
-ist. Beides ist plausibel und wird in 09 als Risiko geführt.
+ist. Beides bleibt plausibel und steht als Risiko in 09.
 
-Der stärkste Wettbewerber ist nicht ein Produkt, sondern **die Gewohnheit, allein zu trainieren,
+Der stärkste Wettbewerber ist kein Produkt, sondern **die Gewohnheit, allein zu trainieren,
 kombiniert mit WhatsApp**. Gegen "gut genug und schon installiert" gewinnt man nicht mit
-Features, sondern damit, dass man Leute zusammenbringt, die sich vorher nicht kannten. Das ist
-der einzige Vorteil, den WhatsApp strukturell nicht haben kann.
+Features, sondern damit, dass man Menschen zusammenbringt, die sich vorher nicht kannten. Das
+ist der einzige Vorteil, den WhatsApp strukturell nicht haben kann.
 
 ## Differenzierungsthese
 
-3com gewinnt, wenn genau drei Dinge stimmen:
+3com gewinnt, wenn vier Dinge stimmen:
 
 1. **Dichte in einer Stadt.** Genug Leute, dass immer etwas los ist.
 2. **Glaubwürdiges Tempo-Matching.** Damit die Angst vor der Fehlpaarung verschwindet.
 3. **Verlässliche Rituale.** Damit Zugehörigkeit statt Transaktion entsteht.
+4. **Ein Jahresrhythmus statt einer Saison.** Damit niemand im Februar abspringt und im Mai neu
+   gewonnen werden muss.
 
-Fehlt eines davon, ist es ein weiteres leeres schwarzes Brett.
+Punkt 4 ist neu in v0.3 und ist der eigentliche Ertrag der Verbreiterung.
 
 ## Quellen
 
 - [Österreichischer Triathlonverband, Wikipedia](https://de.wikipedia.org/wiki/%C3%96sterreichischer_Triathlonverband)
+- [Vienna City Marathon 2026: über 42.000 Finisher, SPOFERAN](https://spoferan.com/news/vienna-city-marathon-2026-neuer-streckenrekord-und-ueber-42000-finisher-feiern-lauf-festival)
+- [Wien Marathon 2026: Sonntagsbewerbe ausgebucht, German Road Races](https://news.germanroadraces.de/wien-marathon-2026-sonntagsbewerbe-sind-ausgebucht-laufbegeisterung-hat-neues-level-erreicht/)
+- [Hyrox in Wien, rund 8.000 Athleten aus 79 Ländern, sportsbusiness.at](https://sportsbusiness.at/hyrox-auch-in-wien-kraft-ausdauer-und-globales-wachstum-exklusiv/)
+- [HYROX Vienna, Red Bull](https://www.redbull.com/at-de/hyrox-vienna)
 - [Tri4You Triathlonverein Wien](https://www.triathlonverein-wien.at/)
 - [Sports Monkeys Triathlon Club](https://www.tri.sportsmonkeys.at/)
 - [Triathlon Wien](https://triathlon-wien.com/)
 - [USC Austria Trainingsgruppen](https://www.ultimatesportclub.com/traininggroups)
-- [Vienna Triathlon](https://www.vienna-triathlon.at/)
 - [Intervals.icu](https://www.intervals.icu/)
-- [TrainingPeaks](https://apps.apple.com/us/app/trainingpeaks-plan-train-lift/id408047715)
-- [MOTTIV](https://apps.apple.com/us/app/mottiv-run-triathlon-plans/id1561001166)
 - [Indoor-Cycling Studios Wien, Eversports](https://www.eversports.at/l/indoor-cycling/wien)
-- [SuperCycle Wien](https://supercycle.at/)

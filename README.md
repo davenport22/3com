@@ -53,6 +53,7 @@ Dichte löst das, kein Werkzeug.
 | [docs/14-startup-council-runde-2.md](docs/14-startup-council-runde-2.md) | Zweite, härtere Council-Runde: Distanzen, Serien-Obergrenze, Konzeptstopp |
 | [docs/15-design-und-ci.md](docs/15-design-und-ci.md) | Markenhaltung, Bildzeichen, Farbe, Typografie, Tonalität, Kanäle |
 | [web/index.html](web/index.html) | Website-Entwurf, eine Seite, ohne Abhängigkeiten |
+| [web/designsystem.html](web/designsystem.html) | Designsystem visuell: Bildzeichen, Palette, Typo, Vorlagen |
 | [decisions/DECISIONS.md](decisions/DECISIONS.md) | Entscheidungslog |
 
 ## Sprachkonvention

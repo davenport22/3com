@@ -1,0 +1,302 @@
+<title>Windschatten Designsystem</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&family=Chivo+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --grund:#F0F2F1; --flaeche:#FFFFFF; --ink:#0C1116; --muted:#64737D;
+  --line:#D9DEDE; --line-soft:#E7EAEA;
+  --signal:#A8681A; --signal-flat:#F4E6D2; --wasser:#2E7F8C;
+  --disp:'Chivo',system-ui,sans-serif;
+  --mono:'Chivo Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --grund:#0C1116; --flaeche:#141C22; --ink:#E9EEEF; --muted:#8797A1;
+    --line:#232F37; --line-soft:#1A242B;
+    --signal:#E5A044; --signal-flat:#2A2016; --wasser:#4E9AA8;
+  }
+}
+:root[data-theme="dark"]{
+  --grund:#0C1116; --flaeche:#141C22; --ink:#E9EEEF; --muted:#8797A1;
+  --line:#232F37; --line-soft:#1A242B;
+  --signal:#E5A044; --signal-flat:#2A2016; --wasser:#4E9AA8;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--grund); color:var(--ink);
+  font-family:var(--disp); font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1100px; margin:0 auto; padding-inline:22px}
+.lbl{font-family:var(--mono); font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted)}
+.num{font-variant-numeric:tabular-nums}
+
+header{padding-block:54px 34px; border-bottom:1px solid var(--line)}
+h1{font-weight:900; letter-spacing:-.035em; font-size:clamp(34px,6vw,58px); line-height:1; margin:14px 0 0}
+header p{max-width:56ch; color:var(--muted); margin:16px 0 0}
+
+section{padding-block:52px; border-bottom:1px solid var(--line)}
+h2{font-weight:900; letter-spacing:-.03em; font-size:clamp(23px,3.4vw,31px); line-height:1.1; margin:0 0 8px}
+.lead{max-width:60ch; color:var(--muted); margin:0 0 28px; font-size:15.5px}
+h3{font-size:16px; font-weight:700; letter-spacing:-.01em; margin:0 0 6px}
+
+/* haltung */
+.vs{width:100%; border-collapse:collapse; font-size:15px}
+.vs th{
+  font-family:var(--mono); font-size:10px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--muted); font-weight:400; text-align:left; padding:0 18px 10px 0; border-bottom:1px solid var(--line);
+}
+.vs td{padding:13px 18px 13px 0; border-bottom:1px solid var(--line-soft); vertical-align:top}
+.vs tr:last-child td{border-bottom:0}
+.vs td:first-child{color:var(--muted); text-decoration:line-through; text-decoration-color:var(--line)}
+.vs td:last-child{font-weight:700}
+.tw{overflow-x:auto}
+
+/* mark */
+.markbox{background:var(--flaeche); border:1px solid var(--line); padding:38px 30px}
+.markbox svg{display:block; width:100%; height:auto; max-width:640px; margin:0 auto}
+.usages{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); margin-top:22px}
+.usages > div{background:var(--flaeche); padding:18px 20px}
+.usages p{margin:6px 0 0; font-size:14px; color:var(--muted); line-height:1.5}
+
+/* palette */
+.pal{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px}
+.sw{border:1px solid var(--line)}
+.sw i{display:block; height:76px}
+.sw div{padding:10px 12px 13px; background:var(--flaeche)}
+.sw b{display:block; font-size:13.5px; font-weight:700; letter-spacing:-.01em}
+.sw code{font-family:var(--mono); font-size:11.5px; color:var(--muted); display:block; margin-top:3px}
+.sw span{display:block; font-size:12px; color:var(--muted); margin-top:7px; line-height:1.4}
+
+/* type */
+.spec{background:var(--flaeche); border:1px solid var(--line); padding:26px 28px; display:flex; flex-direction:column; gap:26px}
+.spec .row{display:flex; flex-direction:column; gap:8px}
+.s900{font-weight:900; font-size:clamp(40px,7vw,64px); letter-spacing:-.045em; line-height:.95}
+.s400{font-weight:400; font-size:17px; max-width:58ch; line-height:1.55}
+.smono{font-family:var(--mono); font-size:14px; letter-spacing:.02em}
+
+/* templates */
+.tpl{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; align-items:start}
+.card{
+  background:#0C1116; color:#E9EEEF; border:1px solid #232F37; aspect-ratio:1/1;
+  padding:26px 24px; display:flex; flex-direction:column; justify-content:space-between;
+}
+.card .top{font-family:var(--mono); font-size:11.5px; letter-spacing:.14em; text-transform:uppercase; color:#E5A044}
+.card .place{font-weight:700; font-size:17px; letter-spacing:-.01em; margin-top:5px; color:#E9EEEF}
+.card .big{font-weight:900; font-size:clamp(48px,9vw,76px); line-height:.85; letter-spacing:-.05em; font-variant-numeric:tabular-nums}
+.card .unit{font-family:var(--mono); font-size:12px; color:#8797A1; margin-top:6px}
+.card .foot{font-family:var(--mono); font-size:11px; color:#8797A1; letter-spacing:.05em; line-height:1.6}
+.card .dot{width:7px; height:7px; border-radius:50%; background:#E5A044; display:inline-block; margin-right:6px}
+.card--photo{justify-content:flex-end; background:linear-gradient(180deg,#1a242b 0%,#0C1116 100%); position:relative; overflow:hidden}
+.card--photo .ph{
+  position:absolute; inset:0; display:grid; place-items:center;
+  font-family:var(--mono); font-size:11px; letter-spacing:.16em; color:#39474F; text-transform:uppercase;
+}
+.card--photo .bar{position:relative; font-family:var(--mono); font-size:12.5px; letter-spacing:.1em; color:#E9EEEF; border-top:1px solid #E5A044; padding-top:12px}
+.card--week .r{display:flex; justify-content:space-between; gap:10px; font-family:var(--mono); font-size:12px; padding:7px 0; border-bottom:1px solid #232F37}
+.card--week .r:last-child{border-bottom:0}
+.card--week .r b{font-weight:500; color:#E5A044}
+.tplcap{font-size:13.5px; color:var(--muted); margin:10px 0 0; line-height:1.5}
+
+/* language */
+.two{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0; border:1px solid var(--line)}
+.two > div{padding:22px 24px}
+.two > div:first-child{border-right:1px solid var(--line)}
+.words{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px}
+.words span{
+  font-family:var(--mono); font-size:12.5px; padding:5px 10px; border:1px solid var(--line); color:var(--muted);
+}
+.words.good span{border-color:var(--signal); color:var(--ink)}
+
+/* steps */
+.steps{width:100%; border-collapse:collapse; font-size:15px}
+.steps th{font-family:var(--mono); font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); font-weight:400; text-align:left; padding:0 16px 10px 0; border-bottom:1px solid var(--line)}
+.steps td{padding:12px 16px 12px 0; border-bottom:1px solid var(--line-soft)}
+.steps tr:last-child td{border-bottom:0}
+.steps td:last-child{font-family:var(--mono); font-size:12.5px; color:var(--signal); white-space:nowrap}
+
+footer{padding-block:26px 46px}
+footer p{font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:0}
+
+@media (max-width:880px){
+  .pal{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tpl{grid-template-columns:1fr}
+  .usages{grid-template-columns:1fr}
+  .two{grid-template-columns:1fr}
+  .two > div:first-child{border-right:0; border-bottom:1px solid var(--line)}
+  section{padding-block:40px}
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="lbl">Designsystem · Entwurf · 11.09.2026</p>
+    <h1>Windschatten</h1>
+    <p>Arbeitsname. Das System hängt an einer Wortmarke und einer Bildlogik, nicht an einem Symbol, das den Namen illustriert. Ein Namenswechsel kostet deshalb nichts außer dem Schriftzug.</p>
+  </header>
+
+  <section>
+    <h2>Die Haltung</h2>
+    <p class="lead">Die Zielgruppe ist gegen Sportmarketing immunisiert. Sie glaubt keine Versprechen, sie glaubt Uhrzeiten und Leute, die auftauchen. Also ist jede Aussage der Marke eine Feststellung.</p>
+    <div class="tw">
+      <table class="vs">
+        <thead><tr><th>Nicht</th><th>Sondern</th></tr></thead>
+        <tbody>
+          <tr><td>Finde deine Grenzen</td><td>Sa 19.09., 08:00, Reichsbrücke, GA1, 110 oder 70</td></tr>
+          <tr><td>Heldenbild im Gegenlicht</td><td>Sechs Leute im Regen, Handyfoto, unscharf</td></tr>
+          <tr><td>Superlative</td><td>Zahlen</td></tr>
+          <tr><td>Inspirierend</td><td>Präzise</td></tr>
+          <tr><td>Motivation</td><td>Verlässlichkeit</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Das Bildzeichen</h2>
+    <p class="lead">Eine Linie, die an einem markierten Punkt zwei Wege nimmt. Das ist die Regel aus dem Konzept, gemeinsamer Start und benannter Abzweig, und gleichzeitig das Windschatten-Bild: Punkte auf einer Linie sind Leute hintereinander.</p>
+    <div class="markbox">
+      <svg viewBox="0 0 640 150" role="img" aria-label="Bildzeichen: eine Linie mit Punkten, die sich an einem markierten Punkt in zwei Wege teilt">
+        <line x1="10" y1="62" x2="360" y2="62" stroke="var(--ink)" stroke-width="2.5"/>
+        <circle cx="62" cy="62" r="5" fill="var(--muted)"/>
+        <circle cx="116" cy="62" r="5" fill="var(--muted)"/>
+        <circle cx="170" cy="62" r="5" fill="var(--muted)"/>
+        <circle cx="360" cy="62" r="9" fill="var(--signal)"/>
+        <line x1="360" y1="62" x2="630" y2="62" stroke="var(--ink)" stroke-width="2.5"/>
+        <line x1="360" y1="62" x2="430" y2="112" stroke="var(--ink)" stroke-width="2.5"/>
+        <line x1="430" y1="112" x2="630" y2="112" stroke="var(--ink)" stroke-width="2.5"/>
+        <text x="630" y="48" text-anchor="end" style="font-family:'Chivo Mono',monospace;font-size:13px;fill:var(--muted)">110 km</text>
+        <text x="630" y="134" text-anchor="end" style="font-family:'Chivo Mono',monospace;font-size:13px;fill:var(--muted)">70 km</text>
+        <text x="360" y="36" text-anchor="middle" style="font-family:'Chivo Mono',monospace;font-size:12px;letter-spacing:.12em;fill:var(--signal)">ABZWEIG</text>
+      </svg>
+    </div>
+    <div class="usages">
+      <div><h3>Als Trennlinie</h3><p>Zwischen Abschnitten auf der Website und in Dokumenten. Ersetzt jede gewöhnliche Trennlinie.</p></div>
+      <div><h3>Als Marke</h3><p>Wortmarke plus Gabelung. Kein Icon-Logo, kein Dreieck, keine Welle, kein Berg.</p></div>
+      <div><h3>Als Aufkleber</h3><p>Amber auf Schwarz. Nicht käuflich, gibt es nach dem fünften Erscheinen.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Farbe</h2>
+    <p class="lead">Aus dem Moment, in dem das stattfindet: halb sieben, vier Grad, halbdunkel, Stirnlampe. Dunkel ist der Standard, die helle Variante existiert gleichwertig. Genau eine Akzentfarbe.</p>
+    <div class="pal">
+      <div class="sw"><i style="background:#0C1116"></i><div><b>Grund</b><code>#0C1116 / #F0F2F1</code><span>Seitenhintergrund</span></div></div>
+      <div class="sw"><i style="background:#141C22"></i><div><b>Fläche</b><code>#141C22 / #FFFFFF</code><span>Karten, Tabellen</span></div></div>
+      <div class="sw"><i style="background:#E5A044"></i><div><b>Signal, Stirnlampe</b><code>#E5A044 / #A8681A</code><span>Nur Termin, Zusage, Abzweig. Sonst nichts.</span></div></div>
+      <div class="sw"><i style="background:#4E9AA8"></i><div><b>Wasser</b><code>#4E9AA8 / #2E7F8C</code><span>Nur Schwimmen und Datenmarkierung</span></div></div>
+      <div class="sw"><i style="background:#8797A1"></i><div><b>Gedämpft</b><code>#8797A1 / #64737D</code><span>Labels, Metadaten</span></div></div>
+      <div class="sw"><i style="background:#232F37"></i><div><b>Linie</b><code>#232F37 / #D9DEDE</code><span>Trennungen, Raster</span></div></div>
+      <div class="sw"><i style="background:#E9EEEF"></i><div><b>Text</b><code>#E9EEEF / #0C1116</code><span>Fließtext</span></div></div>
+      <div class="sw"><i style="background:linear-gradient(90deg,#E5A044 50%,#232F37 50%)"></i><div><b>Verhältnis</b><code>1 : 20</code><span>Wenn drei Dinge amber sind, ist keines wichtig</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Typografie</h2>
+    <p class="lead">Eine Familie, drei Rollen. Chivo für alles, Chivo Mono für Daten. Der Kontrast kommt aus Größe, Gewicht und Versalien, nicht aus Schriftmischung. Das hält das System einfach genug, dass es auch ohne Designer funktioniert.</p>
+    <div class="spec">
+      <div class="row">
+        <span class="lbl">Display · Chivo 900 · enge Laufweite · Zahlen sind Bilder</span>
+        <span class="s900 num">110 km GA1</span>
+      </div>
+      <div class="row">
+        <span class="lbl">Fließtext · Chivo 400</span>
+        <span class="s400">Drei Termine, das ganze Jahr an derselben Stelle. Der Inhalt wechselt mit der Saison, die Uhrzeit nie. Jede Einheit hat zwei Distanzen, damit sie in eine Aufbau- genauso wie in eine Entlastungswoche passt.</span>
+      </div>
+      <div class="row">
+        <span class="lbl">Daten · Chivo Mono · Tabellenziffern</span>
+        <span class="smono num">SA 19.09.2026 · 08:00 · REICHSBRÜCKE · GA1 · 30–32 / 33–35 km/h</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Die drei Formate</h2>
+    <p class="lead">Damit Gestaltung nicht jedes Mal neu erfunden wird, gibt es genau drei Vorlagen. Alle drei sind in unter einer Minute befüllt und ohne Bildmaterial einsetzbar.</p>
+    <div class="tpl">
+      <div>
+        <div class="card">
+          <div>
+            <div class="top">Sa 19.09. · 08:00</div>
+            <div class="place">Reichsbrücke</div>
+          </div>
+          <div>
+            <div class="big num">110</div>
+            <div class="unit">km · oder 70 ab Abzweig Orth</div>
+          </div>
+          <div class="foot"><span class="dot"></span>GA1 · 2 Gruppen<br>30–32 / 33–35 km/h</div>
+        </div>
+        <p class="tplcap"><b>Session-Kachel.</b> Vorher. Immer dieselbe Reihenfolge: wann, wo, wie weit, wie hart. Kein Bild nötig.</p>
+      </div>
+      <div>
+        <div class="card card--photo">
+          <div class="ph">Gruppenfoto</div>
+          <div class="bar">SA 19.09. · 112 KM · 4 °C · 9 LEUTE</div>
+        </div>
+        <p class="tplcap"><b>Nachher-Bild.</b> Foto plus eine Datenzeile. Keine Erklärung, kein Text. Die Zeile ist der Inhalt.</p>
+      </div>
+      <div>
+        <div class="card card--week">
+          <div>
+            <div class="top">Woche 39</div>
+            <div class="place">Was ansteht</div>
+          </div>
+          <div>
+            <div class="r"><span>DI 18:30 Intervalle</span><b>6×1000</b></div>
+            <div class="r"><span>DO 06:45 Schwimmen</span><b>3000 m</b></div>
+            <div class="r"><span>SA 08:00 Ausfahrt</span><b>110 / 70</b></div>
+            <div class="r"><span>SO Special: Trail</span><b>1200 hm</b></div>
+          </div>
+          <div class="foot"><span class="dot"></span>Sonntagabend, jede Woche</div>
+        </div>
+        <p class="tplcap"><b>Wochenübersicht.</b> Sonntagabend, immer gleich. Drei Anker plus die Special Session.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sprache</h2>
+    <p class="lead">Deutsch, per du, knapp. Fachsprache ist erwünscht und wirkt als Türsteher. Wer die Begriffe nicht kennt, ist Einsteiger und lernt sie in zwei Wochen, oder gehört nicht zur Zielgruppe.</p>
+    <div class="two">
+      <div>
+        <h3>Benutzen</h3>
+        <p style="margin:6px 0 0; color:var(--muted); font-size:14.5px">Präzise, fachlich, aus der Gruppe heraus gesprochen. Wir, nicht ihr.</p>
+        <div class="words good">
+          <span>GA1</span><span>Schwelle</span><span>Koppeleinheit</span><span>Abzweig</span>
+          <span>Sled Push</span><span>Vertikalmeter</span><span>Niveaugruppe</span><span>Anker</span>
+          <span>Wir fahren Samstag</span>
+        </div>
+      </div>
+      <div>
+        <h3>Nie benutzen</h3>
+        <p style="margin:6px 0 0; color:var(--muted); font-size:14.5px">Das Letzte ist das wichtigste: Eine Community nennt sich nicht Community, sie ist eine.</p>
+        <div class="words">
+          <span>Fitness</span><span>Workout</span><span>Challenge</span><span>Journey</span>
+          <span>Abenteuer</span><span>Limits</span><span>Unser Team freut sich</span><span>Community</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Umsetzung</h2>
+    <p class="lead">Gestaltung ist nicht der Engpass. Diese Reihenfolge und nicht mehr, alles Weitere wartet auf dreißig Leute.</p>
+    <div class="tw">
+      <table class="steps">
+        <thead><tr><th>Schritt</th><th>Aufwand</th><th>Wann</th></tr></thead>
+        <tbody>
+          <tr><td>Name entscheiden</td><td>2 Stunden</td><td>diese Woche</td></tr>
+          <tr><td>Session-Kachel als Vorlage</td><td>1 Stunde</td><td>diese Woche</td></tr>
+          <tr><td>Instagram-Konto mit Wortmarke</td><td>30 Minuten</td><td>diese Woche</td></tr>
+          <tr><td>Website online</td><td>halber Tag</td><td>nächste Woche</td></tr>
+          <tr><td>Aufkleber bestellen</td><td>30 Minuten</td><td>in vier Wochen</td></tr>
+          <tr><td>Kappen</td><td>–</td><td>ab 30 Mitgliedern</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designsystem · Arbeitsname Windschatten · Entwurf 11.09.2026</p>
+  </footer>
+</div>

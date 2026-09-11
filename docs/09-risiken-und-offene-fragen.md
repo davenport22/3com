@@ -72,14 +72,45 @@ Zugang zu genau den erfahrenen Leuten, die als Gastgeber gebraucht werden.
 dürfen ihre offenen Einheiten auf dem Board posten. Frühe Gespräche mit zwei bis drei
 Vereinsobleuten, bevor öffentlich gelauncht wird.
 
-### R7 Strava baut es selbst (niedrig / hoch)
+### R7 Strava baut es selbst (hochgestuft in v0.8: hoch / hoch)
 
-Strava hat Clubs, Events und die Nutzerbasis. Ein ernsthafter Ausbau ihrer Event-Funktion mit
-Tempo-Matching würde 3com den Kern nehmen.
+**Die frühere Einschätzung "Strava baut es nicht aus" ist überholt.** Strava Group Events haben
+bereits bis zu vier Tempogruppen pro Event. Dazu kam die Runna-Übernahme 2025, The Breakaway
+2025 und im Juli 2026 ein eigener Events-Tab. Run-Club-Mitgliedschaften auf Strava sind 2025 um
+59 Prozent gewachsen. Es fehlen nur noch wiederkehrende Club-Events, und das ist ein plausibler
+nächster Schritt.
 
-**Gegenmaßnahme:** Keine. Der einzige Schutz ist lokale Dichte und reale Beziehungen, die nicht
-migrierbar sind. Strava hat diese Funktion seit Jahren und baut sie nicht aus, was ein Signal
-über ihre Prioritäten ist, aber keine Garantie.
+**Gegenmaßnahme:** Es gibt keine produktseitige. Der einzige Schutz ist lokale Dichte und reale
+Beziehungen, die nicht migrierbar sind. Praktische Konsequenz: nicht versuchen, Strava auf der
+Feature-Ebene zu schlagen, sondern die Community so bauen, dass sie auch dann bestehen bliebe,
+wenn Strava morgen dieselbe Funktion ausliefert.
+
+### R16 Dichteversagen, empirisch belegt (neu, hoch / hoch)
+
+Die Wettbewerbsrecherche zeigt ein durchgehendes Muster: BikeCrew 3.000 Nutzer in ganz Europa,
+CorrerJuntos 1.100 nach Jahren, RoxConnect 16 Bewertungen, SportJoe 30 nach sieben Jahren. Die
+Produkte funktionieren technisch und haben trotzdem nie genug Menschen am selben Ort zur selben
+Zeit gehabt.
+
+Besonders unangenehm ist der Hyrox-Cluster: sechs Anbieter, rund 1,5 Millionen Starter in der
+Saison 2025/26, und ein zwingender Bedarf, weil man ohne Doubles-Partner nicht starten kann.
+Trotzdem hat keiner Traktion. Der Bedarf bei 3com ist schwächer, weil man allein trainieren kann.
+
+**Gegenmaßnahme:** Das Dichteproblem wird nicht gelöst, sondern umgangen. Feste Anker, manuelle
+Kuratierung, eine bestehende Offline-Gruppe. Das ist der Weg, den die Roadmap ohnehin beschreibt.
+Die Konsequenz betrifft die Erwartung, nicht den Plan: **als Community für Wien plausibel, als
+Produktthese deutlich schwächer belegt als angenommen.**
+
+### R17 Progressionsproblem und Formatsättigung (neu, mittel / mittel)
+
+Zwei Befunde aus der Community-Recherche. Erstens: Der dokumentierte Haupt-Todesfall aktueller
+Run Clubs ist, dass Mitglieder besser werden und das Format nicht mitwächst. Zweitens: Wien hat
+bereits mindestens acht sichtbare Run Clubs mit sehr ähnlichem Muster.
+
+**Gegenmaßnahme:** Beides spricht für dieselbe Positionierung. Die Wiener Clubs bedienen fast
+durchgehend das soziale Segment. Strukturiertes, gestopptes, periodisiertes Training mit
+Vergleichbarkeit fehlt. Ein monatlicher identischer Benchmark und ein gemeinsamer
+Wettkampfkalender sind die operative Antwort (siehe 17).
 
 ### R8 Saisonalität (mittel / mittel)
 

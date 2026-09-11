@@ -80,11 +80,19 @@ Verbreiterung erst sichtbar wird.
 | Racefully, Runkeeper-Gruppen | Lauf-Communities | Zeigen, wie schwer soziale Layer im Ausdauersport monetarisierbar sind. Warnsignal. |
 | Hyrox als Format selbst | Community-getriebenes Rennformat | Das interessanteste Vorbild: Hyrox ist in wenigen Jahren gewachsen, weil Gyms es als Grund zum gemeinsamen Trainieren genommen haben. Genau derselbe Mechanismus. |
 
-### Ehrliche Wettbewerbsbeurteilung
+### Ehrliche Wettbewerbsbeurteilung, korrigiert in v0.8
 
-**Es gibt keinen direkten Wettbewerber.** Das ist nicht nur eine gute Nachricht. Die zweite
-mögliche Erklärung ist, dass der Markt zu klein oder das Problem nicht zahlungsrelevant genug
-ist. Beides bleibt plausibel und steht als Risiko in 09.
+**Die frühere Aussage "es gibt keinen direkten Wettbewerber" war falsch.** Die Recherche in
+`16-wettbewerb-realitaetscheck.md` hat mehrere nahe Produkte gefunden, darunter Strava Group
+Events mit bereits existierenden Tempogruppen, OnlyTri mit Level- und Volumenfiltern, und Pace
+mit genau der Serien-plus-Tempogruppen-plus-RSVP-Mechanik aus Dokument 05.
+
+Wichtiger noch: Alle diese Produkte scheitern nicht an Funktionen, sondern an Dichte. BikeCrew
+hat 3.000 Nutzer in ganz Europa, CorrerJuntos 1.100 nach Jahren, SportJoe 30 Bewertungen nach
+sieben Jahren. Das ist dieselbe Wand, gegen die auch 3com läuft, nur empirisch belegt statt
+hergeleitet.
+
+**Siehe Dokument 16 für die vollständige Analyse und die Konsequenzen.**
 
 Der stärkste Wettbewerber ist kein Produkt, sondern **die Gewohnheit, allein zu trainieren,
 kombiniert mit WhatsApp**. Gegen "gut genug und schon installiert" gewinnt man nicht mit

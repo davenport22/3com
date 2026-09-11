@@ -323,3 +323,77 @@ Icon-Logo, nur Wortmarke plus Gabelung, damit ein Namenswechsel das System nicht
 **Sprachregel:** Fachsprache ist erwünscht und wirkt als Türsteher. Das Wort "Community" wird in
 der Selbstbeschreibung nicht verwendet.
 **Wiedervorlage:** nach der Namensentscheidung.
+
+---
+
+## D-024 Erwartungskorrektur nach dem Wettbewerbs-Realitätscheck
+
+**Datum:** 2026-09-11
+**Entscheidung:** Das Gewicht verschiebt sich von der Produktthese zur Community. Die App bleibt
+im Plan, aber als Betriebssystem für wenige Serien, nicht als Startup. Wenn im Winter die Wahl
+zwischen Feature-Arbeit und Gastgeberakquise steht, gewinnt ab jetzt immer die Akquise.
+**Begründung:** Die Annahme "es gibt keinen direkten Wettbewerber" war falsch. Strava Group
+Events haben bereits Tempogruppen, OnlyTri filtert nach Pace, Volumen und Level, Pace
+(paceclubapp) hat Serien plus Tempogruppen plus RSVP. Der einzige verifizierte weiße Fleck ist
+das Intensitätsvokabular, und ein Datenfeld ist kein Burggraben. Entscheidender ist das Muster
+über alle Anbieter: sie scheitern an Dichte, nicht an Funktionen.
+**Der härteste Einzelbefund:** Sechs Hyrox-Partner-Apps, rund 1,5 Mio Starter, ein zwingender
+Partnerbedarf, und trotzdem keine Traktion. Wenn ein Muss-Bedarf kein Produkt trägt, trägt ein
+Kann-Bedarf vermutlich auch keines.
+**Folge für das Ambitionsniveau:** Der Pfad "skalierbare Plattform" aus Dokument 00 wird
+unwahrscheinlich. Realistisch bleiben Verein oder kleines, kostendeckendes Geschäft in einer
+Stadt.
+**Wiedervorlage:** nach Meilenstein M5.
+
+---
+
+## D-025 Erst ein Anker, zwölf Wochen ohne Ausfall
+
+**Datum:** 2026-09-11
+**Entscheidung:** Verschärfung von D-022. Im ersten Quartal läuft genau **eine** Serie, nicht
+drei. Weitere Anker kommen erst, wenn die erste zwölf Wochen ohne Ausfall gelaufen ist.
+**Begründung:** parkrun, November Project, Midnight Runners und HYROX sind alle auf genau einem
+invarianten Format gewachsen. Gründer-Guides nennen wechselnde Treffpunkte und zu viele parallele
+Termine als Abbruchgrund Nummer eins.
+**Wiedervorlage:** nach zwölf Wochen.
+
+---
+
+## D-026 Der Verbal: öffentliches Commitment statt Anmeldung
+
+**Datum:** 2026-09-11
+**Entscheidung:** Am Ende jeder Einheit sagt jeder laut, ob er beim nächsten Termin dabei ist.
+Übernommen von November Project.
+**Begründung:** Es ist das wirksamste bekannte Mittel gegen No-Shows und kostet nichts. Die
+Kennzahl Zusage zu Erscheinen entscheidet laut Roadmap über das Go/No-Go für den Bau, also lohnt
+sich jedes Mittel, das sie hebt. Eine soziale Verpflichtung gegenüber Menschen, die man in drei
+Tagen wiedersieht, wirkt stärker als jede Push-Nachricht.
+**Wiedervorlage:** keine.
+
+---
+
+## D-027 Monatlicher identischer Benchmark
+
+**Datum:** 2026-09-11
+**Entscheidung:** Ein monatlicher, immer gleicher, gestoppter Benchmark. Kandidaten: Kahlenberg
+als Bergzeitfahren, 5 km Prater Hauptallee, oder eine Hyrox-Stationskombination.
+**Begründung:** November Project hat den PR Day, Rapha die Festive 500, HYROX das weltweit
+identische Rennformat. Für eine Zielgruppe mit acht und mehr Wochenstunden ist messbarer
+Fortschritt der eigentliche Bindungstreiber. Beleg dafür aus der Gegenrichtung: parkrun entfernte
+2024 Streckenrekorde und erntete eine Petition.
+**Nebennutzen:** liefert gleichzeitig Trainingsreiz, Fortschrittsnachweis, Inhalt und
+Gesprächsstoff.
+**Wiedervorlage:** keine.
+
+---
+
+## D-028 Erkennungszeichen wird verdient, nicht verkauft
+
+**Datum:** 2026-09-11
+**Entscheidung:** Konkretisierung des Erkennungszeichens aus D-023. Ein Patch oder Sprüh-Tag pro
+zehn absolvierten Einheiten, angebracht beim Termin selbst, auf das eigene Trikot. Kein Shop.
+**Begründung:** November Project besprüht die Shirts beim Workout per Schablone, immer am ersten
+Mittwoch im Monat. Jedes Stück ist dadurch ein Unikat und belegt Anwesenheit. Black Roses vergibt
+das Singlet nur auf Einladung. Ein käufliches Zeichen ist fälschbar und signalisiert nichts.
+**Nebennutzen:** null Lagerrisiko, und es löst das Wiedererkennungsproblem im Wettkampf.
+**Wiedervorlage:** keine.

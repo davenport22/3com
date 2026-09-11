@@ -138,7 +138,43 @@ laufen können:
 | **Schwimmen** | Bahnen nach Niveau, Hauptsatz identisch, Umfang variabel. |
 
 **Die Einheit kommuniziert das aktiv.** Nicht "Samstag 100 km", sondern "Samstag, Start 8 Uhr,
-GA1, 70 oder 110 km, zwei Gruppen". Damit passt sie in doppelt so viele Trainingswochen.
+GA1, 110 km, kurze Variante 70 ab dem Abzweig Orth". Damit passt sie in doppelt so viele
+Trainingswochen.
+
+### Distanzen werden vorgegeben, nicht offengelassen
+
+Die Versuchung, keine Distanz anzusagen, damit niemand ausgeschlossen wird, führt zum Gegenteil.
+Eine Einladung ohne Zahl ist keine Einladung, sondern eine Frage, und der Empfänger muss
+arbeiten, bevor er zusagen kann: Wie weit fahren die? Bin ich zu langsam? Wann bin ich zurück?
+Diese drei Sekunden Unsicherheit kosten mehr Zusagen, als jede Zahl je ausschließen könnte.
+
+**Die Regel: immer eine Distanz, immer genau zwei Optionen, nie drei.**
+
+- Bei zwei Optionen entscheidet man. Bei drei vergleicht man, und beim Vergleichen sagt man ab.
+- Beide Optionen bekommen eine Zahl und einen gemeinsamen Start. Sie trennen sich an einem
+  **benannten Abzweig**, nicht am Treffpunkt. Wer kürzer fährt, ist dann nicht von Minute eins
+  derjenige, der weniger macht.
+- Die Zahlen bleiben über Monate gleich. "Der Samstag ist 110" ist ein Satz, den ein Mitglied
+  über die Gruppe sagen kann. Genau solche Sätze machen aus einem Termin eine Zugehörigkeit.
+
+Analog für die anderen Anker: gleiche Serienstruktur, zwei Wiederholungszahlen. Gleicher
+Hauptsatz im Wasser, zwei Umfänge. Immer zwei, immer benannt.
+
+### Obergrenze: fünf Serien im ersten Jahr
+
+Die Verbreiterung auf mehrere Disziplinen hat die Zahl möglicher Termine vervielfacht. Bei
+geringer Dichte ist das gefährlich, nicht gut: Dieselben 100 aktiven Mitglieder ergeben auf fünf
+Serien rund zehn Erscheinende pro Termin, auf fünfzehn Serien drei bis vier. Das eine ist eine
+Gruppe, das andere eine Verabredung, und Verabredungen fallen aus.
+
+**Maximal fünf Serien im ersten Jahr. Eine neue entsteht nur, wenn eine bestehende dauerhaft
+über fünfzehn Teilnehmende kommt und sich teilen muss.** Wachstum durch Zellteilung, nicht durch
+Neugründung.
+
+Der Druck dagegen wird von innen kommen, nicht von außen: jemand wünscht sich Trail am Sonntag,
+jemand Hyrox am Mittwoch, jemand Freiwasser am Donnerstag. Jeder Wunsch ist berechtigt, und
+jeder erfüllte Wunsch macht die Community dünner. Zusatzformate wandern deshalb in die
+saisonalen Special Sessions, nicht in neue wöchentliche Serien.
 
 ### 2. Coach-geführte Special Sessions (ab Oktober)
 

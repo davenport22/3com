@@ -21,7 +21,7 @@ Dichte löst das, kein Werkzeug.
 
 | Punkt | Stand |
 |---|---|
-| Phase | Konzept v0.5, noch nichts gebaut |
+| Phase | Konzept v0.6. **Eingefroren bis zur dritten Ausfahrt.** |
 | Gründer | zwei, gleiche Anteile. Einer BD, Vertrieb und Community, einer Produkt und Technik |
 | Ambitionsniveau | bewusst offen, entscheidet sich nach dem MVP |
 | Start | zentral organisierte Events: drei ganzjährige Anker, Coach-Sessions, saisonale Zusatzformate |
@@ -50,6 +50,7 @@ Dichte löst das, kein Werkzeug.
 | [docs/11-interview-leitfaden.md](docs/11-interview-leitfaden.md) | Leitfaden für die 15 Validierungsinterviews |
 | [docs/12-startup-council.md](docs/12-startup-council.md) | Fünf Perspektiven, Debatte, fünf Änderungen |
 | [docs/13-bd-playbook.md](docs/13-bd-playbook.md) | Slot-Verhandlung und die ersten 30 Menschen, mit Vorlagen |
+| [docs/14-startup-council-runde-2.md](docs/14-startup-council-runde-2.md) | Zweite, härtere Council-Runde: Distanzen, Serien-Obergrenze, Konzeptstopp |
 | [decisions/DECISIONS.md](decisions/DECISIONS.md) | Entscheidungslog |
 
 ## Sprachkonvention

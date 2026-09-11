@@ -272,3 +272,36 @@ Wiederholungszahl bei identischer Serienstruktur, variabler Umfang bei identisch
 passt. Eine Einheit, die nur eine Planphase bedient, verliert jede Woche die Hälfte der Leute.
 **Kommunikationsregel:** Jede Einladung nennt Intensität und beide Längenoptionen.
 **Wiedervorlage:** keine.
+
+---
+
+## D-021 Distanzen werden vorgegeben, genau zwei Optionen
+
+**Datum:** 2026-09-11
+**Entscheidung:** Jede Einheit nennt eine konkrete Distanz oder Dauer, und genau zwei Optionen.
+Gemeinsamer Start, Trennung an einem benannten Abzweig. Nie drei Optionen, nie "such dir was aus".
+Die Zahlen bleiben über Monate gleich.
+**Begründung:** Eine Einladung ohne Zahl ist keine Einladung, sondern eine Frage, und sie
+verlagert die Arbeit auf den Empfänger. Ohne Zahl kommen weniger Leute, nicht mehr. Bei zwei
+Optionen entscheidet man, bei drei vergleicht man und sagt ab. Zusätzlich entfernt eine
+festgelegte Distanz eine Dimension aus dem Raster aus Niveau, Intensität, Zeit, Ort und
+Disziplin und erhöht damit die Trefferwahrscheinlichkeit multiplikativ.
+**Nebenwirkung, die erwünscht ist:** "Der Samstag ist 110" ist ein Satz, den ein Mitglied über
+die Gruppe sagt. Feste Größen erzeugen Zugehörigkeit, Beliebigkeit erzeugt keine.
+**Gegenprobe:** Zwei Samstage mit angesagter Distanz, zwei ohne, Zusagen und Erschienene zählen.
+Kostet nichts und liefert die Stärke des Effekts.
+**Wiedervorlage:** nach vier Ausfahrten.
+
+---
+
+## D-022 Maximal fünf Serien im ersten Jahr
+
+**Datum:** 2026-09-11
+**Entscheidung:** Höchstens fünf wiederkehrende Serien im ersten Jahr. Eine neue entsteht nur,
+wenn eine bestehende dauerhaft über fünfzehn Teilnehmende kommt und sich teilen muss.
+Zusatzwünsche wandern in saisonale Special Sessions, nicht in neue wöchentliche Serien.
+**Begründung:** Die Verbreiterung auf mehrere Disziplinen hat die Zahl möglicher Zellen
+vervielfacht. Bei geringer Dichte verdünnt jede zusätzliche Serie alle anderen. 100 Mitglieder
+auf fünf Serien sind zehn Erscheinende pro Termin, auf fünfzehn Serien drei bis vier.
+**Wachstumslogik:** Zellteilung statt Neugründung.
+**Wiedervorlage:** bei 250 aktiven Mitgliedern in einer Stadt.

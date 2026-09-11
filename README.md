@@ -13,11 +13,14 @@ und ähnlichem Rennziel taucht auf.
 
 | Punkt | Stand |
 |---|---|
-| Phase | Konzept v0.1, noch nichts gebaut |
+| Phase | Konzept v0.2, noch nichts gebaut |
+| Gründer | zwei, beide im Aufbau auf eine Langdistanz im Sommer 2027 |
 | Ambitionsniveau | bewusst offen, entscheidet sich nach dem MVP |
-| MVP-Form | eigene PWA |
-| Erlöslogik | Brand-Partnerschaften + Coach-/Studio-Marktplatz, Athletinnen zahlen nicht |
-| Name | 3com ist Arbeitstitel, Alternativen siehe `docs/08-naming.md` |
+| Start | zentral organisierte Events: Anker-Einheiten, Coach-Sessions, Indoor-Winterprogramm |
+| MVP-Form | eigene PWA, wiederkehrende Serien statt Ad-hoc-Board |
+| Bauzeitfenster | November 2026 bis Februar 2027, die Grundlagenphase der Gründer |
+| Erlöslogik | Angebotsseite zuerst, Marken erst im zweiten Winter, Athletinnen zahlen nicht |
+| Name | 3com ist Arbeitstitel, Shortlist siehe `docs/08-naming.md` |
 | Datum | 2026-09-11 |
 
 ## Navigation
@@ -36,6 +39,7 @@ und ähnlichem Rennziel taucht auf.
 | [docs/09-risiken-und-offene-fragen.md](docs/09-risiken-und-offene-fragen.md) | Top-Risiken, offene Entscheidungen |
 | [docs/10-roadmap.md](docs/10-roadmap.md) | 90-Tage-Plan, Meilensteine, Abbruchkriterien |
 | [docs/11-interview-leitfaden.md](docs/11-interview-leitfaden.md) | Leitfaden für die 15 Validierungsinterviews |
+| [docs/12-startup-council.md](docs/12-startup-council.md) | Fünf Perspektiven, Debatte, fünf Änderungen |
 | [decisions/DECISIONS.md](decisions/DECISIONS.md) | Entscheidungslog |
 
 ## Sprachkonvention

@@ -2,17 +2,18 @@
 
 ## Top-Risiken, nach Eintrittswahrscheinlichkeit mal Schaden
 
-### R1 Cold Start scheitert (sehr hoch / tödlich)
+### R1 Cold Start scheitert (deutlich entschärft)
 
-Das Board bleibt leer, weil zu wenige Leute zu wenige Sessions posten. Nutzer öffnen einmal,
-sehen nichts, kommen nie wieder.
+Ursprünglich das Hauptrisiko: ein leeres Board, das sich selbst füllen muss. Durch die zentral
+organisierten Events und zwei Gründer, deren eigenes Training das Angebot ist, ist dieses Risiko
+weitgehend neutralisiert. Das Angebot ist von Tag eins garantiert.
 
-**Gegenmaßnahme:** Rituale vor Produkt (siehe 07). Die App startet mit einer bestehenden Gruppe
-von 40 bis 60 Leuten und drei laufenden Anker-Einheiten. Der Gründer garantiert in den ersten
-sechs Monaten ein Mindestangebot pro Woche.
+**Verbleibende Restform:** Nicht "kein Angebot", sondern "kein fremdes Angebot". Wenn nach
+Monaten immer noch ausschließlich ihr beide Einheiten führt, ist es ein Hobby mit Datenbank und
+kein Projekt, das ohne euch existiert.
 
-**Warnsignal:** Wenn nach acht Wochen App-Betrieb weniger als 30 Prozent der Sessions von
-anderen als dir stammen, ist der Loop nicht geschlossen.
+**Gegenmaßnahme:** Der MVP ist auf den Gastgeber optimiert, nicht auf den Teilnehmer (siehe 05).
+Meilenstein M5 in der Roadmap macht die Zahl verbindlich.
 
 ### R2 Der Markt ist zu klein (hoch / hoch)
 
@@ -89,13 +90,60 @@ auf der Plattform.
 (siehe 02). Indoor-Slots, Hallenbad, Krafttraining, Vorträge, Saisonplanung. Der Winter ist die
 Phase, in der die Einsamkeit am größten und der Nutzen am höchsten ist.
 
+### R9 Kollision mit eurem eigenen Rennaufbau (hoch / hoch)
+
+Beide Gründer bereiten sich auf dasselbe Rennen im Sommer 2027 vor. In der spezifischen Phase
+von Mai bis Juli liegen eure Trainingsumfänge bei 15 bis 20 Stunden pro Woche. Wer in dieser
+Phase noch bauen muss, schafft weder das eine noch das andere.
+
+**Gegenmaßnahme:** Die Periodisierung wird zum Bauplan (siehe 07 und 10). Gebaut wird von
+November bis Februar, in eurer Grundlagenphase mit den verlässlichsten Abenden des Jahres. Ab
+Mai wird nur noch betrieben.
+
+**Nebeneffekt, der positiv ist:** In eurer umfangreichsten Trainingsphase ist euer Angebot an die
+Community am größten, weil ihr ohnehin am längsten unterwegs seid.
+
+### R10 Das Post-Race-Loch (hoch / tödlich)
+
+Nach dem Rennen im Juli 2027 fallen bei euch beiden gleichzeitig Motivation, Trainingsvolumen
+und Anwesenheit weg. Eine Community, die zu diesem Zeitpunkt noch an euch hängt, stirbt im
+August 2027.
+
+**Gegenmaßnahme:** Fünf fremdgeführte Serien bis Ende Mai 2027 (Meilenstein M5). Herbstprogramm
+wird im Mai geplant, nicht im August. Eine Veranstaltung nach dem Rennen, die keine Fitness
+braucht.
+
+**Strukturelle Alternative:** Staffelt eure Rennen, falls das noch offen ist. Dasselbe Rennen
+ist gut für die Geschichte und schlecht für die Ausfallsicherheit.
+
+### R11 Gründer-Blindstelle (mittel / mittel)
+
+Beide Gründer sind Persona P1, ambitionierte Berufstätige mit Langdistanzziel. Ein Produkt, das
+nur von P1 entworfen wird, wird für P1 gut und für Einsteigerinnen unzugänglich. Genau die
+Einsteigergruppe hat aber die höchste Bindung und die höchste Weiterempfehlungsrate.
+
+**Gegenmaßnahme:** Mindestens zehn der ersten dreißig Mitglieder sind Einsteigerinnen oder
+Einsteiger. Eine der drei Anker-Einheiten wird ausdrücklich für sie ausgelegt. Und mindestens
+eine Frau unter den ersten fünf Gastgebern, sonst prägt sich die Kultur falsch ein und ist
+später nicht mehr korrigierbar.
+
+### R12 Zwei Gründer ohne geklärte Rollen (mittel / hoch)
+
+"Beide alles, aufgeteilt nach Zeit" funktioniert unter Freunden gut, bis etwas ausfällt. Wenn
+beide für alles zuständig sind, ist niemand für etwas zuständig.
+
+**Gegenmaßnahme:** Nicht Funktionen aufteilen, sondern Ergebnisse. Ein Name pro wiederkehrendem
+Ergebnis (Tabelle in 07). Dazu Anteile und Ausstiegsfall schriftlich, bevor irgendetwas läuft.
+Das fühlt sich überflüssig an und ist genau deshalb der häufigste Gründerkonflikt.
+
 ## Offene Fragen zur Entscheidung
 
 | # | Frage | Wann zu entscheiden | Wer entscheidet |
 |---|---|---|---|
 | Q1 | Rechtsform: Einzelunternehmen, Verein oder GmbH? Der Haftungsaspekt (R4) spricht stärker für den Verein als bisher berücksichtigt. | vor öffentlichem Launch | David plus Steuerberater und Anwalt |
-| Q2 | Machst du das allein oder mit Mitgründerin? Die Zeitlast in Phase 0 ist erheblich und schlecht mit Beratungsalltag vereinbar. | vor Phase 0 | David |
-| Q3 | Wie viel Zeit pro Woche willst du real investieren, über 12 Monate? | sofort | David |
+| Q2 | ~~Allein oder mit Mitgründerin?~~ **Beantwortet:** zwei Gründer, beide mit eigenem Bedarf. Offen bleibt die schriftliche Klärung von Anteilen und Ausstiegsfall. | vor Phase 1 | beide Gründer |
+| Q3 | Wie viel Zeit pro Woche real, über 12 Monate, je Gründer? Mit Rennaufbau ist die Grenze niedriger als sie sich heute anfühlt. | sofort | beide Gründer |
+| Q8 | Bleiben beide beim selben Rennen, oder wird gestaffelt? Das entscheidet über die Ausfallsicherheit im Sommer 2027. | vor Jahresplanung | beide Gründer |
 | Q4 | Startet 3com triathlonspezifisch oder gleich ausdauersportbreit? Breiter heißt größerer Markt und schwächere Identität. | vor App-Launch | David |
 | Q5 | Freiwasserschwimmen anbieten oder aus Haftungsgründen ausschließen? | vor Sommersaison | David plus Anwalt |
 | Q6 | Wird der Strava-Import gebaut oder bleiben die Tempobänder selbstdeklariert? | Woche 1 der Entwicklung | David |

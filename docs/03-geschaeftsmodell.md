@@ -71,6 +71,20 @@ physischen Ankerpunkt (der Shop als Startort) plus Glaubwürdigkeit für den nä
 **Schwelle für ernstzunehmende Markengespräche: circa 300 aktive Mitglieder in einer Stadt.
 [Hypothese]** Darunter ist das Gespräch ein Gefallen, kein Geschäft.
 
+### Warnung: kein Markenevent zum Start
+
+Ein Kick-off mit Markenpartner wirkt attraktiv, weil er Reichweite verspricht. Er kostet aber
+mehr, als er bringt. Die ersten dreißig Menschen prägen die Kultur. Ist ihr erstes gemeinsames
+Erlebnis ein Produktsampling, habt ihr eine Zielgruppe versammelt und keine Community. Dazu
+kommt: eine Marke, die zu diesem Zeitpunkt zusagt, tut das als Gefallen. Damit ist der Kontakt
+für den Moment verbrannt, in dem er tatsächlich etwas wert wäre.
+
+**Der erste Markendeal gehört in den zweiten Winter.** Bis dahin gilt: Angebotsseitiges Geld vor
+Markengeld. Ein Coach, der bezahlt wird, ist ein sichtbarer und fairer Tausch. Ein Sponsor ist
+es erst, wenn die Identität stark genug ist, ihn zu überleben. Ein lokaler Radshop, der einen
+Raum stellt und dafür genannt wird, ist kein Sponsoring, sondern Nachbarschaft, und jederzeit
+in Ordnung.
+
 ## Erlösquelle 2: Angebotsseitiger Marktplatz
 
 | Modell | Mechanik | Take Rate **[Hypothese]** |

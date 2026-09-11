@@ -87,3 +87,83 @@ Einzelstadt-Schemas ist ein vermeidbarer Aufwand.
 Englisch.
 **Begründung:** Markt und Ansprache sind deutschsprachig, Entwicklung ist englischsprachig.
 **Wiedervorlage:** bei Internationalisierung.
+
+---
+
+## D-008 Zwei Gründer, beide mit eigenem Bedarf
+
+**Datum:** 2026-09-11
+**Entscheidung:** 3com wird von zwei Gründern getragen, die beide selbst im Aufbau auf eine
+Langdistanz im Sommer 2027 sind.
+**Begründung:** Der Grenzaufwand, andere zur eigenen Einheit mitzunehmen, liegt nahe null. Damit
+ist das Angebot ohne Zusatzaufwand gesichert und das Cold-Start-Risiko weitgehend neutralisiert.
+Gleichzeitig verdoppelt sich das verfügbare Zeitbudget von 416 auf rund 830 Stunden pro Jahr.
+**Bekanntes Risiko:** Gleiches Rennen bedeutet gleichzeitiger Ausfall nach dem Rennen (R10) und
+eine gemeinsame Blindstelle gegenüber Einsteigern (R11).
+**Rollen:** Beide alles, aufgeteilt nach Zeit, aber mit einem Namen pro wiederkehrendem Ergebnis.
+**Wiedervorlage:** Anteile und Ausstiegsfall schriftlich vor Phase 1.
+
+---
+
+## D-009 Wiederkehrende Serien statt Ad-hoc-Board in v1
+
+**Datum:** 2026-09-11
+**Entscheidung:** Das Posten einzelner Ad-hoc-Sessions fliegt aus v1. Der MVP ist ein Werkzeug
+für wiederkehrende Serien mit Zusage, Gastgeberrolle und Erinnerung.
+**Begründung:** Gemeinsames Training braucht vier gleichzeitige Übereinstimmungen: Zeit, Ort,
+Disziplin, Tempo. Unter etwa 250 aktiven Nutzern pro Stadt sind die meisten Kombinationen leer.
+Wiederkehrende Termine ersetzen Zufall durch Konvention. Zusätzlich sind alle vier geplanten
+Startformate ohnehin wiederkehrend und zentral organisiert.
+**Wirkung:** Bauumfang etwa halbiert.
+**Wiedervorlage:** Bei circa 250 aktiven Nutzern in einer Stadt.
+
+---
+
+## D-010 Tempo als Name, nicht als Zahl
+
+**Datum:** 2026-09-11
+**Entscheidung:** Drei benannte Gruppen auf der Oberfläche: Kaffeefahrt, Tempo, Vollgas. Das
+numerische Band existiert nur im Hintergrund.
+**Begründung:** Sich selbst in ein Intervall einzutragen fühlt sich an wie eine Einstufung.
+Sich zu einer benannten Gruppe zu bekennen fühlt sich an wie eine Einladung. Die Ränder
+überlappen bewusst, wer dazwischen liegt, bekommt beide Gruppen angeboten.
+**Wiedervorlage:** keine.
+
+---
+
+## D-011 Der Gastgeber ist der primäre Nutzer
+
+**Datum:** 2026-09-11
+**Entscheidung:** Jede Produktentscheidung wird daran gemessen, ob sie es jemand anderem
+leichter macht, eine Einheit zu übernehmen und zu führen.
+**Begründung:** Die bindende Einschränkung sind Gründerstunden. Der einzige Hebel dagegen ist
+Delegation des Gastgebens. Zusätzlich ist es die einzige Absicherung gegen das Post-Race-Loch
+im August 2027.
+**Messgröße:** fünf fremdgeführte Serien bis Ende Mai 2027 (M5).
+**Wiedervorlage:** keine.
+
+---
+
+## D-012 Kein Markenevent zum Start
+
+**Datum:** 2026-09-11
+**Entscheidung:** Der geplante Kick-off findet ohne Markenpartner statt. Stattdessen ein
+Saisonauftakt-Abend im November mit inhaltlichem Vortrag durch einen respektierten Coach.
+**Begründung:** Die ersten dreißig Menschen prägen die Kultur. Ein Produktsampling als erstes
+gemeinsames Erlebnis erzeugt ein Publikum, keinen Stamm. Eine Marke, die zu diesem Zeitpunkt
+zusagt, tut es als Gefallen und ist damit für den späteren, wertvolleren Moment verbrannt.
+**Ausnahme:** Ein lokaler Radshop, der Raum stellt und genannt wird, ist Nachbarschaft und kein
+Sponsoring.
+**Wiedervorlage:** zweiter Winter, also ab Herbst 2027.
+
+---
+
+## D-013 Bauen in der Grundlagenphase
+
+**Datum:** 2026-09-11
+**Entscheidung:** Die App wird zwischen November 2026 und Februar 2027 gebaut. Ab Mai 2027 wird
+nicht mehr entwickelt, nur betrieben.
+**Begründung:** Die Periodisierung der Gründer ist der verlässlichste Kalender, den das Projekt
+hat. Im Winter sind die Abende planbar und die mentale Last niedrig. In der spezifischen Phase
+ab Mai liegen die Trainingsumfänge bei 15 bis 20 Stunden pro Woche, dann ist kein Bauen möglich.
+**Wiedervorlage:** keine.

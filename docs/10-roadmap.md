@@ -1,74 +1,136 @@
 # 10 Roadmap
 
-## Übersicht
+Datiert auf den realen Kalender und an die Periodisierung der beiden Gründer gekoppelt.
+Ausgangspunkt: September 2026. Zielrennen beider Gründer: Sommer 2027.
+
+## Das Prinzip
+
+Gebaut wird in der Grundlagenphase, betrieben wird in der spezifischen Phase. Wer im Mai 2027
+noch Code schreibt, hat die Periodisierung gegen sich statt für sich.
+
+## Phasenübersicht
 
 | Phase | Zeitraum | Ziel | Abbruchkriterium |
 |---|---|---|---|
-| Validierung | Woche 1 bis 3 | 15 Interviews, H1 und H2 geprüft | H1 widerlegt: Tempo ist nicht der Blocker, sondern echtes Desinteresse |
-| Rituale | Woche 1 bis 8 | 3 Anker, 40 bis 60 Personen, Wiederkehrrate über 40 Prozent | Wiederkehrrate unter 25 Prozent nach 8 Wochen |
-| Bau | Woche 4 bis 10 | PWA v1 live | Rituale-Phase gescheitert, dann gar nicht erst bauen |
-| Launch | Woche 10 bis 16 | 150 registrierte, 60 aktive in Wien | unter 30 Prozent fremdinitiierte Sessions nach 8 Wochen Betrieb |
-| Dichte | Monat 5 bis 12 | 300 registrierte, 120 aktive, erster Partnerdeal | keine Zahlungsbereitschaft auf Angebots- oder Markenseite |
-| Zweite Stadt | Jahr 2 | Playbook reproduziert ohne Gründerpräsenz | funktioniert nur mit dir vor Ort, dann Pfad "Verein" wählen |
+| **Anker draußen** | Sep bis Okt 2026 | 3 laufende Anker, 40 bis 60 Personen, Indoor-Slots gesichert | Verhältnis Zusage zu Erscheinen unter 50 Prozent nach 6 Wochen |
+| **Winter und Bau** | Nov 2026 bis Feb 2027 | Indoor-Programm als Kernangebot, PWA gebaut | Winterprogramm füllt sich nicht, dann nicht fertigbauen |
+| **Launch** | Mär bis Apr 2027 | App im Betrieb, alle Serien migriert, neue Gastgeber angeworben | unter 2 fremdgeführten Serien nach 8 Wochen |
+| **Saison und Betrieb** | Mai bis Jul 2027 | Kein Bauen. 5 fremdgeführte Serien. Herbstprogramm steht. | 5 Gastgeber nicht erreicht, dann Ausfallplan für August |
+| **Post-Race** | Aug bis Sep 2027 | Community überlebt euer Motivationsloch | Aktivität bricht um mehr als 60 Prozent ein |
+| **Jahr 2** | ab Okt 2027 | Erste Erlöse, Entscheidung über Ambitionsniveau, Test zweite Stadt | Stadt zwei funktioniert nur mit euch vor Ort, dann Pfad Verein wählen |
 
-Beachte die Überlappung von Woche 4 bis 8: Rituale laufen, während gebaut wird. Das ist
-Absicht. Die Bauentscheidung wird aber in Woche 4 nochmals überprüft, nicht blind
-durchgezogen.
+## Phase 1: Anker draußen (Sep bis Okt 2026)
 
-## Die nächsten 30 Tage, konkret
+Solange das Wetter hält. Kein Produkt, nur WhatsApp und Verlässlichkeit.
 
-### Woche 1
+### Woche 1, ab 11.09.2026
 
-- [ ] Liste mit 40 Namen aus dem eigenen Netzwerk plus Startlisten-Recherche (Ironman Austria,
-      70.3 St. Pölten, Vienna Triathlon, Wiener Postleitzahlen)
-- [ ] Interview-Leitfaden schreiben (Ziel: H1 und H2 prüfen, nicht die Idee verkaufen)
-- [ ] 5 Interviews führen
-- [ ] WhatsApp-Community anlegen, Strava-Club anlegen
-- [ ] Erste Samstagsausfahrt terminieren, Startpunkt und zwei Tempogruppen festlegen
+- [ ] Jeder von euch listet 20 Namen aus dem eigenen Netzwerk
+- [ ] Ergebnisverantwortung aufteilen (Tabelle in `07-go-to-market.md`), ein Name pro Zeile
+- [ ] Anteilsaufteilung und Ausstiegsfall schriftlich klären
+- [ ] WhatsApp-Community und Strava-Club anlegen
+- [ ] **Erste Samstagsausfahrt für 19.09.2026 terminieren**, Startpunkt fix, zwei Tempogruppen angekündigt
+- [ ] Startlisten Ironman Austria, 70.3 St. Pölten, Vienna Triathlon nach Wiener Postleitzahlen auswerten
 
-### Woche 2
+### Woche 2 bis 3
 
-- [ ] 5 weitere Interviews
 - [ ] Erste Samstagsausfahrt durchführen, egal wie viele kommen
-- [ ] Dienstags-Intervalleinheit terminieren
-- [ ] Aktuelle ÖTRV-Zahlen anfragen, Startlisten auswerten, Marktzahlen in 04 aktualisieren
+- [ ] Dienstagsintervalle ab 22.09.2026 starten
+- [ ] **Indoor-Studios ansprechen.** Randzeiten, feste Serie über die ganze Saison, nicht Einzeltermine
+- [ ] **Hallenbad-Bahnzeiten klären**
+- [ ] 10 Gespräche mit Teilnehmenden nach den Einheiten, Leitfaden in `11-interview-leitfaden.md`
+- [ ] Domainprüfung für die drei Namen der Shortlist
 
-### Woche 3
+### Woche 4 bis 6
 
-- [ ] 5 weitere Interviews, Auswertung
-- [ ] Entscheidung: H1 bestätigt oder widerlegt, Konzept anpassen
-- [ ] Schwimmeinheit organisieren (Bahn oder Hallenbad-Slot klären)
-- [ ] Domainprüfung für die drei Shortlist-Namen
-- [ ] Gespräch mit einem Radshop über Startpunkt-Partnerschaft
+- [ ] Schwimmeinheit starten
+- [ ] Ein Coach für die erste Special Session gewinnen, Durchreichmodell
+- [ ] Erstes Gespräch mit einem Radshop über Startpunkt und Raum
+- [ ] Erkennungszeichen bestellen: Aufkleber oder Kappe, nur durch fünfmaliges Erscheinen erhältlich
+- [ ] **Zwischenfazit: Verhältnis Zusage zu Erscheinen.** Unter 50 Prozent wird nichts gebaut
 
-### Woche 4
+### Woche 7 bis 8, Ende Oktober
 
-- [ ] Zwischenfazit: Wiederkehrrate der ersten drei Wochen
-- [ ] Entscheidung Go oder No-Go für den Bau
-- [ ] Bei Go: Repo aufsetzen, Supabase-Projekt, Schema aus 06 anlegen
-- [ ] Erstes Gespräch mit einem Coach über eine Curated Session
+- [ ] Saisonauftakt-Abend planen (Vortrag, kein Markenevent)
+- [ ] Winterprogramm terminieren und ankündigen
+- [ ] **Go oder No-Go für den Bau.** Bedingungen: Zusage-zu-Erscheinen über 50 Prozent,
+      mindestens 25 Personen aktiv, mindestens ein Indoor-Slot gesichert
+- [ ] Finaler Name entschieden
+
+## Phase 2: Winter und Bau (Nov 2026 bis Feb 2027)
+
+Eure ruhigste Trainingsphase, verlässliche Abende, niedrigste mentale Last. Das ist das
+Bauzeitfenster.
+
+**Betrieb parallel:**
+- Indoor-Cycling-Serie läuft wöchentlich
+- Hallenbad-Bahn läuft wöchentlich
+- Laufeinheit draußen, wetterunabhängig
+- Saisonauftakt-Abend im November
+- Erste Coach-Sessions
+
+**Bau, geschätzt 10 bis 15 Stunden pro Woche auf zwei Köpfe:**
+
+| Zeitraum | Lieferung |
+|---|---|
+| Nov | Schema, Auth, Onboarding, Tempogruppen |
+| Dez | Serien anlegen, Occurrences, Commit und Abmeldung |
+| Jan | Host-Ansicht, Übernahme einer Serie, Erinnerungen und Bestätigung |
+| Feb | Kuratierte Sessions mit Kapazität und Kosten, Verlässlichkeitsquote, Community-Regeln, geschlossene Beta |
+
+Umfang und Datenmodell in `05-product-mvp-spec.md` und `06-tech-architecture.md`. Der Umfang ist
+gegenüber dem ersten Entwurf etwa halbiert, weil das Ad-hoc-Board entfällt.
+
+## Phase 3: Launch (Mär bis Apr 2027)
+
+- [ ] Geschlossene Beta mit der bestehenden Gruppe, zwei Wochen
+- [ ] Alle Serien auf die App migrieren, WhatsApp nur noch für Kurzfristiges
+- [ ] Öffentlicher Launch in Wien
+- [ ] **Gastgeber anwerben.** Das ist ab hier die wichtigste Aufgabe, nicht Nutzerakquise
+- [ ] Outdoor-Saison startet, Serien entsprechend umstellen
+
+## Phase 4: Saison und Betrieb (Mai bis Jul 2027)
+
+**Ab hier wird nicht mehr gebaut.** Eure Trainingsumfänge liegen bei 15 bis 20 Stunden pro
+Woche. Was jetzt nicht fertig ist, wird es bis August nicht.
+
+- [ ] Fünf Serien werden von anderen geführt (Überlebensbedingung, siehe unten)
+- [ ] **Herbstprogramm im Mai planen, nicht im August**
+- [ ] Trainingswochenende oder Camp, hohe Bindungswirkung, trägt sich selbst
+- [ ] Rennwoche als gemeinsames Community-Erlebnis gestalten, auch für die, die nicht starten
+
+## Phase 5: Post-Race (Aug bis Sep 2027)
+
+Die gefährlichste Phase. Bei euch beiden fallen gleichzeitig Motivation, Umfang und Anwesenheit
+weg.
+
+- [ ] Die fünf fremdgeführten Serien laufen ohne euch weiter
+- [ ] Eine Veranstaltung, die keine Fitness braucht: Saisonauswertung, Planung 2028, Abend
+- [ ] Ehrliche Auswertung: wie viel Aktivität ist ohne euch geblieben
+- [ ] **Entscheidung Ambitionsniveau** anhand realer Daten, siehe `00-vision.md`
 
 ## Meilensteine mit Zahlen
 
-| Meilenstein | Kennzahl | Zieltermin |
+| Meilenstein | Kennzahl | Termin |
 |---|---|---|
-| M1 Problem validiert | 15 Interviews, H1 bestätigt | Woche 3 |
-| M2 Ritual trägt | 8 Wochen Anker, Wiederkehrrate über 40 Prozent | Woche 8 |
-| M3 App live | PWA v1 in Produktion, 40 migrierte Nutzer | Woche 10 |
-| M4 Loop geschlossen | über 50 Prozent der Sessions von anderen erstellt | Woche 18 |
-| M5 Erster Euro | Ein Partnerdeal oder eine Session mit Take Rate | Monat 9 |
-| M6 Dichte | 120 aktive Nutzer in Wien | Monat 12 |
-| M7 Reproduzierbar | Zweite Stadt mit lokalem Gastgeber, 8 Wochen stabil | Monat 18 bis 24 |
+| M1 Ritual trägt | Zusage zu Erscheinen über 50 Prozent über 6 Wochen | Ende Okt 2026 |
+| M2 Winter gesichert | 2 Indoor-Slots als Serie über die Saison gebucht | Ende Okt 2026 |
+| M3 App live | PWA in Produktion, alle Serien migriert | Ende Mär 2027 |
+| M4 Delegation beginnt | 2 Serien von anderen geführt | Ende Apr 2027 |
+| M5 Ausfallsicherheit | **5 Serien von anderen geführt** | Ende Mai 2027 |
+| M6 Post-Race überlebt | Aktivität im September über 60 Prozent des Juni-Niveaus | Sep 2027 |
+| M7 Erster Euro | Take Rate oder Partnerdeal | Winter 2027/28 |
+| M8 Reproduzierbar | Zweite Stadt, 8 Wochen stabil ohne euch vor Ort | 2028 |
+
+M5 ist der wichtigste Meilenstein der gesamten Roadmap. Alles andere lässt sich nachholen, diese
+Zahl nicht: sie muss vor dem Rennen stehen, weil sie danach nicht mehr herstellbar ist.
 
 ## Definition "aktiver Nutzer"
 
-Wichtig, damit die Zahlen nicht selbst betrogen werden:
+> Hat in den letzten 30 Tagen an mindestens einer Einheit teilgenommen oder eine geführt.
+> Registrierung, App-Öffnung oder Feed-Konsum zählen nicht.
 
-> Ein aktiver Nutzer hat in den letzten 30 Tagen an mindestens einer Session teilgenommen oder
-> eine erstellt. Registrierung, App-Öffnung oder Feed-Konsum zählen nicht.
+## Was diese Roadmap absichtlich nicht tut
 
-## Was dieses Dokument absichtlich nicht tut
-
-Es plant nicht über 18 Monate hinaus. Die Ambitionsfrage ist bewusst offen und wird bei M6 und
-M7 mit realen Daten beantwortet. Alles, was heute über Jahr 2 hinaus geschrieben würde, wäre
-Fiktion.
+Sie plant nicht über den September 2027 hinaus. Die Ambitionsfrage wird bei M6 mit realen Daten
+beantwortet. Alles, was heute über Jahr 2 hinaus geschrieben würde, wäre Fiktion.

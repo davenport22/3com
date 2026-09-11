@@ -1,0 +1,367 @@
+<title>Windschatten Wien</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&family=Chivo+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --grund:#F0F2F1; --flaeche:#FFFFFF; --ink:#0C1116; --muted:#64737D;
+  --line:#D9DEDE; --line-soft:#E7EAEA;
+  --signal:#A8681A; --signal-flat:#F4E6D2; --wasser:#2E7F8C;
+  --disp:'Chivo',system-ui,sans-serif;
+  --mono:'Chivo Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --grund:#0C1116; --flaeche:#141C22; --ink:#E9EEEF; --muted:#8797A1;
+    --line:#232F37; --line-soft:#1A242B;
+    --signal:#E5A044; --signal-flat:#2A2016; --wasser:#4E9AA8;
+  }
+}
+:root[data-theme="dark"]{
+  --grund:#0C1116; --flaeche:#141C22; --ink:#E9EEEF; --muted:#8797A1;
+  --line:#232F37; --line-soft:#1A242B;
+  --signal:#E5A044; --signal-flat:#2A2016; --wasser:#4E9AA8;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--grund); color:var(--ink);
+  font-family:var(--disp); font-weight:400; font-size:16.5px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px; margin:0 auto; padding-inline:22px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--signal); outline-offset:3px}
+.mono{font-family:var(--mono)}
+.lbl{
+  font-family:var(--mono); font-size:10.5px; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--muted);
+}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- draft banner ---------- */
+.draft{
+  background:var(--signal-flat); border-bottom:1px solid var(--line);
+  font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--signal); text-align:center; padding:7px 16px;
+}
+
+/* ---------- header ---------- */
+header{border-bottom:1px solid var(--line)}
+.bar{display:flex; align-items:center; justify-content:space-between; gap:16px; padding-block:20px}
+.mark{display:flex; align-items:baseline; gap:12px; min-width:0}
+.mark b{
+  font-weight:900; font-size:20px; letter-spacing:-.02em; text-transform:uppercase;
+}
+.mark span{font-family:var(--mono); font-size:10.5px; letter-spacing:.2em; color:var(--muted)}
+nav{display:flex; gap:22px; font-family:var(--mono); font-size:11.5px; letter-spacing:.1em; text-transform:uppercase}
+nav a{color:var(--muted); text-decoration:none}
+nav a:hover{color:var(--ink)}
+
+/* ---------- hero ---------- */
+.hero{padding-block:64px 56px; border-bottom:1px solid var(--line)}
+.claim{
+  font-weight:900; letter-spacing:-.035em; line-height:1.0;
+  font-size:clamp(38px,7.4vw,74px); margin:0 0 22px; text-wrap:balance; max-width:16ch;
+}
+.claim em{font-style:normal; color:var(--muted)}
+.sub{max-width:52ch; margin:0; font-size:17.5px; color:var(--muted); line-height:1.55}
+
+/* ---------- next session ---------- */
+.next{
+  margin-top:44px; background:var(--flaeche); border:1px solid var(--line);
+  border-left:3px solid var(--signal); display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);
+}
+.next__l{padding:26px 28px; border-right:1px solid var(--line)}
+.next__r{padding:26px 28px; display:flex; flex-direction:column; gap:18px}
+.when{
+  font-family:var(--mono); font-size:13px; font-weight:500; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--signal); margin:0 0 6px;
+}
+.where{font-weight:700; font-size:25px; letter-spacing:-.02em; margin:0 0 2px}
+.where small{display:block; font-weight:400; font-size:13.5px; color:var(--muted); letter-spacing:0; margin-top:4px}
+.dist{display:flex; align-items:baseline; gap:10px; margin-top:26px}
+.dist b{
+  font-weight:900; font-size:clamp(62px,12vw,104px); line-height:.82; letter-spacing:-.05em;
+  font-variant-numeric:tabular-nums;
+}
+.dist .unit{font-family:var(--mono); font-size:15px; color:var(--muted)}
+.alt{
+  margin:12px 0 0; font-family:var(--mono); font-size:13.5px; color:var(--muted);
+  display:flex; align-items:baseline; gap:7px;
+}
+.alt b{font-size:23px; font-weight:700; letter-spacing:-.02em; color:var(--ink); font-family:var(--disp)}
+.kv{display:flex; flex-direction:column; gap:5px}
+.kv dt{margin:0}
+.kv dd{margin:0; font-family:var(--mono); font-size:13.5px; line-height:1.5}
+.groups{display:flex; flex-direction:column; gap:7px; margin:0; padding:0; list-style:none}
+.groups li{
+  display:flex; justify-content:space-between; gap:12px; padding:8px 11px;
+  border:1px solid var(--line); font-family:var(--mono); font-size:12.5px;
+}
+.groups li span:last-child{color:var(--muted)}
+
+/* ---------- fork divider ---------- */
+.fork{display:block; width:100%; height:26px; margin-block:0}
+
+/* ---------- sections ---------- */
+section{padding-block:58px; border-bottom:1px solid var(--line)}
+h2{
+  font-weight:900; letter-spacing:-.03em; font-size:clamp(26px,4vw,38px);
+  line-height:1.05; margin:0 0 10px; text-wrap:balance;
+}
+.lead{max-width:58ch; color:var(--muted); margin:0 0 32px; font-size:16.5px}
+
+/* week table */
+.week{width:100%; border-collapse:collapse; font-size:14.5px}
+.week th{
+  font-family:var(--mono); font-size:10px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--muted); font-weight:400; text-align:left; padding:0 14px 10px 0;
+  border-bottom:1px solid var(--line); white-space:nowrap;
+}
+.week td{padding:15px 14px 15px 0; border-bottom:1px solid var(--line-soft); vertical-align:top}
+.week tr:last-child td{border-bottom:0}
+.week td:first-child{font-family:var(--mono); font-size:12.5px; color:var(--signal); white-space:nowrap; font-weight:500}
+.week td:nth-child(2){font-weight:700; letter-spacing:-.01em}
+.week td:nth-child(2) small{display:block; font-weight:400; color:var(--muted); font-size:13px; margin-top:3px}
+.week .n{font-family:var(--mono); font-variant-numeric:tabular-nums; white-space:nowrap}
+.tw{overflow-x:auto}
+
+/* how it works: two columns */
+.two{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0; border:1px solid var(--line)}
+.two > div{padding:24px 26px}
+.two > div:first-child{border-right:1px solid var(--line)}
+.two h3{font-size:19px; font-weight:700; letter-spacing:-.02em; margin:0 0 4px}
+.two p{margin:10px 0 0; font-size:14.5px; color:var(--muted); line-height:1.55}
+.two .ex{
+  font-family:var(--mono); font-size:13px; color:var(--ink); margin-top:14px;
+  padding:10px 12px; background:var(--grund); border:1px solid var(--line);
+}
+
+/* for whom */
+.fw{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:34px}
+.fw ul{margin:12px 0 0; padding:0; list-style:none; display:flex; flex-direction:column; gap:10px}
+.fw li{padding-left:20px; position:relative; font-size:15px; line-height:1.5}
+.fw li::before{
+  content:""; position:absolute; left:0; top:.62em; width:9px; height:1px; background:var(--signal);
+}
+.fw .no li::before{background:var(--muted)}
+.fw .no li{color:var(--muted)}
+
+/* winter */
+.wint{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+.wint > div{background:var(--flaeche); padding:22px 22px 24px}
+.wint h3{margin:0 0 6px; font-size:17px; font-weight:700; letter-spacing:-.015em}
+.wint p{margin:0; font-size:14px; color:var(--muted); line-height:1.55}
+
+/* join */
+.join{padding-block:62px 70px}
+.join h2{max-width:18ch}
+.cta{
+  display:inline-flex; align-items:center; gap:12px; margin-top:26px;
+  background:var(--signal); color:var(--grund); text-decoration:none;
+  font-family:var(--mono); font-size:13px; letter-spacing:.1em; text-transform:uppercase;
+  padding:15px 24px; font-weight:500;
+}
+.cta:hover{filter:brightness(1.08)}
+.fine{margin-top:18px; font-size:13.5px; color:var(--muted); max-width:50ch}
+
+footer{border-top:1px solid var(--line); padding-block:26px 44px}
+.proto{
+  font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--muted); display:flex; flex-wrap:wrap; gap:8px 20px;
+}
+
+@media (max-width:860px){
+  .next{grid-template-columns:1fr}
+  .next__l{border-right:0; border-bottom:1px solid var(--line)}
+  .two{grid-template-columns:1fr}
+  .two > div:first-child{border-right:0; border-bottom:1px solid var(--line)}
+  .fw{grid-template-columns:1fr; gap:26px}
+  .wint{grid-template-columns:1fr}
+  nav{display:none}
+  .hero{padding-block:44px 40px}
+  section{padding-block:44px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="draft">Entwurf · Arbeitsname Windschatten · noch nicht veröffentlicht</div>
+
+<header>
+  <div class="wrap bar">
+    <div class="mark">
+      <b>Windschatten</b>
+      <span>Wien</span>
+    </div>
+    <nav>
+      <a href="#woche">Die Woche</a>
+      <a href="#wie">Wie das läuft</a>
+      <a href="#fuerwen">Für wen</a>
+      <a href="#winter">Winter</a>
+      <a href="#mit">Mitmachen</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <h1 class="claim">Acht bis fünfzehn Stunden die Woche. <em>Warum allein?</em></h1>
+    <p class="sub">Feste Termine für Leute in Wien, die auf ein Datum hin trainieren. Triathlon, Hyrox, Trail, Marathon. Zwei Niveaugruppen, zwei Distanzen, kein Verein, kein Beitrag.</p>
+
+    <div class="next">
+      <div class="next__l">
+        <p class="when">Nächste Einheit · Sa 19.09.2026 · 08:00</p>
+        <p class="where">Reichsbrücke, Aufgang Nord
+          <small>Donauinsel Süd, Lobau, retour über Groß-Enzersdorf</small>
+        </p>
+        <div class="dist">
+          <b class="num">110</b><span class="unit">km</span>
+        </div>
+        <p class="alt">oder <b class="num">70</b> ab Abzweig Orth</p>
+      </div>
+      <div class="next__r">
+        <dl class="kv">
+          <dt class="lbl">Intensität</dt>
+          <dd>GA1 · durchgehend, keine Intervalle</dd>
+        </dl>
+        <dl class="kv">
+          <dt class="lbl">Gruppen</dt>
+          <dd>
+            <ul class="groups">
+              <li><span>Gruppe 1</span><span>30 – 32 km/h</span></li>
+              <li><span>Gruppe 2</span><span>33 – 35 km/h</span></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="kv">
+          <dt class="lbl">Gastgeber</dt>
+          <dd>David &amp; Co · Handy dabei, niemand bleibt liegen</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <svg class="fork" viewBox="0 0 1200 26" preserveAspectRatio="none" aria-hidden="true">
+    <line x1="0" y1="9" x2="700" y2="9" stroke="var(--line)" stroke-width="1.5"/>
+    <circle cx="700" cy="9" r="4" fill="var(--signal)"/>
+    <line x1="700" y1="9" x2="1200" y2="9" stroke="var(--line)" stroke-width="1.5"/>
+    <line x1="700" y1="9" x2="790" y2="24" stroke="var(--line)" stroke-width="1.5"/>
+    <line x1="790" y1="24" x2="1200" y2="24" stroke="var(--line)" stroke-width="1.5"/>
+  </svg>
+
+  <section id="woche" class="wrap">
+    <h2>Die Woche</h2>
+    <p class="lead">Drei Termine, das ganze Jahr an derselben Stelle. Der Inhalt wechselt mit der Saison, die Uhrzeit nie. Jede Einheit hat zwei Distanzen, damit sie in eine Aufbau- genauso wie in eine Entlastungswoche passt.</p>
+    <div class="tw">
+      <table class="week">
+        <thead>
+          <tr><th>Wann</th><th>Was</th><th>Intensität</th><th>Lang</th><th>Kurz</th><th>Treffpunkt</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SA 08:00</td>
+            <td>Lange Ausfahrt<small>Zwei Gruppen, gemeinsamer Start, Trennung am Abzweig</small></td>
+            <td class="n">GA1</td><td class="n">110 km</td><td class="n">70 km</td>
+            <td>Reichsbrücke</td>
+          </tr>
+          <tr>
+            <td>DI 18:30</td>
+            <td>Intervalle<small>Gleiche Serienstruktur, wer weniger macht, steigt früher aus</small></td>
+            <td class="n">Schwelle</td><td class="n">6 × 1000 m</td><td class="n">4 × 1000 m</td>
+            <td>Prater Hauptallee</td>
+          </tr>
+          <tr>
+            <td>DO 06:45</td>
+            <td>Schwimmen<small>Bahnen nach Niveau, gleicher Hauptsatz</small></td>
+            <td class="n">Technik + GA2</td><td class="n">3 000 m</td><td class="n">2 000 m</td>
+            <td>Hallenbad</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="wie" class="wrap">
+    <h2>Warum du kaum jemanden zum Mittrainieren findest</h2>
+    <p class="lead">Nicht weil es keine anderen gibt. Sondern weil zwei Dinge gleichzeitig passen müssen, und die werden ständig verwechselt.</p>
+    <div class="two">
+      <div>
+        <p class="lbl">Gehört zur Einheit</p>
+        <h3>Intensität</h3>
+        <p>Was am jeweiligen Tag im Plan steht. Ändert sich täglich. Wir schreiben sie immer dazu, damit du in zwei Sekunden weißt, ob es in deine Woche passt.</p>
+        <p class="ex">GA1 · 4 × 8 min Schwelle, 4 min Pause</p>
+      </div>
+      <div>
+        <p class="lbl">Gehört zu dir</p>
+        <h3>Niveau</h3>
+        <p>Wie schnell du bist. Ändert sich über Monate, nicht über Tage. Jede Einheit hat zwei Gruppen mit konkreten Korridoren, du suchst dir eine aus und wechselst jederzeit.</p>
+        <p class="ex">Gruppe 1: 30 – 32 km/h · Gruppe 2: 33 – 35 km/h</p>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:28px; margin-bottom:0">Und nein, gemeinsam heißt nicht locker. Im Windschatten bei 35 sparst du ein Drittel. Auf der Bahn hält eine Gruppe das Tempo genauer als du allein. Genau die harten Einheiten sind die, bei denen die Gruppe den Unterschied macht.</p>
+  </section>
+
+  <section id="fuerwen" class="wrap">
+    <h2>Für wen das ist</h2>
+    <p class="lead">Die Grenze verläuft nicht bei der Sportart, sondern beim Umfang. Wer acht Stunden und mehr pro Woche strukturiert auf ein Renndatum hin trainiert, hat dasselbe Problem, egal ob Ironman, UTMB oder Hyrox.</p>
+    <div class="fw">
+      <div>
+        <p class="lbl">Passt</p>
+        <ul>
+          <li>Du trainierst nach Plan, eigenem oder gekauftem</li>
+          <li>Du hast mindestens ein Renndatum im Kalender</li>
+          <li>Acht bis fünfzehn Stunden pro Woche sind normal für dich</li>
+          <li>Du wechselst über das Jahr zwischen Formaten</li>
+          <li>Du bist Einsteigerin und willst es ernsthaft angehen</li>
+        </ul>
+      </div>
+      <div>
+        <p class="lbl">Passt nicht</p>
+        <ul class="no">
+          <li>Zweimal die Woche laufen zum Ausgleich</li>
+          <li>Kein Wettkampf, kein Datum, kein Plan</li>
+          <li>Du suchst einen Verein mit Lizenz und Vorstand</li>
+          <li>Du suchst Leute zum Kennenlernen, nicht zum Trainieren</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="winter" class="wrap">
+    <h2>Und im Januar?</h2>
+    <p class="lead">Die einsamste Zeit im Jahr ist nicht der Sommer. Es ist die dritte Stunde auf der Rolle im Keller, wenn es um halb fünf dunkel wird. Deshalb läuft der Winter bei uns voller als der Sommer.</p>
+    <div class="wint">
+      <div>
+        <h3>Kraft &amp; Hyrox</h3>
+        <p>Wöchentlich, in der Halle. Die Wiederholungen, die man allein auslässt, macht man in der Gruppe.</p>
+      </div>
+      <div>
+        <h3>Indoor-Slot</h3>
+        <p>Feste Zeit im Studio statt Keller. Gleiche Einheit, nur nebeneinander statt allein.</p>
+      </div>
+      <div>
+        <h3>Bahn &amp; Technik</h3>
+        <p>Hallenbad mit Technikblock. Der Winter ist die einzige Zeit, in der man am Schwimmen wirklich etwas ändert.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap join" id="mit">
+    <h2>Komm am Samstag einfach mit.</h2>
+    <p class="lead" style="margin-bottom:0">Keine Anmeldung, kein Konto, kein Beitrag. Du stehst um acht an der Reichsbrücke oder du stehst nicht. Wenn du vorher wissen willst, wer noch kommt, schreib in die Gruppe.</p>
+    <a class="cta" href="#mit">Zur WhatsApp-Gruppe</a>
+    <p class="fine">Teilnahme auf eigene Verantwortung, eigenes Material, eigene Versicherung. Helmpflicht auf dem Rad, wer keinen aufhat, fährt nicht mit.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="proto">
+      <span>Windschatten Wien</span>
+      <span>Arbeitsname</span>
+      <span>Erste Ausfahrt 19.09.2026</span>
+      <span>Kein Verein</span>
+      <span>Kein Beitrag</span>
+    </p>
+  </div>
+</footer>

@@ -305,3 +305,21 @@ vervielfacht. Bei geringer Dichte verdünnt jede zusätzliche Serie alle anderen
 auf fünf Serien sind zehn Erscheinende pro Termin, auf fünfzehn Serien drei bis vier.
 **Wachstumslogik:** Zellteilung statt Neugründung.
 **Wiedervorlage:** bei 250 aktiven Mitgliedern in einer Stadt.
+
+---
+
+## D-023 Gestaltungsprinzip: Trainingsprotokoll statt Kampagne
+
+**Datum:** 2026-09-11
+**Entscheidung:** Das gesamte Erscheinungsbild folgt der Logik eines Trainingsprotokolls. Jede
+Aussage ist eine Feststellung mit Uhrzeit, Ort, Intensität und beiden Distanzen. Keine
+Adjektive, keine Superlative, keine Motivationssprache. Eine Akzentfarbe (Signal-Amber),
+dunkel als Standard, eine Schriftfamilie in drei Rollen.
+**Begründung:** Die Zielgruppe ist gegen Sportmarketing immunisiert. Glaubwürdigkeit entsteht
+über Zahlen und über Termine, die stattgefunden haben, nicht über Bilder und Versprechen.
+**Bildzeichen:** eine Linie, die an einem markierten Punkt zwei Wege nimmt. Das ist zugleich die
+Regel aus D-021 (gemeinsamer Start, benannter Abzweig) und das Windschatten-Bild. Kein
+Icon-Logo, nur Wortmarke plus Gabelung, damit ein Namenswechsel das System nicht zerstört.
+**Sprachregel:** Fachsprache ist erwünscht und wirkt als Türsteher. Das Wort "Community" wird in
+der Selbstbeschreibung nicht verwendet.
+**Wiedervorlage:** nach der Namensentscheidung.

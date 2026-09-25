@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>3com Konzeptbewertung</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&family=Chivo+Mono:wght@400;500&display=swap">
+<style>
+@page { size: A4; margin: 18mm 17mm 20mm 17mm; }
+:root{
+  --ink:#0C1116; --muted:#5A6870; --line:#D2D8D9; --line-soft:#E6EAEA;
+  --signal:#A8681A; --signal-soft:#F7EEE2;
+  --disp:'Chivo',system-ui,sans-serif; --mono:'Chivo Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:var(--disp); font-size:9.6pt; line-height:1.5; color:var(--ink);
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+h1,h2,h3{ break-after:avoid; page-break-after:avoid }
+table,figure,.box{ break-inside:avoid; page-break-inside:avoid }
+
+/* Kopf */
+.head{ border-bottom:1.5pt solid var(--ink); padding-bottom:10pt; margin-bottom:16pt }
+.kicker{ font-family:var(--mono); font-size:7.2pt; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin:0 0 7pt }
+h1{ font-size:22pt; font-weight:900; letter-spacing:-.03em; line-height:1.05; margin:0 0 6pt }
+.sub{ font-size:11pt; color:var(--muted); margin:0; max-width:46em }
+.meta{ display:flex; gap:26pt; margin-top:12pt; font-family:var(--mono); font-size:7.4pt; letter-spacing:.05em; color:var(--muted) }
+.meta b{ display:block; color:var(--ink); font-weight:500; margin-top:2pt }
+
+/* Abschnitte */
+h2{ font-size:13pt; font-weight:900; letter-spacing:-.02em; margin:20pt 0 6pt; padding-top:7pt; border-top:.75pt solid var(--line) }
+h2 .no{ font-family:var(--mono); font-size:8pt; font-weight:500; color:var(--signal); margin-right:7pt; letter-spacing:.05em }
+h3{ font-size:10pt; font-weight:700; margin:12pt 0 3pt }
+p{ margin:0 0 7pt; max-width:50em }
+ul{ margin:0 0 8pt; padding-left:13pt }
+li{ margin-bottom:3pt; max-width:48em }
+li::marker{ color:var(--muted) }
+strong{ font-weight:700 }
+
+/* Kernaussage */
+.claim{
+  background:var(--signal-soft); border-left:2.5pt solid var(--signal);
+  padding:10pt 13pt; margin:0 0 12pt;
+}
+.claim p{ margin:0; font-size:10.6pt; line-height:1.45 }
+.claim p + p{ margin-top:6pt }
+
+.box{ border:.75pt solid var(--line); padding:9pt 12pt; margin:0 0 10pt; background:#FAFBFB }
+.box .lbl{ font-family:var(--mono); font-size:7pt; letter-spacing:.16em; text-transform:uppercase; color:var(--signal); margin:0 0 4pt }
+.box p:last-child{ margin-bottom:0 }
+
+/* Tabellen */
+table{ width:100%; border-collapse:collapse; font-size:8.6pt; margin:0 0 10pt }
+th{
+  font-family:var(--mono); font-size:6.9pt; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--muted); font-weight:400; text-align:left; padding:0 8pt 5pt 0;
+  border-bottom:.75pt solid var(--ink); vertical-align:bottom;
+}
+td{ padding:5.5pt 8pt 5.5pt 0; border-bottom:.5pt solid var(--line-soft); vertical-align:top; line-height:1.4 }
+tr:last-child td{ border-bottom:0 }
+td.n, th.n{ font-family:var(--mono); font-variant-numeric:tabular-nums; white-space:nowrap }
+td.k{ font-weight:700; white-space:nowrap }
+.tag{ font-family:var(--mono); font-size:7pt; letter-spacing:.06em; text-transform:uppercase; white-space:nowrap }
+.tag--hi{ color:var(--signal); font-weight:500 }
+
+/* Raster-Grafik */
+figure{ margin:10pt 0 12pt }
+figcaption{ font-size:8.2pt; color:var(--muted); line-height:1.5; margin-top:7pt; max-width:48em }
+svg{ display:block; width:100%; height:auto; max-width:440pt }
+
+/* Empfehlung */
+.rec{ border:1.25pt solid var(--ink); padding:11pt 13pt; margin:0 0 11pt }
+.rec .lbl{ font-family:var(--mono); font-size:7pt; letter-spacing:.16em; text-transform:uppercase; color:var(--signal); margin:0 0 5pt }
+.rec h3{ margin:0 0 5pt; font-size:11.5pt; letter-spacing:-.01em }
+.rec p:last-child{ margin-bottom:0 }
+
+.two{ display:grid; grid-template-columns:1fr 1fr; gap:11pt; margin-bottom:10pt }
+
+footer.end{ margin-top:18pt; padding-top:8pt; border-top:.75pt solid var(--line);
+  font-family:var(--mono); font-size:7pt; letter-spacing:.06em; color:var(--muted); line-height:1.7 }
+.pb{ break-before:page; page-break-before:always }
+</style>
+</head>
+<body>
+
+<div class="head">
+  <p class="kicker">Vertraulich · Interner Entwurf · 25. September 2026</p>
+  <h1>Trainingscommunity Wien</h1>
+  <p class="sub">Konzeptbewertung, Marktrecherche und Empfehlung zum weiteren Vorgehen. Arbeitstitel 3com, Namensvorschlag Windschatten.</p>
+  <div class="meta">
+    <div>Stand<b>Konzept v0.8</b></div>
+    <div>Umfang<b>18 Dokumente, 9 Commits</b></div>
+    <div>Status Umsetzung<b>noch nicht gestartet</b></div>
+    <div>Entscheidungsbedarf<b>3 Punkte</b></div>
+  </div>
+</div>
+
+<div class="claim">
+  <p><strong>Das Konzept trägt. Die geplante Größe nicht.</strong></p>
+  <p>Die Idee ist inhaltlich belastbar und durch Recherche gestützt. Zwei Annahmen haben sich als falsch erwiesen: Es gibt sehr wohl vergleichbare Produkte, und die Konkurrenz scheitert nicht an Funktionen, sondern an Dichte. Der Wert liegt damit eindeutig in der Community in Wien, nicht in einer App. Entscheidend ist aber ein drittes, schlichtes Faktum: Die für den 19. September geplante erste Ausfahrt hat nicht stattgefunden, weil die Zeit nicht da war. <strong>Empfehlung: das Vorhaben von wöchentlich auf monatlich verkleinern und mit einem einzigen Termin starten, statt mit drei.</strong></p>
+</div>
+
+<h2><span class="no">01</span>Die Idee</h2>
+
+<p>Eine Trainingscommunity in Wien für Menschen, die ernsthaft auf ein Renndatum hin trainieren. Die Abgrenzung erfolgt nicht über die Sportart, sondern über die Trainingslast: <strong>acht Stunden pro Woche oder mehr, strukturiert, mit einem Wettkampf im Kalender.</strong> Triathlon ist der Kern, Hyrox, Trail und Ultra sowie Marathon mit strukturiertem Plan gehören dazu. Gelegenheitssport ausdrücklich nicht.</p>
+
+<p>Das Angebot sind feste, wiederkehrende Einheiten mit klar angesagter Intensität und zwei Niveaugruppen. Kein Verein, kein Mitgliedsbeitrag, keine Verpflichtung. Getragen wird das von zwei Gründern, die selbst ganzjährig trainieren und zwischen Formaten rotieren, weshalb das Angebot ohne Zusatzaufwand entsteht: Die Einheiten werden ohnehin gefahren.</p>
+
+<h2><span class="no">02</span>Das Problem, präzise gefasst</h2>
+
+<p>Der naheliegende Befund wäre "Triathlontraining ist einsam". Das ist richtig, aber zu unscharf, um daraus ein Angebot abzuleiten. Die tragfähige Formulierung lautet:</p>
+
+<div class="box">
+  <p class="lbl">Kernhypothese</p>
+  <p>Ambitionierte Ausdauersportler trainieren nicht allein, weil es keine anderen gäbe. Sie trainieren allein, weil sie kaum jemanden kennen, der <strong>gleichzeitig zwei Bedingungen erfüllt</strong>: ähnlich leistungsfähig, und an diesem Tag mit derselben Art von Einheit im Plan.</p>
+</div>
+
+<p>Die beiden Dimensionen werden regelmäßig verwechselt. <strong>Intensität</strong> gehört zur Einheit und kommt aus dem Trainingsplan, sie ändert sich täglich. <strong>Niveau</strong> gehört zum Menschen und ändert sich über Monate. Zwei gleich schnelle Athleten können nicht zusammen trainieren, wenn einer in der Aufbau- und einer in der Entlastungswoche steht. Zwei mit derselben Einheit im Plan können es nicht, wenn fünf km/h zwischen ihnen liegen.</p>
+
+<figure>
+  <svg viewBox="-62 -4 704 253" role="img" aria-label="Raster aus Leistungsniveau und Trainingsintensität">
+    <rect x="248" y="22" width="106" height="176" fill="#A8681A" opacity="0.08"/>
+    <rect x="36" y="58" width="530" height="36" fill="#A8681A" opacity="0.08"/>
+    <g stroke="#D2D8D9" stroke-width="0.8">
+      <line x1="36" y1="22" x2="36" y2="198"/><line x1="142" y1="22" x2="142" y2="198"/>
+      <line x1="248" y1="22" x2="248" y2="198"/><line x1="354" y1="22" x2="354" y2="198"/>
+      <line x1="460" y1="22" x2="460" y2="198"/><line x1="566" y1="22" x2="566" y2="198"/>
+      <line x1="36" y1="22" x2="566" y2="22"/><line x1="36" y1="58" x2="566" y2="58"/>
+      <line x1="36" y1="94" x2="566" y2="94"/><line x1="36" y1="130" x2="566" y2="130"/>
+      <line x1="36" y1="164" x2="566" y2="164"/><line x1="36" y1="198" x2="566" y2="198"/>
+    </g>
+    <rect x="248" y="58" width="106" height="36" fill="#A8681A" opacity="0.2"/>
+    <rect x="248" y="58" width="106" height="36" fill="none" stroke="#A8681A" stroke-width="1.6"/>
+    <g fill="#5A6870" opacity="0.45">
+      <circle cx="72" cy="40" r="2.6"/><circle cx="175" cy="38" r="2.6"/><circle cx="196" cy="45" r="2.6"/>
+      <circle cx="290" cy="40" r="2.6"/><circle cx="392" cy="35" r="2.6"/><circle cx="505" cy="42" r="2.6"/>
+      <circle cx="66" cy="74" r="2.6"/><circle cx="168" cy="70" r="2.6"/><circle cx="200" cy="82" r="2.6"/>
+      <circle cx="390" cy="76" r="2.6"/><circle cx="410" cy="84" r="2.6"/><circle cx="498" cy="72" r="2.6"/>
+      <circle cx="80" cy="112" r="2.6"/><circle cx="100" cy="104" r="2.6"/><circle cx="170" cy="118" r="2.6"/>
+      <circle cx="205" cy="108" r="2.6"/><circle cx="270" cy="114" r="2.6"/><circle cx="300" cy="106" r="2.6"/>
+      <circle cx="330" cy="118" r="2.6"/><circle cx="385" cy="110" r="2.6"/><circle cx="420" cy="104" r="2.6"/>
+      <circle cx="440" cy="116" r="2.6"/><circle cx="500" cy="110" r="2.6"/>
+      <circle cx="70" cy="146" r="2.6"/><circle cx="110" cy="152" r="2.6"/><circle cx="165" cy="142" r="2.6"/>
+      <circle cx="195" cy="155" r="2.6"/><circle cx="215" cy="146" r="2.6"/><circle cx="265" cy="150" r="2.6"/>
+      <circle cx="295" cy="142" r="2.6"/><circle cx="325" cy="154" r="2.6"/><circle cx="380" cy="146" r="2.6"/>
+      <circle cx="415" cy="152" r="2.6"/><circle cx="505" cy="148" r="2.6"/>
+      <circle cx="75" cy="182" r="2.6"/><circle cx="180" cy="178" r="2.6"/><circle cx="270" cy="186" r="2.6"/>
+      <circle cx="320" cy="176" r="2.6"/><circle cx="400" cy="184" r="2.6"/><circle cx="510" cy="180" r="2.6"/>
+    </g>
+    <circle cx="282" cy="72" r="3.6" fill="#A8681A"/><circle cx="318" cy="80" r="3.6" fill="#A8681A"/>
+    <line x1="301" y1="10" x2="301" y2="58" stroke="#A8681A" stroke-width="0.9" stroke-dasharray="3 3"/>
+    <g font-family="Chivo, sans-serif" font-size="8.5" fill="#5A6870">
+      <text x="30" y="43" text-anchor="end">Intervall</text>
+      <text x="30" y="79" text-anchor="end" fill="#0C1116" font-weight="700">Schwelle</text>
+      <text x="30" y="115" text-anchor="end">GA2</text>
+      <text x="30" y="150" text-anchor="end">GA1</text>
+      <text x="30" y="185" text-anchor="end">Recovery</text>
+    </g>
+    <g font-family="'Chivo Mono', monospace" font-size="7" fill="#5A6870" letter-spacing="0.8">
+      <text x="36" y="214">LANGSAMER</text>
+      <text x="566" y="214" text-anchor="end">SCHNELLER</text>
+      <text x="301" y="214" text-anchor="middle" fill="#A8681A">DEIN NIVEAU</text>
+      <text x="30" y="14" text-anchor="end">INTENSITÄT</text>
+      <text x="301" y="7" text-anchor="middle" fill="#A8681A" font-weight="500">mögliche Partner</text>
+    </g>
+  </svg>
+  <figcaption>Jeder Punkt ist ein Sportler. Nur dort, wo das eigene Niveau und die heute geplante Intensität zusammentreffen, entsteht ein möglicher Trainingspartner. Ein Bekanntenkreis von zehn Leuten liefert im Schnitt genau einen pro Einheit, und der kann an dem Abend auch noch anders. Deshalb löst keine WhatsApp-Gruppe das Problem: Sie koordiniert Zeit, nicht die Deckung von Niveau und Planphase.</figcaption>
+</figure>
+
+<p>Daraus folgt unmittelbar die Produktlogik: Jede Einheit nennt ihre Intensität in der Sprache der Zielgruppe (GA1, Schwelle, Intervall) und bietet zwei Niveaugruppen mit konkreten Korridoren. Und: Gemeinsam heißt nicht locker. Gerade bei hoher Intensität macht die Gruppe den größten messbaren Unterschied, durch Windschatten, geteilte Führungsarbeit und präziseres Tempo.</p>
+
+<h2><span class="no">03</span>Marktlage in Wien</h2>
+
+<table>
+  <thead><tr><th>Segment</th><th class="n">Schätzung Wien</th><th>Grundlage</th></tr></thead>
+  <tbody>
+    <tr><td class="k">Triathlon, Mittel- und Langdistanz</td><td class="n">1.500 bis 5.000</td><td>Ableitung aus ÖTRV, rund 15.000 Mitglieder in 305 Vereinen (2021)</td></tr>
+    <tr><td class="k">Hyrox, strukturiert trainierend</td><td class="n">1.200 bis 2.500</td><td>Hyrox Vienna 2025: rund 8.000 Starter aus 79 Ländern</td></tr>
+    <tr><td class="k">Trail und Ultra mit Renndatum</td><td class="n">800 bis 2.500</td><td>Schätzung</td></tr>
+    <tr><td class="k">Marathon mit strukturiertem Plan</td><td class="n">1.500 bis 4.000</td><td>Vienna City Marathon 2026: über 42.000 Finisher, Sonntagsbewerbe ausverkauft</td></tr>
+    <tr><td class="k">Bedienbarer Markt gesamt</td><td class="n">5.000 bis 12.000</td><td>nach Abzug von Mehrfachzählung</td></tr>
+  </tbody>
+</table>
+
+<p>Bei realistischen Durchdringungsraten von 10 bis 20 Prozent ergibt das 500 bis 2.400 aktive Personen in Wien. Die Abgrenzung über Trainingslast statt Sportart verdreifacht den Markt gegenüber einer reinen Triathlon-Definition und beseitigt nebenbei die Saisonalität, weil sich die Disziplinen über das Jahr abwechseln. Der Preis dafür ist Identität: Eine Kategorie hält keine Gruppe zusammen, das muss der Name leisten.</p>
+
+<h2><span class="no">04</span>Wettbewerb: der unangenehme Teil</h2>
+
+<p>Die ursprüngliche Annahme lautete, es gebe keinen direkten Wettbewerber. Die Recherche widerlegt das.</p>
+
+<table>
+  <thead><tr><th>Anbieter</th><th>Was vorhanden ist</th><th>Wo es aufhört</th><th class="n">Risiko</th></tr></thead>
+  <tbody>
+    <tr><td class="k">Strava Group Events</td><td>Club-Events mit Route, RSVP und <strong>bis zu vier Tempogruppen je Event</strong></td><td>keine Serien, kein Intensitätsfeld, nur Admins dürfen anlegen</td><td class="tag tag--hi">hoch</td></tr>
+    <tr><td class="k">Strava Events-Tab</td><td>seit Juli 2026, Races und Gruppenläufe, Runna integriert, über 1 Mio Clubs</td><td>noch kein Niveau-Matching im neuen Tab</td><td class="tag tag--hi">hoch</td></tr>
+    <tr><td class="k">OnlyTri</td><td>Filter nach Pace, Wochenvolumen und Level, Gruppen-Sessions inkl. Koppeleinheiten</td><td>keine verifizierbare Nutzerbasis</td><td class="tag tag--hi">hoch</td></tr>
+    <tr><td class="k">Pace (paceclubapp)</td><td>Serien, Tempogruppen, RSVP je Termin, Kapazität, Warteliste</td><td>für bestehende Clubs gedacht, noch auf Warteliste</td><td class="tag tag--hi">hoch</td></tr>
+    <tr><td class="k">CorrerJuntos</td><td>Matching mit Gewichtung: Pace 30 %, Zeitplan 25 %, Level 25 %</td><td>praktisch nur Spanien, 1.100 Nutzer nach Jahren</td><td class="tag">mittel</td></tr>
+    <tr><td class="k">BikeCrew</td><td>Radfahrer-Matching mit Pace-Profil</td><td>3.000 Nutzer in ganz Europa</td><td class="tag">mittel</td></tr>
+    <tr><td class="k">Hyrox-Partnerapps (6 Stück)</td><td>Matching nach Leistungslevel und Stationsstärken</td><td>RoxConnect: 16 Bewertungen nach über einem Jahr</td><td class="tag">mittel</td></tr>
+  </tbody>
+</table>
+
+<h3>Drei Schlussfolgerungen</h3>
+
+<p><strong>Der weiße Fleck ist schmal.</strong> Kein gefundenes Produkt führt GA1, Schwelle oder Intervall als strukturiertes Feld. Das ist ein echter Unterschied, aber ein einzelnes Datenfeld ist kein Wettbewerbsschutz.</p>
+
+<p><strong>Alle scheitern an Dichte, nicht an Funktionen.</strong> BikeCrew 3.000 Nutzer europaweit, CorrerJuntos 1.100 nach Jahren, SportJoe (DE) 30 Store-Bewertungen nach sieben Jahren. Any Distance, von Apple gefeaturet und designpreisgekrönt, ging 2025 Open Source, der Gründer nennt explizit fehlendes Product-Market-Fit. Die Produkte funktionieren technisch. Sie hatten nie genug Menschen am selben Ort zur selben Zeit.</p>
+
+<div class="box">
+  <p class="lbl">Der härteste Einzelbefund</p>
+  <p>Sechs Anbieter konkurrieren um Hyrox-Partnersuche. Die Sportart hatte in der Saison 2025/26 rund 1,5 Millionen Starter, und der Bedarf ist <strong>zwingend</strong>: Ohne Doubles-Partner kann man nicht starten. Trotzdem hat keiner dieser Anbieter Traktion. Unser Bedarf ist schwächer, denn man kann allein trainieren. Wenn ein Muss-Bedarf kein Produkt trägt, trägt ein Kann-Bedarf vermutlich auch keines.</p>
+</div>
+
+<p><strong>Die realistische Bedrohung ist Strava, nicht die Startups.</strong> Runna-Übernahme 2025, Events-Tab 2026, Tempogruppen bereits gebaut, Run-Club-Mitgliedschaften plus 59 Prozent im Jahr 2025. Fehlen nur noch wiederkehrende Club-Events, und das ist ein naheliegender nächster Schritt.</p>
+
+<h2><span class="no">05</span>Was funktionierende Communities gemeinsam haben</h2>
+
+<p>Untersucht wurden parkrun, November Project, Midnight Runners, Rapha Cycling Club, Black Roses NYC, Run Dem Crew, HYROX und GoodGym. Fünf Muster wiederholen sich und sind direkt übertragbar.</p>
+
+<table>
+  <thead><tr><th class="n">Nr</th><th>Muster</th><th>Beleg</th><th>Anwendung bei uns</th></tr></thead>
+  <tbody>
+    <tr><td class="n">1</td><td class="k">Ein invariantes Format</td><td>parkrun: jeden Samstag, 5 km, gratis, gestoppt, weltweit identisch. November Project: 6:28 Uhr, nicht 6:30</td><td>Ein Termin, nie verschoben, immer gleiche Struktur</td></tr>
+    <tr><td class="n">2</td><td class="k">Öffentliches Commitment statt Anmeldung</td><td>November Project "Verbal": laut ausgesprochene Zusage für das nächste Mal</td><td>Am Ende jeder Einheit sagt jeder, ob er nächstes Mal kommt</td></tr>
+    <tr><td class="n">3</td><td class="k">No-Drop im Format, nicht als Regel</td><td>Midnight Runners läuft nie mehr als 2 km am Stück, Übungspausen sind erzwungener Sammelpunkt. parkrun hat den Tail Walker als offizielle Rolle</td><td>Benannter Abzweig statt Trennung am Start, veröffentlichte Tempokorridore</td></tr>
+    <tr><td class="n">4</td><td class="k">Erkennungszeichen wird verdient</td><td>November Project besprüht Shirts beim Workout per Schablone. Black Roses vergibt das Singlet nur auf Einladung</td><td>Patch nach zehn Einheiten, kein Shop</td></tr>
+    <tr><td class="n">5</td><td class="k">Wachstum durch Andocken</td><td>November Project übernahm fertige lokale Gruppen. HYROX nutzt 15.000 Gyms als Vertriebskanal statt eigener Standorte</td><td>Gastauftritte bei bestehenden Wiener Gruppen statt Konkurrenz</td></tr>
+  </tbody>
+</table>
+
+<h3>Zwei dokumentierte Fehlermuster, die uns direkt betreffen</h3>
+
+<p><strong>Das Progressionsproblem.</strong> Die Haupttodesursache aktueller Run Clubs ist, dass Mitglieder besser werden und das Format nicht mitwächst. Wien hat bereits mindestens acht sichtbare Run Clubs, fast durchgehend im sozialen Segment mit Kaffee danach. Genau hier liegt unsere Lücke: strukturiertes, gestopptes, periodisiertes Training mit Vergleichbarkeit.</p>
+
+<p><strong>Regeln nachträglich ändern.</strong> Little Stoke parkrun wurde 2016 dauerhaft geschlossen, als die Gemeinde eine Gebühr verlangen wollte. Und als parkrun 2024 Streckenrekorde entfernte, gab es eine Petition. Bei leistungsorientierten Zielgruppen ist Messbarkeit kein Nebeneffekt, sondern der Grund zu kommen.</p>
+
+<div class="pb"></div>
+
+<h2><span class="no">06</span>Bewertung: was trägt, was nicht</h2>
+
+<div class="two">
+  <div class="box">
+    <p class="lbl">Trägt</p>
+    <ul>
+      <li>Die Problemdefinition. Zweidimensionale Peer-Knappheit ist präzise, prüfbar und erklärt, warum bestehende Lösungen versagen</li>
+      <li>Die Zielgruppenabgrenzung über Trainingslast. Größerer Markt, keine Saisonalität, klare Ausschlusskriterien</li>
+      <li>Die Gründerkonstellation. Eigener Bedarf, ganzjährige Glaubwürdigkeit, Grenzaufwand nahe null</li>
+      <li>Die Marktlücke in Wien. Acht Clubs im sozialen Segment, keiner im strukturierten</li>
+      <li>Das Community-Playbook. Erprobt, billig, sofort anwendbar</li>
+    </ul>
+  </div>
+  <div class="box">
+    <p class="lbl">Trägt nicht</p>
+    <ul>
+      <li>Die Produktthese. Die Mechanik existiert bereits mehrfach, teils bei Strava</li>
+      <li>Die Skalierung über Städte. Alle Vergleichsfälle sind genau daran gescheitert</li>
+      <li>Der Burggraben über Features. Ein Intensitätsfeld schützt nichts</li>
+      <li>Das Erlösmodell im ersten Jahr. Faktisch null Umsatz bei laufenden Kosten</li>
+      <li><strong>Die geplante Taktung.</strong> Drei wöchentliche Anker unterstellen acht Stunden pro Woche pro Gründer. Diese Zeit ist aktuell nicht vorhanden</li>
+    </ul>
+  </div>
+</div>
+
+<p>Der letzte Punkt ist der entscheidende und der einzige, der sich seit dem 11. September durch Tatsachen belegt hat. Die für den 19. September angesetzte erste Ausfahrt hat nicht stattgefunden, Grund war fehlende Zeit. Das ist kein Motivationsproblem und kein Zeichen gegen die Idee. Es ist eine Information über die realistische Kapazität, und sie kam früh genug, um den Plan darauf auszurichten statt ihn daran scheitern zu lassen.</p>
+
+<h2><span class="no">07</span>Empfehlung</h2>
+
+<div class="rec">
+  <p class="lbl">Kernempfehlung</p>
+  <h3>Von wöchentlich auf monatlich verkleinern. Ein Termin statt drei.</h3>
+  <p>Eine lange Ausfahrt pro Monat, immer am ersten Samstag, immer gleiche Uhrzeit, immer gleicher Startpunkt, immer zwei Distanzen. Das ist weiterhin eine Community, sie wächst nur langsamer. Und sie fällt nicht nach sechs Wochen in sich zusammen, weil niemand die Termine halten konnte.</p>
+</div>
+
+<p>Die Begründung ist nicht Bequemlichkeit, sondern die Evidenz aus Abschnitt 05. Formatinvarianz schlägt Frequenz. parkrun ist auf einem einzigen Termin pro Woche zu 2.000 Standorten gewachsen, nicht auf dreien. Wechselnde Treffpunkte und zu viele parallele Termine werden in Gründer-Leitfäden als Abbruchgrund Nummer eins genannt. Ein Termin, den man zwölf Monate lang hält, ist mehr wert als drei, die man drei Wochen lang hält.</p>
+
+<h3>Was sich dadurch ändert</h3>
+
+<table>
+  <thead><tr><th>Element</th><th>Bisher geplant</th><th>Empfehlung</th></tr></thead>
+  <tbody>
+    <tr><td class="k">Taktung</td><td>3 Anker pro Woche</td><td>1 Ausfahrt pro Monat, erster Samstag</td></tr>
+    <tr><td class="k">Zeitbedarf je Gründer</td><td>8 h pro Woche</td><td>rund 3 h pro Monat</td></tr>
+    <tr><td class="k">Winterprogramm</td><td>Slots verhandeln ab sofort</td><td>verschoben, bis der Monatstermin viermal gehalten wurde</td></tr>
+    <tr><td class="k">App</td><td>Bau November bis Februar</td><td>gestrichen, bis mindestens 30 Personen regelmäßig kommen</td></tr>
+    <tr><td class="k">Erste Zielgröße</td><td>40 bis 60 Personen in 8 Wochen</td><td>8 bis 12 Personen bei der dritten Ausfahrt</td></tr>
+    <tr><td class="k">Entscheidungspunkt</td><td>Go/No-Go nach 8 Wochen</td><td>nach vier Monatsterminen, also Februar 2027</td></tr>
+  </tbody>
+</table>
+
+<p>Die App entfällt in dieser Variante nicht dauerhaft, sie entfällt vorläufig. Bei einem Monatstermin mit zwölf Leuten organisiert man über WhatsApp, und zwar besser als über jede Eigenentwicklung. Angesichts des Wettbewerbsbefunds aus Abschnitt 04 ist das ohnehin die richtige Reihenfolge: erst Dichte, dann Werkzeug.</p>
+
+<h2><span class="no">08</span>Die nächsten 30 Tage</h2>
+
+<table>
+  <thead><tr><th class="n">Wann</th><th>Was</th><th class="n">Aufwand</th><th>Wer</th></tr></thead>
+  <tbody>
+    <tr><td class="n">diese Woche</td><td class="k">Termin fixieren und zehn Leute einzeln anschreiben</td><td class="n">20 Min</td><td>beide, je fünf</td></tr>
+    <tr><td class="n">diese Woche</td><td class="k">Festlegen, wer den Termin hält, wenn der andere ausfällt</td><td class="n">5 Min</td><td>beide</td></tr>
+    <tr><td class="n">Sa 03.10.</td><td class="k">Erste Ausfahrt. Findet statt, egal wie viele kommen</td><td class="n">4 Std</td><td>beide</td></tr>
+    <tr><td class="n">nach der Ausfahrt</td><td class="k">Den "Verbal" einführen: jeder sagt laut, ob er im November dabei ist</td><td class="n">2 Min</td><td>Gastgeber</td></tr>
+    <tr><td class="n">Oktober</td><td class="k">Namensentscheidung. Domain-, Marken- und Handle-Check</td><td class="n">2 Std</td><td>einer</td></tr>
+    <tr><td class="n">Sa 07.11.</td><td class="k">Zweite Ausfahrt, gleicher Startpunkt, gleiche Uhrzeit</td><td class="n">4 Std</td><td>beide</td></tr>
+  </tbody>
+</table>
+
+<p>Nicht in diesen 30 Tagen: keine Slot-Verhandlungen, keine Markenansprache, keine Website, kein Logo, keine Zeile Code. Alles davon ist vorbereitet und liegt im Repository, aber nichts davon ist jetzt der Engpass.</p>
+
+<h2><span class="no">09</span>Offene Entscheidungen</h2>
+
+<table>
+  <thead><tr><th class="n">Nr</th><th>Frage</th><th>Warum sie jetzt ansteht</th></tr></thead>
+  <tbody>
+    <tr><td class="n">E1</td><td class="k">Monatlich oder wöchentlich?</td><td>Bestimmt alles Weitere. Empfehlung: monatlich, mit der Option später zu erhöhen. Der umgekehrte Weg, von drei Terminen auf einen zu reduzieren, ist öffentlich und beschädigt die Glaubwürdigkeit</td></tr>
+    <tr><td class="n">E2</td><td class="k">Wer hält den Termin?</td><td>Ein Anker, der am Gründer mit den wenigsten freien Samstagen hängt, fällt aus. Es braucht einen Namen pro Termin, nicht geteilte Zuständigkeit</td></tr>
+    <tr><td class="n">E3</td><td class="k">Welcher Name?</td><td>Blockiert Website, Instagram und jede Weitererzählung. Shortlist: Windschatten, Kadenz, Rudel, Grundlage. Aufwand für die Prüfung: zwei Stunden</td></tr>
+  </tbody>
+</table>
+
+<p>Nicht mehr offen und bereits entschieden: Zielgruppenabgrenzung, Distanzenregel mit zwei Optionen, Trennung von Intensität und Niveau, kein Mitgliedsbeitrag, kein Markenevent zum Start, Gastgeber als primärer Nutzer des späteren Produkts. Die vollständige Begründung liegt im Entscheidungslog.</p>
+
+<h2><span class="no">10</span>Materialbestand</h2>
+
+<p>Alles Folgende ist fertig und liegt im Repository. Es ist bewusst eingefroren, bis die dritte Ausfahrt stattgefunden hat.</p>
+
+<table>
+  <thead><tr><th>Bereich</th><th>Umfang</th></tr></thead>
+  <tbody>
+    <tr><td class="k">Konzept</td><td>Vision, Problem und Personas, Lösungskonzept, Geschäftsmodell, Markt und Wettbewerb</td></tr>
+    <tr><td class="k">Produkt</td><td>MVP-Spezifikation, technische Architektur mit Datenmodell, Roadmap mit Meilensteinen</td></tr>
+    <tr><td class="k">Umsetzung</td><td>Go-to-Market, BD-Playbook mit Gesprächsgerüsten und Nachrichtenvorlagen, Interview-Leitfaden</td></tr>
+    <tr><td class="k">Marke</td><td>Designsystem mit Bildzeichen, Palette, Typografie und drei Vorlagen. Website-Entwurf, fertig</td></tr>
+    <tr><td class="k">Bewertung</td><td>Zwei Bewertungsrunden nach fünf Perspektiven, Wettbewerbsrecherche, Community-Playbook</td></tr>
+    <tr><td class="k">Nachvollziehbarkeit</td><td>28 dokumentierte Entscheidungen mit Begründung und Wiedervorlagedatum, 17 Risiken</td></tr>
+  </tbody>
+</table>
+
+<footer class="end">
+  Quellen der Marktzahlen: Österreichischer Triathlonverband, Vienna City Marathon 2026, Hyrox Vienna 2025, Strava Produktdokumentation, sportsbusiness.at.<br>
+  Alle nicht belegten Zahlen sind im Repository als Hypothese markiert, jeweils mit Prüfmethode.<br>
+  Erstellt am 25.09.2026 · Interner Arbeitsstand, nicht zur Weitergabe außerhalb des Gründerkreises.
+</footer>
+
+</body>
+</html>

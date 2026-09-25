@@ -397,3 +397,32 @@ Mittwoch im Monat. Jedes Stück ist dadurch ein Unikat und belegt Anwesenheit. B
 das Singlet nur auf Einladung. Ein käufliches Zeichen ist fälschbar und signalisiert nichts.
 **Nebennutzen:** null Lagerrisiko, und es löst das Wiedererkennungsproblem im Wettkampf.
 **Wiedervorlage:** keine.
+
+---
+
+## D-029 Aufwandsschätzung für den App-Bau korrigiert
+
+**Datum:** 2026-09-25
+**Entscheidung:** Das Bauzeitfenster November bis Februar entfällt als Planungsgröße. Der
+Umfang aus `05-product-mvp-spec.md` ist mit KI-gestützter Entwicklung eher ein Wochenende plus
+zwei bis drei Abende Nachschärfen.
+**Begründung:** Die alte Schätzung unterstellte Handarbeit. Damit war der Bau ein Engpass, der
+ein eigenes Quartal brauchte, und das hat den ganzen Plan verzerrt.
+**Folge:** Der Bau braucht kein Zeitfenster mehr. Er passiert, wenn die Community ihn braucht.
+Das ändert nichts an der Reihenfolge: erst Dichte, dann Werkzeug. Es senkt nur die Kosten,
+falsch zu liegen.
+**Wiedervorlage:** keine.
+
+---
+
+## D-030 Sichtbarer Prototyp für die Ansprache
+
+**Datum:** 2026-09-25
+**Entscheidung:** Website und klickbarer App-Prototyp werden in der Ansprache der ersten Leute
+eingesetzt, um das Vorhaben zu zeigen. Beides ist als Entwurf gekennzeichnet.
+**Begründung:** Eine Einladung zu einer Ausfahrt bleibt eine Einladung zu einer Ausfahrt. Wer
+aber nachfragt, wohin das gehen soll, bekommt eine Antwort, die er sich ansehen kann. Das hebt
+die Zusagequote und zieht Menschen an, die Lust auf den Aufbau haben, nicht nur auf die Runde.
+**Regel:** Der Prototyp wird nie als bestehendes Produkt dargestellt. Beide Seiten tragen
+sichtbar den Hinweis Entwurf.
+**Wiedervorlage:** keine.

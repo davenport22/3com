@@ -26,7 +26,7 @@ Dichte löst das, kein Werkzeug.
 | Ambitionsniveau | bewusst offen, entscheidet sich nach dem MVP |
 | Start | zentral organisierte Events: drei ganzjährige Anker, Coach-Sessions, saisonale Zusatzformate |
 | MVP-Form | eigene PWA, wiederkehrende Serien statt Ad-hoc-Board |
-| Bauzeitfenster | November 2026 bis Februar 2027, die Grundlagenphase der Gründer |
+| Bauaufwand App | rund ein Wochenende mit KI-gestützter Entwicklung, kein Engpass |
 | Erlöslogik | Angebotsseite zuerst, Marken erst im zweiten Winter, Athletinnen zahlen nicht |
 | Markt Wien | 5.000 bis 12.000 Personen (Schätzung, siehe 04) |
 | Name | 3com ist seit v0.3 sachlich falsch (drei Disziplinen). Shortlist: Windschatten, Kadenz, Rudel |
@@ -52,7 +52,8 @@ Dichte löst das, kein Werkzeug.
 | [docs/13-bd-playbook.md](docs/13-bd-playbook.md) | Slot-Verhandlung und die ersten 30 Menschen, mit Vorlagen |
 | [docs/14-startup-council-runde-2.md](docs/14-startup-council-runde-2.md) | Zweite, härtere Council-Runde: Distanzen, Serien-Obergrenze, Konzeptstopp |
 | [docs/15-design-und-ci.md](docs/15-design-und-ci.md) | Markenhaltung, Bildzeichen, Farbe, Typografie, Tonalität, Kanäle |
-| [web/index.html](web/index.html) | Website-Entwurf, eine Seite, ohne Abhängigkeiten |
+| [web/index.html](web/index.html) | Website-Entwurf inkl. App-Teaser, eine Seite, ohne Abhängigkeiten |
+| [web/app-prototyp.html](web/app-prototyp.html) | Klickbarer App-Prototyp, vier Bildschirme |
 | [docs/16-wettbewerb-realitaetscheck.md](docs/16-wettbewerb-realitaetscheck.md) | Wer es schon gibt, warum die scheitern, was das heißt |
 | [docs/17-community-playbook.md](docs/17-community-playbook.md) | Lehren aus parkrun, November Project, HYROX und anderen |
 | [web/designsystem.html](web/designsystem.html) | Designsystem visuell: Bildzeichen, Palette, Typo, Vorlagen |

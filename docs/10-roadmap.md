@@ -77,7 +77,14 @@ hat, trägt der andere den Hauptteil des Baus.
 - Saisonauftakt-Abend im November
 - Erste Coach-Sessions
 
-**Bau, geschätzt 10 bis 15 Stunden pro Woche auf zwei Köpfe:**
+**Korrektur der Aufwandsschätzung (25.09.2026):** Die folgende Vier-Monats-Planung stammt aus
+der Annahme, dass eine solche App von Hand gebaut wird. Mit KI-gestützter Entwicklung ist der
+beschriebene Umfang eher ein Wochenende plus zwei bis drei Abende Nachschärfen. Der Bau ist
+damit **nicht mehr der Engpass und braucht kein eigenes Zeitfenster.** Er passiert, wenn die
+Community ihn braucht, nicht nach Kalender. Die Monatszuordnung unten bleibt als
+Reihenfolge der Bausteine gültig, nicht als Zeitplan.
+
+**Reihenfolge der Bausteine:**
 
 | Zeitraum | Lieferung |
 |---|---|

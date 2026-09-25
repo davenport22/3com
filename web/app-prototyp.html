@@ -1,0 +1,338 @@
+<title>Windschatten App-Prototyp</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&family=Chivo+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --page:#F0F2F1; --page-ink:#0C1116; --page-mut:#64737D; --page-line:#D9DEDE;
+  --app-bg:#0C1116; --app-surf:#151E24; --app-surf2:#1B262D; --app-ink:#E9EEEF;
+  --app-mut:#8797A1; --app-line:#25333B; --sig:#E5A044; --sig-dim:#2A2016;
+  --swim:#4E9AA8; --bike:#D2915C; --run:#96B36A; --str:#A88BC0;
+  --d:'Chivo',system-ui,sans-serif; --m:'Chivo Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --page:#080C0F; --page-ink:#E9EEEF; --page-mut:#8797A1; --page-line:#1E2830 }
+}
+:root[data-theme="dark"]{ --page:#080C0F; --page-ink:#E9EEEF; --page-mut:#8797A1; --page-line:#1E2830 }
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--page-ink);font-family:var(--d);font-size:16px;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.lbl{font-family:var(--m);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--page-mut)}
+.num{font-variant-numeric:tabular-nums}
+
+.draft{background:var(--sig-dim);color:var(--sig);font-family:var(--m);font-size:11px;
+  letter-spacing:.1em;text-transform:uppercase;text-align:center;padding:7px 16px;border-bottom:1px solid var(--page-line)}
+
+header{padding-block:46px 30px;border-bottom:1px solid var(--page-line)}
+h1{font-weight:900;letter-spacing:-.035em;font-size:clamp(30px,5.4vw,50px);line-height:1;margin:12px 0 0}
+header p{max-width:54ch;color:var(--page-mut);margin:16px 0 0;font-size:16.5px}
+
+.stage{display:grid;grid-template-columns:330px minmax(0,1fr);gap:48px;padding-block:44px 64px;align-items:start}
+
+/* ---------- phone ---------- */
+.phone{position:sticky;top:28px;width:330px;height:668px;background:var(--app-bg);
+  border:9px solid #1A242B;border-radius:38px;overflow:hidden;display:flex;flex-direction:column;
+  box-shadow:0 18px 50px rgba(0,0,0,.28)}
+.notch{height:26px;flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;
+  padding:0 18px;font-family:var(--m);font-size:9.5px;color:var(--app-mut);letter-spacing:.06em}
+.screen{flex:1;overflow-y:auto;color:var(--app-ink);padding:0 16px 8px;scrollbar-width:thin}
+.screen::-webkit-scrollbar{width:0}
+.tabs{flex:0 0 auto;display:flex;border-top:1px solid var(--app-line);background:var(--app-surf)}
+.tabs button{flex:1;background:none;border:0;padding:11px 4px 14px;cursor:pointer;
+  font-family:var(--m);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--app-mut)}
+.tabs button[aria-selected="true"]{color:var(--sig)}
+.tabs button span{display:block;font-size:15px;margin-bottom:3px;line-height:1}
+
+/* app bits */
+.apphead{padding:14px 0 12px;position:sticky;top:0;background:var(--app-bg);z-index:2}
+.apphead .t{font-weight:900;font-size:21px;letter-spacing:-.02em;margin:0}
+.apphead .s{font-family:var(--m);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--app-mut);margin:0 0 3px}
+.back{background:none;border:0;padding:0;color:var(--sig);font-family:var(--m);font-size:10.5px;
+  letter-spacing:.1em;text-transform:uppercase;cursor:pointer;margin-bottom:8px}
+
+.card{background:var(--app-surf);border:1px solid var(--app-line);padding:13px 14px;margin-bottom:9px;
+  cursor:pointer;text-align:left;width:100%;font:inherit;color:inherit;display:block}
+.card:hover{border-color:var(--sig)}
+.card .when{font-family:var(--m);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sig);margin-bottom:5px}
+.card .tt{font-weight:700;font-size:15.5px;letter-spacing:-.01em;margin-bottom:3px}
+.card .meta{font-family:var(--m);font-size:10.5px;color:var(--app-mut);line-height:1.6}
+.row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+
+.disc{width:5px;align-self:stretch;flex:0 0 5px}
+.cardwrap{display:flex;gap:0;margin-bottom:9px}
+.cardwrap .card{margin:0;border-left:0}
+
+.pill{font-family:var(--m);font-size:9px;letter-spacing:.08em;text-transform:uppercase;
+  padding:3px 7px;border:1px solid var(--app-line);color:var(--app-mut);white-space:nowrap}
+.pill--yes{border-color:var(--sig);color:var(--sig)}
+.pill--fit{border-color:var(--run);color:var(--run)}
+
+.big{font-weight:900;font-size:50px;line-height:.85;letter-spacing:-.045em}
+.alt{font-family:var(--m);font-size:11px;color:var(--app-mut);margin-top:7px}
+.kv{border-top:1px solid var(--app-line);padding:10px 0}
+.kv .k{font-family:var(--m);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--app-mut);margin-bottom:4px}
+.kv .v{font-size:14px;line-height:1.5}
+.kv .v .mono{font-family:var(--m);font-size:12.5px}
+
+.grp{border:1px solid var(--app-line);padding:9px 11px;margin-bottom:7px;cursor:pointer}
+.grp[data-sel="1"]{border-color:var(--sig);background:var(--sig-dim)}
+.grp .n{font-weight:700;font-size:13.5px}
+.grp .r{font-family:var(--m);font-size:11px;color:var(--app-mut)}
+.who{display:flex;gap:4px;margin-top:7px;flex-wrap:wrap}
+.av{width:22px;height:22px;border-radius:50%;background:var(--app-surf2);color:var(--app-mut);
+  font-family:var(--m);font-size:8.5px;display:grid;place-items:center;border:1px solid var(--app-line)}
+.av--me{background:var(--sig);color:#0C1116;border-color:var(--sig);font-weight:500}
+
+.cta{width:100%;border:0;padding:14px;margin:12px 0 6px;cursor:pointer;
+  font-family:var(--m);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;
+  background:var(--sig);color:#0C1116;font-weight:500}
+.cta[data-on="1"]{background:transparent;color:var(--sig);border:1px solid var(--sig)}
+.hint{font-family:var(--m);font-size:10px;color:var(--app-mut);line-height:1.6;margin:0 0 14px}
+
+.bar{height:5px;background:var(--app-surf2);margin-top:6px;position:relative;overflow:hidden}
+.bar i{position:absolute;inset:0 auto 0 0;background:var(--sig);display:block}
+
+/* ---------- explanation column ---------- */
+.notes h2{font-weight:900;letter-spacing:-.025em;font-size:clamp(22px,3vw,29px);line-height:1.1;margin:0 0 8px}
+.notes > p{color:var(--page-mut);max-width:56ch;margin:0 0 26px}
+.step{border-top:1px solid var(--page-line);padding:18px 0 4px;display:grid;grid-template-columns:34px 1fr;gap:14px}
+.step .no{font-family:var(--m);font-size:11px;color:var(--sig);letter-spacing:.06em;padding-top:3px}
+.step h3{margin:0 0 4px;font-size:17px;font-weight:700;letter-spacing:-.015em}
+.step p{margin:0 0 8px;font-size:14.5px;color:var(--page-mut);line-height:1.55;max-width:52ch}
+.step button{background:none;border:1px solid var(--page-line);padding:6px 11px;cursor:pointer;
+  font-family:var(--m);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--page-ink)}
+.step button:hover{border-color:var(--sig);color:var(--sig)}
+.step.is-on{}
+.step.is-on .no{font-weight:500}
+.step.is-on h3{color:var(--sig)}
+
+.foot{border-top:1px solid var(--page-line);padding-block:24px 48px;font-family:var(--m);
+  font-size:11px;letter-spacing:.08em;color:var(--page-mut);line-height:1.8}
+
+@media (max-width:900px){
+  .stage{grid-template-columns:1fr;gap:34px;justify-items:center}
+  .phone{position:static}
+  .notes{width:100%}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="draft">Klickbarer Prototyp · Arbeitsname Windschatten · keine echten Daten</div>
+
+<div class="wrap">
+  <header>
+    <p class="lbl">App-Skizze · September 2026</p>
+    <h1>Was wir bauen</h1>
+    <p>Kein Marktplatz, kein Feed, kein zweites Strava. Ein Werkzeug für wiederkehrende Einheiten: Du siehst, was diese Woche läuft, ob es zu deinem Plan und deinem Tempo passt, und sagst in zwei Taps zu. Tippe dich durch, alles rechts erklärt mit.</p>
+  </header>
+
+  <div class="stage">
+
+    <div class="phone">
+      <div class="notch"><span>8:12</span><span>Windschatten</span></div>
+      <div class="screen" id="screen"></div>
+      <div class="tabs" id="tabs">
+        <button data-go="week" aria-selected="true"><span>▤</span>Woche</button>
+        <button data-go="host"><span>◎</span>Gastgeber</button>
+        <button data-go="me"><span>◍</span>Profil</button>
+      </div>
+    </div>
+
+    <div class="notes">
+      <h2>Vier Bildschirme, mehr braucht es nicht</h2>
+      <p>Der ganze Rest aus der Spezifikation hängt daran. Was hier nicht drin ist, ist bewusst nicht drin.</p>
+
+      <div class="step" data-step="week">
+        <div class="no">01</div>
+        <div>
+          <h3>Diese Woche</h3>
+          <p>Der Startbildschirm beantwortet eine Frage: Was mache ich diese Woche und mit wem. Kein Board mit allem, was es gibt, sondern die nächsten Termine mit deinem Zusagestatus. Jede Zeile nennt Intensität und beide Distanzen, damit du in zwei Sekunden gegen deinen eigenen Plan prüfst.</p>
+          <button data-go="week">Zeigen</button>
+        </div>
+      </div>
+
+      <div class="step" data-step="detail">
+        <div class="no">02</div>
+        <div>
+          <h3>Die Einheit</h3>
+          <p>Die Distanz ist das größte Element, nicht ein Wort im Fließtext. Darunter die Struktur im Klartext, damit sie gegen den Trainingsplan prüfbar ist. Zwei Niveaugruppen mit konkreten Korridoren, eine davon als deine markiert. Zusagen ist ein Tap, und es ist eine Zusage für dieses Datum, nicht für eine Serie.</p>
+          <button data-go="detail">Zeigen</button>
+        </div>
+      </div>
+
+      <div class="step" data-step="host">
+        <div class="no">03</div>
+        <div>
+          <h3>Gastgeber</h3>
+          <p>Der wichtigste Bildschirm im ganzen Produkt, und der, den fast niemand baut. Wer kommt, in welcher Gruppe, und wie verlässlich diese Zusagen erfahrungsgemäß sind. Dazu ein Knopf, um die Einheit an jemand anderen zu übergeben. Ob das hier leicht fällt, entscheidet, ob die Community ohne uns existiert.</p>
+          <button data-go="host">Zeigen</button>
+        </div>
+      </div>
+
+      <div class="step" data-step="me">
+        <div class="no">04</div>
+        <div>
+          <h3>Profil</h3>
+          <p>Dein Niveau je Disziplin als Korridor, nicht als Bestzeit. Es ändert sich über Monate, nicht über Tage, und wird einmal gesetzt. Dazu dein Renndatum und deine Verlässlichkeitsquote, also wie oft du nach einer Zusage auch da warst. Sichtbar, aber ohne Wertung.</p>
+          <button data-go="me">Zeigen</button>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="no">05</div>
+        <div>
+          <h3>Was bewusst fehlt</h3>
+          <p>Kein Ad-hoc-Board, solange die Gruppe klein ist: Bei wenigen Leuten sind fast alle Kombinationen aus Zeit, Ort, Disziplin und Tempo leer. Kein Aktivitäten-Feed, den macht Strava besser. Keine Trainingspläne, die kommen vom Coach. Keine Direktnachrichten, nur ein Gruppenchat pro Einheit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    Prototyp zur Veranschaulichung · Beispieldaten, keine echten Personen · Windschatten ist ein Arbeitsname
+  </div>
+</div>
+
+<script>
+(function(){
+  var D = {
+    week: [
+      {id:'sa', disc:'bike', col:'var(--bike)', when:'Sa 03.10. · 08:00', t:'Lange Ausfahrt',
+       meta:'GA1 · 110 oder 70 km<br>Reichsbrücke Aufgang Nord', state:'yes'},
+      {id:'di', disc:'run', col:'var(--run)', when:'Di 06.10. · 18:30', t:'Intervalle',
+       meta:'Schwelle · 6×1000 oder 4×1000<br>Prater Hauptallee', state:'fit'},
+      {id:'do', disc:'swim', col:'var(--swim)', when:'Do 08.10. · 06:45', t:'Bahn & Technik',
+       meta:'GA2 · 3000 oder 2000 m<br>Hallenbad', state:'open'},
+      {id:'so', disc:'strength', col:'var(--str)', when:'So 11.10. · 09:00', t:'Kraft & Hyrox',
+       meta:'Zirkel · 60 min<br>Halle Wien 2 · 4 Plätze frei', state:'open'}
+    ]
+  };
+  var joined = {sa:true, di:false, do:false, so:false};
+  var group = {sa:2, di:2, do:1, so:1};
+  var scr = document.getElementById('screen');
+  var tabs = document.getElementById('tabs');
+  var cur = 'week';
+
+  function esc(s){ return String(s); }
+
+  function stateP(st, id){
+    if(joined[id]) return '<span class="pill pill--yes">zugesagt</span>';
+    if(st==='fit') return '<span class="pill pill--fit">deine Gruppe</span>';
+    return '<span class="pill">offen</span>';
+  }
+
+  function week(){
+    var h = '<div class="apphead"><p class="s">Wien · KW 40</p><p class="t">Diese Woche</p></div>';
+    D.week.forEach(function(s){
+      h += '<div class="cardwrap">'+
+           '<i class="disc" style="background:'+s.col+'"></i>'+
+           '<button class="card" data-open="'+s.id+'">'+
+             '<div class="row"><div class="when">'+s.when+'</div>'+stateP(s.state,s.id)+'</div>'+
+             '<div class="tt">'+s.t+'</div>'+
+             '<div class="meta">'+s.meta+'</div>'+
+           '</button></div>';
+    });
+    h += '<p class="hint" style="margin-top:12px">Vier Termine. Mehr gibt es nicht, und das ist Absicht: Wenige feste Einheiten füllen sich, viele verteilen dieselben Leute auf leere Termine.</p>';
+    return h;
+  }
+
+  function detail(id){
+    id = id || 'sa';
+    var s = D.week.filter(function(x){return x.id===id})[0];
+    var isRide = id==='sa';
+    var g1 = isRide ? ['Gruppe 1','30 – 32 km/h'] : ['Gruppe 1','4:10 – 4:30 /km'];
+    var g2 = isRide ? ['Gruppe 2','33 – 35 km/h'] : ['Gruppe 2','3:50 – 4:05 /km'];
+    var big = isRide ? '110' : '6×1000';
+    var unit = isRide ? 'km' : 'm';
+    var alt = isRide ? 'oder 70 km ab Abzweig Orth' : 'oder 4×1000, früher aussteigen';
+    var struct = isRide ? '2 Std GA1 durchgehend, dann Lobau-Runde. Keine Intervalle.'
+                        : '6 × 1000 m an der Schwelle, 400 m Trabpause. Ein-/Auslaufen je 15 min.';
+    var h = '<div class="apphead"><button class="back" data-go="week">← Diese Woche</button>'+
+            '<p class="s">'+s.when+'</p><p class="t">'+s.t+'</p></div>';
+    h += '<div style="display:flex;align-items:baseline;gap:8px;margin:6px 0 0">'+
+         '<span class="big num">'+big+'</span><span style="font-family:var(--m);font-size:13px;color:var(--app-mut)">'+unit+'</span></div>'+
+         '<p class="alt">'+alt+'</p>';
+    h += '<div class="kv"><div class="k">Intensität</div><div class="v"><span class="mono">'+struct+'</span></div></div>';
+    h += '<div class="kv"><div class="k">Treffpunkt</div><div class="v">'+s.meta.split('<br>')[1]+'</div></div>';
+    h += '<div class="kv"><div class="k">Deine Gruppe wählen</div>';
+    [[1,g1],[2,g2]].forEach(function(p){
+      var sel = group[id]===p[0] ? '1':'0';
+      h += '<div class="grp" data-grp="'+p[0]+'" data-id="'+id+'" data-sel="'+sel+'">'+
+           '<div class="row"><span class="n">'+p[1][0]+'</span><span class="r">'+p[1][1]+'</span></div>'+
+           '<div class="who">'+
+             (p[0]===1 ? '<span class="av">MK</span><span class="av">TS</span><span class="av">JB</span>'
+                       : '<span class="av">AL</span><span class="av">PH</span>')+
+             (group[id]===p[0] && joined[id] ? '<span class="av av--me">DU</span>' : '')+
+           '</div></div>';
+    });
+    h += '</div>';
+    h += '<button class="cta" data-join="'+id+'" data-on="'+(joined[id]?'1':'0')+'">'+
+         (joined[id] ? 'Zugesagt · abmelden' : 'Ich bin dabei')+'</button>';
+    h += '<p class="hint">Du sagst für dieses Datum zu, nicht für die Serie. 12 Stunden vorher fragen wir einmal nach, ob es noch passt.</p>';
+    return h;
+  }
+
+  function host(){
+    var h = '<div class="apphead"><p class="s">Gastgeber · Sa 03.10.</p><p class="t">Lange Ausfahrt</p></div>';
+    h += '<div class="card" style="cursor:default">'+
+         '<div class="row"><span class="meta">Zugesagt</span><span class="tt num" style="font-size:22px">9</span></div>'+
+         '<div class="bar"><i style="width:78%"></i></div>'+
+         '<div class="meta" style="margin-top:7px">Erfahrungswert: rund 7 erscheinen</div></div>';
+    h += '<div class="kv"><div class="k">Gruppe 1 · 30 – 32 km/h</div><div class="v">'+
+         '<div class="who"><span class="av">MK</span><span class="av">TS</span><span class="av">JB</span><span class="av">RN</span><span class="av">EL</span></div></div></div>';
+    h += '<div class="kv"><div class="k">Gruppe 2 · 33 – 35 km/h</div><div class="v">'+
+         '<div class="who"><span class="av">AL</span><span class="av">PH</span><span class="av">MW</span><span class="av av--me">DU</span></div></div></div>';
+    h += '<div class="kv"><div class="k">Neu dabei</div><div class="v">Elena L. kommt zum ersten Mal. Kurz begrüßen, Gruppe zeigen, Route erklären.</div></div>';
+    h += '<button class="cta" style="background:transparent;color:var(--sig);border:1px solid var(--sig)">Nachricht an alle Zugesagten</button>';
+    h += '<button class="cta" style="background:var(--app-surf);color:var(--app-ink);border:1px solid var(--app-line)">Diese Einheit übergeben</button>';
+    h += '<p class="hint">Übergeben ist der wichtigste Knopf. Eine Community, die nur läuft, wenn die Gründer da sind, ist keine Community, sondern ein Terminkalender.</p>';
+    return h;
+  }
+
+  function me(){
+    var h = '<div class="apphead"><p class="s">Profil</p><p class="t">David S.</p></div>';
+    h += '<div class="kv" style="border-top:0"><div class="k">Nächstes Rennen</div>'+
+         '<div class="v">Langdistanz · Juli 2027 <span class="mono" style="color:var(--app-mut)">· noch 41 Wochen</span></div></div>';
+    h += '<div class="kv"><div class="k">Dein Niveau</div><div class="v">'+
+         '<div class="row" style="padding:5px 0"><span>Rad, flach</span><span class="mono">33 – 35 km/h</span></div>'+
+         '<div class="row" style="padding:5px 0"><span>Lauf, locker</span><span class="mono">4:45 – 5:05 /km</span></div>'+
+         '<div class="row" style="padding:5px 0"><span>Schwimmen</span><span class="mono">1:38 – 1:50 /100m</span></div>'+
+         '<div class="row" style="padding:5px 0"><span>Kraft</span><span class="mono">Stufe 2 von 3</span></div>'+
+         '</div></div>';
+    h += '<p class="hint">Ein Korridor, keine Bestzeit. Wird einmal gesetzt und ändert sich über Monate. Optional aus Strava vorgeschlagen.</p>';
+    h += '<div class="kv"><div class="k">Verlässlichkeit</div><div class="v">'+
+         '<span class="mono" style="font-size:15px">11 von 12</span> Zusagen eingehalten'+
+         '<div class="bar"><i style="width:92%"></i></div></div></div>';
+    h += '<p class="hint">Sichtbar, aber ohne Wertung. No-Shows sind der schnellste Weg, eine wiederkehrende Einheit zu töten, und Sichtbarkeit ist das billigste Gegenmittel.</p>';
+    return h;
+  }
+
+  function render(view, arg){
+    cur = view;
+    if(view==='week') scr.innerHTML = week();
+    else if(view==='detail') scr.innerHTML = detail(arg);
+    else if(view==='host') scr.innerHTML = host();
+    else scr.innerHTML = me();
+    scr.scrollTop = 0;
+    var tabFor = (view==='detail') ? 'week' : view;
+    Array.prototype.forEach.call(tabs.querySelectorAll('button'), function(b){
+      b.setAttribute('aria-selected', b.dataset.go===tabFor ? 'true':'false');
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('.step'), function(s){
+      s.classList.toggle('is-on', s.dataset.step===view);
+    });
+  }
+
+  document.addEventListener('click', function(e){
+    var go = e.target.closest('[data-go]');
+    if(go){ render(go.dataset.go); return; }
+    var op = e.target.closest('[data-open]');
+    if(op){ render('detail', op.dataset.open); return; }
+    var gr = e.target.closest('[data-grp]');
+    if(gr){ group[gr.dataset.id] = +gr.dataset.grp; render('detail', gr.dataset.id); return; }
+    var jn = e.target.closest('[data-join]');
+    if(jn){ joined[jn.dataset.join] = !joined[jn.dataset.join]; render('detail', jn.dataset.join); return; }
+  });
+
+  render('week');
+})();
+</script>

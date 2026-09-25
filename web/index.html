@@ -153,6 +153,27 @@ h2{
 .wint h3{margin:0 0 6px; font-size:17px; font-weight:700; letter-spacing:-.015em}
 .wint p{margin:0; font-size:14px; color:var(--muted); line-height:1.55}
 
+
+/* ---------- app teaser ---------- */
+.apps{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:6px}
+.mini{
+  background:#0C1116; border:1px solid #232F37; border-radius:16px; overflow:hidden;
+  min-height:300px; padding:16px 14px; display:flex; flex-direction:column; color:#E9EEEF;
+}
+.mini .mt{font-family:var(--mono); font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:#E5A044; margin-bottom:8px}
+.mini .mh{font-weight:900; font-size:17px; letter-spacing:-.02em; margin:0 0 10px; line-height:1.1}
+.mini .mrow{border-top:1px solid #232F37; padding:8px 0; font-size:11.5px; line-height:1.4}
+.mini .mrow b{display:block; font-weight:700; font-size:12.5px}
+.mini .mrow span{font-family:var(--mono); font-size:10px; color:#8797A1}
+.mini .mbig{font-weight:900; font-size:40px; line-height:.85; letter-spacing:-.045em; margin:4px 0 2px}
+.mini .msub{font-family:var(--mono); font-size:10px; color:#8797A1}
+.mini .mgrp{border:1px solid #232F37; padding:6px 8px; margin-top:6px; display:flex; justify-content:space-between; font-family:var(--mono); font-size:9.5px; color:#8797A1}
+.mini .mgrp.on{border-color:#E5A044; color:#E5A044; background:#2A2016}
+.mini .mcta{margin-top:auto; background:#E5A044; color:#0C1116; text-align:center; padding:9px;
+  font-family:var(--mono); font-size:9.5px; letter-spacing:.12em; text-transform:uppercase; font-weight:500}
+.appcap{font-size:13.5px; color:var(--muted); margin:14px 0 0; line-height:1.55}
+@media (max-width:860px){ .apps{grid-template-columns:1fr; gap:14px} } 
+
 /* join */
 .join{padding-block:62px 70px}
 .join h2{max-width:18ch}
@@ -198,6 +219,7 @@ footer{border-top:1px solid var(--line); padding-block:26px 44px}
       <a href="#wie">Wie das läuft</a>
       <a href="#fuerwen">Für wen</a>
       <a href="#winter">Winter</a>
+      <a href="#app">Die App</a>
       <a href="#mit">Mitmachen</a>
     </nav>
   </div>
@@ -344,6 +366,42 @@ footer{border-top:1px solid var(--line); padding-block:26px 44px}
         <p>Hallenbad mit Technikblock. Der Winter ist die einzige Zeit, in der man am Schwimmen wirklich etwas ändert.</p>
       </div>
     </div>
+  </section>
+
+
+  <section id="app" class="wrap">
+    <h2>Woran wir arbeiten</h2>
+    <p class="lead">Solange wir wenige sind, läuft alles über WhatsApp, und das reicht auch. Parallel entsteht ein kleines Werkzeug für genau das, was WhatsApp nicht kann: sehen, ob eine Einheit zu deinem Plan und deinem Tempo passt, bevor du zusagst.</p>
+    <div class="apps">
+      <div class="mini">
+        <div class="mt">Diese Woche</div>
+        <h3 class="mh">Vier Termine, mehr nicht</h3>
+        <div class="mrow"><b>Sa · Lange Ausfahrt</b><span>GA1 · 110 oder 70 km</span></div>
+        <div class="mrow"><b>Di · Intervalle</b><span>Schwelle · 6×1000</span></div>
+        <div class="mrow"><b>Do · Bahn &amp; Technik</b><span>GA2 · 3000 m</span></div>
+        <div class="mrow"><b>So · Kraft &amp; Hyrox</b><span>Zirkel · 60 min</span></div>
+      </div>
+      <div class="mini">
+        <div class="mt">Sa 03.10. · 08:00</div>
+        <h3 class="mh">Lange Ausfahrt</h3>
+        <div class="mbig num">110</div>
+        <div class="msub">km · oder 70 ab Abzweig Orth</div>
+        <div class="mrow" style="margin-top:10px"><span>2 Std GA1 durchgehend, dann Lobau-Runde</span></div>
+        <div class="mgrp"><span>Gruppe 1</span><span>30 – 32 km/h</span></div>
+        <div class="mgrp on"><span>Gruppe 2</span><span>33 – 35 km/h</span></div>
+        <div class="mcta">Ich bin dabei</div>
+      </div>
+      <div class="mini">
+        <div class="mt">Gastgeber</div>
+        <h3 class="mh">Wer kommt wirklich</h3>
+        <div class="mrow"><b>9 zugesagt</b><span>Erfahrungswert: rund 7 erscheinen</span></div>
+        <div class="mrow"><b>Gruppe 1</b><span>5 Personen</span></div>
+        <div class="mrow"><b>Gruppe 2</b><span>4 Personen</span></div>
+        <div class="mrow"><b>Neu dabei</b><span>Elena L., zum ersten Mal</span></div>
+        <div class="mcta" style="background:transparent;color:#E5A044;border:1px solid #E5A044">Einheit übergeben</div>
+      </div>
+    </div>
+    <p class="appcap">Skizze, noch nichts davon läuft. Der dritte Bildschirm ist uns der wichtigste: Eine Gruppe, die nur stattfindet, wenn wir zwei da sind, ist keine Gruppe, sondern unser Terminkalender.</p>
   </section>
 
   <div class="wrap join" id="mit">

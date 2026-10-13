@@ -1,6 +1,8 @@
-# 3com (Arbeitstitel)
+# Windschatten
 
 Community-Plattform für Triathletinnen und Triathleten. Start in Wien, danach DACH.
+
+Arbeitstitel war 3com, der Name ist seit 13.10.2026 entschieden (D-031).
 
 **Kurzfassung:** Hochvolumiges Ausdauertraining ist ein Mannschaftssport, der als Einzelsport
 betrieben wird. Acht bis fünfzehn Stunden pro Woche, über Monate, fast alles allein. 3com macht
@@ -21,16 +23,16 @@ Dichte löst das, kein Werkzeug.
 
 | Punkt | Stand |
 |---|---|
-| Phase | Konzept v0.8. **Eingefroren bis zur dritten Ausfahrt.** Wettbewerb und Community-Playbook recherchiert. |
+| Phase | v1.0. Konzept eingefroren. **Es wird gefahren, nicht mehr geschrieben.** |
 | Gründer | zwei, gleiche Anteile. Einer BD, Vertrieb und Community, einer Produkt und Technik |
 | Ambitionsniveau | bewusst offen, entscheidet sich nach dem MVP |
-| Start | zentral organisierte Events: drei ganzjährige Anker, Coach-Sessions, saisonale Zusatzformate |
-| MVP-Form | eigene PWA, wiederkehrende Serien statt Ad-hoc-Board |
-| Bauaufwand App | rund ein Wochenende mit KI-gestützter Entwicklung, kein Engpass |
+| Erster Termin | **Sa 17.10.2026, 08:00, Reichsbrücke Nord.** Ein Anker, nicht drei (D-033) |
+| App | gebaut und im Betrieb, Quelltext in `app/windschatten.html` (D-032) |
+| Nächster Schritt | acht Nachrichten verschicken, siehe `docs/18-start-kit.md` |
 | Erlöslogik | Angebotsseite zuerst, Marken erst im zweiten Winter, Athletinnen zahlen nicht |
 | Markt Wien | 5.000 bis 12.000 Personen (Schätzung, siehe 04) |
-| Name | 3com ist seit v0.3 sachlich falsch (drei Disziplinen). Shortlist: Windschatten, Kadenz, Rudel |
-| Datum | 2026-09-11 |
+| Name | **Windschatten**, entschieden (D-031). Domain noch nicht geprüft |
+| Datum | 2026-10-13 |
 
 ## Navigation
 
@@ -53,10 +55,12 @@ Dichte löst das, kein Werkzeug.
 | [docs/14-startup-council-runde-2.md](docs/14-startup-council-runde-2.md) | Zweite, härtere Council-Runde: Distanzen, Serien-Obergrenze, Konzeptstopp |
 | [docs/15-design-und-ci.md](docs/15-design-und-ci.md) | Markenhaltung, Bildzeichen, Farbe, Typografie, Tonalität, Kanäle |
 | [web/index.html](web/index.html) | Website-Entwurf inkl. App-Teaser, eine Seite, ohne Abhängigkeiten |
-| [web/app-prototyp.html](web/app-prototyp.html) | Klickbarer App-Prototyp, vier Bildschirme |
+| [app/windschatten.html](app/windschatten.html) | **Die App.** Terminbrett mit geteilter Datenbank, läuft |
+| [web/app-prototyp.html](web/app-prototyp.html) | Klickbarer Prototyp, überholt durch `app/` |
 | [docs/16-wettbewerb-realitaetscheck.md](docs/16-wettbewerb-realitaetscheck.md) | Wer es schon gibt, warum die scheitern, was das heißt |
 | [docs/17-community-playbook.md](docs/17-community-playbook.md) | Lehren aus parkrun, November Project, HYROX und anderen |
 | [web/designsystem.html](web/designsystem.html) | Designsystem visuell: Bildzeichen, Palette, Typo, Vorlagen |
+| [docs/18-start-kit.md](docs/18-start-kit.md) | **Die fertigen Texte für die nächsten zehn Tage** |
 | [decisions/DECISIONS.md](decisions/DECISIONS.md) | Entscheidungslog |
 
 ## Sprachkonvention

@@ -426,3 +426,58 @@ die Zusagequote und zieht Menschen an, die Lust auf den Aufbau haben, nicht nur 
 **Regel:** Der Prototyp wird nie als bestehendes Produkt dargestellt. Beide Seiten tragen
 sichtbar den Hinweis Entwurf.
 **Wiedervorlage:** keine.
+
+---
+
+## D-031 Der Name ist Windschatten
+
+**Datum:** 2026-10-13
+**Entscheidung:** Das Projekt heißt Windschatten. 3com entfällt, die Shortlist aus `08-naming.md`
+ist abgeschlossen. Kadenz, Rudel und Grundlage werden nicht weiterverfolgt.
+**Begründung:** Windschatten ist das einzige Wort auf der Liste, das die Sache selbst beschreibt
+und nicht nur klingt: vorne fährt jemand, hinten spart man ein Drittel, man wechselt sich ab. Das
+ist gleichzeitig die Erklärung, warum Gruppentraining besser ist als Alleintraining, und die
+Umgangsform, die diese Gruppe haben soll. Kadenz ist Radsprache und schließt Laufen und Schwimmen
+aus. Rudel ist eine Behauptung über Härte. Grundlage ist zu nah an GA1 und damit zu eng.
+**Eingestandener Nachteil:** dreizehn Zeichen, deutsch, international nicht tragfähig. Das ist in
+Wien kein Problem und im Fall einer zweiten Stadt im DACH-Raum auch nicht. Falls das Projekt
+jemals darüber hinausgeht, ist ein Namenswechsel das kleinste der dann anstehenden Probleme.
+**Folge:** Domain und Instagram-Handle werden auf Windschatten geprüft und gesichert. Die
+Domainprüfung konnte aus der Arbeitsumgebung heraus nicht durchgeführt werden (RDAP nicht
+erreichbar), sie steht noch aus.
+**Wiedervorlage:** nur bei Expansion außerhalb des deutschsprachigen Raums.
+
+---
+
+## D-032 Die App ist gebaut und läuft
+
+**Datum:** 2026-10-13
+**Entscheidung:** Statt eines weiteren Prototyps gibt es ein funktionierendes Terminwerkzeug mit
+geteilter Datenbank: Einheiten anlegen, Niveaugruppe wählen, zusagen, sehen wer kommt. Quelltext
+in `app/windschatten.html`.
+**Begründung:** D-029 hat festgehalten, dass der Bau kein Engpass mehr ist. Ein Klickprototyp zu
+zeigen, obwohl das echte Ding in derselben Zeit entsteht, wäre nach dieser Erkenntnis nur noch
+Gewohnheit. Ein Werkzeug, das wirklich läuft, kostet nichts extra und beantwortet eine Frage, die
+kein Prototyp beantwortet: ob Leute tatsächlich zusagen.
+**Grenze:** Zusagen kann nur, wer Schreibrecht auf dem Artefakt hat. Das passt für die ersten
+zehn bis fünfzehn Personen und ist ab dort neu zu bewerten. Für alle anderen bleibt WhatsApp.
+**Regel aus D-030 bleibt:** Die App wird nicht als fertiges Produkt dargestellt. Sie ist das
+Terminbrett der Gruppe, mehr behauptet sie nicht.
+**Wiedervorlage:** sobald mehr als fünfzehn Personen zusagen wollen.
+
+---
+
+## D-033 Neustart am 17.10.2026, der Samstag ist der einzige Anker
+
+**Datum:** 2026-10-13
+**Entscheidung:** Die erste Ausfahrt findet am 17.10.2026 statt. Bis auf Weiteres gibt es genau
+einen wiederkehrenden Termin: Samstag, 08:00, Reichsbrücke. Dienstag und Donnerstag kommen erst
+dazu, wenn der Samstag mehrere Wochen ohne Lücke stattgefunden hat.
+**Begründung:** Der ursprünglich geplante Termin am 19.09. hat nicht stattgefunden, weil keine
+Zeit war. Genau das ist das Ausfallrisiko aus `09-risiken-und-offene-fragen.md`, und es ist
+eingetreten, bevor ein einziger Teilnehmer da war. Drei Anker gleichzeitig zu starten, erhöht
+dieses Risiko um das Dreifache. Ein Termin, der stattfindet, schlägt drei, die auf dem Papier
+stehen.
+**Abbruchkriterium unverändert:** Verhältnis Zusage zu Erscheinen über sechs Wochen unter
+50 Prozent, dann wird nichts weiter gebaut.
+**Wiedervorlage:** nach der dritten durchgeführten Ausfahrt.

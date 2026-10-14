@@ -29,6 +29,7 @@ Dichte löst das, kein Werkzeug.
 | Erster Termin | **Sa 17.10.2026, 08:00, Reichsbrücke Nord.** Ein Anker, nicht drei (D-033) |
 | App | gebaut und im Betrieb, Quelltext in `app/windschatten.html` (D-032) |
 | Terminmodell | zwei Ebenen: fixer Anker am Wochenende, bewegliche Einheiten unter der Woche (D-035) |
+| Plattform | Web, kein natives iOS vor 15 Personen (D-036). Stufenplan dort |
 | Nächster Schritt | acht Nachrichten verschicken, siehe `docs/18-start-kit.md` |
 | Geld | **Keine Monetarisierung (D-034).** Kosten werden durch die geteilt, die teilnehmen |
 | Markt Wien | 5.000 bis 12.000 Personen (Schätzung, siehe 04) |

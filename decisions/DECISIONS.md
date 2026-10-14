@@ -558,3 +558,49 @@ Einheit angeboten hat, fliegt sie wieder raus.
 (beweglich, jede Person schreibt nur in die eigene).
 **Wiedervorlage:** bei mehr als 25 aktiven Personen, dann ist die Dichteschwelle möglicherweise
 überschritten und feste Wochentermine schlagen wieder das Anbieten.
+
+---
+
+## D-036 Kein natives iOS. Der Flow wird im Web gebaut.
+
+**Datum:** 2026-10-14
+**Auslöser:** Gewünschter Ablauf: eine Einheit anlegen ("ich mach am Mittwoch die 1h
+Intervalle"), den Link zusätzlich in die WhatsApp-Gruppe stellen, andere klicken drauf, sagen zu
+und übernehmen den Termin in ihren Kalender.
+**Entscheidung:** Der Ablauf wird gebaut, die native App nicht. Nichts an diesem Ablauf verlangt
+eine native App, mit einer Ausnahme.
+
+| Schritt | Geht heute | Bemerkung |
+|---|---|---|
+| Einheit anlegen | ja | jede Person, nicht nur die Gastgeber (D-035) |
+| Eigener Link pro Einheit | ja | Ankertext hinter der Adresse, öffnet direkt diese Einheit |
+| In WhatsApp teilen | ja | fertiger Text mit Ort, Zeit, Dauer und Link, ein Knopf |
+| Draufklicken und zusagen | eingeschränkt | nur mit Zugang zum Artefakt, siehe unten |
+| In den Kalender | teilweise | Google ja, Apple nein |
+
+**Was nativ wirklich dazukäme:** verlässliche Push-Nachrichten, Eintrag direkt in den
+Apple-Kalender, Platz am Homescreen, später ein Widget.
+**Was es kostet:** 99 Euro im Jahr für das Entwicklerprogramm, Review vor jedem Update, und vor
+allem eine Installationshürde. Bei acht Leuten ist "installier dir diese App" ein ungleich
+größerer Schritt als "klick auf diesen Link". Dazu fehlt Android, also etwa die Hälfte.
+
+**Der Kern des Arguments:** Bei acht bis fünfzehn Personen ist WhatsApp der Push. Eine Nachricht
+in der Gruppe erreicht diese Gruppe zuverlässiger als jede Push-Nachricht und kostet nichts. Eine
+eigene App ist ein zweiter Kanal, den dieselben Leute zusätzlich beachten müssten.
+
+**Die echte Hürde ist nicht nativ gegen Web, sondern der Zugang.** Das aktuelle Werkzeug liegt
+auf claude.ai und verlangt Anmeldung plus Schreibrecht. Ein Link in der WhatsApp-Gruppe
+funktioniert für Fremde deshalb nicht. Das löst eine native App genauso wenig, die bräuchte
+dasselbe eigene Backend.
+
+**Stufenplan:**
+
+| Stufe | Wann | Was |
+|---|---|---|
+| 0, jetzt | bis etwa 15 Personen | aktuelles Werkzeug, Zugang einzeln per Einladung |
+| 1 | ab etwa 15, oder sobald jemand ohne Einladung zusagen soll | eigene Web-App auf eigener Adresse, Link ohne Anmeldung, iOS und Android, zum Homescreen hinzufügbar, Apple-Kalender über .ics. Aufwand: ein paar Stunden plus zwei Konten |
+| 2 | nur wenn Erinnerungen der Engpass sind | Push, dann zuerst als PWA, nativ erst wenn das nicht reicht |
+
+**Prüffrage für Stufe 1:** Sagt in den ersten vier Wochen jemand von sich aus, dass er den Termin
+gern im Kalender hätte oder die Seite nicht öffnen kann? Wenn nein, war es nie das Problem.
+**Wiedervorlage:** bei 15 aktiven Personen.

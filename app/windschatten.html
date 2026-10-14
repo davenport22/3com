@@ -118,6 +118,11 @@ header{padding-block:30px 20px}
 .who li.me{border-color:var(--signal); color:var(--signal)}
 .who p{margin:0; color:var(--muted); font-size:13.5px}
 
+.share{margin:18px 0 0; padding-top:14px; border-top:1px solid var(--line)}
+.share .lbl{display:block; margin-bottom:8px}
+.sharebtns{display:flex; gap:8px; flex-wrap:wrap}
+.sharebtns .btn{flex:1 1 150px; text-decoration:none}
+.cfb{margin-top:10px; font-family:'Chivo Mono',monospace; font-size:12.5px; line-height:1.45}
 .note{color:var(--muted); font-size:13.5px; margin:14px 0 0}
 .empty{padding:22px 18px; color:var(--muted); font-size:14.5px; text-align:center}
 .boot{padding:40px 0; color:var(--muted); font-family:'Chivo Mono',monospace; font-size:13px}
@@ -180,12 +185,52 @@ textarea{resize:vertical; min-height:56px}
   var DOW = ["So","Mo","Di","Mi","Do","Fr","Sa"];
   var SPORT = {rad:"Rad", lauf:"Lauf", schwimmen:"Schwimmen", kraft:"Kraft/Hyrox", koppel:"Koppel"};
   var OFFER_WINDOW = 16;
+  var BASE = "https://claude.ai/artifact/5yFx9nCsDTxi6FrYaKuDTD";
+  var DUR = {rad:240, lauf:90, schwimmen:75, kraft:60, koppel:120};
+
+  function pad(n){return String(n).padStart(2,"0");}
+  function linkFor(id){ return BASE + "#" + id; }
+  function durOf(s){ return Number(s.dur) || DUR[s.sport] || 90; }
+  function endOf(s){
+    var p=(s.time||"18:30").split(":"), d=parseISO(s.date);
+    d.setHours(Number(p[0])||0, Number(p[1])||0, 0, 0);
+    d.setMinutes(d.getMinutes()+durOf(s));
+    return d;
+  }
+  function stamp(d){
+    return d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate())+"T"
+      +pad(d.getHours())+pad(d.getMinutes())+"00";
+  }
+  function gcalUrl(s){
+    var p=(s.time||"18:30").split(":"), a=parseISO(s.date);
+    a.setHours(Number(p[0])||0, Number(p[1])||0, 0, 0);
+    var det=[s.intensity, s.long?("lang "+s.long):"", s.short?("kurz "+s.short):"",
+             s.note, linkFor(s.id)].filter(Boolean).join("\n");
+    return "https://calendar.google.com/calendar/render?action=TEMPLATE"
+      +"&text="+encodeURIComponent("Windschatten · "+(s.title||"Einheit"))
+      +"&dates="+stamp(a)+"/"+stamp(endOf(s))
+      +"&ctz=Europe/Vienna"
+      +"&location="+encodeURIComponent(s.meet||"Wien")
+      +"&details="+encodeURIComponent(det);
+  }
+  function shareText(s){
+    var l=[];
+    l.push(dow(s.date)+" "+fmtDate(s.date)+", "+(s.time||"")+" — "+(s.title||"Einheit"));
+    if(s.meet) l.push(s.meet);
+    var m=[SPORT[s.sport]||s.sport, s.intensity, "ca. "+durOf(s)+" min"].filter(Boolean);
+    if(s.long) m.push(s.long+(s.short?" oder "+s.short:""));
+    l.push(m.join(" · "));
+    if(s.note) l.push(s.note);
+    l.push("");
+    l.push("Zusagen: "+linkFor(s.id));
+    return l.join("\n");
+  }
 
   var S = {
     db:null, user:null, uid:null, canWrite:null, canEdit:false,
     ready:false, dbOff:false,
     anchors:[], offers:[], myOffers:{}, commits:{}, names:{},
-    open:null, pick:{}, busy:false,
+    open:null, pick:{}, busy:false, copied:null, copyFallback:null, hash:null,
     addAnchor:false, addOffer:false, confirmDel:null, msg:null
   };
 
@@ -243,7 +288,7 @@ textarea{resize:vertical; min-height:56px}
 
   function row(s,isNext){
     var id=s.id, g=groupsOf(s), coming=comingFor(id), open=(S.open===id);
-    var h='<article class="card'+(isNext?" next":"")+'">';
+    var h='<article class="card'+(isNext?" next":"")+'" id="c_'+esc(id)+'">';
 
     h+='<div class="s-head" data-open="'+esc(id)+'">';
     h+='<div class="s-when"><div class="s-dow">'+dow(s.date)+'</div>'
@@ -301,6 +346,17 @@ textarea{resize:vertical; min-height:56px}
             +(g.length>1?' <span class="mono" style="opacity:.6">G'+(coming[j].g+1)+'</span>':'')+'</li>';
         }
         h+='</ul>';
+      }
+      h+='</div>';
+
+      h+='<div class="share"><span class="lbl">Weitersagen</span><div class="sharebtns">';
+      h+='<button class="btn ghost sm" data-copy="'+esc(id)+'">'
+        +(S.copied===id?"Kopiert":"Text für WhatsApp")+'</button>';
+      h+='<a class="btn ghost sm" href="'+esc(gcalUrl(s))+'" target="_blank" rel="noopener">In den Kalender</a>';
+      h+='</div>';
+      if(S.copyFallback===id){
+        h+='<textarea class="cfb" id="cfb_'+esc(id)+'" readonly rows="6">'+esc(shareText(s))+'</textarea>';
+        h+='<p class="note" style="margin-top:6px">Automatisch kopieren ging nicht. Text markieren und kopieren.</p>';
       }
       h+='</div>';
 
@@ -362,7 +418,11 @@ textarea{resize:vertical; min-height:56px}
       +'<option value="koppel">Koppel</option></select></label></div>'
       +'<div class="row2">'
       +'<label class="f"><span>Intensität</span><input id="o_int" name="intensity" placeholder="Schwelle" maxlength="40"></label>'
-      +'<label class="f"><span>Treffpunkt</span><input id="o_meet" name="meet" required placeholder="Prater Hauptallee" maxlength="80"></label></div>'
+      +'<label class="f"><span>Dauer</span><select id="o_dur" name="dur">'
+      +'<option value="45">45 min</option><option value="60" selected>1 h</option>'
+      +'<option value="75">1 h 15</option><option value="90">1 h 30</option>'
+      +'<option value="120">2 h</option><option value="180">3 h</option></select></label></div>'
+      +'<label class="f"><span>Treffpunkt</span><input id="o_meet" name="meet" required placeholder="Prater Hauptallee" maxlength="80"></label>'
       +'<label class="f"><span>Notiz</span><textarea id="o_note" name="note" maxlength="240" placeholder="Was genau, und ob man auch nur einen Teil mitmachen kann."></textarea></label>'
       +'<div style="display:flex; gap:8px; margin-top:4px">'
       +'<button type="button" class="btn ghost" data-cancel="offer">Abbrechen</button>'
@@ -505,12 +565,13 @@ textarea{resize:vertical; min-height:56px}
 
   async function addOffer(form){
     if(!S.db||!S.uid||S.busy) return;
-    var f=readForm(form,["date","time","title","sport","intensity","meet","note"]);
+    var f=readForm(form,["date","time","title","sport","intensity","meet","note","dur"]);
     if(!f.date||!f.time||!f.title||!f.meet) return;
     var mine={},k; for(k in S.myOffers) mine[k]=S.myOffers[k];
     mine[newId("o_")]={
       date:f.date,time:f.time,title:f.title,sport:f.sport||"lauf",
       intensity:f.intensity||"",meet:f.meet,note:f.note||"",
+      dur:Number(f.dur)||60,
       createdAt:new Date().toISOString()};
     S.busy=true; S.msg=null; render();
     try{ await S.db.doc("offers/"+S.uid).set(mine); S.myOffers=mine; S.addOffer=false; }
@@ -535,8 +596,30 @@ textarea{resize:vertical; min-height:56px}
     S.busy=false; render();
   }
 
+  var copyTimer=null;
+  function selectFallback(id){
+    S.copyFallback=id; render();
+    var ta=document.getElementById("cfb_"+id);
+    if(ta){ try{ ta.focus(); ta.select(); }catch(e){} }
+  }
+  function doCopy(id){
+    var s=find(id); if(!s) return;
+    var txt=shareText(s);
+    function ok(){
+      S.copied=id; S.copyFallback=null; render();
+      if(copyTimer) clearTimeout(copyTimer);
+      copyTimer=setTimeout(function(){ S.copied=null; render(); },2000);
+    }
+    try{
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(txt).then(ok,function(){ selectFallback(id); });
+      } else { selectFallback(id); }
+    }catch(err){ selectFallback(id); }
+  }
+
   document.addEventListener("click",function(e){
     var t=e.target, el;
+    if((el=t.closest("[data-copy]"))){ doCopy(el.getAttribute("data-copy")); return; }
     if((el=t.closest("[data-pick]"))){
       S.pick[el.getAttribute("data-pick")]=Number(el.getAttribute("data-g")); render(); return;
     }
@@ -564,11 +647,23 @@ textarea{resize:vertical; min-height:56px}
     else if(e.target.id==="offerf"){ e.preventDefault(); addOffer(e.target); }
   });
 
+  function readHash(){
+    var h=String(window.location.hash||"").replace(/^#/,"");
+    return /^[A-Za-z0-9_.~-]{1,80}$/.test(h) ? h : null;
+  }
+  function jump(){
+    if(!S.hash) return;
+    var el=document.getElementById("c_"+S.hash);
+    if(el){ try{ el.scrollIntoView({block:"center"}); }catch(e){} S.hash=null; }
+  }
+
   async function boot(){
     var db=null,user=null;
     try{ db=await window.claude.use("db"); }catch(e){}
     try{ user=await window.claude.use("user"); }catch(e){}
     S.db=db; S.user=user;
+    S.hash=readHash();
+    if(S.hash) S.open=S.hash;
 
     if(user){
       try{ S.uid=await user.id(); }catch(e){ S.uid=null; }
@@ -586,11 +681,11 @@ textarea{resize:vertical; min-height:56px}
         if(d.date) out.push(d);
       }
       S.anchors=out;
-      if(!S.open && out.length){
+      if(!S.open && !S.hash && out.length){
         var t=todayISO();
         for(var k=0;k<out.length;k++) if(out[k].date>=t){ S.open=out[k].id; break; }
       }
-      render();
+      render(); jump();
     },function(err){
       S.msg=(err&&err.code==="revoked")
         ? "Der Zugriff wurde beendet. Lade die Seite neu."
@@ -615,7 +710,7 @@ textarea{resize:vertical; min-height:56px}
         return (a.date+a.time) < (b.date+b.time) ? -1 : (a.date+a.time) > (b.date+b.time) ? 1 : 0;
       });
       S.offers=list; S.myOffers=mine;
-      render(); refreshNames();
+      render(); jump(); refreshNames();
     },function(){});
 
     db.collection("commits").limit(300).onSnapshot(function(snap){

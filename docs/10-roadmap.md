@@ -137,8 +137,12 @@ Loch. Was hier stattdessen geprüft wird, ist Hypothese H3.
 | M4 Delegation beginnt | 2 Serien von anderen geführt | Ende Apr 2027 |
 | M5 Ausfallsicherheit | **5 Serien von anderen geführt** | Ende Mai 2027 |
 | M6 Formatwechsel trägt | über 30 Prozent der Mitglieder wechseln über die Saison die Disziplin | Sep 2027 |
-| M7 Erster Euro | Take Rate oder Partnerdeal | Winter 2027/28 |
+| ~~M7 Erster Euro~~ | entfällt (D-034, keine Monetarisierung) | — |
 | M8 Reproduzierbar | Zweite Stadt, 8 Wochen stabil ohne euch vor Ort | 2028 |
+
+Seit D-034 ist M5 nicht mehr nur der wichtigste, sondern die Überlebensbedingung: ohne Erlös
+lässt sich keine Arbeit einkaufen, die einzige Währung ist die Bereitschaft anderer, eine
+Einheit zu führen.
 
 M5 ist der wichtigste Meilenstein der gesamten Roadmap, weil er als einziger die Frage
 beantwortet, die über das Ambitionsniveau entscheidet: läuft 3com ohne euch? M6 ist der

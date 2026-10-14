@@ -1,3 +1,7 @@
+> **Überholt durch D-034 (14.10.2026).** Windschatten verfolgt kein Erlösziel. Dieses
+> Dokument bleibt als Dokumentation des verworfenen Pfades stehen. Gültig ist nur noch der
+> Gedanke, dass Kosten durch die geteilt werden, die daran teilnehmen.
+
 # 03 Geschäftsmodell
 
 ## Getroffene Entscheidung

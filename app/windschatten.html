@@ -1,4 +1,5 @@
 <title>Windschatten Wien</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;900&family=Chivo+Mono:wght@400;500&display=swap');
 
@@ -6,18 +7,19 @@
   --bg:#F0F2F1; --surface:#FFFFFF; --sunk:#F6F7F7; --text:#0C1116; --muted:#64737D;
   --line:#D9DEDE; --signal:#A8681A; --on-signal:#FFFFFF; --soft:rgba(168,104,26,.10);
   --water:#2E7F8C; --shadow:0 1px 2px rgba(12,17,22,.06), 0 8px 24px rgba(12,17,22,.05);
+  color-scheme:light;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --bg:#0C1116; --surface:#141C22; --sunk:#101820; --text:#E9EEEF; --muted:#8797A1;
     --line:#232F37; --signal:#E5A044; --on-signal:#0C1116; --soft:rgba(229,160,68,.13);
-    --water:#4E9AA8; --shadow:none;
+    --water:#4E9AA8; --shadow:none; color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
   --bg:#0C1116; --surface:#141C22; --sunk:#101820; --text:#E9EEEF; --muted:#8797A1;
   --line:#232F37; --signal:#E5A044; --on-signal:#0C1116; --soft:rgba(229,160,68,.13);
-  --water:#4E9AA8; --shadow:none;
+  --water:#4E9AA8; --shadow:none; color-scheme:dark;
 }
 
 *{box-sizing:border-box}
@@ -25,15 +27,16 @@ html,body{margin:0;padding:0}
 body{
   background:var(--bg); color:var(--text);
   font-family:'Chivo',system-ui,-apple-system,sans-serif;
-  font-size:16px; line-height:1.5;
-  -webkit-font-smoothing:antialiased;
+  font-size:16px; line-height:1.5; -webkit-font-smoothing:antialiased;
   font-variant-numeric:tabular-nums;
 }
-.wrap{max-width:720px; margin:0 auto; padding:0 16px 72px}
+.wrap{max-width:720px; margin:0 auto;
+  padding-left:max(16px, env(safe-area-inset-left,0px));
+  padding-right:max(16px, env(safe-area-inset-right,0px));
+  padding-block:0 72px}
 .mono{font-family:'Chivo Mono',ui-monospace,monospace}
 
-/* header */
-header{padding:30px 0 20px}
+header{padding-block:30px 20px}
 .brand{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap}
 .wordmark{font-weight:900; letter-spacing:-.035em; font-size:26px; line-height:1}
 .place{font-family:'Chivo Mono',monospace; font-size:11px; letter-spacing:.14em;
@@ -41,17 +44,17 @@ header{padding:30px 0 20px}
 .fork{display:block; margin:16px 0 0; width:100%; height:18px; overflow:visible}
 .tag{margin:14px 0 0; color:var(--muted); font-size:14px; max-width:46ch}
 
-/* generic */
 .card{background:var(--surface); border:1px solid var(--line); border-radius:14px;
   box-shadow:var(--shadow); margin:14px 0; overflow:hidden}
 .pad{padding:18px}
 .lbl{font-family:'Chivo Mono',monospace; font-size:10.5px; letter-spacing:.16em;
   text-transform:uppercase; color:var(--muted)}
-.sec{margin:34px 0 0}
-.sec > .lbl{display:block; margin-bottom:8px}
-.hr{height:1px; background:var(--line); border:0; margin:0}
+.sec{margin:32px 0 0}
+.sec .lbl{display:block}
+.sechd{display:flex; align-items:baseline; justify-content:space-between; gap:12px;
+  margin-bottom:8px; flex-wrap:wrap}
+.sechd p{margin:0; font-size:13px; color:var(--muted); max-width:44ch}
 
-/* session row */
 .s-head{display:flex; gap:14px; align-items:flex-start; padding:16px 18px; cursor:pointer;
   -webkit-tap-highlight-color:transparent}
 .s-head:hover{background:var(--sunk)}
@@ -71,16 +74,14 @@ header{padding:30px 0 20px}
 .in-pill{background:var(--soft); color:var(--signal); border:1px solid var(--signal);
   font-family:'Chivo Mono',monospace; font-size:10.5px; letter-spacing:.1em;
   text-transform:uppercase; padding:3px 8px; border-radius:999px; white-space:nowrap}
+.by{font-family:'Chivo Mono',monospace; font-size:11px; color:var(--muted)}
 
-/* next-up emphasis */
 .next{border-color:var(--signal)}
-.next .s-head{background:var(--soft)}
-.next .s-head:hover{background:var(--soft)}
+.next .s-head, .next .s-head:hover{background:var(--soft)}
 .bignum{font-weight:900; font-size:54px; letter-spacing:-.05em; line-height:.92; margin:0}
 .bignum small{font-weight:400; font-size:15px; letter-spacing:0; color:var(--muted);
   display:block; margin-top:6px; font-family:'Chivo Mono',monospace}
 
-/* detail */
 .detail{border-top:1px solid var(--line); padding:18px; background:var(--sunk)}
 .kv{display:grid; grid-template-columns:86px 1fr; gap:6px 14px; font-size:14.5px; margin:0 0 16px}
 .kv dt{font-family:'Chivo Mono',monospace; font-size:11px; letter-spacing:.12em;
@@ -107,6 +108,7 @@ header{padding:30px 0 20px}
 .btn.ghost{background:transparent; color:var(--text); border-color:var(--line)}
 .btn.ghost:hover{border-color:var(--muted)}
 .btn.sm{width:auto; padding:7px 12px; font-size:13px}
+:focus-visible{outline:2px solid var(--signal); outline-offset:2px}
 
 .who{margin:16px 0 0; font-size:14px}
 .who .lbl{display:block; margin-bottom:6px}
@@ -116,29 +118,26 @@ header{padding:30px 0 20px}
 .who li.me{border-color:var(--signal); color:var(--signal)}
 .who p{margin:0; color:var(--muted); font-size:13.5px}
 
-/* notes / states */
 .note{color:var(--muted); font-size:13.5px; margin:14px 0 0}
-.empty{padding:26px 18px; text-align:center; color:var(--muted); font-size:14.5px}
+.empty{padding:22px 18px; color:var(--muted); font-size:14.5px; text-align:center}
 .boot{padding:40px 0; color:var(--muted); font-family:'Chivo Mono',monospace; font-size:13px}
 .err{border-color:var(--signal)}
 .err .pad{font-size:14px}
 
-/* form */
 form.add{display:grid; gap:10px}
 .row2{display:grid; grid-template-columns:1fr 1fr; gap:10px}
-label.f{display:block}
+label.f{display:block; min-width:0}
 label.f > span{display:block; font-family:'Chivo Mono',monospace; font-size:10.5px;
   letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:4px}
 input,select,textarea{width:100%; background:var(--surface); color:var(--text);
   border:1px solid var(--line); border-radius:9px; padding:10px 12px;
   font-family:inherit; font-size:15px}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--signal); outline-offset:1px;
-  border-color:var(--signal)}
-textarea{resize:vertical; min-height:62px}
+textarea{resize:vertical; min-height:56px}
 
 .foot{margin:40px 0 0; padding-top:20px; border-top:1px solid var(--line);
   color:var(--muted); font-size:13px}
 .foot b{color:var(--text); font-weight:500}
+.foot p{margin:0 0 8px; max-width:60ch}
 
 @media (max-width:480px){
   .row2{grid-template-columns:1fr}
@@ -161,8 +160,8 @@ textarea{resize:vertical; min-height:62px}
       <path d="M352 5 H600" stroke="currentColor" stroke-width="1" fill="none" opacity=".35"/>
       <circle cx="352" cy="5" r="3.2" fill="var(--signal)"/>
     </svg>
-    <p class="tag">Gemeinsamer Start, benannter Abzweig, zwei Distanzen. Wer kommt, sagt zu.
-      Wer zusagt, steht da.</p>
+    <p class="tag">Das Wochenende steht fest. Unter der Woche wird angeboten, was gerade im
+      Plan steht. Wer kommt, sagt zu.</p>
   </header>
 
   <main id="app"><div class="boot">wird geladen …</div></main>
@@ -170,6 +169,7 @@ textarea{resize:vertical; min-height:62px}
   <div class="foot">
     <p><b>Die Regel:</b> Intensität gehört zur Einheit, Niveau gehört zu dir.
       Auch Vollgas ist gemeinsam, solange die Gruppe zusammenpasst.</p>
+    <p>Kein Verein, kein Beitrag. Was Geld kostet, wird durch die geteilt, die hingehen.</p>
   </div>
 </div>
 
@@ -178,407 +178,454 @@ textarea{resize:vertical; min-height:62px}
   "use strict";
 
   var DOW = ["So","Mo","Di","Mi","Do","Fr","Sa"];
-  var SPORT = {rad:"Rad", lauf:"Lauf", schwimmen:"Schwimmen", kraft:"Kraft", koppel:"Koppel"};
+  var SPORT = {rad:"Rad", lauf:"Lauf", schwimmen:"Schwimmen", kraft:"Kraft/Hyrox", koppel:"Koppel"};
+  var OFFER_WINDOW = 16;
 
   var S = {
-    db:null, user:null, uid:null,
-    canWrite:null, canEdit:false,
+    db:null, user:null, uid:null, canWrite:null, canEdit:false,
     ready:false, dbOff:false,
-    sessions:[], commits:{}, names:{},
+    anchors:[], offers:[], myOffers:{}, commits:{}, names:{},
     open:null, pick:{}, busy:false,
-    adding:false, confirmDel:null, msg:null
+    addAnchor:false, addOffer:false, confirmDel:null, msg:null
   };
 
   var app = document.getElementById("app");
 
-  /* ---------- helpers ---------- */
   function esc(s){
-    return String(s==null?"":s).replace(/[&<>"']/g, function(c){
+    return String(s==null?"":s).replace(/[&<>"']/g,function(c){
       return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
     });
   }
   function todayISO(){
-    var d = new Date();
+    var d=new Date();
     return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
   }
-  function parseISO(s){
-    var p = String(s||"").split("-");
-    return new Date(Number(p[0]), Number(p[1])-1, Number(p[2]));
+  function plusDaysISO(n){
+    var d=new Date(); d.setDate(d.getDate()+n);
+    return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
   }
-  function fmtDate(iso){
-    var d = parseISO(iso);
-    return String(d.getDate()).padStart(2,"0")+"."+String(d.getMonth()+1).padStart(2,"0")+".";
-  }
-  function dow(iso){ return DOW[parseISO(iso).getDay()]; }
-  function lsGet(k){ try{ return window.localStorage.getItem(k); }catch(e){ return null; } }
-  function lsSet(k,v){ try{ window.localStorage.setItem(k,v); }catch(e){} }
+  function parseISO(s){var p=String(s||"").split("-");return new Date(+p[0],+p[1]-1,+p[2]);}
+  function fmtDate(iso){var d=parseISO(iso);
+    return String(d.getDate()).padStart(2,"0")+"."+String(d.getMonth()+1).padStart(2,"0")+".";}
+  function dow(iso){return DOW[parseISO(iso).getDay()];}
+  function lsGet(k){try{return window.localStorage.getItem(k);}catch(e){return null;}}
+  function lsSet(k,v){try{window.localStorage.setItem(k,v);}catch(e){}}
+  function newId(p){return p+Math.random().toString(36).slice(2,9)+Date.now().toString(36).slice(-4);}
+
+  function all(){ return S.anchors.concat(S.offers); }
+  function find(id){ var a=all(); for(var i=0;i<a.length;i++) if(a[i].id===id) return a[i]; return null; }
 
   function groupsOf(s){
-    var g = s.groups;
-    if (Object.prototype.toString.call(g) === "[object Array]" && g.length) return g;
-    return ["Gruppe 1"];
+    var g=s.groups;
+    if(Object.prototype.toString.call(g)==="[object Array]" && g.length) return g;
+    return ["alle zusammen"];
   }
-  function comingFor(sid){
-    var out = [];
-    for (var uid in S.commits){
-      var c = S.commits[uid];
-      if (c && c[sid] != null) out.push({uid:uid, g: (c[sid] && c[sid].g) || 0});
+  function comingFor(id){
+    var out=[];
+    for(var uid in S.commits){
+      var c=S.commits[uid];
+      if(c && c[id]!=null) out.push({uid:uid, g:(c[id]&&c[id].g)||0});
     }
-    out.sort(function(a,b){ return a.g - b.g; });
+    out.sort(function(a,b){return a.g-b.g;});
     return out;
   }
-  function myPick(sid, s){
-    if (S.pick[sid] != null) return S.pick[sid];
-    var mine = S.commits[S.uid];
-    if (mine && mine[sid] != null) return (mine[sid].g)||0;
-    var last = Number(lsGet("ws.group"));
-    if (!isNaN(last) && last >= 0 && last < groupsOf(s).length) return last;
+  function myPick(id,s){
+    if(S.pick[id]!=null) return S.pick[id];
+    var mine=S.commits[S.uid];
+    if(mine && mine[id]!=null) return (mine[id].g)||0;
+    var last=Number(lsGet("ws.group"));
+    if(!isNaN(last) && last>=0 && last<groupsOf(s).length) return last;
     return 0;
   }
-  function amIn(sid){
-    var mine = S.commits[S.uid];
-    return !!(mine && mine[sid] != null);
-  }
-  function nameOf(uid){
-    if (uid === S.uid) return "Du";
-    return S.names[uid] || "Jemand";
-  }
+  function amIn(id){var m=S.commits[S.uid];return !!(m && m[id]!=null);}
+  function nameOf(uid){ return uid===S.uid ? "Du" : (S.names[uid] || "Jemand"); }
+  function mayWrite(){ return S.canWrite!==false && !!S.uid; }
 
-  /* ---------- render ---------- */
-  function sessionRow(s, isNext){
-    var sid = s.id, g = groupsOf(s), coming = comingFor(sid);
-    var open = (S.open === sid);
-    var h = '<article class="card'+(isNext?" next":"")+'" data-card="'+esc(sid)+'">';
+  function row(s,isNext){
+    var id=s.id, g=groupsOf(s), coming=comingFor(id), open=(S.open===id);
+    var h='<article class="card'+(isNext?" next":"")+'">';
 
-    h += '<div class="s-head" data-open="'+esc(sid)+'">';
-    h += '<div class="s-when"><div class="s-dow">'+dow(s.date)+'</div>'
-       + '<div class="s-date">'+fmtDate(s.date)+'</div>'
-       + '<div class="s-time">'+esc(s.time||"")+'</div></div>';
-    h += '<div class="s-body"><div class="s-title">'+esc(s.title||"Einheit")+'</div>'
-       + '<div class="s-meta">'+esc([SPORT[s.sport]||s.sport, s.intensity, s.meet].filter(Boolean).join(" · "))+'</div></div>';
-    h += '<div class="s-right">';
-    if (amIn(sid)) h += '<span class="in-pill">dabei</span>';
-    h += '<span class="count">'+(coming.length ? '<span class="dot"></span>'+coming.length : '—')+'</span>';
-    h += '</div></div>';
+    h+='<div class="s-head" data-open="'+esc(id)+'">';
+    h+='<div class="s-when"><div class="s-dow">'+dow(s.date)+'</div>'
+      +'<div class="s-date">'+fmtDate(s.date)+'</div>'
+      +'<div class="s-time">'+esc(s.time||"")+'</div></div>';
+    h+='<div class="s-body"><div class="s-title">'+esc(s.title||"Einheit")+'</div>'
+      +'<div class="s-meta">'+esc([SPORT[s.sport]||s.sport,s.intensity,s.meet].filter(Boolean).join(" · "))+'</div>'
+      +(s.by?'<div class="by">angeboten von '+esc(nameOf(s.by))+'</div>':'')
+      +'</div>';
+    h+='<div class="s-right">';
+    if(amIn(id)) h+='<span class="in-pill">dabei</span>';
+    h+='<span class="count">'+(coming.length?'<span class="dot"></span>'+coming.length:'—')+'</span>';
+    h+='</div></div>';
 
-    if (open){
-      h += '<div class="detail">';
-      if (isNext && (s.long || s.short)){
-        h += '<p class="bignum">'+esc(s.long||s.short)
-          +  (s.short && s.long ? '<small>oder '+esc(s.short)+'</small>' : '<small>&nbsp;</small>')+'</p>';
+    if(open){
+      h+='<div class="detail">';
+      if(isNext && (s.long||s.short)){
+        h+='<p class="bignum">'+esc(s.long||s.short)
+          +(s.short&&s.long?'<small>oder '+esc(s.short)+'</small>':'<small>&nbsp;</small>')+'</p>';
       }
-      h += '<dl class="kv">';
-      h += '<dt>Treffpunkt</dt><dd>'+esc(s.meet||"—")+'</dd>';
-      h += '<dt>Zeit</dt><dd>'+dow(s.date)+' '+fmtDate(s.date)+' '+esc(s.time||"")+'</dd>';
-      if (s.long)  h += '<dt>Lang</dt><dd>'+esc(s.long)+'</dd>';
-      if (s.short) h += '<dt>Kurz</dt><dd>'+esc(s.short)+'</dd>';
-      h += '<dt>Intensität</dt><dd>'+esc(s.intensity||"—")+'</dd>';
-      if (s.note) h += '<dt>Notiz</dt><dd>'+esc(s.note)+'</dd>';
-      h += '</dl>';
+      h+='<dl class="kv">';
+      h+='<dt>Treffpunkt</dt><dd>'+esc(s.meet||"—")+'</dd>';
+      h+='<dt>Zeit</dt><dd>'+dow(s.date)+' '+fmtDate(s.date)+' '+esc(s.time||"")+'</dd>';
+      if(s.long) h+='<dt>Lang</dt><dd>'+esc(s.long)+'</dd>';
+      if(s.short) h+='<dt>Kurz</dt><dd>'+esc(s.short)+'</dd>';
+      h+='<dt>Intensität</dt><dd>'+esc(s.intensity||"—")+'</dd>';
+      if(s.note) h+='<dt>Notiz</dt><dd>'+esc(s.note)+'</dd>';
+      h+='</dl>';
 
-      var picked = myPick(sid, s);
-      if (S.canWrite !== false && S.uid){
-        h += '<div class="lbl" style="margin-bottom:7px">Dein Niveau an dem Tag</div>';
-        h += '<div class="groups">';
-        for (var i=0;i<g.length;i++){
-          var n = 0; for (var k=0;k<coming.length;k++) if (coming[k].g===i) n++;
-          h += '<button class="gbtn" data-pick="'+esc(sid)+'" data-g="'+i+'" aria-pressed="'
-             + (picked===i?"true":"false")+'">'
-             + '<span class="gnum">'+(n||"")+'</span>'
-             + '<b>Gruppe '+(i+1)+'</b><span>'+esc(g[i])+'</span></button>';
+      if(mayWrite()){
+        if(g.length>1){
+          var picked=myPick(id,s);
+          h+='<div class="lbl" style="margin-bottom:7px">Dein Niveau an dem Tag</div><div class="groups">';
+          for(var i=0;i<g.length;i++){
+            var n=0; for(var k=0;k<coming.length;k++) if(coming[k].g===i) n++;
+            h+='<button class="gbtn" data-pick="'+esc(id)+'" data-g="'+i+'" aria-pressed="'
+              +(picked===i?"true":"false")+'"><span class="gnum">'+(n||"")+'</span>'
+              +'<b>Gruppe '+(i+1)+'</b><span>'+esc(g[i])+'</span></button>';
+          }
+          h+='</div>';
         }
-        h += '</div>';
-        h += '<button class="btn'+(amIn(sid)?" ghost":"")+'" data-go="'+esc(sid)+'"'+(S.busy?" disabled":"")+'>'
-           + (amIn(sid) ? "Doch nicht — abmelden" : "Ich bin dabei")+'</button>';
+        h+='<button class="btn'+(amIn(id)?" ghost":"")+'" data-go="'+esc(id)+'"'+(S.busy?" disabled":"")+'>'
+          +(amIn(id)?"Doch nicht — abmelden":"Ich bin dabei")+'</button>';
       } else {
-        h += '<p class="note">Zusagen geht hier nur mit Schreibrecht. '
-           + 'Sag im Gruppenchat Bescheid, dann trägt dich jemand ein.</p>';
+        h+='<p class="note">Zusagen geht hier nur mit Schreibrecht. Sag im Gruppenchat Bescheid.</p>';
       }
 
-      h += '<div class="who"><span class="lbl">Wer kommt</span>';
-      if (!coming.length){
-        h += '<p>Noch niemand. Der Erste macht es leichter für alle anderen.</p>';
+      h+='<div class="who"><span class="lbl">Wer kommt</span>';
+      if(!coming.length){
+        h+='<p>Noch niemand. Der Erste macht es leichter für alle anderen.</p>';
       } else {
-        h += '<ul>';
-        for (var j=0;j<coming.length;j++){
-          h += '<li'+(coming[j].uid===S.uid?' class="me"':'')+'>'+esc(nameOf(coming[j].uid))
-             + ' <span class="mono" style="opacity:.6">G'+(coming[j].g+1)+'</span></li>';
+        h+='<ul>';
+        for(var j=0;j<coming.length;j++){
+          h+='<li'+(coming[j].uid===S.uid?' class="me"':'')+'>'+esc(nameOf(coming[j].uid))
+            +(g.length>1?' <span class="mono" style="opacity:.6">G'+(coming[j].g+1)+'</span>':'')+'</li>';
         }
-        h += '</ul>';
+        h+='</ul>';
       }
-      h += '</div>';
+      h+='</div>';
 
-      if (S.canEdit){
-        h += '<div style="margin-top:18px; display:flex; gap:8px; justify-content:flex-end">';
-        if (S.confirmDel === sid){
-          h += '<button class="btn ghost sm" data-cancel-del="1">Abbrechen</button>'
-             + '<button class="btn sm" data-del="'+esc(sid)+'">Wirklich löschen</button>';
+      var mayKill = s.by ? (s.by===S.uid) : S.canEdit;
+      if(mayKill){
+        h+='<div style="margin-top:18px; display:flex; gap:8px; justify-content:flex-end">';
+        if(S.confirmDel===id){
+          h+='<button class="btn ghost sm" data-cancel-del="1">Abbrechen</button>'
+            +'<button class="btn sm" data-del="'+esc(id)+'">Wirklich löschen</button>';
         } else {
-          h += '<button class="btn ghost sm" data-askdel="'+esc(sid)+'">Einheit löschen</button>';
+          h+='<button class="btn ghost sm" data-askdel="'+esc(id)+'">'
+            +(s.by?"Angebot zurückziehen":"Einheit löschen")+'</button>';
         }
-        h += '</div>';
+        h+='</div>';
       }
-      h += '</div>';
+      h+='</div>';
     }
-    h += '</article>';
+    h+='</article>';
     return h;
   }
 
-  function addForm(){
-    var h = '<form class="add" id="addf">';
-    h += '<div class="row2">'
-      +  '<label class="f"><span>Datum</span><input type="date" name="date" required value="'+todayISO()+'"></label>'
-      +  '<label class="f"><span>Uhrzeit</span><input type="time" name="time" required value="08:00"></label>'
-      +  '</div>';
-    h += '<div class="row2">'
-      +  '<label class="f"><span>Titel</span><input name="title" required placeholder="Lange Ausfahrt" maxlength="60"></label>'
-      +  '<label class="f"><span>Sportart</span><select name="sport">'
-      +  '<option value="rad">Rad</option><option value="lauf">Lauf</option>'
-      +  '<option value="schwimmen">Schwimmen</option><option value="kraft">Kraft</option>'
-      +  '<option value="koppel">Koppel</option></select></label>'
-      +  '</div>';
-    h += '<div class="row2">'
-      +  '<label class="f"><span>Intensität</span><input name="intensity" placeholder="GA1" maxlength="40"></label>'
-      +  '<label class="f"><span>Treffpunkt</span><input name="meet" required placeholder="Reichsbrücke, Nordseite" maxlength="80"></label>'
-      +  '</div>';
-    h += '<div class="row2">'
-      +  '<label class="f"><span>Lange Variante</span><input name="long" placeholder="110 km" maxlength="40"></label>'
-      +  '<label class="f"><span>Kurze Variante</span><input name="short" placeholder="70 km ab Abzweig Orth" maxlength="60"></label>'
-      +  '</div>';
-    h += '<div class="row2">'
-      +  '<label class="f"><span>Gruppe 1</span><input name="g1" placeholder="30–32 km/h" maxlength="40"></label>'
-      +  '<label class="f"><span>Gruppe 2</span><input name="g2" placeholder="33–35 km/h" maxlength="40"></label>'
-      +  '</div>';
-    h += '<label class="f"><span>Notiz</span><textarea name="note" maxlength="240" placeholder="Optional. Kein Marketing."></textarea></label>';
-    h += '<div style="display:flex; gap:8px; margin-top:4px">'
-      +  '<button type="button" class="btn ghost" data-addcancel="1">Abbrechen</button>'
-      +  '<button type="submit" class="btn"'+(S.busy?" disabled":"")+'>Eintragen</button></div>';
-    h += '</form>';
-    return h;
+  function anchorForm(){
+    return '<form class="add" id="anchorf">'
+      +'<div class="row2">'
+      +'<label class="f"><span>Datum</span><input id="a_date" type="date" name="date" required value="'+todayISO()+'"></label>'
+      +'<label class="f"><span>Uhrzeit</span><input id="a_time" type="time" name="time" required value="08:00"></label></div>'
+      +'<div class="row2">'
+      +'<label class="f"><span>Titel</span><input id="a_title" name="title" required placeholder="Lange Ausfahrt" maxlength="60"></label>'
+      +'<label class="f"><span>Sportart</span><select id="a_sport" name="sport">'
+      +'<option value="rad">Rad</option><option value="lauf">Lauf</option>'
+      +'<option value="schwimmen">Schwimmen</option><option value="kraft">Kraft/Hyrox</option>'
+      +'<option value="koppel">Koppel</option></select></label></div>'
+      +'<div class="row2">'
+      +'<label class="f"><span>Intensität</span><input id="a_int" name="intensity" placeholder="GA1" maxlength="40"></label>'
+      +'<label class="f"><span>Treffpunkt</span><input id="a_meet" name="meet" required placeholder="Reichsbrücke, Nordseite" maxlength="80"></label></div>'
+      +'<div class="row2">'
+      +'<label class="f"><span>Lange Variante</span><input id="a_long" name="long" placeholder="110 km" maxlength="40"></label>'
+      +'<label class="f"><span>Kurze Variante</span><input id="a_short" name="short" placeholder="70 km ab Abzweig Orth" maxlength="60"></label></div>'
+      +'<div class="row2">'
+      +'<label class="f"><span>Gruppe 1</span><input id="a_g1" name="g1" placeholder="30–32 km/h" maxlength="40"></label>'
+      +'<label class="f"><span>Gruppe 2</span><input id="a_g2" name="g2" placeholder="33–35 km/h" maxlength="40"></label></div>'
+      +'<label class="f"><span>Notiz</span><textarea id="a_note" name="note" maxlength="240"></textarea></label>'
+      +'<div style="display:flex; gap:8px; margin-top:4px">'
+      +'<button type="button" class="btn ghost" data-cancel="anchor">Abbrechen</button>'
+      +'<button type="submit" class="btn"'+(S.busy?" disabled":"")+'>Anker eintragen</button></div>'
+      +'</form>';
+  }
+
+  function offerForm(){
+    return '<form class="add" id="offerf">'
+      +'<div class="row2">'
+      +'<label class="f"><span>Wann</span><input id="o_date" type="date" name="date" required value="'+plusDaysISO(1)+'" min="'+todayISO()+'"></label>'
+      +'<label class="f"><span>Uhrzeit</span><input id="o_time" type="time" name="time" required value="18:30"></label></div>'
+      +'<div class="row2">'
+      +'<label class="f"><span>Was steht an</span><input id="o_title" name="title" required placeholder="Schwelle 5 × 1000" maxlength="60"></label>'
+      +'<label class="f"><span>Sportart</span><select id="o_sport" name="sport">'
+      +'<option value="lauf">Lauf</option><option value="rad">Rad</option>'
+      +'<option value="schwimmen">Schwimmen</option><option value="kraft">Kraft/Hyrox</option>'
+      +'<option value="koppel">Koppel</option></select></label></div>'
+      +'<div class="row2">'
+      +'<label class="f"><span>Intensität</span><input id="o_int" name="intensity" placeholder="Schwelle" maxlength="40"></label>'
+      +'<label class="f"><span>Treffpunkt</span><input id="o_meet" name="meet" required placeholder="Prater Hauptallee" maxlength="80"></label></div>'
+      +'<label class="f"><span>Notiz</span><textarea id="o_note" name="note" maxlength="240" placeholder="Was genau, und ob man auch nur einen Teil mitmachen kann."></textarea></label>'
+      +'<div style="display:flex; gap:8px; margin-top:4px">'
+      +'<button type="button" class="btn ghost" data-cancel="offer">Abbrechen</button>'
+      +'<button type="submit" class="btn"'+(S.busy?" disabled":"")+'>Anbieten</button></div>'
+      +'</form>';
   }
 
   function render(){
-    if (!S.ready){ app.innerHTML = '<div class="boot">wird geladen …</div>'; return; }
+    if(!S.ready){ app.innerHTML='<div class="boot">wird geladen …</div>'; return; }
+    var h="";
 
-    var h = "";
+    if(S.msg) h+='<div class="card err"><div class="pad">'+esc(S.msg)+'</div></div>';
 
-    if (S.msg){
-      h += '<div class="card err"><div class="pad">'+esc(S.msg)+'</div></div>';
+    if(S.dbOff){
+      h+='<div class="card"><div class="pad">'
+        +'<p style="margin:0 0 8px"><b>Der Terminplan lädt hier nicht.</b></p>'
+        +'<p class="note" style="margin:0">Das passiert, wenn du abgemeldet bist oder die Seite '
+        +'keinen Zugriff auf ihre Daten bekommt. Die Einheiten stehen weiterhin im Gruppenchat.</p>'
+        +'</div></div>';
+      app.innerHTML=h; return;
     }
 
-    if (S.dbOff){
-      h += '<div class="card"><div class="pad">'
-        +  '<p style="margin:0 0 8px"><b>Der Terminplan lädt hier nicht.</b></p>'
-        +  '<p class="note" style="margin:0">Das passiert, wenn du abgemeldet bist oder die Seite '
-        +  'keinen Zugriff auf ihre Daten bekommt. Die Einheiten stehen weiterhin im Gruppenchat.</p>'
-        +  '</div></div>';
-      app.innerHTML = h;
-      return;
-    }
+    var today=todayISO();
+    var up=S.anchors.filter(function(s){return s.date>=today;});
+    var past=S.anchors.filter(function(s){return s.date<today;}).reverse();
+    var horizon=plusDaysISO(OFFER_WINDOW);
+    var off=S.offers.filter(function(o){return o.date>=today && o.date<=horizon;});
 
-    var today = todayISO();
-    var up = S.sessions.filter(function(s){ return s.date >= today; });
-    var past = S.sessions.filter(function(s){ return s.date < today; }).reverse();
-
-    if (!up.length){
-      h += '<div class="card"><div class="empty">'
-        +  (S.canEdit ? "Noch keine Einheit eingetragen. Trag die nächste ein, dann sehen sie alle."
-                      : "Gerade steht nichts im Kalender. Sobald der nächste Termin fix ist, steht er hier.")
-        +  '</div></div>';
+    h+='<div class="sec" style="margin-top:8px"><div class="sechd">'
+      +'<span class="lbl">Fix · das Wochenende</span>'
+      +'<p>Findet statt, egal wer zusagt.</p></div></div>';
+    if(!up.length){
+      h+='<div class="card"><div class="empty">'
+        +(S.canEdit?"Noch kein Anker eingetragen.":"Gerade steht kein fixer Termin.")+'</div></div>';
     } else {
-      h += '<div class="sec" style="margin-top:8px"><span class="lbl">Als Nächstes</span></div>';
-      for (var i=0;i<up.length;i++) h += sessionRow(up[i], i===0);
+      for(var i=0;i<up.length;i++) h+=row(up[i], i===0);
     }
 
-    if (S.canEdit){
-      h += '<div class="sec"><span class="lbl">Gastgeber</span>';
-      h += '<div class="card"><div class="pad">';
-      if (S.adding) h += addForm();
-      else h += '<button class="btn ghost" data-addopen="1">Einheit eintragen</button>';
-      h += '</div></div></div>';
+    h+='<div class="sec"><div class="sechd">'
+      +'<span class="lbl">Beweglich · unter der Woche</span>'
+      +'<p>Was jemand ohnehin im Plan hat. Wer mitmag, sagt zu.</p></div>';
+    if(!off.length){
+      h+='<div class="card"><div class="empty">Diese Woche noch nichts angeboten.'
+        +(mayWrite()?' Wenn du Intervalle, Gym oder Bahn im Plan hast, trag es ein.':'')+'</div></div>';
+    } else {
+      for(var m=0;m<off.length;m++) h+=row(off[m], false);
+    }
+    if(mayWrite()){
+      h+='<div class="card"><div class="pad">';
+      h+= S.addOffer ? offerForm()
+        : '<button class="btn ghost" data-open-form="offer">Einheit anbieten</button>';
+      h+='</div></div>';
+    }
+    h+='</div>';
+
+    if(S.canEdit){
+      h+='<div class="sec"><span class="lbl">Gastgeber</span>';
+      h+='<div class="card"><div class="pad">';
+      h+= S.addAnchor ? anchorForm()
+        : '<button class="btn ghost" data-open-form="anchor">Festen Anker eintragen</button>';
+      h+='</div></div></div>';
     }
 
-    if (past.length){
-      h += '<div class="sec"><span class="lbl">Gewesen</span></div>';
-      for (var j=0;j<Math.min(past.length,6);j++) h += sessionRow(past[j], false);
+    if(past.length){
+      h+='<div class="sec"><span class="lbl">Gewesen</span></div>';
+      for(var j=0;j<Math.min(past.length,6);j++) h+=row(past[j],false);
     }
 
-    app.innerHTML = h;
+    app.innerHTML=h;
   }
 
-  /* ---------- names ---------- */
-  var nameWanted = {};
+  var nameWanted={};
   async function refreshNames(){
-    if (!S.user) return;
-    var ids = [], seen = {};
-    for (var uid in S.commits){
-      if (uid === S.uid || seen[uid]) continue;
-      seen[uid] = 1; ids.push(uid);
+    if(!S.user) return;
+    var ids=[],seen={},uid;
+    for(uid in S.commits){ if(uid!==S.uid && !seen[uid]){seen[uid]=1;ids.push(uid);} }
+    for(var i=0;i<S.offers.length;i++){
+      uid=S.offers[i].by;
+      if(uid && uid!==S.uid && !seen[uid]){seen[uid]=1;ids.push(uid);}
     }
-    if (!ids.length) return;
-    var key = ids.slice().sort().join(",");
-    if (nameWanted[key]) return;
-    nameWanted[key] = 1;
+    if(!ids.length) return;
+    var key=ids.slice().sort().join(",");
+    if(nameWanted[key]) return;
+    nameWanted[key]=1;
     try{
-      var ps = await S.user.profiles(ids);
-      var changed = false;
-      for (var i=0;i<ids.length;i++){
-        var p = ps && ps[ids[i]];
-        var n = (p && p.name) || "";
-        if (n && S.names[ids[i]] !== n){ S.names[ids[i]] = n; changed = true; }
+      var ps=await S.user.profiles(ids), changed=false;
+      for(var k=0;k<ids.length;k++){
+        var p=ps&&ps[ids[k]], n=(p&&p.name)||"";
+        if(n && S.names[ids[k]]!==n){S.names[ids[k]]=n;changed=true;}
       }
-      if (changed) render();
-    }catch(e){ /* names stay generic */ }
+      if(changed) render();
+    }catch(e){}
   }
 
-  /* ---------- writes ---------- */
-  async function toggle(sid){
-    if (!S.db || !S.uid || S.busy) return;
-    var s = null;
-    for (var i=0;i<S.sessions.length;i++) if (S.sessions[i].id === sid) s = S.sessions[i];
-    if (!s) return;
-
-    var mine = {};
-    var cur = S.commits[S.uid] || {};
-    for (var k in cur) mine[k] = cur[k];
-
-    if (mine[sid] != null){
-      delete mine[sid];
+  function failed(e){
+    if(e && e.code==="invalid_argument"){
+      S.canWrite=false;
+      S.msg="Das geht mit deinem Zugang nicht. Sag im Gruppenchat Bescheid.";
     } else {
-      var g = myPick(sid, s);
-      mine[sid] = {g:g, at:new Date().toISOString()};
-      lsSet("ws.group", String(g));
+      S.msg="Das hat gerade nicht geklappt. Probier es nochmal.";
     }
+  }
 
-    S.busy = true; S.msg = null; render();
+  async function toggle(id){
+    if(!S.db || !S.uid || S.busy) return;
+    var s=find(id); if(!s) return;
+    var mine={}, cur=S.commits[S.uid]||{}, k;
+    for(k in cur) mine[k]=cur[k];
+    if(mine[id]!=null){ delete mine[id]; }
+    else { var g=myPick(id,s); mine[id]={g:g, at:new Date().toISOString()}; lsSet("ws.group",String(g)); }
+    S.busy=true; S.msg=null; render();
+    try{ await S.db.doc("commits/"+S.uid).set(mine); S.commits[S.uid]=mine; }
+    catch(e){ failed(e); }
+    S.busy=false; render();
+  }
+
+  function readForm(form,names){
+    var f={};
+    names.forEach(function(n){var el=form.elements[n];f[n]=el?String(el.value||"").trim():"";});
+    return f;
+  }
+
+  async function addAnchor(form){
+    if(!S.db||S.busy) return;
+    var f=readForm(form,["date","time","title","sport","intensity","meet","long","short","g1","g2","note"]);
+    if(!f.date||!f.time||!f.title||!f.meet) return;
+    var groups=[]; if(f.g1)groups.push(f.g1); if(f.g2)groups.push(f.g2);
+    if(!groups.length) groups=["alle zusammen"];
+    var id="s_"+f.date.replace(/-/g,"")+"_"+(f.sport||"rad");
+    S.busy=true; S.msg=null; render();
     try{
-      await S.db.doc("commits/" + S.uid).set(mine);
-      S.commits[S.uid] = mine;
-    }catch(e){
-      if (e && e.code === "invalid_argument"){
-        S.canWrite = false;
-        S.msg = "Zusagen geht mit deinem Zugang nicht. Sag im Gruppenchat Bescheid.";
+      await S.db.doc("sessions/"+id).set({
+        date:f.date,time:f.time,title:f.title,sport:f.sport||"rad",intensity:f.intensity||"",
+        meet:f.meet,long:f.long||"",short:f.short||"",groups:groups,note:f.note||"",
+        createdAt:new Date().toISOString()});
+      S.addAnchor=false;
+    }catch(e){ failed(e); }
+    S.busy=false; render();
+  }
+
+  async function addOffer(form){
+    if(!S.db||!S.uid||S.busy) return;
+    var f=readForm(form,["date","time","title","sport","intensity","meet","note"]);
+    if(!f.date||!f.time||!f.title||!f.meet) return;
+    var mine={},k; for(k in S.myOffers) mine[k]=S.myOffers[k];
+    mine[newId("o_")]={
+      date:f.date,time:f.time,title:f.title,sport:f.sport||"lauf",
+      intensity:f.intensity||"",meet:f.meet,note:f.note||"",
+      createdAt:new Date().toISOString()};
+    S.busy=true; S.msg=null; render();
+    try{ await S.db.doc("offers/"+S.uid).set(mine); S.myOffers=mine; S.addOffer=false; }
+    catch(e){ failed(e); }
+    S.busy=false; render();
+  }
+
+  async function remove(id){
+    if(!S.db||S.busy) return;
+    var s=find(id); if(!s) return;
+    S.busy=true; S.confirmDel=null; S.msg=null; render();
+    try{
+      if(s.by){
+        if(s.by!==S.uid) throw {code:"invalid_argument"};
+        var mine={},k; for(k in S.myOffers) if(k!==id) mine[k]=S.myOffers[k];
+        await S.db.doc("offers/"+S.uid).set(mine); S.myOffers=mine;
       } else {
-        S.msg = "Das hat gerade nicht geklappt. Probier es nochmal.";
+        await S.db.doc("sessions/"+id).delete();
       }
+      if(S.open===id) S.open=null;
+    }catch(e){ failed(e); }
+    S.busy=false; render();
+  }
+
+  document.addEventListener("click",function(e){
+    var t=e.target, el;
+    if((el=t.closest("[data-pick]"))){
+      S.pick[el.getAttribute("data-pick")]=Number(el.getAttribute("data-g")); render(); return;
     }
-    S.busy = false; render();
-  }
-
-  async function addSession(form){
-    if (!S.db || S.busy) return;
-    var f = {};
-    ["date","time","title","sport","intensity","meet","long","short","g1","g2","note"].forEach(function(n){
-      var el = form.elements[n];
-      f[n] = el ? String(el.value||"").trim() : "";
-    });
-    if (!f.date || !f.time || !f.title || !f.meet) return;
-
-    var groups = [];
-    if (f.g1) groups.push(f.g1);
-    if (f.g2) groups.push(f.g2);
-    if (!groups.length) groups = ["alle zusammen"];
-
-    var id = "s_" + f.date.replace(/-/g,"") + "_" + (f.sport||"rad");
-    var body = {
-      date:f.date, time:f.time, title:f.title, sport:f.sport||"rad",
-      intensity:f.intensity||"", meet:f.meet, long:f.long||"", short:f.short||"",
-      groups:groups, note:f.note||"", createdAt:new Date().toISOString()
-    };
-
-    S.busy = true; S.msg = null; render();
-    try{
-      await S.db.doc("sessions/" + id).set(body);
-      S.adding = false;
-    }catch(e){
-      S.msg = "Die Einheit konnte nicht gespeichert werden.";
-    }
-    S.busy = false; render();
-  }
-
-  async function delSession(sid){
-    if (!S.db || S.busy) return;
-    S.busy = true; S.confirmDel = null; render();
-    try{ await S.db.doc("sessions/" + sid).delete(); }
-    catch(e){ S.msg = "Löschen hat nicht geklappt."; }
-    S.busy = false; render();
-  }
-
-  /* ---------- events ---------- */
-  document.addEventListener("click", function(e){
-    var t = e.target;
-    var el;
-
-    if ((el = t.closest("[data-pick]"))){
-      S.pick[el.getAttribute("data-pick")] = Number(el.getAttribute("data-g"));
+    if((el=t.closest("[data-go]"))){ toggle(el.getAttribute("data-go")); return; }
+    if((el=t.closest("[data-askdel]"))){ S.confirmDel=el.getAttribute("data-askdel"); render(); return; }
+    if(t.closest("[data-cancel-del]")){ S.confirmDel=null; render(); return; }
+    if((el=t.closest("[data-del]"))){ remove(el.getAttribute("data-del")); return; }
+    if((el=t.closest("[data-open-form]"))){
+      if(el.getAttribute("data-open-form")==="offer") S.addOffer=true; else S.addAnchor=true;
       render(); return;
     }
-    if ((el = t.closest("[data-go]"))){ toggle(el.getAttribute("data-go")); return; }
-    if ((el = t.closest("[data-askdel]"))){ S.confirmDel = el.getAttribute("data-askdel"); render(); return; }
-    if (t.closest("[data-cancel-del]")){ S.confirmDel = null; render(); return; }
-    if ((el = t.closest("[data-del]"))){ delSession(el.getAttribute("data-del")); return; }
-    if (t.closest("[data-addopen]")){ S.adding = true; render(); return; }
-    if (t.closest("[data-addcancel]")){ S.adding = false; render(); return; }
-    if ((el = t.closest("[data-open]"))){
-      var sid = el.getAttribute("data-open");
-      S.open = (S.open === sid) ? null : sid;
-      S.confirmDel = null;
+    if((el=t.closest("[data-cancel]"))){
+      if(el.getAttribute("data-cancel")==="offer") S.addOffer=false; else S.addAnchor=false;
       render(); return;
+    }
+    if((el=t.closest("[data-open]"))){
+      var id=el.getAttribute("data-open");
+      S.open=(S.open===id)?null:id; S.confirmDel=null; render(); return;
     }
   });
 
-  document.addEventListener("submit", function(e){
-    if (e.target && e.target.id === "addf"){ e.preventDefault(); addSession(e.target); }
+  document.addEventListener("submit",function(e){
+    if(!e.target) return;
+    if(e.target.id==="anchorf"){ e.preventDefault(); addAnchor(e.target); }
+    else if(e.target.id==="offerf"){ e.preventDefault(); addOffer(e.target); }
   });
 
-  /* ---------- boot ---------- */
   async function boot(){
-    var db = null, user = null;
-    try{ db = await window.claude.use("db"); }catch(e){}
-    try{ user = await window.claude.use("user"); }catch(e){}
+    var db=null,user=null;
+    try{ db=await window.claude.use("db"); }catch(e){}
+    try{ user=await window.claude.use("user"); }catch(e){}
+    S.db=db; S.user=user;
 
-    S.db = db; S.user = user;
-
-    if (user){
-      try{ S.uid = await user.id(); }catch(e){ S.uid = null; }
-      try{ S.canEdit = !!user.canEdit(); }catch(e){ S.canEdit = false; }
-      try{ var w = user.can("data.write"); S.canWrite = (w == null ? null : !!w); }catch(e){ S.canWrite = null; }
+    if(user){
+      try{ S.uid=await user.id(); }catch(e){ S.uid=null; }
+      try{ S.canEdit=!!user.canEdit(); }catch(e){ S.canEdit=false; }
+      try{ var w=user.can("data.write"); S.canWrite=(w==null?null:!!w); }catch(e){ S.canWrite=null; }
     }
+    if(!db || !S.uid){ S.dbOff=true; S.ready=true; render(); return; }
 
-    if (!db || !S.uid){ S.dbOff = true; S.ready = true; render(); return; }
-
-    S.ready = true; render();
+    S.ready=true; render();
 
     db.collection("sessions").orderBy("date","asc").limit(100).onSnapshot(function(snap){
-      var out = [];
-      for (var i=0;i<snap.docs.length;i++){
-        var d = snap.docs[i].data() || {};
-        d.id = snap.docs[i].id;
-        if (d.date) out.push(d);
+      var out=[];
+      for(var i=0;i<snap.docs.length;i++){
+        var d=snap.docs[i].data()||{}; d.id=snap.docs[i].id;
+        if(d.date) out.push(d);
       }
-      S.sessions = out;
-      if (!S.open && out.length){
-        var today = todayISO();
-        for (var k=0;k<out.length;k++) if (out[k].date >= today){ S.open = out[k].id; break; }
+      S.anchors=out;
+      if(!S.open && out.length){
+        var t=todayISO();
+        for(var k=0;k<out.length;k++) if(out[k].date>=t){ S.open=out[k].id; break; }
       }
       render();
-    }, function(err){
-      S.msg = (err && err.code === "revoked")
-        ? "Der Zugriff auf den Terminplan wurde beendet. Lade die Seite neu."
+    },function(err){
+      S.msg=(err&&err.code==="revoked")
+        ? "Der Zugriff wurde beendet. Lade die Seite neu."
         : "Der Terminplan lädt gerade nicht.";
       render();
     });
 
+    db.collection("offers").limit(300).onSnapshot(function(snap){
+      var list=[], mine={};
+      for(var i=0;i<snap.docs.length;i++){
+        var uid=snap.docs[i].id, body=snap.docs[i].data()||{};
+        if(uid===S.uid) mine=body;
+        for(var k in body){
+          var o=body[k];
+          if(o && o.date){
+            var c={}; for(var f in o) c[f]=o[f];
+            c.id=k; c.by=uid; list.push(c);
+          }
+        }
+      }
+      list.sort(function(a,b){
+        return (a.date+a.time) < (b.date+b.time) ? -1 : (a.date+a.time) > (b.date+b.time) ? 1 : 0;
+      });
+      S.offers=list; S.myOffers=mine;
+      render(); refreshNames();
+    },function(){});
+
     db.collection("commits").limit(300).onSnapshot(function(snap){
-      var m = {};
-      for (var i=0;i<snap.docs.length;i++) m[snap.docs[i].id] = snap.docs[i].data() || {};
-      S.commits = m;
-      render();
-      refreshNames();
-    }, function(){ /* commits stay empty; sessions still render */ });
+      var m={};
+      for(var i=0;i<snap.docs.length;i++) m[snap.docs[i].id]=snap.docs[i].data()||{};
+      S.commits=m; render(); refreshNames();
+    },function(){});
   }
 
-  if (window.claude && window.claude.use) boot();
-  else { S.dbOff = true; S.ready = true; render(); }
+  if(window.claude && window.claude.use) boot();
+  else { S.dbOff=true; S.ready=true; render(); }
 })();
 </script>

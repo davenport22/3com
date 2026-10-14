@@ -17,6 +17,9 @@ kopiert, und nicht aus Aufgaben, die man plant.
 **Die einzige Regel für die nächsten zehn Tage:** Am Samstag um 08:00 steht jemand an der
 Reichsbrücke. Ob fünf Leute kommen oder null, entscheidet nicht, ob gefahren wird.
 
+Unter der Woche gilt diese Regel ausdrücklich nicht. Dort wird angeboten, nicht terminiert
+(D-035).
+
 ---
 
 ## 1. Acht Nachrichten, nicht zwanzig
@@ -106,6 +109,10 @@ Vorhaben.
 > vorher.
 >
 > Sagt bitte bis Freitag Abend kurz zu oder ab, dann weiß ich, ob ich auf wen wart.
+>
+> Und unter der Woche: wenn wer Intervalle, Gym oder Bahn im Plan hat und nicht allein machen
+> will, einfach hier reinschreiben. Tag, Uhrzeit, was genau, wo. Wer passend im Plan hat, kommt
+> mit. Das muss nicht jede Woche derselbe Termin sein.
 
 ---
 

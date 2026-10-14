@@ -481,3 +481,80 @@ stehen.
 **Abbruchkriterium unverändert:** Verhältnis Zusage zu Erscheinen über sechs Wochen unter
 50 Prozent, dann wird nichts weiter gebaut.
 **Wiedervorlage:** nach der dritten durchgeführten Ausfahrt.
+
+---
+
+## D-034 Keine Monetarisierung. Nur Kostendeckung.
+
+**Datum:** 2026-10-14
+**Entscheidung:** Windschatten verfolgt kein Erlösziel. Es gibt keine Take Rate, keine Beiträge,
+kein Abo, keinen Markenumsatz. Was Geld kostet (Hallenzeit, Bahn, Studio, Coach), wird durch die
+geteilt, die daran teilnehmen. Marken sind nur als Übernahme konkreter Kosten oder Sachleistung
+denkbar, nie als Einnahme.
+**Begründung:** Vorgabe des Gründers, bestätigt am 14.10.2026. Das war von Anfang an die
+Prämisse ("kein Unternehmen für maximalen Gewinn"), stand aber bis jetzt als Verschiebung im
+Plan statt als Festlegung. Die Verschiebung hat Arbeit erzeugt, die nie gebraucht wurde.
+**Folgen:**
+- D-001 (Ambitionsniveau bleibt offen) ist damit beantwortet und geschlossen. Das hier ist eine
+  Gruppe mit einem Werkzeug, kein Unternehmen. Die Frage nach Verein, Bootstrapped Business oder
+  Plattform stellt sich nicht mehr.
+- `03-geschaeftsmodell.md` ist ab jetzt ein Kostenmodell. Unit Economics, Erlöslogik und
+  Take-Rate-Rechnungen sind gegenstandslos.
+- Meilenstein M7 ("Erster Euro") entfällt ersatzlos.
+- Die Belastungsgrenze ist nicht mehr Geld, sondern Aufmerksamkeit. Ohne Erlös gibt es keine
+  Möglichkeit, Arbeit einzukaufen. Die einzige Währung ist die Bereitschaft anderer, eine Einheit
+  zu führen. **M5 (fünf fremdgeführte Serien) ist damit nicht mehr ein Meilenstein unter acht,
+  sondern die einzige Überlebensbedingung des Vorhabens.**
+- Was wegfällt, fällt ersatzlos weg: kein Pitch, keine Investorenlogik, keine Bewertungsfrage,
+  keine zweite Stadt aus Wachstumsgründen. Eine zweite Stadt entsteht höchstens, weil jemand dort
+  dasselbe machen will.
+**Wiedervorlage:** nur wenn laufende Kosten entstehen, die sich nicht umlegen lassen.
+
+---
+
+## D-035 Zwei Ebenen: fixer Anker am Wochenende, bewegliche Einheiten unter der Woche
+
+**Datum:** 2026-10-14
+**Entscheidung:** Das Terminmodell bekommt zwei Ebenen mit unterschiedlichen Regeln.
+
+| | Fixer Anker | Bewegliche Einheit |
+|---|---|---|
+| Wann | Samstag, 08:00, immer dieselbe Stelle | unter der Woche, Termin wechselt |
+| Was | lange Ausfahrt, langer Lauf | Intervalle, Gym, Bahn, Koppel |
+| Wer legt an | die Gastgeber | jede und jeder |
+| Gilt | findet statt, egal wer zusagt | findet statt, wenn wer mitmag |
+| Vorlauf | wochenlang bekannt | ein bis drei Tage |
+
+**Begründung:** Die bisherige Annahme war, dass alle drei Anker ganzjährig an derselben Stelle im
+Kalender stehen müssen, weil Wiederholung Verlässlichkeit erzeugt. Für das Wochenende stimmt das
+und bleibt. Unter der Woche ist es falsch, und zwar aus demselben Grund, aus dem das ganze Projekt
+existiert.
+
+Ein fester Dienstagstermin verlangt, dass zehn Trainingspläne sich einem Slot anpassen. Das ist
+genau die zweidimensionale Peer-Knappheit aus `01-problem-und-nutzer.md`, nur mit einer
+zusätzlichen Bedingung: jetzt muss auch noch der Wochentag passen. Ein bewegliches Angebot dreht
+das um. Wer ohnehin Schwelle im Plan hat, sagt es an, und wer etwas Kompatibles im Plan hat,
+kommt mit. Die Zuordnung passiert über das Angebot, nicht über den Kalender.
+
+**Die allgemeine Regel dahinter:** Feste Slots sind ein dichteabhängiges Instrument. Unterhalb
+einer gewissen Gruppengröße schlägt Zuordnung die Terminplanung, oberhalb ist es umgekehrt, weil
+sich dann jeder Slot füllt und der Ritualwert überwiegt. parkrun und November Project arbeiten
+oberhalb dieser Schwelle. Windschatten mit acht Leuten arbeitet darunter.
+
+**Warum das Wochenende die Ausnahme ist:** Die lange Einheit ist durch Arbeitszeiten ohnehin auf
+das Wochenende synchronisiert. Da ist der Slot keine Zumutung, sondern eine Feststellung.
+
+**Verhältnis zu Council-Runde 2:** Dort wurde das Ad-hoc-Board gestrichen, weil ein leeres Board
+sichtbares Scheitern ist. Das Argument gilt weiter und ist der Grund, warum diese Ebene begrenzt
+und rücknehmbar ist. Gestrichen wurde damals ein Board, das die Serien *ersetzt*. Hier bleibt der
+Anker unangetastet.
+
+**Risiko und Gegenmaßnahme:** Eine leere Angebotsliste wirkt tot. Deshalb bleibt WhatsApp der
+primäre Kanal für bewegliche Einheiten, die App bildet sie nur ab, und der Leerzustand ist als
+Aufforderung formuliert, nicht als Lücke.
+**Abbruchkriterium für diese Ebene:** Wenn nach vier Wochen niemand außer den Gastgebern eine
+Einheit angeboten hat, fliegt sie wieder raus.
+**Umgesetzt:** `app/windschatten.html`, getrennte Ablage `sessions` (Anker) und `offers`
+(beweglich, jede Person schreibt nur in die eigene).
+**Wiedervorlage:** bei mehr als 25 aktiven Personen, dann ist die Dichteschwelle möglicherweise
+überschritten und feste Wochentermine schlagen wieder das Anbieten.

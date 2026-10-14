@@ -25,11 +25,12 @@ Dichte löst das, kein Werkzeug.
 |---|---|
 | Phase | v1.0. Konzept eingefroren. **Es wird gefahren, nicht mehr geschrieben.** |
 | Gründer | zwei, gleiche Anteile. Einer BD, Vertrieb und Community, einer Produkt und Technik |
-| Ambitionsniveau | bewusst offen, entscheidet sich nach dem MVP |
+| Ambitionsniveau | entschieden: Gruppe mit Werkzeug, kein Unternehmen (D-034) |
 | Erster Termin | **Sa 17.10.2026, 08:00, Reichsbrücke Nord.** Ein Anker, nicht drei (D-033) |
 | App | gebaut und im Betrieb, Quelltext in `app/windschatten.html` (D-032) |
+| Terminmodell | zwei Ebenen: fixer Anker am Wochenende, bewegliche Einheiten unter der Woche (D-035) |
 | Nächster Schritt | acht Nachrichten verschicken, siehe `docs/18-start-kit.md` |
-| Erlöslogik | Angebotsseite zuerst, Marken erst im zweiten Winter, Athletinnen zahlen nicht |
+| Geld | **Keine Monetarisierung (D-034).** Kosten werden durch die geteilt, die teilnehmen |
 | Markt Wien | 5.000 bis 12.000 Personen (Schätzung, siehe 04) |
 | Name | **Windschatten**, entschieden (D-031). Domain noch nicht geprüft |
 | Datum | 2026-10-13 |

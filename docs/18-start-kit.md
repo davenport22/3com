@@ -1,40 +1,46 @@
-# 18 Startkit: die Texte, die jetzt rausgehen
+# 18 Startkit: die Texte für den Neustart am 09.01.2027
 
-Dieses Dokument enthält keine Strategie. Es enthält die fertigen Nachrichten für die nächsten
-zehn Tage, damit zwischen Entscheidung und Versand keine Schreibarbeit mehr liegt.
+Dieses Dokument enthält keine Strategie. Es enthält die fertigen Nachrichten bis zum ersten
+Samstag, damit zwischen Entscheidung und Versand keine Schreibarbeit mehr liegt.
 
-Stand: 13.10.2026. Zieltermin: **Samstag, 17.10.2026, 08:00, Reichsbrücke.**
-
----
-
-## 0. Warum es beim ersten Mal nicht geklappt hat
-
-Der 19.09. ist ausgefallen, weil keine Zeit war. Das ist kein Konzeptfehler, sondern das
-normale Verhalten eines Vorhabens ohne äußeren Druck. Die Gegenmaßnahme ist nicht mehr
-Motivation, sondern weniger Aufwand pro Schritt. Deshalb besteht dieses Kit aus Texten, die man
-kopiert, und nicht aus Aufgaben, die man plant.
-
-**Die einzige Regel für die nächsten zehn Tage:** Am Samstag um 08:00 steht jemand an der
-Reichsbrücke. Ob fünf Leute kommen oder null, entscheidet nicht, ob gefahren wird.
-
-Unter der Woche gilt diese Regel ausdrücklich nicht. Dort wird angeboten, nicht terminiert
-(D-035).
+Stand: 04.11.2026. Zieltermin: **Samstag, 09.01.2027, 09:00, Praterstern, Beginn Hauptallee.**
+Versandfrist: **Sonntag, 15.11.2026** (D-038).
 
 ---
 
-## 1. Acht Nachrichten, nicht zwanzig
+## 0. Warum es zweimal nicht geklappt hat
 
-Die Roadmap verlangte zwanzig Namen pro Gründer. Das ist der Grund, warum die Liste nie
-geschrieben wurde. Acht reichen für die erste Ausfahrt.
+Der 19.09. ist ausgefallen, weil keine Zeit war. Der 17.10. ist ausgefallen, weil die acht
+Nachrichten aus der letzten Fassung dieses Dokuments nie verschickt wurden. In derselben Zeit sind
+eine App, eine Website und zehn Entscheidungen entstanden. Der Engpass war also nie Zeit für das
+Projekt, sondern genau dieser eine Schritt, der sich unangenehmer anfühlt als alles andere: Leute
+direkt fragen.
+
+Deshalb drei Änderungen gegenüber der ersten Fassung:
+
+1. **Früher fragen.** Die Nachricht kündigt einen Termin in acht Wochen an, nicht übermorgen. Das
+   ist für den Empfänger eine leichte Zusage und für den Absender eine leichte Frage
+2. **Eine Frist, die jemand anderer kennt.** Der Mitgründer weiß vom 15.11. und fragt nach
+3. **Schreibstopp.** Bis die acht Nachrichten im `LOGBUCH.md` stehen, wird an nichts anderem
+   gearbeitet
+
+**Die einzige Regel ab dem 09.01.:** Am Samstag um 09:00 steht jemand am Praterstern. Ob fünf Leute
+kommen oder null, entscheidet nicht, ob gelaufen wird.
+
+---
+
+## 1. Acht Namen, zehn Minuten
+
+Das ist der erste Schritt und der einzige für heute. Noch keine Nachricht, nur die Namen.
 
 **Auswahlkriterium, in dieser Reihenfolge:**
 
-1. Wer hat in den letzten zwölf Monaten ein Rennen gefinisht?
+1. Wer hat in den letzten zwölf Monaten ein Rennen gefinisht oder hat eines für 2027 im Kalender?
 2. Wer hat dir schon einmal von sich aus von seinem Trainingsplan erzählt?
-3. Wer wohnt so, dass die Reichsbrücke um acht erreichbar ist?
+3. Wer kommt am Samstag um neun gut zum Praterstern?
 
-Wer alle drei erfüllt, bekommt die Nachricht zuerst. Keine Gruppenbroadcasts, keine
-Instagram-Story. Acht einzelne Nachrichten, jede mit dem Vornamen vorne.
+Laufen ist breiter als Radfahren. Marathon-, Trail- und Hyrox-Leute zählen genauso wie
+Triathleten (D-014).
 
 | | Name | Kriterium 1 | 2 | 3 | Nachricht raus | Antwort |
 |---|---|---|---|---|---|---|
@@ -51,23 +57,25 @@ Instagram-Story. Acht einzelne Nachrichten, jede mit dem Vornamen vorne.
 
 ## 2. Die Einzelnachricht
 
-Zum Kopieren. Nur den Vornamen und gegebenenfalls einen Halbsatz Persönliches ändern.
+Zum Kopieren. Nur den Vornamen und gegebenenfalls einen Halbsatz Persönliches ändern. Jede
+Nachricht einzeln, kein Broadcast, keine Story.
 
 > Servus [Name],
 >
-> kurze Sache: Ich fahr ab jetzt jeden Samstag um 08:00 ab Reichsbrücke eine lange GA1-Runde,
-> 110 km, mit Abzweig bei Orth für alle, die bei 70 aussteigen wollen. Zwei Tempogruppen,
-> 30–32 und 33–35.
+> kurze Frage für Jänner: ich lauf ab 9.1. jeden Samstag um 9 einen langen GA1-Lauf am Prater,
+> Start Praterstern, zwei Runden Hauptallee bis zum Lusthaus und retour, also ca. 18 km. Wer nur
+> 9 will, steigt nach der ersten Runde aus. Zwei Tempos, ca. 6:00 und ca. 5:30 pro km.
 >
-> Hintergrund: Ich trainier zehn bis fünfzehn Stunden die Woche und fahr davon fast alles
-> allein, und das ist auf Dauer deppert. Es geht nicht darum, dass niemand Zeit hat, sondern
-> dass selten wer gleichzeitig gleich schnell ist und dasselbe im Plan stehen hat.
+> Hintergrund: ich trainier zehn bis fünfzehn Stunden die Woche und mach davon fast alles allein,
+> und das ist auf Dauer hald deppert. Es fehlt nicht an Leuten, sondern daran, dass selten wer
+> gleich schnell ist und am selben Tag dasselbe im Plan hat.
 >
-> Diesen Samstag, 17.10., ist das erste Mal. Magst mit?
+> Magst am 9.1. mit? Muss noch nix fix sein, nur ob es dich grundsätzlich interessiert.
 
-**Was absichtlich nicht drinsteht:** kein Projektname, keine App, keine Community, keine
-Vision. Das ist eine Einladung zu einer Ausfahrt. Wer nachfragt, wohin das gehen soll, bekommt
-Abschnitt 3.
+**Was absichtlich nicht drinsteht:** kein Projektname, keine App, keine Community, keine Vision.
+Das ist eine Einladung zu einem Lauf. Wer nachfragt, bekommt Abschnitt 3.
+
+**Wenn bis 29.11. weniger als drei Ja kommen:** acht weitere Namen, dieselbe Nachricht.
 
 ---
 
@@ -77,108 +85,117 @@ Nur auf Nachfrage.
 
 > Das heißt Windschatten und ist bis jetzt nichts außer einem fixen Samstagstermin.
 >
-> Der Plan dahinter: feste Einheiten in Wien für Leute, die auf ein Datum hin trainieren,
-> Triathlon, Hyrox, Trail, Marathon. Immer zwei Distanzen, damit es in eine Aufbau- genauso
-> wie in eine Entlastungswoche passt, und zwei Tempogruppen, damit niemand hinten rausfällt.
-> Im Winter dann Halle, Rolle und Bahn, weil das die einsamste Zeit im Jahr ist.
+> Der Plan dahinter: fixe Einheiten in Wien für Leute, die auf ein Rennen hin trainieren,
+> Triathlon, Marathon, Trail, Hyrox. Immer zwei Distanzen, damit es in eine Aufbau- genauso wie in
+> eine Entlastungswoche passt, und zwei Tempos, damit niemand hinten rausfällt. Unter der Woche
+> sagt wer an, was er eh im Plan hat, und wer was Passendes hat, kommt mit.
 >
-> Kein Verein, kein Beitrag, keine Anmeldung. Da: [Link zur Seite]
+> Kein Verein, kein Beitrag, keine Anmeldung.
 
 ---
 
 ## 4. Die Gruppe
 
-Erst anlegen, wenn mindestens drei zugesagt haben. Eine leere Gruppe ist ein Beweis gegen das
-Vorhaben.
+Erst anlegen, wenn mindestens drei zugesagt haben, spätestens am 14.12. Eine leere Gruppe ist ein
+Beweis gegen das Vorhaben.
 
 **Name:** Windschatten Wien
 **Beschreibung:**
 
-> Feste Trainingseinheiten in Wien für Leute mit Renndatum. Samstag 08:00 Reichsbrücke, lange
-> Ausfahrt, zwei Distanzen, zwei Tempogruppen. Alles andere entsteht. Teilnahme auf eigene
-> Verantwortung, Helmpflicht.
+> Fixe Trainingseinheiten in Wien für Leute mit Renndatum. Samstag 09:00 Praterstern, langer Lauf,
+> 18 oder 9 km, zwei Tempos. Alles andere entsteht. Teilnahme auf eigene Verantwortung.
 
 **Erste Nachricht in der Gruppe:**
 
-> Da sind wir. Der Termin steht: Samstag 08:00, Reichsbrücke Aufgang Nord.
+> Da sind wir. Start ist Samstag, 9.1., 09:00, Praterstern, Beginn Hauptallee.
 >
-> 110 km GA1, Donauinsel Süd, Lobau, retour über Groß-Enzersdorf. Wer kürzer will, steigt beim
-> Abzweig Orth aus, dann sind es 70.
+> 18 km GA1, zwei Runden bis zum Lusthaus und retour. Wer kürzer will, steigt nach Runde 1 am
+> Start aus, dann sind es 9.
 >
-> Zwei Gruppen: 30–32 und 33–35. Wir starten gemeinsam und trennen uns am Abzweig, nicht
-> vorher.
+> Zwei Tempos: 6:15 bis 5:45 und 5:45 bis 5:15 pro km. Wir starten gemeinsam.
 >
-> Sagt bitte bis Freitag Abend kurz zu oder ab, dann weiß ich, ob ich auf wen wart.
+> Ab dann jeden Samstag, gleiche Zeit, gleiche Stelle, auch über Feiertage und bei Schnee.
 >
-> Und unter der Woche: wenn wer Intervalle, Gym oder Bahn im Plan hat und nicht allein machen
-> will, einfach hier reinschreiben. Tag, Uhrzeit, was genau, wo. Wer passend im Plan hat, kommt
-> mit. Das muss nicht jede Woche derselbe Termin sein.
+> Und unter der Woche: wenn wer Intervalle, Gym oder Bahn im Plan hat und es nicht allein machen
+> will, einfach reinschreiben. Tag, Uhrzeit, was genau, wo. Wer was Passendes im Plan hat, kommt
+> mit.
 
 ---
 
 ## 5. Die Session-Kachel
 
-Immer dieselbe Reihenfolge, immer ohne Adjektive. Geht Mittwoch in die Gruppe und auf Instagram.
+Immer dieselbe Reihenfolge, immer ohne Adjektive. Geht am 04.01. in die Gruppe.
 
 ```
-SA 17.10.        08:00
-REICHSBRÜCKE NORD
+SA 09.01.        09:00
+PRATERSTERN · HAUPTALLEE
 
-110
-oder 70 ab Abzweig Orth
+18
+oder 9 nach Runde 1
 
-GA1 · 2 Gruppen · 30–32 / 33–35 km/h
+GA1 · 2 Gruppen · 6:15–5:45 / 5:45–5:15 min/km
 ```
 
 ---
 
-## 6. Freitagabend
+## 6. Montag davor, 04.01.
 
-> Morgen 08:00, Reichsbrücke Nord. [n] Leute haben zugesagt. Wetter: [x] Grad, [Bedingung].
-> Licht mitnehmen, es ist um acht noch nicht wirklich hell. Ich bin da, auch wenn sonst
-> niemand kommt.
+An alle, die zugesagt haben, einzeln oder in der Gruppe:
+
+> Gutes Neues! Samstag ist es so weit: 09:00 Praterstern, 18 oder 9 km. Bist dabei?
+
+---
+
+## 7. Freitagabend
+
+> Morgen 09:00, Praterstern, Beginn Hauptallee. [n] Leute haben zugesagt. Wetter: [x] Grad,
+> [Bedingung]. Ich bin da, auch wenn sonst niemand kommt.
 
 Der letzte Satz ist der wichtigste im ganzen Dokument. Er macht aus einer Verabredung einen
 Termin.
 
 ---
 
-## 7. Nach der Ausfahrt
+## 8. Nach dem Lauf
 
-Ein Foto der Gruppe von hinten, darüber eine Zeile. Kein Text, keine Erklärung.
+Ein Foto der Gruppe von hinten, darüber eine Zeile.
 
 ```
-SA 17.10. · 112 KM · 6 °C · 5 LEUTE
+SA 09.01. · 18 KM · -2 °C · 5 LEUTE
 ```
 
 In die Gruppe dazu:
 
-> Nächster Termin: Samstag 24.10., 08:00, gleiche Stelle.
+> Nächster Termin: Samstag 16.01., 09:00, gleiche Stelle.
 
-Mehr nicht. Die Wiederholung ist die Botschaft.
-
----
-
-## 8. Wenn niemand kommt
-
-Dann fährt man die Runde allein, postet dieselbe Zeile mit `1 LEUTE` und schreibt denselben
-Satz über den nächsten Termin. Drei Wochen lang. Wer in Woche vier immer noch allein fährt, hat
-eine belastbare Antwort auf die Frage, ob es in Wien genug Leute gibt, und die ist mehr wert als
-weitere Konzeptarbeit.
+Und eine Zeile ins `LOGBUCH.md`: Zusagen, Erschienen, Wetter.
 
 ---
 
-## 9. Die zehn Tage
+## 9. Wenn niemand kommt
+
+Dann läuft man die Runde allein, postet dieselbe Zeile mit `1 LEUTE` und schreibt denselben Satz
+über den nächsten Termin. Drei Wochen lang. Wer in Woche vier immer noch allein läuft, hat eine
+belastbare Antwort auf die Frage, ob es in Wien genug Leute gibt, und die ist mehr wert als weitere
+Konzeptarbeit.
+
+---
+
+## 10. Der Kalender bis zum Start
 
 | Wann | Was | Dauer |
 |---|---|---|
-| Heute | Acht Namen in die Tabelle oben, acht Nachrichten raus | 40 Minuten |
-| Mittwoch | Gruppe anlegen, sobald drei zugesagt haben, Kachel posten | 15 Minuten |
-| Freitag | Freitagabend-Nachricht | 2 Minuten |
-| **Sa 17.10.** | **Fahren** | — |
-| Samstag danach | Foto, Zeile, nächster Termin | 5 Minuten |
-| Sonntag | Mit zwei Leuten nach der Ausfahrt reden, Leitfaden in `11-interview-leitfaden.md` | 20 Minuten |
+| **Heute** | Acht Namen in die Tabelle oben | 10 Minuten |
+| Heute | Mitgründer die Frist 15.11. schicken | 1 Minute |
+| **bis So 15.11.** | Acht Nachrichten raus, jede ins Logbuch | 30 Minuten |
+| bis So 29.11. | Unter drei Ja: acht weitere Namen, dieselbe Nachricht | 30 Minuten |
+| bis So 13.12. | Runde einmal selbst laufen und messen, im eigenen Training | 0 Minuten extra |
+| bis Mo 14.12. | Gruppe anlegen, erste Nachricht | 10 Minuten |
+| Mo 04.01. | Erinnerung und Kachel | 5 Minuten |
+| Fr 08.01. | Freitagabend-Nachricht | 2 Minuten |
+| **Sa 09.01.** | **Laufen** | — |
+| Samstag danach | Foto, Zeile, nächster Termin, Logbuch | 5 Minuten |
 | Ab dann | Jeden Samstag dasselbe | — |
 
-Mehr steht in den nächsten zehn Tagen nicht an. Website, App, Winterslots, Instagram und alles
-andere in diesem Repository warten, bis der Samstag dreimal stattgefunden hat.
+Mehr steht bis zum Start nicht an. Website, App, Domain, Winterslots, Instagram und alles andere in
+diesem Repository warten, bis der Samstag dreimal stattgefunden hat.

@@ -1,5 +1,7 @@
 # 17 Was man von anderen Communities lernen kann
 
+> **Konzeptstand bis Mitte Oktober 2026, wird nicht mehr nachgezogen (D-039).** Was aktuell gilt, steht im README und im Entscheidungslog. Der Arbeitstitel 3com heißt heute Windschatten (D-031).
+
 Recherchiert am 11.09.2026. Untersucht: November Project, parkrun, Midnight Runners, Rapha
 Cycling Club, Bandit Running, Black Roses NYC, Track Mafia, Run Dem Crew, HYROX, GoodGym, plus
 die Berichterstattung zum Run-Club-Boom 2024 bis 2026.

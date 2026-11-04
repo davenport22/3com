@@ -604,3 +604,83 @@ dasselbe eigene Backend.
 **Prüffrage für Stufe 1:** Sagt in den ersten vier Wochen jemand von sich aus, dass er den Termin
 gern im Kalender hätte oder die Seite nicht öffnen kann? Wenn nein, war es nie das Problem.
 **Wiedervorlage:** bei 15 aktiven Personen.
+
+---
+
+## D-037 Neustart am 09.01.2027, Winteranker ist der lange Lauf
+
+**Datum:** 2026-11-04
+**Ausgangslage:** Weder der 19.09. noch der 17.10. haben stattgefunden, auch keiner der Samstage
+danach. Stand im `LOGBUCH.md`.
+**Entscheidung:** Neustart am Samstag, 09.01.2027. Der einzige fixe Anker ist ab dann ein langer
+Lauf, nicht mehr die Ausfahrt.
+
+| | Bisher | Ab 09.01.2027 |
+|---|---|---|
+| Format | lange Ausfahrt, GA1 | langer Lauf, GA1 |
+| Zeit | Samstag 08:00 | Samstag 09:00 |
+| Treffpunkt | Reichsbrücke Nord | Praterstern, Beginn Hauptallee |
+| Lang | 110 km | 18 km, zwei Runden Hauptallee bis Lusthaus und retour |
+| Kurz | 70 km ab Abzweig Orth | 9 km, Ausstieg nach Runde 1 am Start |
+| Gruppen | 30–32 / 33–35 km/h | 6:15–5:45 / 5:45–5:15 min/km |
+
+**Begründung:**
+- Eine 110-km-Ausfahrt ist von November bis Februar in Wien kein verlässlicher Termin. Kälte,
+  Nässe, Glätte und Dunkelheit machen aus "findet statt, egal wer zusagt" ein Versprechen, das
+  man nicht halten kann. Verlässlichkeit ist aber das ganze Angebot
+- Der lange Lauf steht bei allen Formaten der Zielgruppe im Winterplan, Triathlon, Marathon,
+  Trail und Hyrox. Er bedient damit die breiteste Gruppe aus D-014
+- Kein Raum, keine Kosten, keine Verhandlung, kein Material. Die Hauptallee ist beleuchtet, flach
+  und gut erreichbar
+- Die Runde erfüllt D-021 von selbst: gemeinsamer Start, benannter Ausstieg nach Runde 1, und
+  niemand ist am Ende weit weg vom Ausgangspunkt
+- 09:00 statt 08:00, weil es im Jänner erst gegen 07:45 hell wird
+- Jänner statt sofort: Anfang Jänner beginnt bei fast allen der Aufbau, Vorsätze sind frisch, und
+  die Zeit bis dahin reicht, um die Einladungen rechtzeitig vor den Feiertagen rauszuschicken
+
+**Nicht entschieden:** Ob die Ausfahrt im Frühjahr zurückkommt. Das entscheidet sich an den Zahlen
+im Logbuch, frühestens im März.
+**Prüfung:** Die Distanzen sind **[Hypothese]**. Die Runde wird bis 13.12. einmal gelaufen und
+gemessen, im Rahmen des eigenen Trainings.
+**Wiedervorlage:** nach dem dritten durchgeführten Samstag, spätestens März 2027.
+
+---
+
+## D-038 Der Engpass ist der Versand. Bis er erledigt ist, wird nichts anderes gemacht.
+
+**Datum:** 2026-11-04
+**Befund:** Der Start ist nicht am Konzept gescheitert, nicht am Wetter und nicht an der App. Die
+acht Einladungen aus `docs/18-start-kit.md` sind nie verschickt worden. Gleichzeitig sind in
+derselben Zeit 18 Dokumente, 36 Entscheidungen, eine Website und eine App entstanden. Schreiben
+und Bauen fühlen sich wie Fortschritt an und haben das eine ersetzt, was den Plan testet.
+**Entscheidung:**
+1. **Versandfrist So 15.11.2026.** Bis dahin gehen acht Einzelnachrichten raus, als Ankündigung für
+   den 09.01. Früh statt knapp, weil eine Einladung für Jänner für beide Seiten leichter ist als eine
+   für übermorgen, und weil acht Leute, die Bescheid wissen, aus dem Plan eine Zusage machen
+2. **Schreibstopp.** Bis die acht Nachrichten im Logbuch stehen, wird an diesem Repository nichts
+   geändert außer dem Logbuch. Kein Konzept, keine Website, keine App
+3. **Zeugen.** Der Mitgründer bekommt die Frist mitgeteilt und fragt am 15.11. nach
+4. **Kleinster Schritt zuerst.** Erst die acht Namen in die Tabelle, das dauert zehn Minuten. Die
+   Nachrichten sind fertig formuliert und werden nur kopiert
+
+**Abbruchkriterium:** Wenn am 15.11. keine acht Nachrichten raus sind, ist das die Antwort, und
+zwar eine ehrliche: dann ist es gerade nicht das richtige Projekt, und das Repository wird als
+abgeschlossen markiert statt weiter gepflegt. Das ist kein Scheitern, sondern eine Entscheidung.
+**Wiedervorlage:** 15.11.2026.
+
+---
+
+## D-039 Repository aufgeräumt, überholte Stände markiert
+
+**Datum:** 2026-11-04
+**Entscheidung:** Nur fünf Dateien sind ab jetzt lebendig: `README.md`, `LOGBUCH.md`,
+`decisions/DECISIONS.md`, `docs/18-start-kit.md` und `app/windschatten.html`. Alle anderen Dokumente
+tragen einen Hinweis, dass sie den Konzeptstand bis Mitte Oktober 2026 zeigen. Sie werden nicht
+mehr nachgezogen.
+**Damit hinfällig:**
+- Anteile, Vesting und Ausstiegsfall (D-008, D-017). Ohne Geld und ohne Unternehmen (D-034) gibt es
+  nichts zu verteilen. Was bleibt, ist die Rollenteilung
+- Der Stack aus `docs/06-tech-architecture.md`. Gebaut wurde eine einzelne Datei mit geteilter
+  Datenbank (D-032). Das bleibt so bis Stufe 1 aus D-036
+- Die Phasen der Roadmap. Die neue Abfolge steht in `docs/10-roadmap.md` oben
+**Wiedervorlage:** keine.

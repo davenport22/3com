@@ -1,5 +1,36 @@
 # 10 Roadmap
 
+## Stand 04.11.2026: was jetzt gilt
+
+Die Phasen weiter unten sind nicht eingetreten. Zwischen September und Oktober hat kein einziger
+Termin stattgefunden (siehe `LOGBUCH.md`). Damit verschiebt sich alles um ein Quartal, und die
+Reihenfolge wird einfacher.
+
+| Phase | Zeitraum | Ziel | Abbruchkriterium |
+|---|---|---|---|
+| **Versand** | bis 15.11.2026 | acht Einladungen raus, im Logbuch belegt (D-038) | keine acht raus, dann wird das Projekt als abgeschlossen markiert |
+| **Vorlauf** | 16.11.2026 bis 08.01.2027 | mindestens drei Zusagen, Gruppe steht, Runde gemessen | unter drei Zusagen nach zwei Wellen, dann alleine starten und drei Wochen messen |
+| **Anker läuft** | ab 09.01.2027 | jeden Samstag ohne Ausfall, zwölf Wochen lang (D-025) | Zusage zu Erscheinen unter 50 Prozent über sechs Wochen (M1) |
+| **Zweite Ebene** | ab Februar 2027 | erste bewegliche Einheit, die nicht von einem Gründer angeboten wird (D-035) | nach vier Wochen bietet niemand außer den Gründern etwas an, dann fliegt die Ebene raus |
+| **Frühjahr** | ab März 2027 | Entscheidung, ob die Ausfahrt als zweiter Anker zurückkommt | nur wenn der Lauf zwölf Wochen ohne Lücke lief |
+| **Delegation** | bis Ende Mai 2027 | M5 unverändert: fünf fremdgeführte Serien. Realistischer Zwischenschritt: ein Samstag, den jemand anderer führt | kein einziger Samstag fremdgeführt bis Ende April |
+
+**Meilensteine, neu datiert:**
+
+| Meilenstein | Kennzahl | Termin |
+|---|---|---|
+| M0 Versand | acht Einladungen im Logbuch | 15.11.2026 |
+| M1 Ritual trägt | Zusage zu Erscheinen über 50 Prozent über 6 Wochen | Ende Februar 2027 |
+| M2 Winter gesichert | entfällt für diesen Winter, der Lauf braucht keinen Slot | — |
+| M4 Delegation beginnt | ein Samstag von jemand anderem geführt | Ende April 2027 |
+| M5 Ausfallsicherheit | 5 Serien von anderen geführt | Ende Mai 2027, wird im April realistisch neu bewertet |
+
+Alles unterhalb dieser Linie ist der Plan vom September 2026 und bleibt als Begründung stehen.
+
+---
+
+## Plan vom September 2026 (überholt)
+
 Datiert auf den realen Kalender. Ausgangspunkt: September 2026. Gemeinsames Zielrennen beider
 Gründer: Sommer 2027. Beide trainieren ganzjährig und rotieren zwischen Hyrox, Trail und Ultra
 und Langdistanz.

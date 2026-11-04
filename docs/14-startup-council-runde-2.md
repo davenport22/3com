@@ -1,5 +1,7 @@
 # 14 Startup Council, Runde 2
 
+> **Konzeptstand bis Mitte Oktober 2026, wird nicht mehr nachgezogen (D-039).** Was aktuell gilt, steht im README und im Entscheidungslog. Der Arbeitstitel 3com heißt heute Windschatten (D-031).
+
 Gegenstand: das gesamte Konzept in v0.5, plus die offene Frage, ob Einheiten Distanzen vorgeben
 sollen.
 

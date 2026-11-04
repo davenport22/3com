@@ -1,5 +1,7 @@
 # 15 Design und Corporate Identity
 
+> **Konzeptstand bis Mitte Oktober 2026, wird nicht mehr nachgezogen (D-039).** Was aktuell gilt, steht im README und im Entscheidungslog. Der Arbeitstitel 3com heißt heute Windschatten (D-031).
+
 Arbeitsname für alle Entwürfe: **Windschatten**. Der Name ist noch nicht final (siehe 08), das
 Gestaltungssystem ist aber bewusst so gebaut, dass es einen Namenswechsel übersteht: es hängt an
 einem Wortmarken-Ansatz und einer Bildlogik, nicht an einem Symbol, das den Namen illustriert.

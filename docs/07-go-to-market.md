@@ -1,5 +1,7 @@
 # 07 Go to Market
 
+> **Konzeptstand bis Mitte Oktober 2026, wird nicht mehr nachgezogen (D-039).** Was aktuell gilt, steht im README und im Entscheidungslog. Der Arbeitstitel 3com heißt heute Windschatten (D-031).
+
 Überarbeitet nach dem Startup Council und nach der Gründerkonstellation: zwei Gründer, beide
 ganzjährig im Training und zwischen Hyrox, Trail und Ultra und Langdistanz rotierend,
 gemeinsames Zielrennen im Sommer 2027, Start über zentral organisierte Events.

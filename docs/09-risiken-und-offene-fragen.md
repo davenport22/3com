@@ -1,5 +1,7 @@
 # 09 Risiken und offene Fragen
 
+> **Konzeptstand bis Mitte Oktober 2026, wird nicht mehr nachgezogen (D-039).** Was aktuell gilt, steht im README und im Entscheidungslog. Der Arbeitstitel 3com heißt heute Windschatten (D-031).
+
 ## Top-Risiken, nach Eintrittswahrscheinlichkeit mal Schaden
 
 ### R1 Cold Start scheitert (deutlich entschärft)

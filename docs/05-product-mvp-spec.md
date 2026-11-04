@@ -1,5 +1,7 @@
 # 05 Product and MVP Specification
 
+> **Concept state until mid-October 2026, no longer maintained (D-039).** The running app (`app/windschatten.html`) implements a reduced scope: anchors, offers, commits, level groups. Working title 3com is now Windschatten (D-031).
+
 Language: English (build documentation). Revised after the Startup Council, see `12-startup-council.md`.
 
 ## What changed in this revision

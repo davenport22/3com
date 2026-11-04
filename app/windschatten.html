@@ -75,6 +75,12 @@ header{padding-block:30px 20px}
   font-family:'Chivo Mono',monospace; font-size:10.5px; letter-spacing:.1em;
   text-transform:uppercase; padding:3px 8px; border-radius:999px; white-space:nowrap}
 .by{font-family:'Chivo Mono',monospace; font-size:11px; color:var(--muted)}
+.off-pill{color:var(--muted); border:1px solid var(--line); font-family:'Chivo Mono',monospace;
+  font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; padding:3px 8px; border-radius:999px; white-space:nowrap}
+.card.cancelled .s-title{text-decoration:line-through; opacity:.6}
+.att{display:flex; gap:8px; align-items:center; margin-top:6px}
+.att input{width:90px}
+.kpi{font-family:'Chivo Mono',monospace; font-size:13px; margin:0 0 14px}
 
 .next{border-color:var(--signal)}
 .next .s-head, .next .s-head:hover{background:var(--soft)}
@@ -215,6 +221,7 @@ textarea{resize:vertical; min-height:56px}
   }
   function shareText(s){
     var l=[];
+    if(s.status==="abgesagt") l.push("ABGESAGT"+(s.offNote?": "+s.offNote:""));
     l.push(dow(s.date)+" "+fmtDate(s.date)+", "+(s.time||"")+" — "+(s.title||"Einheit"));
     if(s.meet) l.push(s.meet);
     var m=[SPORT[s.sport]||s.sport, s.intensity, "ca. "+durOf(s)+" min"].filter(Boolean);
@@ -231,7 +238,7 @@ textarea{resize:vertical; min-height:56px}
     ready:false, dbOff:false,
     anchors:[], offers:[], myOffers:{}, commits:{}, names:{},
     open:null, pick:{}, busy:false, copied:null, copyFallback:null, hash:null,
-    addAnchor:false, addOffer:false, confirmDel:null, msg:null
+    addAnchor:false, addOffer:false, confirmDel:null, confirmCancel:null, msg:null, keep:{}
   };
 
   var app = document.getElementById("app");
@@ -288,7 +295,8 @@ textarea{resize:vertical; min-height:56px}
 
   function row(s,isNext){
     var id=s.id, g=groupsOf(s), coming=comingFor(id), open=(S.open===id);
-    var h='<article class="card'+(isNext?" next":"")+'" id="c_'+esc(id)+'">';
+    var past=s.date<todayISO(), off=(s.status==="abgesagt");
+    var h='<article class="card'+(isNext&&!off?" next":"")+(off?" cancelled":"")+'" id="c_'+esc(id)+'">';
 
     h+='<div class="s-head" data-open="'+esc(id)+'">';
     h+='<div class="s-when"><div class="s-dow">'+dow(s.date)+'</div>'
@@ -299,8 +307,13 @@ textarea{resize:vertical; min-height:56px}
       +(s.by?'<div class="by">angeboten von '+esc(nameOf(s.by))+'</div>':'')
       +'</div>';
     h+='<div class="s-right">';
-    if(amIn(id)) h+='<span class="in-pill">dabei</span>';
-    h+='<span class="count">'+(coming.length?'<span class="dot"></span>'+coming.length:'—')+'</span>';
+    if(off) h+='<span class="off-pill">abgesagt</span>';
+    else if(amIn(id)) h+='<span class="in-pill">dabei</span>';
+    if(past && !s.by && s.came!=null){
+      h+='<span class="count">'+Number(s.came)+' da / '+coming.length+' zugesagt</span>';
+    } else {
+      h+='<span class="count">'+(coming.length?'<span class="dot"></span>'+coming.length:'—')+'</span>';
+    }
     h+='</div></div>';
 
     if(open){
@@ -318,7 +331,21 @@ textarea{resize:vertical; min-height:56px}
       if(s.note) h+='<dt>Notiz</dt><dd>'+esc(s.note)+'</dd>';
       h+='</dl>';
 
-      if(mayWrite()){
+      if(off){
+        h+='<p class="note" style="margin:0 0 14px"><b>Abgesagt.</b> '+esc(s.offNote||"")+'</p>';
+      }
+
+      if(past && !s.by && S.canEdit){
+        h+='<span class="lbl">Erschienen</span><div class="att">'
+          +'<input id="came_'+esc(id)+'" type="number" min="0" max="99" inputmode="numeric" value="'
+          +(s.came!=null?esc(s.came):"")+'" aria-label="Wie viele waren da">'
+          +'<button class="btn ghost sm" data-came="'+esc(id)+'"'+(S.busy?" disabled":"")+'>Speichern</button></div>'
+          +'<p class="note" style="margin-top:6px">Alle, die da waren, auch ohne Zusage. Daraus rechnet sich die Quote.</p>';
+      }
+
+      if(past || off){
+        // nichts mehr zuzusagen
+      } else if(mayWrite()){
         if(g.length>1){
           var picked=myPick(id,s);
           h+='<div class="lbl" style="margin-bottom:7px">Dein Niveau an dem Tag</div><div class="groups">';
@@ -362,7 +389,17 @@ textarea{resize:vertical; min-height:56px}
 
       var mayKill = s.by ? (s.by===S.uid) : S.canEdit;
       if(mayKill){
-        h+='<div style="margin-top:18px; display:flex; gap:8px; justify-content:flex-end">';
+        h+='<div style="margin-top:18px; display:flex; gap:8px; justify-content:flex-end; flex-wrap:wrap">';
+        if(!s.by && !past){
+          if(off){
+            h+='<button class="btn ghost sm" data-uncancel="'+esc(id)+'">Findet doch statt</button>';
+          } else if(S.confirmCancel===id){
+            h+='<input id="offnote_'+esc(id)+'" placeholder="Grund, z.B. Glatteis" maxlength="80" style="flex:1 1 180px">'
+              +'<button class="btn sm" data-cancel-go="'+esc(id)+'">Absagen</button>';
+          } else {
+            h+='<button class="btn ghost sm" data-askcancel="'+esc(id)+'">Absagen (nur bei Gefahr)</button>';
+          }
+        }
         if(S.confirmDel===id){
           h+='<button class="btn ghost sm" data-cancel-del="1">Abbrechen</button>'
             +'<button class="btn sm" data-del="'+esc(id)+'">Wirklich löschen</button>';
@@ -382,22 +419,22 @@ textarea{resize:vertical; min-height:56px}
     return '<form class="add" id="anchorf">'
       +'<div class="row2">'
       +'<label class="f"><span>Datum</span><input id="a_date" type="date" name="date" required value="'+todayISO()+'"></label>'
-      +'<label class="f"><span>Uhrzeit</span><input id="a_time" type="time" name="time" required value="08:00"></label></div>'
+      +'<label class="f"><span>Uhrzeit</span><input id="a_time" type="time" name="time" required value="09:00"></label></div>'
       +'<div class="row2">'
-      +'<label class="f"><span>Titel</span><input id="a_title" name="title" required placeholder="Lange Ausfahrt" maxlength="60"></label>'
+      +'<label class="f"><span>Titel</span><input id="a_title" name="title" required placeholder="Langer Lauf" maxlength="60"></label>'
       +'<label class="f"><span>Sportart</span><select id="a_sport" name="sport">'
-      +'<option value="rad">Rad</option><option value="lauf">Lauf</option>'
+      +'<option value="lauf">Lauf</option><option value="rad">Rad</option>'
       +'<option value="schwimmen">Schwimmen</option><option value="kraft">Kraft/Hyrox</option>'
       +'<option value="koppel">Koppel</option></select></label></div>'
       +'<div class="row2">'
       +'<label class="f"><span>Intensität</span><input id="a_int" name="intensity" placeholder="GA1" maxlength="40"></label>'
-      +'<label class="f"><span>Treffpunkt</span><input id="a_meet" name="meet" required placeholder="Reichsbrücke, Nordseite" maxlength="80"></label></div>'
+      +'<label class="f"><span>Treffpunkt</span><input id="a_meet" name="meet" required placeholder="Praterstern, Beginn Hauptallee" maxlength="80"></label></div>'
       +'<div class="row2">'
-      +'<label class="f"><span>Lange Variante</span><input id="a_long" name="long" placeholder="110 km" maxlength="40"></label>'
-      +'<label class="f"><span>Kurze Variante</span><input id="a_short" name="short" placeholder="70 km ab Abzweig Orth" maxlength="60"></label></div>'
+      +'<label class="f"><span>Lange Variante</span><input id="a_long" name="long" placeholder="18 km" maxlength="40"></label>'
+      +'<label class="f"><span>Kurze Variante</span><input id="a_short" name="short" placeholder="9 km, Ausstieg nach Runde 1" maxlength="60"></label></div>'
       +'<div class="row2">'
-      +'<label class="f"><span>Gruppe 1</span><input id="a_g1" name="g1" placeholder="30–32 km/h" maxlength="40"></label>'
-      +'<label class="f"><span>Gruppe 2</span><input id="a_g2" name="g2" placeholder="33–35 km/h" maxlength="40"></label></div>'
+      +'<label class="f"><span>Gruppe 1</span><input id="a_g1" name="g1" placeholder="6:15–5:45 min/km" maxlength="40"></label>'
+      +'<label class="f"><span>Gruppe 2</span><input id="a_g2" name="g2" placeholder="5:45–5:15 min/km" maxlength="40"></label></div>'
       +'<label class="f"><span>Notiz</span><textarea id="a_note" name="note" maxlength="240"></textarea></label>'
       +'<div style="display:flex; gap:8px; margin-top:4px">'
       +'<button type="button" class="btn ghost" data-cancel="anchor">Abbrechen</button>'
@@ -430,6 +467,37 @@ textarea{resize:vertical; min-height:56px}
       +'</form>';
   }
 
+  // Eingaben überleben ein Neuzeichnen: jede Zusage eines anderen löst render() aus,
+  // und innerHTML würde halb ausgefüllte Formulare sonst leeren.
+  function keepInputs(){
+    var els=app.querySelectorAll("input[id],textarea[id],select[id]");
+    for(var i=0;i<els.length;i++) S.keep[els[i].id]=els[i].value;
+    var a=document.activeElement;
+    return (a && a.id && app.contains(a)) ? {id:a.id, s:a.selectionStart, e:a.selectionEnd} : null;
+  }
+  function restoreInputs(focus){
+    for(var id in S.keep){
+      var el=document.getElementById(id);
+      if(el && el.value!==S.keep[id]) el.value=S.keep[id];
+    }
+    if(focus){
+      var f=document.getElementById(focus.id);
+      if(f){ try{ f.focus(); if(focus.s!=null && f.setSelectionRange) f.setSelectionRange(focus.s,focus.e); }catch(e){} }
+    }
+  }
+  function forget(prefix){ for(var k in S.keep) if(k.indexOf(prefix)===0) delete S.keep[k]; }
+  function paint(h){ var f=keepInputs(); app.innerHTML=h; restoreInputs(f); }
+
+  function quote(){
+    var today=todayISO(), n=0, came=0, said=0;
+    for(var i=S.anchors.length-1;i>=0 && n<6;i--){
+      var s=S.anchors[i];
+      if(s.date>=today || s.status==="abgesagt" || s.came==null) continue;
+      n++; came+=Number(s.came)||0; said+=comingFor(s.id).length;
+    }
+    return {n:n, came:came, said:said};
+  }
+
   function render(){
     if(!S.ready){ app.innerHTML='<div class="boot">wird geladen …</div>'; return; }
     var h="";
@@ -442,7 +510,7 @@ textarea{resize:vertical; min-height:56px}
         +'<p class="note" style="margin:0">Das passiert, wenn du abgemeldet bist oder die Seite '
         +'keinen Zugriff auf ihre Daten bekommt. Die Einheiten stehen weiterhin im Gruppenchat.</p>'
         +'</div></div>';
-      app.innerHTML=h; return;
+      paint(h); return;
     }
 
     var today=todayISO();
@@ -481,6 +549,13 @@ textarea{resize:vertical; min-height:56px}
     if(S.canEdit){
       h+='<div class="sec"><span class="lbl">Gastgeber</span>';
       h+='<div class="card"><div class="pad">';
+      var q=quote();
+      if(q.n){
+        h+='<p class="kpi">Letzte '+q.n+' Termine: '+q.said+' zugesagt, '+q.came+' da'
+          +(q.said?' · Erschienen je Zusage '+Math.round(100*q.came/q.said)+' %':'')+'</p>';
+      } else {
+        h+='<p class="kpi">Nach jedem Termin bei „Gewesen“ eintragen, wie viele da waren.</p>';
+      }
       h+= S.addAnchor ? anchorForm()
         : '<button class="btn ghost" data-open-form="anchor">Festen Anker eintragen</button>';
       h+='</div></div></div>';
@@ -491,7 +566,7 @@ textarea{resize:vertical; min-height:56px}
       for(var j=0;j<Math.min(past.length,6);j++) h+=row(past[j],false);
     }
 
-    app.innerHTML=h;
+    paint(h);
   }
 
   var nameWanted={};
@@ -531,10 +606,37 @@ textarea{resize:vertical; min-height:56px}
     var s=find(id); if(!s) return;
     var mine={}, cur=S.commits[S.uid]||{}, k;
     for(k in cur) mine[k]=cur[k];
+    pruneCommits(mine);
     if(mine[id]!=null){ delete mine[id]; }
     else { var g=myPick(id,s); mine[id]={g:g, at:new Date().toISOString()}; lsSet("ws.group",String(g)); }
     S.busy=true; S.msg=null; render();
     try{ await S.db.doc("commits/"+S.uid).set(mine); S.commits[S.uid]=mine; }
+    catch(e){ failed(e); }
+    S.busy=false; render();
+  }
+
+  // Alte Einträge fliegen beim nächsten Schreiben raus, damit die eigenen Dokumente nicht endlos wachsen.
+  function pruneCommits(mine){
+    for(var k in mine){
+      var s=find(k);
+      if(!s || s.date<plusDaysISO(-60)) delete mine[k];
+    }
+  }
+  function pruneOffers(mine){
+    var cut=plusDaysISO(-14);
+    for(var k in mine){ if(!mine[k] || !mine[k].date || mine[k].date<cut) delete mine[k]; }
+  }
+  function anchorBody(s,patch){
+    var o={},k;
+    for(k in s) if(k!=="id") o[k]=s[k];
+    for(k in patch) o[k]=patch[k];
+    return o;
+  }
+  async function patchAnchor(id,patch){
+    if(!S.db||S.busy||!S.canEdit) return;
+    var s=find(id); if(!s||s.by) return;
+    S.busy=true; S.msg=null; render();
+    try{ await S.db.doc("sessions/"+id).set(anchorBody(s,patch)); }
     catch(e){ failed(e); }
     S.busy=false; render();
   }
@@ -551,14 +653,14 @@ textarea{resize:vertical; min-height:56px}
     if(!f.date||!f.time||!f.title||!f.meet) return;
     var groups=[]; if(f.g1)groups.push(f.g1); if(f.g2)groups.push(f.g2);
     if(!groups.length) groups=["alle zusammen"];
-    var id="s_"+f.date.replace(/-/g,"")+"_"+(f.sport||"rad");
+    var id=newId("s_"+f.date.replace(/-/g,"")+"_");
     S.busy=true; S.msg=null; render();
     try{
       await S.db.doc("sessions/"+id).set({
-        date:f.date,time:f.time,title:f.title,sport:f.sport||"rad",intensity:f.intensity||"",
+        date:f.date,time:f.time,title:f.title,sport:f.sport||"lauf",intensity:f.intensity||"",
         meet:f.meet,long:f.long||"",short:f.short||"",groups:groups,note:f.note||"",
         createdAt:new Date().toISOString()});
-      S.addAnchor=false;
+      S.addAnchor=false; forget("a_");
     }catch(e){ failed(e); }
     S.busy=false; render();
   }
@@ -568,13 +670,14 @@ textarea{resize:vertical; min-height:56px}
     var f=readForm(form,["date","time","title","sport","intensity","meet","note","dur"]);
     if(!f.date||!f.time||!f.title||!f.meet) return;
     var mine={},k; for(k in S.myOffers) mine[k]=S.myOffers[k];
+    pruneOffers(mine);
     mine[newId("o_")]={
       date:f.date,time:f.time,title:f.title,sport:f.sport||"lauf",
       intensity:f.intensity||"",meet:f.meet,note:f.note||"",
       dur:Number(f.dur)||60,
       createdAt:new Date().toISOString()};
     S.busy=true; S.msg=null; render();
-    try{ await S.db.doc("offers/"+S.uid).set(mine); S.myOffers=mine; S.addOffer=false; }
+    try{ await S.db.doc("offers/"+S.uid).set(mine); S.myOffers=mine; S.addOffer=false; forget("o_"); }
     catch(e){ failed(e); }
     S.busy=false; render();
   }
@@ -627,17 +730,31 @@ textarea{resize:vertical; min-height:56px}
     if((el=t.closest("[data-askdel]"))){ S.confirmDel=el.getAttribute("data-askdel"); render(); return; }
     if(t.closest("[data-cancel-del]")){ S.confirmDel=null; render(); return; }
     if((el=t.closest("[data-del]"))){ remove(el.getAttribute("data-del")); return; }
+    if((el=t.closest("[data-came]"))){
+      var cid=el.getAttribute("data-came"), inp=document.getElementById("came_"+cid);
+      var v=inp?parseInt(inp.value,10):NaN;
+      if(!isNaN(v) && v>=0){ delete S.keep["came_"+cid]; patchAnchor(cid,{came:v}); }
+      return;
+    }
+    if((el=t.closest("[data-askcancel]"))){ S.confirmCancel=el.getAttribute("data-askcancel"); render(); return; }
+    if((el=t.closest("[data-cancel-go]"))){
+      var xid=el.getAttribute("data-cancel-go"), note=document.getElementById("offnote_"+xid);
+      var why=note?String(note.value||"").trim():"";
+      delete S.keep["offnote_"+xid]; S.confirmCancel=null;
+      patchAnchor(xid,{status:"abgesagt", offNote:why}); return;
+    }
+    if((el=t.closest("[data-uncancel]"))){ patchAnchor(el.getAttribute("data-uncancel"),{status:"", offNote:""}); return; }
     if((el=t.closest("[data-open-form]"))){
-      if(el.getAttribute("data-open-form")==="offer") S.addOffer=true; else S.addAnchor=true;
+      if(el.getAttribute("data-open-form")==="offer"){ forget("o_"); S.addOffer=true; } else { forget("a_"); S.addAnchor=true; }
       render(); return;
     }
     if((el=t.closest("[data-cancel]"))){
-      if(el.getAttribute("data-cancel")==="offer") S.addOffer=false; else S.addAnchor=false;
+      if(el.getAttribute("data-cancel")==="offer"){ forget("o_"); S.addOffer=false; } else { forget("a_"); S.addAnchor=false; }
       render(); return;
     }
     if((el=t.closest("[data-open]"))){
       var id=el.getAttribute("data-open");
-      S.open=(S.open===id)?null:id; S.confirmDel=null; render(); return;
+      S.open=(S.open===id)?null:id; S.confirmDel=null; S.confirmCancel=null; render(); return;
     }
   });
 

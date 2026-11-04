@@ -1,5 +1,7 @@
 # 13 BD-Playbook für die nächsten vier Wochen
 
+> **Konzeptstand bis Mitte Oktober 2026, wird nicht mehr nachgezogen (D-039).** Was aktuell gilt, steht im README und im Entscheidungslog. Der Arbeitstitel 3com heißt heute Windschatten (D-031).
+
 Das operative Handbuch für die BD- und Community-Rolle. Zwei Aufgaben, beide zeitkritisch, beide
 vor dem ersten Codezeile-Schreiben zu erledigen.
 

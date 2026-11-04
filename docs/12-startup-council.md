@@ -1,5 +1,7 @@
 # 12 Startup Council
 
+> **Konzeptstand bis Mitte Oktober 2026, wird nicht mehr nachgezogen (D-039).** Was aktuell gilt, steht im README und im Entscheidungslog. Der Arbeitstitel 3com heißt heute Windschatten (D-031).
+
 Fünf Perspektiven auf 3com, plus Debatte und Synthese.
 
 **Kalibrierung:** 3com ist ausdrücklich **kein** Unternehmen zur Gewinnmaximierung. Das

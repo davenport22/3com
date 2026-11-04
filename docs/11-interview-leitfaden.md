@@ -1,5 +1,7 @@
 # 11 Interview-Leitfaden für die Validierung
 
+> **Konzeptstand bis Mitte Oktober 2026, wird nicht mehr nachgezogen (D-039).** Was aktuell gilt, steht im README und im Entscheidungslog. Der Arbeitstitel 3com heißt heute Windschatten (D-031).
+
 Ziel: H1 und H2 aus `01-problem-und-nutzer.md` prüfen. 15 Gespräche, je 20 bis 30 Minuten.
 
 ## Grundregeln

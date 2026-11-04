@@ -1,5 +1,7 @@
 # 01 Problem und Nutzer
 
+> **Konzeptstand bis Mitte Oktober 2026, wird nicht mehr nachgezogen (D-039).** Was aktuell gilt, steht im README und im Entscheidungslog. Der Arbeitstitel 3com heißt heute Windschatten (D-031).
+
 Überarbeitet in v0.3 (Abgrenzung über Trainingslast statt Sportart) und in v0.5 (Kernproblem als
 zweidimensionale Peer-Knappheit neu gefasst).
 

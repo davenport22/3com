@@ -5,7 +5,7 @@ Community-Plattform für Triathletinnen und Triathleten. Start in Wien, danach D
 Arbeitstitel war 3com, der Name ist seit 13.10.2026 entschieden (D-031).
 
 **Kurzfassung:** Hochvolumiges Ausdauertraining ist ein Mannschaftssport, der als Einzelsport
-betrieben wird. Acht bis fünfzehn Stunden pro Woche, über Monate, fast alles allein. 3com macht
+betrieben wird. Acht bis fünfzehn Stunden pro Woche, über Monate, fast alles allein. Windschatten macht
 aus geplanten Einzeleinheiten gemeinsame Einheiten.
 
 **Zielgruppe:** nicht eine Sportart, sondern eine Trainingslast. Acht Stunden pro Woche oder
@@ -23,23 +23,33 @@ Dichte löst das, kein Werkzeug.
 
 | Punkt | Stand |
 |---|---|
-| Phase | v1.0. Konzept eingefroren. **Es wird gefahren, nicht mehr geschrieben.** |
-| Gründer | zwei, gleiche Anteile. Einer BD, Vertrieb und Community, einer Produkt und Technik |
-| Ambitionsniveau | entschieden: Gruppe mit Werkzeug, kein Unternehmen (D-034) |
-| Erster Termin | **Sa 17.10.2026, 08:00, Reichsbrücke Nord.** Ein Anker, nicht drei (D-033) |
-| App | gebaut und im Betrieb, Quelltext in `app/windschatten.html` (D-032) |
-| Terminmodell | zwei Ebenen: fixer Anker am Wochenende, bewegliche Einheiten unter der Woche (D-035) |
-| Plattform | Web, kein natives iOS vor 15 Personen (D-036). Stufenplan dort |
-| Nächster Schritt | acht Nachrichten verschicken, siehe `docs/18-start-kit.md` |
-| Geld | **Keine Monetarisierung (D-034).** Kosten werden durch die geteilt, die teilnehmen |
-| Markt Wien | 5.000 bis 12.000 Personen (Schätzung, siehe 04) |
-| Name | **Windschatten**, entschieden (D-031). Domain noch nicht geprüft |
-| Datum | 2026-10-13 |
+| Phase | Neustart. Drei Monate Konzept, **null Termine**. Bilanz im [Logbuch](LOGBUCH.md) |
+| Neustart | **Sa 09.01.2027, 09:00, Praterstern, Beginn Hauptallee** (D-037) |
+| Anker | langer Lauf, 18 oder 9 km, zwei Tempos. Die Ausfahrt ruht bis mindestens März |
+| Engpass | acht Einladungen. Versandfrist **So 15.11.2026**, bis dahin Schreibstopp (D-038) |
+| Nächster Schritt | acht Namen in die Tabelle in [`docs/18-start-kit.md`](docs/18-start-kit.md), dann Nachrichten raus |
+| Gründer | zwei. Einer BD, Vertrieb und Community, einer Produkt und Technik |
+| Ambitionsniveau | Gruppe mit Werkzeug, kein Unternehmen (D-034) |
+| Geld | keine Monetarisierung. Kosten teilen die, die teilnehmen (D-034) |
+| App | läuft, Quelltext in `app/windschatten.html` (D-032). Plattform Web, kein natives iOS (D-036) |
+| Terminmodell | fixer Anker am Wochenende, bewegliche Einheiten unter der Woche (D-035) |
+| Name | **Windschatten** (D-031). Domain ungeprüft, wartet bis nach dem Versand |
+| Datum | 2026-11-04 |
+
+## Was lebendig ist und was nicht
+
+Nur fünf Dateien werden gepflegt: dieses README, das [Logbuch](LOGBUCH.md), das
+[Entscheidungslog](decisions/DECISIONS.md), das [Startkit](docs/18-start-kit.md) und die
+[App](app/windschatten.html). Alle anderen Dokumente zeigen den Konzeptstand bis Mitte Oktober 2026
+und tragen oben einen Hinweis (D-039). Wenn sie dem Entscheidungslog widersprechen, gilt das
+Entscheidungslog.
 
 ## Navigation
 
 | Dokument | Inhalt |
 |---|---|
+| [LOGBUCH.md](LOGBUCH.md) | **Was wirklich passiert ist.** Termine, Zusagen, Erschienene, Versand |
+| [docs/18-start-kit.md](docs/18-start-kit.md) | **Die fertigen Texte bis zum Neustart am 09.01.2027** |
 | [docs/00-vision.md](docs/00-vision.md) | Nordstern, Ambition, Prinzipien |
 | [docs/01-problem-und-nutzer.md](docs/01-problem-und-nutzer.md) | Problem, Personas, Jobs to be done |
 | [docs/02-loesungskonzept.md](docs/02-loesungskonzept.md) | Drei-Schichten-Modell, Kernloop, Abgrenzung |
@@ -56,13 +66,12 @@ Dichte löst das, kein Werkzeug.
 | [docs/13-bd-playbook.md](docs/13-bd-playbook.md) | Slot-Verhandlung und die ersten 30 Menschen, mit Vorlagen |
 | [docs/14-startup-council-runde-2.md](docs/14-startup-council-runde-2.md) | Zweite, härtere Council-Runde: Distanzen, Serien-Obergrenze, Konzeptstopp |
 | [docs/15-design-und-ci.md](docs/15-design-und-ci.md) | Markenhaltung, Bildzeichen, Farbe, Typografie, Tonalität, Kanäle |
-| [web/index.html](web/index.html) | Website-Entwurf inkl. App-Teaser, eine Seite, ohne Abhängigkeiten |
+| [web/index.html](web/index.html) | Website-Entwurf, auf Neustart 09.01.2027 aktualisiert, nicht online |
 | [app/windschatten.html](app/windschatten.html) | **Die App.** Terminbrett mit geteilter Datenbank, läuft |
 | [web/app-prototyp.html](web/app-prototyp.html) | Klickbarer Prototyp, überholt durch `app/` |
 | [docs/16-wettbewerb-realitaetscheck.md](docs/16-wettbewerb-realitaetscheck.md) | Wer es schon gibt, warum die scheitern, was das heißt |
 | [docs/17-community-playbook.md](docs/17-community-playbook.md) | Lehren aus parkrun, November Project, HYROX und anderen |
 | [web/designsystem.html](web/designsystem.html) | Designsystem visuell: Bildzeichen, Palette, Typo, Vorlagen |
-| [docs/18-start-kit.md](docs/18-start-kit.md) | **Die fertigen Texte für die nächsten zehn Tage** |
 | [decisions/DECISIONS.md](decisions/DECISIONS.md) | Entscheidungslog |
 
 ## Sprachkonvention

@@ -1,5 +1,7 @@
 # 16 Wettbewerb, Realitätscheck
 
+> **Konzeptstand bis Mitte Oktober 2026, wird nicht mehr nachgezogen (D-039).** Was aktuell gilt, steht im README und im Entscheidungslog. Der Arbeitstitel 3com heißt heute Windschatten (D-031).
+
 Recherchiert am 11.09.2026. **Dieses Dokument widerlegt eine zentrale Annahme aus v0.1 bis v0.7.**
 
 ## Die Kernaussage

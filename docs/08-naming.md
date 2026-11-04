@@ -1,5 +1,7 @@
 # 08 Naming
 
+> **Konzeptstand bis Mitte Oktober 2026, wird nicht mehr nachgezogen (D-039).** Was aktuell gilt, steht im README und im Entscheidungslog. Der Arbeitstitel 3com heißt heute Windschatten (D-031).
+
 Status: **3com ist Arbeitstitel.** Entscheidung über den finalen Namen vor dem App-Launch
 (Woche 8), nicht vorher nötig. Bis dahin wird unter 3com gearbeitet.
 

@@ -1,5 +1,7 @@
 # 02 Lösungskonzept
 
+> **Konzeptstand bis Mitte Oktober 2026, wird nicht mehr nachgezogen (D-039).** Was aktuell gilt, steht im README und im Entscheidungslog. Der Arbeitstitel 3com heißt heute Windschatten (D-031).
+
 ## Die atomare Einheit: die Session
 
 Alles in 3com hängt an einem einzigen Objekt: **eine geplante Trainingseinheit mit offenen

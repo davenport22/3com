@@ -1,5 +1,7 @@
 # 06 Technical Architecture
 
+> **Not implemented (D-039).** The app was built as a single HTML file with a shared database on claude.ai (D-032), not with the stack below. This document is kept as the target picture for stage 1 in D-036. Working title 3com is now Windschatten (D-031).
+
 Language: English (build documentation).
 
 ## Guiding constraint
